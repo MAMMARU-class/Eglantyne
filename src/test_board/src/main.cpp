@@ -23,19 +23,19 @@ void setup() {
   krs2.begin();
   Serial.println("program started");
 
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("connected to wifi");
+//   WiFi.begin(ssid, password);
+//   while (WiFi.status() != WL_CONNECTED) {
+//     delay(500);
+//     Serial.print(".");
+//   }
+//   Serial.println("connected to wifi");
 
-  if (!client.connect(serverIP, serverPort)) {
-    Serial.println("connection to server failed");
-    return;
-  }
+//   if (!client.connect(serverIP, serverPort)) {
+//     Serial.println("connection to server failed");
+//     return;
+//   }
 
-  client.println("program started");
+//   client.println("program started");
 }
 
 void loop() {
@@ -55,19 +55,19 @@ void loop() {
     int now1, now2;
     now1 = krs1.setPos(1,7500);
     now2 = krs2.setPos(1,7500);
-    client.printf("%d, %d", now1, now2);
+    // client.printf("%d, %d", now1, now2);
     delay(500); //0.5秒待つ
     now1 = krs1.setPos(1,9500); //位置指令　ID:0サーボを9500へ 右
     now2 = krs2.setPos(1,9500); //位置指令　ID:0サーボを9500へ 右
-    client.printf("%d, %d", now1, now2);
+    // client.printf("%d, %d", now1, now2);
     delay(500); //0.5秒待つ
     now1 = krs1.setPos(1,7500); //位置指令　ID:0サーボを7500へ 中央
     now2 = krs2.setPos(1,7500); //位置指令　ID:0サーボを7500へ 中央
-    client.printf("%d, %d", now1, now2);
+    // client.printf("%d, %d", now1, now2);
     delay(500); //0.5秒待つ
     now1 = krs1.setPos(1,5500); //位置指令　ID:0サーボを5500へ 左
     now2 = krs2.setPos(1,5500); //位置指令　ID:0サーボを5500へ 左
-    client.printf("%d, %d", now1, now2);
+    // client.printf("%d, %d", now1, now2);
     delay(500);
     
 }
