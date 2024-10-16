@@ -1,0 +1,17 @@
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/lib/nao_state_publisher/nao_state_publisher
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/launch//nao_state_publisher_launch.py
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/ament_index/resource_index/package_run_dependencies/nao_state_publisher
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/ament_index/resource_index/parent_prefix_path/nao_state_publisher
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/environment/ament_prefix_path.sh
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/environment/ament_prefix_path.dsv
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/environment/path.sh
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/environment/path.dsv
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/local_setup.bash
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/local_setup.sh
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/local_setup.zsh
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/local_setup.dsv
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/package.dsv
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/ament_index/resource_index/packages/nao_state_publisher
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/cmake/nao_state_publisherConfig.cmake
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/cmake/nao_state_publisherConfig-version.cmake
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/install/nao_state_publisher/share/nao_state_publisher/package.xml

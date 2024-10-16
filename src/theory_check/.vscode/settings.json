@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.sdf": "xml",
+        "*.urdf": "xml",
+        "core": "cpp",
+        "string": "cpp"
+    }
+}
