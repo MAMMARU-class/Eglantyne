@@ -1,19 +1,29 @@
 #include <iostream>
-#include <Eigen/Dense>
+#include <vector>
+// #include <Eigen/Dense>
 
 using namespace std;
-using namespace Eigen;
+// using namespace Eigen;
+
+class Test{
+public:
+    void set_name(string name){this->name = name;}
+    string get_name(){return name;}
+private:
+    string name;
+};
 
 int main(void){
-    Matrix2d m_mini;
-    m_mini << 1, 2,
-              3, 4;
+    Test test1; test1.set_name("test1");
+    Test test2; test2.set_name("test2");
+    Test test3; test3.set_name("test3");
 
-    MatrixXd m(3,3);
-    m.block<2,2>(0,0) = m_mini;
-    m.block<1,3>(2,0) = MatrixXd::Zero(1,3);
-    m(0,2) = 3;
-    m(1,2) = 5;
+    std::vector<Test*> list;
+    list.push_back(&test1);
+    list.push_back(&test2);
+    list.push_back(&test2);
 
-    cout << m << endl;
+    for (const auto& elem : list){
+        cout << elem->get_name() << endl;
+    }
 }

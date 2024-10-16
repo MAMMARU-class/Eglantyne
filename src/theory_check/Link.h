@@ -9,7 +9,7 @@ using namespace Eigen;
 
 class Link{
 public:
-    // Link();
+    Link();
     
     void setname(string link_name);
     string name();
@@ -23,16 +23,16 @@ public:
 
     // getter of local info
     Vector3d getP_l();
+    Matrix3d getR_l();
     Vector3d getA_l();
     double getq();
-    Matrix3d getR_l();
 
     // setter and getter of world info
-    Vector3d calcA_w();
     void setP_w(Vector3d P_w);
     void setR_w(Matrix3d R_w);
     Vector3d getP_w();
     Matrix3d getR_w();
+    Vector3d getA_w();
 
     // homogeneous transformation matrix
     Matrix4d getHTMat();
