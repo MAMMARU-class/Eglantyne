@@ -20,8 +20,8 @@ void setup(){
     hip_roll.setDefault("hip_roll", 0,0,-15, 1,0,0, 0, &hip_yaw);
     hip_pitch.setDefault("hip_pitch", 0,0,-15, 0,1,0, 0, &hip_roll);
     nee_pitch.setDefault("nee_pitch", 0,0,-70, 0,1,0, 0, &hip_pitch);
-    toe_roll.setDefault("toe_roll", 0,0,-70, 1,0,0, 0, &nee_pitch);
-    toe_pitch.setDefault("toe_pitch", 0,0,0, 0,1,0, 0, &toe_roll);
+    toe_pitch.setDefault("toe_roll", 0,0,-70, 0,1,0, 0, &nee_pitch);
+    toe_roll.setDefault("toe_pitch", 0,0,0, 1,0,0, 0, &toe_pitch);
 
     main_link.setname("main");
     next_link.setDefault("next", 0,20,0, 1,0,0, 0, &main_link);
@@ -38,20 +38,22 @@ int main(void){
     toe_pitch.setq(-30);
     // default state
 
-    Vector3d P_ref << 0
-                      -25
-                      -130;
-    Matrix3d R_ref << 1, 0, 0,
-                      0, 1, 0,
-                      0, 0, 1;
-    Kinematics::inverse(&toe_pitch, P_ref, R_ref);
-    std::vector<Link*> link_list = Kinematics::showFromBody(&toe_pitch);
+    Vector3d P_ref;
+    P_ref << 0,
+             -25,
+             -90;
+    Matrix3d R_ref;
+    R_ref << 1, 0, 0,
+             0, 1, 0,
+             0, 0, 1;
+    Kinematics::inverse(&toe_roll, P_ref, R_ref);
+    std::vector<Link*> link_list = Kinematics::showFromBody(&toe_roll);
     for (const auto& link : link_list){
         cout << link->name() << " : " << link->getq() << endl;
     }
 
-    cout << "\n\nendeffector P_w : \n" << toe_pitch.getP_w << endl;
-    cout <<   "\nendeffector R_w : \n" << toe_pitch.getR_w << endl;
+    cout << "\n\nendeffector P_w : \n" << toe_roll.getP_w() << endl;
+    cout <<   "\nendeffector R_w : \n" << toe_roll.getR_w() << endl;
 
     return 0;
 }

@@ -35,7 +35,6 @@ void Kinematics::forward(Link* link){
 void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
     std::vector<Link*> link_list = showFromBody(link);
     int link_size = link_list.size();
-    forward(link);
 
     VectorXd q_vec(link_size);
     int vec_id = 0;
@@ -45,24 +44,28 @@ void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
     }
 
     for (int i=10; i>0; i--){
+        forward(link);
         // err : 6 dementional vector (P, w)
         VectorXd err = calcerr(link, P_ref, R_ref); // 6 dementional
-        if (err.norm() > std::numeric_limits<double>::epsilon()){
+        if (err.norm() < std::numeric_limits<double>::epsilon()){
             return;
         }else{
             MatrixXd Jacobi = calcJacobi(link_list); // 6*link_size matrix
             double lambda = 0.5;
             VectorXd deltaq(link_size);
             deltaq = lambda * Jacobi.completeOrthogonalDecomposition().pseudoInverse() * err;
-            q_vec += deltaq;
-            setQ(q_vec, link_list);
-
-            forward(link);
+            q_vec += 180.0 / M_PI * deltaq;
+            // setQ(q_vec, link_list);
+            int link_id = 0;
+            for (const auto& link : link_list){
+                link->setq(q_vec(link_id));
+                link_id++;
+            }
         }
     }
 }
 
-
+// sub calculer
 
 MatrixXd Kinematics::calcJacobi(std::vector<Link*> link_list){
     MatrixXd Jacobi(6, link_list.size());
@@ -71,10 +74,16 @@ MatrixXd Kinematics::calcJacobi(std::vector<Link*> link_list){
         Vector3d A_w = link->getA_w();
         // P_w_n - P_w_i
         Vector3d P_i_n = link_list.back()->getP_w() - link->getP_w();
+        
+        MatrixXd check(3,2);
+        check.block<3,1>(0,0) = A_w;
+        check.block<3,1>(0,1) = P_i_n;
+
         Jacobi.block<3,1>(0,row) = A_w.cross(P_i_n);
         Jacobi.block<3,1>(3,row) = A_w;
         row++;
     }
+    cout << Jacobi << "\n" << endl;
     return Jacobi;
 }
 
