@@ -33,19 +33,25 @@ int main(void){
     using std::endl;
 
     setup();
-    // hip_yaw.setq(45);
     hip_pitch.setq(-30);
     nee_pitch.setq(60);
     toe_pitch.setq(-30);
-    Kinematics::forward(&toe_pitch);
-    
-    cout << toe_pitch.getP_w() << endl;
-    cout << toe_pitch.getR_w() << endl;
+    // default state
 
-    std::vector<Link*> link_list;
-    link_list = Kinematics::showFromBody(&toe_pitch);
-
+    Vector3d P_ref << 0
+                      -25
+                      -130;
+    Matrix3d R_ref << 1, 0, 0,
+                      0, 1, 0,
+                      0, 0, 1;
+    Kinematics::inverse(&toe_pitch, P_ref, R_ref);
+    std::vector<Link*> link_list = Kinematics::showFromBody(&toe_pitch);
     for (const auto& link : link_list){
-        cout << link->name() << endl;
+        cout << link->name() << " : " << link->getq() << endl;
     }
+
+    cout << "\n\nendeffector P_w : \n" << toe_pitch.getP_w << endl;
+    cout <<   "\nendeffector R_w : \n" << toe_pitch.getR_w << endl;
+
+    return 0;
 }

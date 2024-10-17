@@ -1,22 +1,18 @@
 #include "Kinematics.h"
+using namespace Eigen;
 
+// set ptrs for lists to endeffecer from body
 std::vector<Link*> Kinematics::showFromBody(Link* link){
-    std::vector<Link*> link_v;
     if (link->parent() == nullptr){
-        // cout << link->name() << endl;
-        return link_v;
+        return {};
     }
 
-    showFromBody(link->parent());
-    // cout << link->name() << endl;
-    for (const auto& elem : link_v){
-        cout << elem->name() << endl;
-    }
-    cout << "\n" << endl;
-    link_v.push_back(link);
-    return link_v;
+    std::vector<Link*> link_list = showFromBody(link->parent());
+    link_list.push_back(link);
+    return link_list;
 }
 
+// forward kinematics. calclate every link's (from body to endeffect) P_w nad R_w
 void Kinematics::forward(Link* link){
     if (link->parent() == nullptr){
         Matrix4d RootMat;
@@ -29,23 +25,60 @@ void Kinematics::forward(Link* link){
     }
 
     forward(link->parent());
-    // cout << "state of " << link->name() << endl;
-    // cout << "parent's HTMat\n" << link->parent()->getHTMat() << endl;
-    // cout << "local state \n" << link->getState_l() << endl;
     Matrix4d State_w;
     // multiple parent HT matrix with target local states
     State_w = link->parent()->getHTMat() * link->getState_l();
-    // cout << "state on world\n" << State_w << "\n\n" << endl;
     link->setState_w(State_w);
     return;
 }
 
 void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
+    std::vector<Link*> link_list = showFromBody(link);
+    int link_size = link_list.size();
+    forward(link);
+
+    VectorXd q_vec(link_size);
+    int vec_id = 0;
+    for (const auto& link : link_list){
+        q_vec(vec_id) = link->getq();
+        vec_id++;
+    }
+
+    for (int i=10; i>0; i--){
+        // err : 6 dementional vector (P, w)
+        VectorXd err = calcerr(link, P_ref, R_ref); // 6 dementional
+        if (err.norm() > std::numeric_limits<double>::epsilon()){
+            return;
+        }else{
+            MatrixXd Jacobi = calcJacobi(link_list); // 6*link_size matrix
+            double lambda = 0.5;
+            VectorXd deltaq(link_size);
+            deltaq = lambda * Jacobi.completeOrthogonalDecomposition().pseudoInverse() * err;
+            q_vec += deltaq;
+            setQ(q_vec, link_list);
+
+            forward(link);
+        }
+    }
 }
 
 
 
+MatrixXd Kinematics::calcJacobi(std::vector<Link*> link_list){
+    MatrixXd Jacobi(6, link_list.size());
+    int row = 0;
+    for (const auto& link : link_list){
+        Vector3d A_w = link->getA_w();
+        // P_w_n - P_w_i
+        Vector3d P_i_n = link_list.back()->getP_w() - link->getP_w();
+        Jacobi.block<3,1>(0,row) = A_w.cross(P_i_n);
+        Jacobi.block<3,1>(3,row) = A_w;
+        row++;
+    }
+    return Jacobi;
+}
 
+// compare endeffercor P_w, R_w to P_ref, R_ref
 VectorXd Kinematics::calcerr(Link* link, Vector3d P_ref, Matrix3d R_ref){
     VectorXd errVec(6);
     
@@ -59,6 +92,7 @@ VectorXd Kinematics::calcerr(Link* link, Vector3d P_ref, Matrix3d R_ref){
     return errVec;
 }
 
+// convert rotation error to angluler velocity
 Vector3d Kinematics::rot2omega(Link* link, Matrix3d R_ref){
     Vector3d w;
     
@@ -79,5 +113,13 @@ Vector3d Kinematics::rot2omega(Link* link, Matrix3d R_ref){
              R_now(1,1) + 1,
              R_now(2,2) + 1;
         return M_PI / 2 * v;
+    }
+}
+
+void setQ(VectorXd q_vec, std::vector<Link*> link_list){
+    int link_id = 0;
+    for (const auto& link : link_list){
+        link->setq(q_vec(link_id));
+        link_id++;
     }
 }
