@@ -1,0 +1,23 @@
+[0.014s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.032s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.129s] -- Configuring incomplete, errors occurred!
+[0.129s] See also "/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/CMakeOutput.log".
+[0.129s] [31mCMake Error at CMakeLists.txt:13 (find_package):
+[0.129s]   By not providing "Findgazebo_ros.cmake" in CMAKE_MODULE_PATH this project
+[0.129s]   has asked CMake to find a package configuration file provided by
+[0.130s]   "gazebo_ros", but CMake did not find one.
+[0.130s] 
+[0.130s]   Could not find a package configuration file provided by "gazebo_ros" with
+[0.130s]   any of the following names:
+[0.130s] 
+[0.130s]     gazebo_rosConfig.cmake
+[0.130s]     gazebo_ros-config.cmake
+[0.130s] 
+[0.130s]   Add the installation prefix of "gazebo_ros" to CMAKE_PREFIX_PATH or set
+[0.130s]   "gazebo_ros_DIR" to a directory containing one of the above files.  If
+[0.130s]   "gazebo_ros" provides a separate development package or SDK, be sure it has
+[0.130s]   been installed.
+[0.130s] 
+[0.130s] [0m
+[0.131s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.133s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
