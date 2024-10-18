@@ -1,0 +1,3 @@
+Err:1 https://apt.packages.shiftkey.dev/ubuntu any InRelease
+  Bad header line Bad header data [IP: 13.107.246.46 443]
+Fetched 4,682 B in 9s (510 B/s)
