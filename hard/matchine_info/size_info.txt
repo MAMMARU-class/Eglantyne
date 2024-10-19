@@ -7,5 +7,6 @@ leg  yaw to roll  : 22.2
 leg roll to pitch : 26.01
 leg upper         : 78.02
 leg under         : 78.02
-leg to foot       : 37.5
+leg to footz      : 37.5
+leg to foot frontx: 66
 foot : 50 * 87.5
