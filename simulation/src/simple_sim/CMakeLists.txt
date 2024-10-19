@@ -11,7 +11,7 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-find_package(gazebo REQUIRED)
+find_package(gazebo_ros REQUIRED)
 find_package(robot_state_publisher REQUIRED)
 
 if(BUILD_TESTING)

@@ -1,38 +1,44 @@
-import os
-import launch
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import ExecuteProcess
-from launch.substitutions import Command
-from launch_ros.substitutions import FindPackageShare
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from ament_index_python.packages import get_package_share_directory
+import os
 
 def generate_launch_description():
-    # パッケージパスの取得
-    pkg_share = FindPackageShare(package='simple_sim').find('simple_sim')
+    # パッケージディレクトリの取得
+    simple_sim_pkg = get_package_share_directory('simple_sim')
+    gazebo_ros_pkg = get_package_share_directory('gazebo_ros')
 
-    # xacroでURDFファイルを生成
-    model = os.path.join(pkg_share, 'urdf', 'model.urdf')
+    # CougarBotのURDFファイルのパス
+    urdf_file = os.path.join(simple_sim_pkg, 'urdf', 'eglantyne.urdf')
+
+    # 空のワールドのlaunchファイルのパス
+    empty_world_launch = os.path.join(gazebo_ros_pkg, 'launch', 'empty_world.launch.py')
 
     return LaunchDescription([
-        # Gazebo Classicを空のワールドで起動
-        ExecuteProcess(
-            cmd=['gazebo', '--verbose', '--pause', '-s', 'libgazebo_ros_factory.so', 'empty.world'],
-            output='screen'
-        ),
-        
-        # URDFを読み込んでロボットをスポーンするノード
-        Node(
-            package='gazebo_ros',
-            executable='spawn_entity.py',
-            arguments=['-topic', '/robot_description', '-entity', 'my_robot'],
-            output='screen'
-        ),
-
-        # ロボットのURDFをパラメータとして設定
+        # robot_descriptionパラメータをセットする
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
             output='screen',
-            parameters=[{'robot_description': model}]
+            parameters=[{'robot_description': open(urdf_file).read()}]
+        ),
+
+        # 空のワールドでGazeboを起動
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(empty_world_launch)
+        ),
+
+        # CougarBotをGazeboにスポーン
+        Node(
+            package='gazebo_ros',
+            executable='spawn_entity.py',
+            arguments=[
+                '-param', 'robot_description',
+                '-urdf',
+                '-model', 'cougarbot'
+            ],
+            output='screen'
         ),
     ])

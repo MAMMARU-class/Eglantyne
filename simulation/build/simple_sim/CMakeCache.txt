@@ -794,11 +794,14 @@ foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 //The directory containing a CMake configuration file for gazebo.
 gazebo_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gazebo
 
+//The directory containing a CMake configuration file for gazebo_dev.
+gazebo_dev_DIR:PATH=/opt/ros/humble/share/gazebo_dev/cmake
+
 //Path to a library.
 gazebo_proto_msgs_lib:FILEPATH=/usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
 
 //The directory containing a CMake configuration file for gazebo_ros.
-gazebo_ros_DIR:PATH=gazebo_ros_DIR-NOTFOUND
+gazebo_ros_DIR:PATH=/opt/ros/humble/share/gazebo_ros/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
@@ -898,6 +901,9 @@ pkgcfg_lib_PC_FCL_octomap:FILEPATH=/usr/lib/x86_64-linux-gnu/liboctomap.so
 
 //Path to a library.
 pkgcfg_lib_PC_FCL_octomath:FILEPATH=/usr/lib/x86_64-linux-gnu/liboctomath.so
+
+//Path to a library.
+pkgcfg_lib_TBB_tbb:FILEPATH=/usr/lib/x86_64-linux-gnu/libtbb.so
 
 //Path to a library.
 pkgcfg_lib_TINYXML2_tinyxml2:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinyxml2.so
@@ -1284,7 +1290,7 @@ CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 DART_DEFINITIONS:INTERNAL=
 DART_INCLUDE_DIRS:INTERNAL=/usr/include
-DART_LIBRARIES:INTERNAL=dart
+DART_LIBRARIES:INTERNAL=dart;dart
 //Boost min version requirement
 DART_MIN_BOOST_VERSION:INTERNAL=1.58.0
 DART_dart_DEFINITIONS:INTERNAL=
@@ -1301,7 +1307,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boo
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurl.so][/usr/include/x86_64-linux-gnu][c ][v7.81.0()]
 //Details about finding DART
-FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart][cfound components: dart ][v(6.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart;dart][cfound components: dart ][v(6.6)]
 //Details about finding DL
 FIND_PACKAGE_MESSAGE_DETAILS_DL:INTERNAL=[true][v()]
 //Details about finding Eigen3
@@ -1692,6 +1698,41 @@ Protobuf_PROTOC_EXECUTABLE-ADVANCED:INTERNAL=1
 Protobuf_PROTOC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Protobuf_PROTOC_LIBRARY_RELEASE
 Protobuf_PROTOC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+TBB_CFLAGS:INTERNAL=
+TBB_CFLAGS_I:INTERNAL=
+TBB_CFLAGS_OTHER:INTERNAL=
+TBB_FOUND:INTERNAL=1
+TBB_INCLUDEDIR:INTERNAL=/usr/include
+TBB_INCLUDE_DIRS:INTERNAL=
+TBB_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-ltbb
+TBB_LDFLAGS_OTHER:INTERNAL=
+TBB_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+TBB_LIBRARIES:INTERNAL=tbb
+TBB_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+TBB_LIBS:INTERNAL=
+TBB_LIBS_L:INTERNAL=
+TBB_LIBS_OTHER:INTERNAL=
+TBB_LIBS_PATHS:INTERNAL=
+TBB_MODULE_NAME:INTERNAL=tbb
+TBB_PREFIX:INTERNAL=/usr
+TBB_STATIC_CFLAGS:INTERNAL=
+TBB_STATIC_CFLAGS_I:INTERNAL=
+TBB_STATIC_CFLAGS_OTHER:INTERNAL=
+TBB_STATIC_INCLUDE_DIRS:INTERNAL=
+TBB_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-ltbb
+TBB_STATIC_LDFLAGS_OTHER:INTERNAL=
+TBB_STATIC_LIBDIR:INTERNAL=
+TBB_STATIC_LIBRARIES:INTERNAL=tbb
+TBB_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+TBB_STATIC_LIBS:INTERNAL=
+TBB_STATIC_LIBS_L:INTERNAL=
+TBB_STATIC_LIBS_OTHER:INTERNAL=
+TBB_STATIC_LIBS_PATHS:INTERNAL=
+TBB_VERSION:INTERNAL=2021.5.0
+TBB_tbb_INCLUDEDIR:INTERNAL=
+TBB_tbb_LIBDIR:INTERNAL=
+TBB_tbb_PREFIX:INTERNAL=
+TBB_tbb_VERSION:INTERNAL=
 TINYXML2_CFLAGS:INTERNAL=
 TINYXML2_CFLAGS_I:INTERNAL=
 TINYXML2_CFLAGS_OTHER:INTERNAL=
@@ -1897,6 +1938,7 @@ __pkg_config_arguments_OGRE_PKGC:INTERNAL=OGRE
 __pkg_config_arguments_PC_ASSIMP:INTERNAL=assimp;QUIET
 __pkg_config_arguments_PC_CURL:INTERNAL=QUIET;libcurl
 __pkg_config_arguments_PC_FCL:INTERNAL=fcl;QUIET
+__pkg_config_arguments_TBB:INTERNAL=tbb
 __pkg_config_arguments_TINYXML2:INTERNAL=tinyxml2
 __pkg_config_arguments_UUID:INTERNAL=uuid
 __pkg_config_arguments_ZIP:INTERNAL=libzip
@@ -1908,6 +1950,7 @@ __pkg_config_checked_OGRE_PKGC:INTERNAL=1
 __pkg_config_checked_PC_ASSIMP:INTERNAL=1
 __pkg_config_checked_PC_CURL:INTERNAL=1
 __pkg_config_checked_PC_FCL:INTERNAL=1
+__pkg_config_checked_TBB:INTERNAL=1
 __pkg_config_checked_TINYXML2:INTERNAL=1
 __pkg_config_checked_UUID:INTERNAL=1
 __pkg_config_checked_ZIP:INTERNAL=1
@@ -1959,6 +2002,8 @@ pkgcfg_lib_PC_FCL_m-ADVANCED:INTERNAL=1
 pkgcfg_lib_PC_FCL_octomap-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_FCL_octomath
 pkgcfg_lib_PC_FCL_octomath-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_TBB_tbb
+pkgcfg_lib_TBB_tbb-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_TINYXML2_tinyxml2
 pkgcfg_lib_TINYXML2_tinyxml2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_UUID_uuid

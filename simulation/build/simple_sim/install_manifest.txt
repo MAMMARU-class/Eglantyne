@@ -1,5 +1,5 @@
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/simenv.launch.py
-/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/model.urdf
+/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/eglantyne.urdf
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/package_run_dependencies/simple_sim
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/parent_prefix_path/simple_sim
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.sh

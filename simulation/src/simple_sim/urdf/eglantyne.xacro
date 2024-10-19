@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="eglantyne">
+    <xacro:include filename="body_macro.xacro"/>
+    <link name="world"/>
+
+    <xacro:box_link name="body" 
+                    x="80" y="78" z="80" 
+                    ofsx="0" ofsy="0" ofsz="40" 
+                    mass="1"/>
+    <joint name="fixed" type="fixed">
+        <parent link="world"/>
+        <child link="body"/>
+    </joint>
+
+    <xacro:cylinder_link name="leg_yaw_right"
+                         length="22.2" radious="20"
+                         ofsx="0" ofsy="0" ofsz="-11.1"
+                         mass="1"/>
+    <joint name="leg_yaw_right" type="revolute">
+        <parent link="body"/>
+        <child link="leg_yaw_right"/>
+        <origin xyz="0 0.03 0" rpy="0 0 0"/>
+
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+    </joint>
+
+    <xacro:box_link name="leg_roll_right"
+                    x="30" y="30" z="26.01"
+                    ofsx="0" ofsy="0" ofsz="${-26.01 / 2}"
+                    mass="1"/>
+    <joint name="leg_roll_right" type="revolute">
+        <parent link="leg_yaw_right"/>
+        <child link="leg_roll_right"/>
+        <origin xyz="0 0 -0.0222" rpy="0 0 0"/>
+
+        <axis xyz="1 0 0"/>
+        <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+    </joint>
+
+    <xacro:box_link name="leg_upper_right"
+                    x="30" y="10" z="78.02"
+                    ofsx="0" ofsy="${10 / 2}" ofsz="${-78.02 / 2}"
+                    mass="1"/>
+    <joint name="leg_upper_right" type="revolute">
+        <parent link="leg_roll_right"/>
+        <child link="leg_upper_right"/>
+        <origin xyz="0 ${0.03 / 2} -0.0261" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+        <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+    </joint>
+
+    <xacro:box_link name="leg_under_right"
+                    x="30" y="10" z="78.02"
+                    ofsx="0" ofsy="${-10 / 2}" ofsz="${-78.02 / 2}"
+                    mass="1"/>
+    <joint name="leg_under_right" type="revolute">
+        <parent link="leg_upper_right"/>
+        <child link="leg_under_right"/>
+        <origin xyz="0 0 -0.07802" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+        <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+    </joint>
+
+
+</robot>
