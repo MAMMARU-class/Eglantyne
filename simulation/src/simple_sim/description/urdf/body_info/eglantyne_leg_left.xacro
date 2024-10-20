@@ -1,0 +1,109 @@
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro">
+<xacro:macro name="leg_left_link" params="dir"> 
+
+    <xacro:cylinder_link name="leg_yaw_left"
+                         length="22.2" radius="20"
+                         ofsx="0" ofsy="0" ofsz="-11.1"
+                         mass="13" collision="false" />
+    <joint name="leg_yaw_left" type="revolute">
+        <parent link="body"/>
+        <child link="leg_yaw_left"/>
+        <xacro:if value="${dir == 'right'}">
+            <origin xyz="0 -0.03 0" rpy="0 0 0"/>
+        </xacro:if>
+        <xacro:if value="${dir == 'left'}">
+            <origin xyz="0 0.03 0" rpy="0 0 0"/>
+        </xacro:if>
+
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.57" upper="1.57" effort="10.0" velocity="1.0"/>
+    </joint>
+
+
+    <xacro:box_link name="leg_roll_left"
+                    x="30" y="30" z="26.01"
+                    ofsx="0" ofsy="0" ofsz="${-26.01 / 2}"
+                    mass="95" collision="true" />
+    <joint name="leg_roll_left" type="revolute">
+        <parent link="leg_yaw_left"/>
+        <child link="leg_roll_left"/>
+        <origin xyz="0 0 -0.0222" rpy="0 0 0"/>
+
+        <axis xyz="1 0 0"/>
+        <xacro:if value="${dir == 'right'}">
+            <limit lower="-1.57" upper="${3.14 / 6}" effort="10.0" velocity="1.0"/>
+        </xacro:if>
+        <xacro:if value="${dir == 'left'}">
+            <limit lower="${-3.14 / 6}" upper="1.57" effort="10.0" velocity="1.0"/>
+        </xacro:if>
+    </joint>
+
+
+    <xacro:box_link name="leg_upper_left"
+                    x="30" y="30" z="78.02"
+                    ofsx="0" ofsy="0" ofsz="${-78.02 / 2}"
+                    mass="71" collision="false" />
+    <joint name="leg_upper_left" type="revolute">
+        <parent link="leg_roll_left"/>
+        <child link="leg_upper_left"/>
+        <origin xyz="0 0 -0.0261" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+        <limit lower="${-3.14 * 5 / 6}" upper="${3.14 / 4}" effort="10.0" velocity="1.0"/>
+    </joint>
+
+
+    <xacro:box_link name="leg_under_left"
+                    x="30" y="30" z="78.02"
+                    ofsx="0" ofsy="0" ofsz="${-78.02 / 2}"
+                    mass="108" collision="true" />
+    <joint name="leg_under_left" type="revolute">
+        <parent link="leg_upper_left"/>
+        <child link="leg_under_left"/>
+        <origin xyz="0 0 -0.07802" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+        <limit lower="0" upper="${3.14 * 5 / 6}" effort="10.0" velocity="1.0"/>
+    </joint>
+
+
+    <xacro:cylinder_link name="foot_pitch_left"
+                         length="30" radius="15"
+                         ofsx="0" ofsy="0" ofsz="${-30 / 2}"
+                         mass="10" collision="false" />
+    <joint name="foot_pitch_left" type="revolute">
+        <parent link="leg_under_left"/>
+        <child link="foot_pitch_left"/>
+        <origin xyz="0 0 -0.07802" rpy="0 -1.57 0"/>
+
+        <axis xyz="0 1 0"/>
+        <limit lower="${-3.14 / 3}" upper="0" effort="10.0" velocity="1.0"/>
+    </joint>
+
+
+    <xacro:cylinder_link name="foot_roll_left"
+                         length="36" radius="15"
+                         ofsx="0" ofsy="0" ofsz="${-36 / 2}"
+                         mass="10" collision="true" />
+    <joint name="foot_roll_left" type="revolute">
+        <parent link="foot_pitch_left"/>
+        <child link="foot_roll_left"/>
+        <origin xyz="0 0 -0.03" rpy="0 0 0"/>
+
+        <axis xyz="0 0 1"/>
+        <limit lower="${-3.14 / 3}" upper="${3.14 / 3}" effort="10.0" velocity="1.0"/>
+    </joint>
+
+
+    <xacro:box_link name="foot_left"
+                    x="10" y="50" z="87.5"
+                    ofsx="${10 / 2}" ofsy="0" ofsz="${87.5 / 2}"
+                    mass="48" collision="true" />
+    <joint name="foot_left" type="fixed">
+        <parent link="foot_roll_left"/>
+        <child link="foot_left"/>
+        <origin xyz="-0.0375 0 -0.036" rpy="0 0 0"/>
+    </joint>
+
+</xacro:macro>
+</robot>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro">
+    <gazebo>
+        <plugin name="gazebo_ros_joint_state_publisher"
+            filename="libgazebo_ros_joint_state_publisher.so">
+        <update_rate>20</update_rate>
+        <joint_name>arm_pitch_right</joint_name>
+        <joint_name>arm_roll_right</joint_name>
+        <joint_name>hand_right</joint_name>
+        
+        <joint_name>arm_pitch_left</joint_name>
+        <joint_name>arm_roll_left</joint_name>
+        <joint_name>hand_left</joint_name>
+
+        <joint_name>leg_yaw_right</joint_name>
+        <joint_name>leg_roll_right</joint_name>
+        <joint_name>leg_upper_right</joint_name>
+        <joint_name>leg_under_right</joint_name>
+        <joint_name>foot_pitch_right</joint_name>
+        <joint_name>foot_roll_right</joint_name>
+
+        <joint_name>leg_yaw_left</joint_name>
+        <joint_name>leg_roll_left</joint_name>
+        <joint_name>leg_upper_left</joint_name>
+        <joint_name>leg_under_left</joint_name>
+        <joint_name>foot_pitch_left</joint_name>
+        <joint_name>foot_roll_left</joint_name>
+        </plugin>
+    </gazebo>
+</robot>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro">
+    <xacro:box_link name="body" 
+                    x="60" y="78" z="80" 
+                    ofsx="0" ofsy="0" ofsz="40" 
+                    mass="217" collision="true" />
+    <joint name="fixed" type="fixed">
+        <parent link="base"/>
+        <child link="body"/>
+    </joint>
+
+    <xacro:box_link name="battery"
+                    x="40" y="40" z="80"
+                    ofsx="${-40 / 2}" ofsy="0" ofsz="40"
+                    mass="88" collision="false" />
+    <joint name="battery" type="fixed">
+        <parent link="body"/>
+        <child link="battery"/>
+    </joint>
+
+    <xacro:cylinder_link name="head"
+                         length="50" radius="23"
+                         ofsx="0" ofsy="0" ofsz="${80 + 30 / 2}"
+                         mass="20" collision="true" />
+    <joint name="head" type="fixed">
+        <parent link="body"/>
+        <child link="head"/>
+    </joint>
+
+</robot>

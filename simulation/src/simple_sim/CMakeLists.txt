@@ -26,7 +26,12 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY launch urdf
+install(
+  DIRECTORY description/launch description/urdf
+  DESTINATION share/${PROJECT_NAME}/)
+
+install(
+  DIRECTORY simenv/launch simenv/config
   DESTINATION share/${PROJECT_NAME}/)
 
 ament_package()

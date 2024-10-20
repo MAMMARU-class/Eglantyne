@@ -1,0 +1,72 @@
+[0.027s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/opt/ros/humble PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/ros2_control_demos/example_11 -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11
+[0.047s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.438s] -- Found Python3: /home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.539s] -- Found hardware_interface: 2.42.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.586s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.592s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.602s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.616s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.634s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.845s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.847s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.870s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.908s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.911s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.925s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.928s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.936s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.946s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.956s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.035s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.036s] -- Found Threads: TRUE  
+[1.092s] -- Found ament_cmake_pytest: 1.3.10 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[2.220s] -- Configuring done
+[2.237s] -- Generating done
+[2.238s] -- Build files have been written to: /home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11
+[2.250s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11' returned '0': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/opt/ros/humble PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/ros2_control_demos/example_11 -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11
+[2.250s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/opt/ros/humble PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11 -- -j16 -l16
+[2.471s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_control_demo_example_11.dir/hardware/carlikebot_system.cpp.o[0m
+[8.463s] [100%] [32m[1mLinking CXX shared library libros2_control_demo_example_11.so[0m
+[8.791s] [100%] Built target ros2_control_demo_example_11
+[8.809s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11' returned '0': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/opt/ros/humble PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11 -- -j16 -l16
+[8.834s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/opt/ros/humble PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11
+[9.266s] -- Install configuration: ""
+[9.266s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/ros2_control_demo_example_11.xml
+[9.266s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/include/ros2_control_demo_example_11
+[9.266s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/include/ros2_control_demo_example_11/ros2_control_demo_example_11
+[9.266s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/include/ros2_control_demo_example_11/ros2_control_demo_example_11/carlikebot_system.hpp
+[9.266s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/launch
+[9.266s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/launch/view_robot.launch.py
+[9.267s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/ros2_control
+[9.267s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/ros2_control/carlikebot.ros2_control.xacro
+[9.267s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/urdf
+[9.267s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/urdf/carlikebot.urdf.xacro
+[9.267s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/launch
+[9.267s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/launch/carlikebot.launch.py
+[9.267s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/config
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/config/carlikebot_controllers.yaml
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/lib/libros2_control_demo_example_11.so
+[9.272s] -- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/lib/libros2_control_demo_example_11.so" to ""
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/environment/library_path.sh
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/environment/library_path.dsv
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_example_11
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_example_11
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/environment/ament_prefix_path.sh
+[9.272s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/environment/ament_prefix_path.dsv
+[9.273s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/environment/path.sh
+[9.273s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/environment/path.dsv
+[9.273s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/local_setup.bash
+[9.274s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/local_setup.sh
+[9.275s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/local_setup.zsh
+[9.275s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/local_setup.dsv
+[9.275s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/package.dsv
+[9.275s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ament_index/resource_index/packages/ros2_control_demo_example_11
+[9.275s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_control_demo_example_11
+[9.275s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/cmake/export_ros2_control_demo_example_11Export.cmake
+[9.275s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/cmake/export_ros2_control_demo_example_11Export-noconfig.cmake
+[9.279s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/cmake/ament_cmake_export_targets-extras.cmake
+[9.279s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.280s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/cmake/ros2_control_demo_example_11Config.cmake
+[9.280s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/cmake/ros2_control_demo_example_11Config-version.cmake
+[9.280s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/share/ros2_control_demo_example_11/package.xml
+[9.298s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11' returned '0': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/opt/ros/humble PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/simulation/build/ros2_control_demo_example_11

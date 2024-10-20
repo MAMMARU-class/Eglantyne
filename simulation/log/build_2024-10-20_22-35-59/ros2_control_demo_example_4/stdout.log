@@ -1,0 +1,44 @@
+[100%] Built target ros2_control_demo_example_4
+-- Install configuration: ""
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/ros2_control_demo_example_4.xml
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/include/ros2_control_demo_example_4
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/include/ros2_control_demo_example_4/ros2_control_demo_example_4
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/include/ros2_control_demo_example_4/ros2_control_demo_example_4/rrbot_system_with_sensor.hpp
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/launch
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/launch/view_robot.launch.py
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/ros2_control
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/ros2_control/rrbot_system_with_sensor.ros2_control.xacro
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/urdf
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/urdf/rrbot_system_with_sensor.urdf.xacro
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/rviz
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/rviz/rrbot.rviz
+-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/launch
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/launch/test_forward_position_controller.launch.py
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/launch/rrbot_system_with_sensor.launch.py
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/config
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/config/rrbot_forward_position_publisher.yaml
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/config/rrbot_with_sensor_controllers.yaml
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/lib/libros2_control_demo_example_4.so
+-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/lib/libros2_control_demo_example_4.so" to ""
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/environment/library_path.sh
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/environment/library_path.dsv
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_example_4
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_example_4
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/environment/ament_prefix_path.sh
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/environment/ament_prefix_path.dsv
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/environment/path.sh
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/environment/path.dsv
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/local_setup.bash
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/local_setup.sh
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/local_setup.zsh
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/local_setup.dsv
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/package.dsv
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ament_index/resource_index/packages/ros2_control_demo_example_4
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_control_demo_example_4
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/cmake/export_ros2_control_demo_example_4Export.cmake
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/cmake/export_ros2_control_demo_example_4Export-noconfig.cmake
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/cmake/ros2_control_demo_example_4Config.cmake
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/cmake/ros2_control_demo_example_4Config-version.cmake
+-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/package.xml

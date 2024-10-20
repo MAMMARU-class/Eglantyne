@@ -44,8 +44,15 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/simple_sim/" TYPE DIRECTORY FILES
-    "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/launch"
-    "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/urdf"
+    "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/description/launch"
+    "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/description/urdf"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/simple_sim/" TYPE DIRECTORY FILES
+    "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/launch"
+    "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/config"
     )
 endif()
 

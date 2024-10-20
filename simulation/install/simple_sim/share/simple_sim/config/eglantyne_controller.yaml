@@ -1,0 +1,41 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    eglantyne_controller:
+      type: position_controllers/JointTrajectoryController
+
+
+eglantyne_controller:
+  ros__parameters:
+    joints:
+      - arm_pitch_right
+      - arm_roll_right
+      - hand_right
+
+      - arm_pitch_left
+      - arm_roll_left
+      - hand_left
+
+      - leg_yaw_right
+      - leg_roll_right
+      - leg_upper_right
+      - leg_under_right
+      - foot_pitch_right
+      - foot_roll_right
+
+      - leg_yaw_left
+      - leg_roll_left
+      - leg_upper_left
+      - leg_under_left
+      - foot_pitch_left
+      - foot_roll_left
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position

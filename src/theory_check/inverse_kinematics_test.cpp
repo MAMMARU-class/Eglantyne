@@ -39,9 +39,9 @@ int main(void){
     // default state
 
     Vector3d P_ref;
-    P_ref << 0,
-             -25,
-             -90;
+    P_ref << 20,
+             -45,
+             -70;
     Matrix3d R_ref;
     R_ref << 1, 0, 0,
              0, 1, 0,
