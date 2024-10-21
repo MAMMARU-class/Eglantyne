@@ -1,0 +1,22 @@
+[0.000000] (-) TimerEvent: {}
+[0.000123] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000162] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000172] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000180] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000187] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000195] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000202] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000209] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000216] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000224] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.000232] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.000239] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.000247] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.000255] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.000263] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.000270] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.000277] (-) JobUnselected: {'identifier': 'simple_sim'}
+[0.000288] (ros2_control_demos) JobQueued: {'identifier': 'ros2_control_demos', 'dependencies': OrderedDict([('ros2_control_demo_description', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description'), ('ros2_control_demo_example_1', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1'), ('ros2_control_demo_example_10', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10'), ('ros2_control_demo_example_11', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11'), ('ros2_control_demo_example_12', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12'), ('ros2_control_demo_example_14', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14'), ('ros2_control_demo_example_2', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2'), ('ros2_control_demo_example_3', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3'), ('ros2_control_demo_example_4', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4'), ('ros2_control_demo_example_5', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5'), ('ros2_control_demo_example_6', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6'), ('ros2_control_demo_example_7', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7'), ('ros2_control_demo_example_8', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8'), ('ros2_control_demo_example_9', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9'), ('ros2_control_demo_example_15', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15')])}
+[0.000733] (ros2_control_demos) JobStarted: {'identifier': 'ros2_control_demos'}
+[0.026420] (ros2_control_demos) JobEnded: {'identifier': 'ros2_control_demos', 'rc': 1}
+[0.036817] (-) EventReactorShutdown: {}

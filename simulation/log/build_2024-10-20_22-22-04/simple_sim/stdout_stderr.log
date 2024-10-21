@@ -1,8 +1,0 @@
--- Install configuration: ""
--- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch
-[31mCMake Error at cmake_install.cmake:46 (file):
-  file INSTALL cannot find
-  "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/urdf": No
-  such file or directory.
-
-[0m

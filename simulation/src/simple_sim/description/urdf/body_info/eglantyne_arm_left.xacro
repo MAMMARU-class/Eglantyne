@@ -5,6 +5,7 @@
                          length="23.2" radius="15"
                          ofsx="0" ofsy="0" ofsz="${-23.2 / 2}"
                          mass="13" collision="true"/>
+                         
     <joint name="arm_pitch_left" type="revolute">
         <parent link="body"/>
         <child link="arm_pitch_left"/>

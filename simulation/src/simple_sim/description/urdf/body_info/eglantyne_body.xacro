@@ -7,6 +7,7 @@
     <joint name="fixed" type="fixed">
         <parent link="base"/>
         <child link="body"/>
+        <origin xyz = "0 0 0"/>
     </joint>
 
     <xacro:box_link name="battery"

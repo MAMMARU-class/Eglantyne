@@ -1,0 +1,150 @@
+[0.115s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim
+[0.154s] -- The C compiler identification is GNU 11.4.0
+[0.292s] -- The CXX compiler identification is GNU 11.4.0
+[0.304s] -- Detecting C compiler ABI info
+[0.356s] -- Detecting C compiler ABI info - done
+[0.361s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.362s] -- Detecting C compile features
+[0.362s] -- Detecting C compile features - done
+[0.366s] -- Detecting CXX compiler ABI info
+[0.422s] -- Detecting CXX compiler ABI info - done
+[0.428s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.428s] -- Detecting CXX compile features
+[0.428s] -- Detecting CXX compile features - done
+[0.431s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.642s] -- Found Python3: /home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.715s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.775s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.780s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.789s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.802s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.824s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.884s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.888s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.985s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.018s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.074s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.088s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.168s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.170s] -- Found Threads: TRUE  
+[1.279s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.281s] -- Checking for module 'bullet>=2.82'
+[1.300s] --   Found bullet, version 3.05
+[1.419s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.478s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.517s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.556s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.571s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.581s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.596s] -- Searching for dependencies of ignition-math6
+[1.599s] -- Looking for OGRE...
+[1.600s] -- OGRE_PREFIX_WATCH changed.
+[1.605s] -- Checking for module 'OGRE'
+[1.614s] --   Found OGRE, version 1.9.0
+[1.636s] -- Found Ogre Ghadamon (1.9.0)
+[1.646s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.656s] -- Looking for OGRE_Paging...
+[1.665s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.665s] -- Looking for OGRE_Terrain...
+[1.672s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.672s] -- Looking for OGRE_Property...
+[1.681s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.681s] -- Looking for OGRE_RTShaderSystem...
+[1.691s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.691s] -- Looking for OGRE_Volume...
+[1.701s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.701s] -- Looking for OGRE_Overlay...
+[1.711s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.930s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.935s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.935s] -- Searching for dependencies of ignition-transport8
+[1.957s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.975s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.976s] -- Checking for module 'libzmq >= 4'
+[1.986s] --   Found libzmq , version 4.3.4
+[2.018s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.027s] -- Checking for module 'uuid'
+[2.038s] --   Found uuid, version 2.37.2
+[2.069s] -- Found UUID: TRUE  
+[2.071s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.071s] -- Searching for dependencies of ignition-msgs5
+[2.089s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.094s] -- Checking for module 'tinyxml2'
+[2.107s] --   Found tinyxml2, version 9.0.0
+[2.141s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.146s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.146s] -- Searching for dependencies of ignition-common3
+[2.147s] -- Looking for dlfcn.h - found
+[2.148s] -- Looking for libdl - found
+[2.150s] -- Found DL: TRUE  
+[2.164s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.166s] -- Searching for <ignition-common3> component [graphics]
+[2.169s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.170s] -- Searching for dependencies of ignition-common3-graphics
+[2.170s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.175s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.176s] -- Searching for dependencies of ignition-fuel_tools4
+[2.250s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.261s] -- Checking for module 'jsoncpp'
+[2.277s] --   Found jsoncpp, version 1.9.5
+[2.313s] -- Found JSONCPP: TRUE  
+[2.320s] -- Checking for module 'libzip'
+[2.336s] --   Found libzip, version 1.7.3
+[2.373s] -- Found ZIP: TRUE  
+[2.373s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.374s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.374s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.381s] -- Gazebo version: 11.10
+[2.381s] -- Checking for module 'tbb'
+[2.398s] --   Found tbb, version 2021.5.0
+[2.438s] -- Found gazebo_ros2_control: 0.4.10 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[2.731s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[2.745s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.747s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.747s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.851s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.989s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.991s] -- Added test 'lint_cmake' to check CMake code style
+[2.994s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.998s] -- Added test 'xmllint' to check XML markup files
+[3.000s] -- Configuring done
+[3.008s] -- Generating done
+[3.013s] -- Build files have been written to: /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim
+[3.041s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim
+[3.045s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[3.440s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[3.471s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim
+[3.576s] -- Install configuration: ""
+[3.576s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch
+[3.576s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/view_robot.launch.py
+[3.576s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf
+[3.576s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/ros2_control_conf.xacro
+[3.576s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/gazebo_setup.xacro
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_leg_left.xacro
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_body.xacro
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_leg_right.xacro
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_arm_right.xacro
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/shape_macro.xacro
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_arm_left.xacro
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/eglantyne.xacro
+[3.577s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch
+[3.577s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/eglantyne_controller.launch.py
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config/eglantyne_controller.yaml
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/package_run_dependencies/simple_sim
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/parent_prefix_path/simple_sim
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.sh
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.dsv
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.sh
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.dsv
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.bash
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.sh
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.zsh
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.dsv
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.dsv
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/packages/simple_sim
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig.cmake
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig-version.cmake
+[3.578s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.xml
+[3.581s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim

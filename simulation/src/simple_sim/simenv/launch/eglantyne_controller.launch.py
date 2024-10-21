@@ -16,6 +16,7 @@ import os
 def generate_launch_description():
     # specify the name of the package and path to eacro file
     pkg_name = "simple_sim"
+    pkg_path = get_package_share_directory(pkg_name)
 
     robot_controllers = PathJoinSubstitution(
         [
@@ -36,11 +37,25 @@ def generate_launch_description():
 
     view_robot = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            [os.path.join(FindPackageShare(pkg_name), "launch"), "/view_robot.lanuch.py"]
+            [os.path.join(pkg_path, "launch"), "/view_robot.launch.py"]
         )
+    )
+
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+    )
+
+    robot_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["position_controller", "-c", "/controller_manager"],
     )
 
     return LaunchDescription([
         control_node,
-        view_robot
+        view_robot,
+        joint_state_broadcaster_spawner,
+        robot_controller_spawner,
     ])

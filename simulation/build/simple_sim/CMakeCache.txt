@@ -731,6 +731,9 @@ ament_pep257_BIN:FILEPATH=/opt/ros/humble/bin/ament_pep257
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
 
+//The directory containing a CMake configuration file for angles.
+angles_DIR:PATH=/opt/ros/humble/share/angles/cmake
+
 //The directory containing a CMake configuration file for boost_atomic.
 boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.74.0
 
@@ -773,6 +776,18 @@ composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cma
 //The directory containing a CMake configuration file for console_bridge.
 console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 
+//The directory containing a CMake configuration file for control_msgs.
+control_msgs_DIR:PATH=/opt/ros/humble/share/control_msgs/cmake
+
+//The directory containing a CMake configuration file for controller_interface.
+controller_interface_DIR:PATH=/opt/ros/humble/share/controller_interface/cmake
+
+//The directory containing a CMake configuration file for controller_manager.
+controller_manager_DIR:PATH=/opt/ros/humble/share/controller_manager/cmake
+
+//The directory containing a CMake configuration file for controller_manager_msgs.
+controller_manager_msgs_DIR:PATH=/opt/ros/humble/share/controller_manager_msgs/cmake
+
 //The directory containing a CMake configuration file for eigen3_cmake_module.
 eigen3_cmake_module_DIR:PATH=/opt/ros/humble/share/eigen3_cmake_module/cmake
 
@@ -800,11 +815,17 @@ gazebo_dev_DIR:PATH=/opt/ros/humble/share/gazebo_dev/cmake
 //Path to a library.
 gazebo_proto_msgs_lib:FILEPATH=/usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
 
+//The directory containing a CMake configuration file for gazebo_ros2_control.
+gazebo_ros2_control_DIR:PATH=/opt/ros/humble/share/gazebo_ros2_control/cmake
+
 //The directory containing a CMake configuration file for gazebo_ros.
 gazebo_ros_DIR:PATH=/opt/ros/humble/share/gazebo_ros/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for hardware_interface.
+hardware_interface_DIR:PATH=/opt/ros/humble/share/hardware_interface/cmake
 
 //The directory containing a CMake configuration file for ignition-cmake2.
 ignition-cmake2_DIR:PATH=/usr/share/cmake/ignition-cmake2
@@ -838,6 +859,9 @@ libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/c
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
+
+//The directory containing a CMake configuration file for lifecycle_msgs.
+lifecycle_msgs_DIR:PATH=/opt/ros/humble/share/lifecycle_msgs/cmake
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
@@ -935,6 +959,9 @@ rcl_action_DIR:PATH=/opt/ros/humble/share/rcl_action/cmake
 //The directory containing a CMake configuration file for rcl_interfaces.
 rcl_interfaces_DIR:PATH=/opt/ros/humble/share/rcl_interfaces/cmake
 
+//The directory containing a CMake configuration file for rcl_lifecycle.
+rcl_lifecycle_DIR:PATH=/opt/ros/humble/share/rcl_lifecycle/cmake
+
 //The directory containing a CMake configuration file for rcl_logging_interface.
 rcl_logging_interface_DIR:PATH=/opt/ros/humble/share/rcl_logging_interface/cmake
 
@@ -953,11 +980,17 @@ rclcpp_action_DIR:PATH=/opt/ros/humble/share/rclcpp_action/cmake
 //The directory containing a CMake configuration file for rclcpp_components.
 rclcpp_components_DIR:PATH=/opt/ros/humble/share/rclcpp_components/cmake
 
+//The directory containing a CMake configuration file for rclcpp_lifecycle.
+rclcpp_lifecycle_DIR:PATH=/opt/ros/humble/share/rclcpp_lifecycle/cmake
+
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
 
 //The directory containing a CMake configuration file for rcutils.
 rcutils_DIR:PATH=/opt/ros/humble/share/rcutils/cmake
+
+//The directory containing a CMake configuration file for realtime_tools.
+realtime_tools_DIR:PATH=/opt/ros/humble/share/realtime_tools/cmake
 
 //The directory containing a CMake configuration file for rmw.
 rmw_DIR:PATH=/opt/ros/humble/share/rmw/cmake
@@ -1070,6 +1103,9 @@ tinyxml2_vendor_DIR:PATH=/opt/ros/humble/share/tinyxml2_vendor/cmake
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
 
+//The directory containing a CMake configuration file for trajectory_msgs.
+trajectory_msgs_DIR:PATH=/opt/ros/humble/share/trajectory_msgs/cmake
+
 //The directory containing a CMake configuration file for unique_identifier_msgs.
 unique_identifier_msgs_DIR:PATH=/opt/ros/humble/share/unique_identifier_msgs/cmake
 
@@ -1088,8 +1124,14 @@ urdfdom_headers_DIR:PATH=/opt/ros/humble/lib/x86_64-linux-gnu/urdfdom_headers/cm
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
+
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake
+
+//The directory containing a CMake configuration file for yaml_cpp_vendor.
+yaml_cpp_vendor_DIR:PATH=/opt/ros/humble/share/yaml_cpp_vendor/cmake
 
 
 ########################
@@ -1290,7 +1332,7 @@ CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 DART_DEFINITIONS:INTERNAL=
 DART_INCLUDE_DIRS:INTERNAL=/usr/include
-DART_LIBRARIES:INTERNAL=dart;dart;dart;dart;dart;dart;dart;dart;dart
+DART_LIBRARIES:INTERNAL=dart
 //Boost min version requirement
 DART_MIN_BOOST_VERSION:INTERNAL=1.58.0
 DART_dart_DEFINITIONS:INTERNAL=
@@ -1307,7 +1349,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boo
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurl.so][/usr/include/x86_64-linux-gnu][c ][v7.81.0()]
 //Details about finding DART
-FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart;dart;dart;dart;dart;dart;dart;dart;dart][cfound components: dart ][v(6.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart][cfound components: dart ][v(6.6)]
 //Details about finding DL
 FIND_PACKAGE_MESSAGE_DETAILS_DL:INTERNAL=[true][v()]
 //Details about finding Eigen3
@@ -1928,8 +1970,6 @@ _Python3_EXECUTABLE:INTERNAL=/home/hibiki/.espressif/python_env/idf5.4_py3.10_en
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages;/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=cc25393523eb3c34c03e3c18ec930be3
-//Interpreter reason failure
-_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 __pkg_config_arguments_BULLET:INTERNAL=bullet>=2.82

@@ -332,9 +332,6 @@ console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 //The directory containing a CMake configuration file for control_msgs.
 control_msgs_DIR:PATH=/opt/ros/humble/share/control_msgs/cmake
 
-//The directory containing a CMake configuration file for controller_manager.
-controller_manager_DIR:PATH=controller_manager_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
 
