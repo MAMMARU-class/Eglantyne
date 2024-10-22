@@ -5,9 +5,8 @@
                     ofsx="0" ofsy="0" ofsz="40" 
                     mass="217" collision="true" />
     <joint name="fixed" type="fixed">
-        <parent link="base"/>
-        <child link="body"/>
-        <origin xyz = "0 0 0"/>
+        <parent link="base_link"/>
+        <child link="body_link"/>
     </joint>
 
     <xacro:box_link name="battery"
@@ -15,8 +14,8 @@
                     ofsx="${-40 / 2}" ofsy="0" ofsz="40"
                     mass="88" collision="false" />
     <joint name="battery" type="fixed">
-        <parent link="body"/>
-        <child link="battery"/>
+        <parent link="body_link"/>
+        <child link="battery_link"/>
     </joint>
 
     <xacro:cylinder_link name="head"
@@ -24,8 +23,8 @@
                          ofsx="0" ofsy="0" ofsz="${80 + 30 / 2}"
                          mass="20" collision="true" />
     <joint name="head" type="fixed">
-        <parent link="body"/>
-        <child link="head"/>
+        <parent link="body_link"/>
+        <child link="head_link"/>
     </joint>
 
 </robot>

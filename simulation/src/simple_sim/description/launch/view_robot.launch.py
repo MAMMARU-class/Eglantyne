@@ -30,8 +30,8 @@ def generate_launch_description():
             package='robot_state_publisher',
             executable='robot_state_publisher',
             output='screen',
-            parameters=[{"robot_description": robot_description_content,
-                         'use_sim_time': True}]
+            parameters=[{"robot_description": robot_description_content,}]
+            # delete 'use_sim_time': True
     )
     
     gazebo = IncludeLaunchDescription(
@@ -43,7 +43,8 @@ def generate_launch_description():
         package='gazebo_ros',
         executable='spawn_entity.py',
         arguments=['-topic', 'robot_description',
-                   '-entity', 'my_robot',],
+                   '-entity', 'Eglantyne',
+                   '-x', '0', '-y', '0', '-z', '0.25'],
         output='screen'
     )
 

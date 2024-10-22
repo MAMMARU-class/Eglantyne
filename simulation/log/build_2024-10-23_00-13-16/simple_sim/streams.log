@@ -1,0 +1,151 @@
+[0.011s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.041s] [ 50%] [32mBuilding CXX object CMakeFiles/squad.dir/example/squad.cpp.o[0m
+[0.162s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:49:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.162s]    24 |         std::vector<std::string> joint_names = [[01;35m[K'arm_pitch_right'[m[K, 'arm_roll_right', 'hand_right',
+[0.162s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[0.162s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:68:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.162s]    24 |         std::vector<std::string> joint_names = ['arm_pitch_right', [01;35m[K'arm_roll_right'[m[K, 'hand_right',
+[0.162s]       |                                                                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[0.162s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:86:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.162s]    24 |     std::vector<std::string> joint_names = ['arm_pitch_right', 'arm_roll_right', [01;35m[K'hand_right'[m[K,
+[0.162s]       |                                                                                  [01;35m[K^~~~~~~~~~~~[m[K
+[0.162s] 
+[0.162s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:25:49:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.162s]    25 |                                                 [01;35m[K'arm_pitch_left'[m[K, 'arm_roll_left', 'hand_left',
+[0.162s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[0.162s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:25:67:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.162s]    25 |                                                 'arm_pitch_left', [01;35m[K'arm_roll_left'[m[K, 'hand_left',
+[0.162s]       |                                                                   [01;35m[K^~~~~~~~~~~~~~~[m[K
+[0.162s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:25:84:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.162s]    25 |                                               'arm_pitch_left', 'arm_roll_left', [01;35m[K'hand_left'[m[K,
+[0.162s]       |                                                                                  [01;35m[K^~~~~~~~~~~[m[K
+[0.162s] 
+[0.162s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:26:49:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.162s]    26 |                                                 [01;35m[K'leg_yaw_right'[m[K, 'leg_roll_right', 'leg_upper_right', 'leg_under_right', 'foot_pitch_right', 'foot_roll_right',
+[0.162s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:26:66:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    26 |                                                 'leg_yaw_right', [01;35m[K'leg_roll_right'[m[K, 'leg_upper_right', 'leg_under_right', 'foot_pitch_right', 'foot_roll_right',
+[0.163s]       |                                                                  [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:26:84:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    26 |                                               'leg_yaw_right', 'leg_roll_right', [01;35m[K'leg_upper_right'[m[K, 'leg_under_right', 'foot_pitch_right', 'foot_roll_right',
+[0.163s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[0.163s] 
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:26:103:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    26 |                            'leg_yaw_right', 'leg_roll_right', 'leg_upper_right', [01;35m[K'leg_under_right'[m[K, 'foot_pitch_right', 'foot_roll_right',
+[0.163s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[0.163s] 
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:26:122:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    26 |         'leg_yaw_right', 'leg_roll_right', 'leg_upper_right', 'leg_under_right', [01;35m[K'foot_pitch_right'[m[K, 'foot_roll_right',
+[0.163s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.163s] 
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:26:142:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    26 | ht', 'leg_roll_right', 'leg_upper_right', 'leg_under_right', 'foot_pitch_right', [01;35m[K'foot_roll_right'[m[K,
+[0.163s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[0.163s] 
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:27:49:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    27 |                                                 [01;35m[K'leg_yaw_left'[m[K, 'leg_roll_left', 'leg_upper_left', 'leg_under_left', 'foot_pitch_left', 'foot_roll_left'];
+[0.163s]       |                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:27:65:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    27 |                                                 'leg_yaw_left', [01;35m[K'leg_roll_left'[m[K, 'leg_upper_left', 'leg_under_left', 'foot_pitch_left', 'foot_roll_left'];
+[0.163s]       |                                                                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:27:82:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    27 |                                                 'leg_yaw_left', 'leg_roll_left', [01;35m[K'leg_upper_left'[m[K, 'leg_under_left', 'foot_pitch_left', 'foot_roll_left'];
+[0.163s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:27:100:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    27 |                               'leg_yaw_left', 'leg_roll_left', 'leg_upper_left', [01;35m[K'leg_under_left'[m[K, 'foot_pitch_left', 'foot_roll_left'];
+[0.163s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[0.163s] 
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:27:118:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    27 |             'leg_yaw_left', 'leg_roll_left', 'leg_upper_left', 'leg_under_left', [01;35m[K'foot_pitch_left'[m[K, 'foot_roll_left'];
+[0.163s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[0.163s] 
+[0.163s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:27:137:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[0.163s]    27 | w_left', 'leg_roll_left', 'leg_upper_left', 'leg_under_left', 'foot_pitch_left', [01;35m[K'foot_roll_left'[m[K];
+[0.164s]       |                                                                                  [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[0.164s] 
+[1.412s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_z[m[K’ does not name a type; did you mean ‘[01m[Ksize_t[m[K’?
+[1.412s]    44 |     [01;31m[Ksize_z[m[K count_;
+[1.412s]       |     [01;31m[K^~~~~~[m[K
+[1.412s]       |     [32m[Ksize_t[m[K
+[1.412s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In constructor ‘[01m[KSquad::Squad()[m[K’:
+[1.412s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:13:22:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KSquad[m[K’ does not have any field named ‘[01m[Kcount_[m[K’
+[1.412s]    13 |     : Node("squad"), [01;31m[Kcount_[m[K(0)
+[1.412s]       |                      [01;31m[K^~~~~~[m[K
+[1.416s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:15:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_[m[K’?
+[1.416s]    15 |         [01;31m[Kpublisher[m[K = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/joint_trajectory_controller/joint_trajectory", 10);
+[1.416s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.416s]       |         [32m[Kpublisher_[m[K
+[1.417s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:17:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+[1.417s]    17 |             [01;31m[K1s[m[K, std::bind(&Squad::timer_callback, this)
+[1.417s]       |             [01;31m[K^~[m[K
+[1.419s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In member function ‘[01m[Kvoid Squad::timer_callback()[m[K’:
+[1.419s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:49:[m[K [01;31m[Kerror: [m[Kexpected identifier before '\x69676874'
+[1.419s]    24 |         std::vector<std::string> joint_names = [[01;31m[K'arm_pitch_right'[m[K, 'arm_roll_right', 'hand_right',
+[1.420s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.420s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+[1.420s]    24 |         std::vector<std::string> joint_names = ['arm_pitch_right'[01;31m[K,[m[K 'arm_roll_right', 'hand_right',
+[1.420s]       |                                                                  [01;31m[K^[m[K
+[1.420s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In lambda function:
+[1.420s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[1.420s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In member function ‘[01m[Kvoid Squad::timer_callback()[m[K’:
+[1.420s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:66:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KSquad::timer_callback()::<lambda()>[m[K’ to non-scalar type ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >[m[K’ requested
+[1.420s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:24:68:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '\x69676874'
+[1.420s]    24 |         std::vector<std::string> joint_names = ['arm_pitch_right', [01;31m[K'arm_roll_right'[m[K, 'hand_right',
+[1.421s]       |                                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.421s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In lambda function:
+[1.421s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:29:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[1.421s]    29 |         positions.points = [][01;31m[K;[m[K
+[1.421s]       |                              [01;31m[K^[m[K
+[1.421s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In member function ‘[01m[Kvoid Squad::timer_callback()[m[K’:
+[1.421s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:29:30:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ktrajectory_msgs::msg::JointTrajectory_<std::allocator<void> >::_points_type[m[K’ {aka ‘[01m[Kstd::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >[m[K’} and ‘[01m[KSquad::timer_callback()::<lambda()>[m[K’)
+[1.421s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[1.421s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.421s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:2[m[K:
+[1.421s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >; _Alloc = std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > >][m[K’
+[1.421s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[1.421s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.421s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KSquad::timer_callback()::<lambda()>[m[K’ to ‘[01m[Kconst std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >&[m[K’
+[1.421s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[1.421s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.421s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[1.421s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.421s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:2[m[K:
+[1.421s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >; _Alloc = std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > >][m[K’
+[1.421s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.421s]       |       [01;36m[K^~~~~~~~[m[K
+[1.421s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KSquad::timer_callback()::<lambda()>[m[K’ to ‘[01m[Kstd::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >&&[m[K’
+[1.421s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.421s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[1.421s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >; _Alloc = std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > >][m[K’
+[1.421s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[1.421s]       |       [01;36m[K^~~~~~~~[m[K
+[1.421s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KSquad::timer_callback()::<lambda()>[m[K’ to ‘[01m[Kstd::initializer_list<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > >[m[K’
+[1.421s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[1.421s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.421s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:30:37:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[1.421s]    30 |         std::vector<double> pos1 = [[01;31m[K0.0[m[K, 0.0, -0.8,
+[1.421s]       |                                     [01;31m[K^~~[m[K
+[1.421s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:30:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+[1.421s]    30 |         std::vector<double> pos1 = [0.0[01;31m[K,[m[K 0.0, -0.8,
+[1.422s]       |                                        [01;31m[K^[m[K
+[1.422s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In lambda function:
+[1.422s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:30:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[1.422s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:[m[K In member function ‘[01m[Kvoid Squad::timer_callback()[m[K’:
+[1.422s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:30:40:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KSquad::timer_callback()::<lambda()>[m[K’ to non-scalar type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ requested
+[1.422s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:30:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[1.422s]    30 |         std::vector<double> pos1 = [0.0, [01;31m[K0.0[m[K, -0.8,
+[1.422s]       |                                          [01;31m[K^~~[m[K
+[1.422s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:40:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+[1.422s]    40 |         }[01;31m[Kelse[m[K{positions.points.positions = pos2; }
+[1.422s]       |          [01;31m[K^~~~[m[K
+[1.422s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:40:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _points_type = class std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpositions[m[K’
+[1.422s]    40 |         }else{positions.points.[01;31m[Kpositions[m[K = pos2; }
+[1.422s]       |                                [01;31m[K^~~~~~~~~[m[K
+[1.423s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp:40:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos2[m[K’ was not declared in this scope; did you mean ‘[01m[Kpos1[m[K’?
+[1.423s]    40 |         }else{positions.points.positions = [01;31m[Kpos2[m[K; }
+[1.423s]       |                                            [01;31m[K^~~~[m[K
+[1.423s]       |                                            [32m[Kpos1[m[K
+[1.828s] gmake[2]: *** [CMakeFiles/squad.dir/build.make:76: CMakeFiles/squad.dir/example/squad.cpp.o] Error 1
+[1.828s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/squad.dir/all] Error 2
+[1.828s] gmake: *** [Makefile:146: all] Error 2
+[1.831s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

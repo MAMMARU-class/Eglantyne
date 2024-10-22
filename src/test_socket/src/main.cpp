@@ -6,7 +6,7 @@
 WiFiClient client;
 const char* ssid = "hibiki";
 const char* password = "Maruh1b1k1";
-const char* serverIP = "172.20.10.4";
+const char* serverIP = "192.168.38.177";
 const int serverPort = 12345;
 
 void setup() {

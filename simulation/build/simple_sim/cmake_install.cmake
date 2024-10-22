@@ -57,6 +57,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/simple_sim/" TYPE DIRECTORY FILES "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/simple_sim")
 endif()
 

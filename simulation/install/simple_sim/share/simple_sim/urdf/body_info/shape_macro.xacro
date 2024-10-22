@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="eglantyne">
     <xacro:macro name="box_link" params="name x y z ofsx ofsy ofsz mass collision">
-        <link name = "${name}">
+        <link name = "${name}_link">
             <visual>
                 <geometry>
                     <box size="${x * 0.001} ${y * 0.001} ${z * 0.001}"/>
@@ -33,7 +33,7 @@
 
 
     <xacro:macro name="cylinder_link" params="name length radius ofsx ofsy ofsz mass collision">
-        <link name = "${name}">
+        <link name = "${name}_link">
             <visual>
                 <geometry>
                     <cylinder length="${length * 0.001}" radius="${radius * 0.001}"/>

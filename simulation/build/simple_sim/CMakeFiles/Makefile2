@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_si
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/squad.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +73,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/simple_sim_uninstall.dir/clean
+clean: CMakeFiles/squad.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +127,32 @@ simple_sim_uninstall: CMakeFiles/simple_sim_uninstall.dir/rule
 CMakeFiles/simple_sim_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_sim_uninstall.dir/build.make CMakeFiles/simple_sim_uninstall.dir/clean
 .PHONY : CMakeFiles/simple_sim_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/squad.dir
+
+# All Build rule for target.
+CMakeFiles/squad.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=1,2 "Built target squad"
+.PHONY : CMakeFiles/squad.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/squad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/squad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles 0
+.PHONY : CMakeFiles/squad.dir/rule
+
+# Convenience name for target.
+squad: CMakeFiles/squad.dir/rule
+.PHONY : squad
+
+# clean rule for target.
+CMakeFiles/squad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/clean
+.PHONY : CMakeFiles/squad.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

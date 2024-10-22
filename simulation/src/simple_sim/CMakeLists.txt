@@ -7,9 +7,12 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(gazebo_ros REQUIRED)
-find_package(gazebo_ros2_control REQUIRED)
-find_package(robot_state_publisher REQUIRED)
+find_package(control_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -30,5 +33,12 @@ install(
 install(
   DIRECTORY simenv/launch simenv/config
   DESTINATION share/${PROJECT_NAME}/)
+
+add_executable(squad example/squad.cpp)
+ament_target_dependencies(squad rclcpp trajectory_msgs)
+
+install(
+  DIRECTORY example/
+  DESTINATION lib/${PROJECT_NAME}/)
 
 ament_package()

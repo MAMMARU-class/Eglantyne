@@ -197,6 +197,43 @@ simple_sim_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_sim_uninstall.dir/build.make CMakeFiles/simple_sim_uninstall.dir/build
 .PHONY : simple_sim_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named squad
+
+# Build rule for target.
+squad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 squad
+.PHONY : squad
+
+# fast build rule for target.
+squad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/build
+.PHONY : squad/fast
+
+example/squad.o: example/squad.cpp.o
+.PHONY : example/squad.o
+
+# target to build an object file
+example/squad.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/example/squad.cpp.o
+.PHONY : example/squad.cpp.o
+
+example/squad.i: example/squad.cpp.i
+.PHONY : example/squad.i
+
+# target to preprocess a source file
+example/squad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/example/squad.cpp.i
+.PHONY : example/squad.cpp.i
+
+example/squad.s: example/squad.cpp.s
+.PHONY : example/squad.s
+
+# target to generate assembly for a file
+example/squad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/example/squad.cpp.s
+.PHONY : example/squad.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... simple_sim_uninstall"
 	@echo "... uninstall"
+	@echo "... squad"
+	@echo "... example/squad.o"
+	@echo "... example/squad.i"
+	@echo "... example/squad.s"
 .PHONY : help
 
 

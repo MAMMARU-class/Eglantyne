@@ -6,95 +6,80 @@
             <plugin>gazebo_ros2_control/GazeboSystem</plugin>
         </hardware>
         
-        <xacro:macro name="ros2_control_joint" params="posmin posmax angle_init">
-            <command_interface name="position">
-                <param name="min">${posmin}</param>
-                <param name="max">${posmin}</param>
-            </command_interface>
-            <command_interface name="velocity">
-                <param name="min">-3.15</param>
-                <param name="max">3.15</param>
-            </command_interface>
-            <state_interface name="position">
-                <param name="initial_value">${angle_init}</param>
-            </state_interface>
+        <xacro:macro name="ros2_control_joint" params="name posmin posmax angle_init">
+            <joint name="${name}">
+                <command_interface name="position">
+                    <param name="min">${posmin}</param>
+                    <param name="max">${posmin}</param>
+                </command_interface>
+                <command_interface name="velocity">
+                    <param name="min">-3.15</param>
+                    <param name="max">3.15</param>
+                </command_interface>
+                <state_interface name="position">
+                    <param name="initial_value">${angle_init}</param>
+                </state_interface>
+            </joint>
         </xacro:macro>
 
-
-        <joint name = "arm_pitch_right">
-            <xacro:ros2_control_joint  posmin="-3.14" posmax="1.57"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "arm_roll_right">
-            <xacro:ros2_control_joint  posmin="${-3.14 * 7 / 6}" posmax="${3.14 / 6}"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "hand_right">
-            <xacro:ros2_control_joint  posmin="-3.14" posmax="${3.14 / 4}"
-                                       angle_init="${-3.14 / 4}" />
-        </joint>
         
-        <joint name = "arm_pitch_left">
-            <xacro:ros2_control_joint  posmin="-1.57" posmax="3.14"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "arm_roll_left">
-            <xacro:ros2_control_joint  posmin="${-3.14 / 6}" posmax="${3.14 * 7 / 6}"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "hand_left">
-            <xacro:ros2_control_joint  posmin="-3.14" posmax="${3.14 / 4}"
-                                       angle_init="${-3.14 / 4}" />
-        </joint>
+        <xacro:ros2_control_joint  name = "arm_pitch_right"
+                                   posmin="-3.14" posmax="1.57"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "arm_roll_right"
+                                   posmin="${-3.14 * 7 / 6}" posmax="${3.14 / 6}"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "hand_right"
+                                   posmin="-3.14" posmax="${3.14 / 4}"
+                                   angle_init="${-3.14 / 4}" />
+       
 
-        <joint name = "leg_yaw_right">
-            <xacro:ros2_control_joint  posmin="-1.57" posmax="1.57"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "leg_roll_right">
-            <xacro:ros2_control_joint  posmin="-1.57" posmax="${3.14 / 6}"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "leg_upper_right">
-            <xacro:ros2_control_joint  posmin="${-3.14 * 5 / 6}" posmax="${3.14 / 4}"
-                                       angle_init="${-3.14 / 6}" />
-        </joint>
-        <joint name = "leg_under_right">
-            <xacro:ros2_control_joint  posmin="0" posmax="${3.14 * 5 / 6}"
-                                       angle_init="${3.14 / 3}" />
-        </joint>
-        <joint name = "foot_pitch_right">
-            <xacro:ros2_control_joint  posmin="${-3.14 / 3}" posmax="0"
-                                       angle_init="${-3.14 / 6}" />
-        </joint>
-        <joint name = "foot_roll_right">
-            <xacro:ros2_control_joint  posmin="${-3.14 / 3}" posmax="${3.14 / 3}"
-                                       angle_init="0" />
-        </joint>
+        <xacro:ros2_control_joint  name = "arm_pitch_left"
+                                   posmin="-1.57" posmax="3.14"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "arm_roll_left"
+                                   posmin="${-3.14 / 6}" posmax="${3.14 * 7 / 6}"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "hand_left"
+                                   posmin="-3.14" posmax="${3.14 / 4}"
+                                   angle_init="${-3.14 / 4}" />
 
-        <joint name = "leg_yaw_left">
-            <xacro:ros2_control_joint  posmin="-1.57" posmax="1.57"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "leg_roll_left">
-            <xacro:ros2_control_joint  posmin="${3.14 / 6}" posmax="1.57"
-                                       angle_init="0" />
-        </joint>
-        <joint name = "leg_upper_left">
-            <xacro:ros2_control_joint  posmin="${-3.14 * 5 / 6}" posmax="${3.14 / 4}"
-                                       angle_init="${-3.14 / 6}" />
-        </joint>
-        <joint name = "leg_under_left">
-            <xacro:ros2_control_joint  posmin="0" posmax="${3.14 * 5 / 6}"
-                                       angle_init="${3.14 / 3}" />
-        </joint>
-        <joint name = "foot_pitch_left">
-            <xacro:ros2_control_joint  posmin="${-3.14 / 3}" posmax="0"
-                                       angle_init="${-3.14 / 6}" />
-        </joint>
-        <joint name = "foot_roll_left">
-            <xacro:ros2_control_joint  posmin="${-3.14 / 3}" posmax="${3.14 / 3}"
-                                       angle_init="0" />
-        </joint>
-    </ros2_control>
+        <xacro:ros2_control_joint  name = "leg_yaw_right"
+                                   posmin="-1.57" posmax="1.57"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "leg_roll_right"
+                                   posmin="-1.57" posmax="${3.14 / 6}"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "leg_upper_right"
+                                   posmin="${-3.14 * 5 / 6}" posmax="${3.14 / 4}"
+                                   angle_init="${-3.14 / 6}" />
+        <xacro:ros2_control_joint  name = "leg_under_right"
+                                   posmin="0" posmax="${3.14 * 5 / 6}"
+                                   angle_init="${3.14 / 3}" />
+        <xacro:ros2_control_joint  name = "foot_pitch_right"
+                                   posmin="${-3.14 / 3}" posmax="0"
+                                   angle_init="${-3.14 / 6}" />
+        <xacro:ros2_control_joint  name = "foot_roll_right"
+                                   posmin="${-3.14 / 3}" posmax="${3.14 / 3}"
+                                   angle_init="0" />
+
+        <xacro:ros2_control_joint  name = "leg_yaw_left"
+                                   posmin="-1.57" posmax="1.57"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "leg_roll_left"
+                                   posmin="${3.14 / 6}" posmax="1.57"
+                                   angle_init="0" />
+        <xacro:ros2_control_joint  name = "leg_upper_left"
+                                   posmin="${-3.14 * 5 / 6}" posmax="${3.14 / 4}"
+                                   angle_init="${-3.14 / 6}" />
+        <xacro:ros2_control_joint  name = "leg_under_left"
+                                   posmin="0" posmax="${3.14 * 5 / 6}"
+                                   angle_init="${3.14 / 3}" />
+        <xacro:ros2_control_joint  name = "foot_pitch_left"
+                                   posmin="${-3.14 / 3}" posmax="0"
+                                   angle_init="${-3.14 / 6}" />
+        <xacro:ros2_control_joint  name = "foot_roll_left"
+                                   posmin="${-3.14 / 3}" posmax="${3.14 / 3}"
+                                   angle_init="0" />
+   </ros2_control>
 </robot>

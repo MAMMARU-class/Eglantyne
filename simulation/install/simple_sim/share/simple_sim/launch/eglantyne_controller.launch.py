@@ -7,10 +7,9 @@ from launch.substitutions import Command, FindExecutable, PathJoinSubstitution, 
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
-from launch.actions import IncludeLaunchDescription
+from launch.actions import ExecuteProcess, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
-import xacro
 import os
 
 def generate_launch_description():
@@ -30,8 +29,8 @@ def generate_launch_description():
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[robot_controllers],
-        remappings=[("~/robot_description", "/robot_description"),
-        ],
+        # remappings=[("~/robot_description", "/robot_description"),
+        # ],
         output="both",
     )
 
@@ -50,12 +49,26 @@ def generate_launch_description():
     robot_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["position_controller", "-c", "/controller_manager"],
+        arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
     )
+
+    # load_joint_state_broadcaster = ExecuteProcess(
+    #     cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+    #          'joint_state_broadcaster'],
+    #     output='screen'
+    # )
+
+    # load_joint_trajectory_controller = ExecuteProcess(
+    #     cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+    #          'joint_trajectory_controller'],
+    #     output='screen'
+    # )
 
     return LaunchDescription([
         control_node,
         view_robot,
+        # load_joint_state_broadcaster,
+        # load_joint_trajectory_controller,
         joint_state_broadcaster_spawner,
         robot_controller_spawner,
     ])

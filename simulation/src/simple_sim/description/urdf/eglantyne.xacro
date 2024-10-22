@@ -2,20 +2,18 @@
 <robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="eglantyne">
     <xacro:include filename="body_info/shape_macro.xacro"/>
 
-    <link name="base"/>
+    <link name="base_link"/>
 
     <xacro:include filename="body_info/eglantyne_body.xacro"/>
 
-    <xacro:include filename="body_info/eglantyne_arm_right.xacro"/>
-    <xacro:arm_right_link dir="right"/>
-    <xacro:include filename="body_info/eglantyne_arm_left.xacro"/>
-    <xacro:arm_left_link dir="left"/>
+    <xacro:include filename="body_info/eglantyne_arm.xacro"/>
+    <xacro:arm_link dir="right"/>
+    <xacro:arm_link dir="left"/>
 
-    <xacro:include filename="body_info/eglantyne_leg_right.xacro"/>
-    <xacro:leg_right_link dir="right"/>
-    <xacro:include filename="body_info/eglantyne_leg_left.xacro"/>
-    <xacro:leg_left_link dir="left"/>
-
+    <xacro:include filename="body_info/eglantyne_leg.xacro"/>
+    <xacro:leg_link dir="right"/>
+    <xacro:leg_link dir="left"/>
+    
     <xacro:include filename="gazebo_setup.xacro"/>
     <xacro:include filename="ros2_control_conf.xacro"/>
 
