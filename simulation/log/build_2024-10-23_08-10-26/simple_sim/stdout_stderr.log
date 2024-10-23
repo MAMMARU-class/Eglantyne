@@ -1,0 +1,207 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim
+[ 50%] [32mBuilding CXX object CMakeFiles/pub_test.dir/test/pub_test.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:34:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   24 |         positions.joint_names = [[01;35m[K'arm_pitch_right'[m[K, 'arm_roll_right', 'hand_right',
+      |                                  [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:53:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   24 |         positions.joint_names = ['arm_pitch_right', [01;35m[K'arm_roll_right'[m[K, 'hand_right',
+      |                                                     [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:71:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   24 | sitions.joint_names = ['arm_pitch_right', 'arm_roll_right', [01;35m[K'hand_right'[m[K,
+      |                                                             [01;35m[K^~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:25:49:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   25 |                                                 [01;35m[K'arm_pitch_left'[m[K, 'arm_roll_left', 'hand_left',
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:25:67:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   25 |                                           'arm_pitch_left', [01;35m[K'arm_roll_left'[m[K, 'hand_left',
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:25:84:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   25 |                          'arm_pitch_left', 'arm_roll_left', [01;35m[K'hand_left'[m[K,
+      |                                                             [01;35m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:26:49:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   26 |                                                 [01;35m[K'leg_yaw_right'[m[K, 'leg_roll_right', 'leg_upper_right', 'leg_under_right', 'foot_pitch_right', 'foot_roll_right',
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:26:66:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   26 |                                            'leg_yaw_right', [01;35m[K'leg_roll_right'[m[K, 'leg_upper_right', 'leg_under_right', 'foot_pitch_right', 'foot_roll_right',
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:26:84:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   26 |                          'leg_yaw_right', 'leg_roll_right', [01;35m[K'leg_upper_right'[m[K, 'leg_under_right', 'foot_pitch_right', 'foot_roll_right',
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:26:103:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   26 |       'leg_yaw_right', 'leg_roll_right', 'leg_upper_right', [01;35m[K'leg_under_right'[m[K, 'foot_pitch_right', 'foot_roll_right',
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:26:122:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   26 | t', 'leg_roll_right', 'leg_upper_right', 'leg_under_right', [01;35m[K'foot_pitch_right'[m[K, 'foot_roll_right',
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:26:142:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   26 | , 'leg_upper_right', 'leg_under_right', 'foot_pitch_right', [01;35m[K'foot_roll_right'[m[K,
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:27:49:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   27 |                                                 [01;35m[K'leg_yaw_left'[m[K, 'leg_roll_left', 'leg_upper_left', 'leg_under_left', 'foot_pitch_left', 'foot_roll_left'];
+      |                                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:27:65:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   27 |                                             'leg_yaw_left', [01;35m[K'leg_roll_left'[m[K, 'leg_upper_left', 'leg_under_left', 'foot_pitch_left', 'foot_roll_left'];
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:27:82:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   27 |                            'leg_yaw_left', 'leg_roll_left', [01;35m[K'leg_upper_left'[m[K, 'leg_under_left', 'foot_pitch_left', 'foot_roll_left'];
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:27:100:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   27 |          'leg_yaw_left', 'leg_roll_left', 'leg_upper_left', [01;35m[K'leg_under_left'[m[K, 'foot_pitch_left', 'foot_roll_left'];
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:27:118:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   27 | left', 'leg_roll_left', 'leg_upper_left', 'leg_under_left', [01;35m[K'foot_pitch_left'[m[K, 'foot_roll_left'];
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:27:137:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   27 | ft', 'leg_upper_left', 'leg_under_left', 'foot_pitch_left', [01;35m[K'foot_roll_left'[m[K];
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:12:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KSquad[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   12 |     [01;31m[KSquad[m[K()
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kint PubTest::Squad()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:13:7:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+   13 |     : [01;31m[KNode[m[K("pub_test"), count_(0)
+      |       [01;31m[K^~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:17:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   17 |             [01;31m[K1000ms[m[K, std::bind(&Squad::timer_callback, this)
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[KSquad[m[K’ is not a class, namespace, or enumeration
+   17 |             1000ms, std::bind(&[01;31m[KSquad[m[K::timer_callback, this)
+      |                                [01;31m[K^~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:19:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   19 |     [01;35m[K}[m[K
+      |     [01;35m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:34:[m[K [01;31m[Kerror: [m[Kexpected identifier before '\x69676874'
+   24 |         positions.joint_names = [[01;31m[K'arm_pitch_right'[m[K, 'arm_roll_right', 'hand_right',
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+   24 |         positions.joint_names = ['arm_pitch_right'[01;31m[K,[m[K 'arm_roll_right', 'hand_right',
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In lambda function:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:51:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ktrajectory_msgs::msg::JointTrajectory_<std::allocator<void> >::_joint_names_type[m[K’ {aka ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >[m[K’} and ‘[01m[KPubTest::timer_callback()::<lambda()>[m[K’)
+In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+  198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KPubTest::timer_callback()::<lambda()>[m[K’ to ‘[01m[Kconst std::vector<std::__cxx11::basic_string<char> >&[m[K’
+  199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+  709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KPubTest::timer_callback()::<lambda()>[m[K’ to ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >&&[m[K’
+  709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 [01;36m[K~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+  730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KPubTest::timer_callback()::<lambda()>[m[K’ to ‘[01m[Kstd::initializer_list<std::__cxx11::basic_string<char> >[m[K’
+  730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:37:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   29 |         std::vector<double> pos1 = [[01;31m[K0.0[m[K, 0.0, -0.8,
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+   29 |         std::vector<double> pos1 = [0.0[01;31m[K,[m[K 0.0, -0.8,
+      |                                        [01;31m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In lambda function:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:40:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KPubTest::timer_callback()::<lambda()>[m[K’ to non-scalar type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ requested
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+   29 |         std::vector<double> pos1 = [0.0, [01;31m[K0.0[m[K, -0.8,
+      |                                          [01;31m[K^~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:39:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   39 |         }[01;31m[Kelse[m[K{positions.points.positions = pos2; }
+      |          [01;31m[K^~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:39:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _points_type = class std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpositions[m[K’
+   39 |         }else{positions.points.[01;31m[Kpositions[m[K = pos2; }
+      |                                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:39:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos2[m[K’ was not declared in this scope; did you mean ‘[01m[Kpos1[m[K’?
+   39 |         }else{positions.points.positions = [01;31m[Kpos2[m[K; }
+      |                                            [01;31m[K^~~~[m[K
+      |                                            [32m[Kpos1[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:2[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = PubTest; _Args = {}; _Tp = PubTest][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = PubTest; _Args = {}; _Tp = PubTest; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<PubTest>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = PubTest; _Alloc = std::allocator<PubTest>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = PubTest; _Alloc = std::allocator<PubTest>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<PubTest>; _Args = {}; _Tp = PubTest; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<PubTest>; _Args = {}; _Tp = PubTest][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = PubTest; _Alloc = std::allocator<PubTest>; _Args = {}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = PubTest; _Args = {}][m[K’
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:49:43:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KPubTest::PubTest()[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:9:7:[m[K [01;36m[Knote: [m[K‘[01m[KPubTest::PubTest()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+    9 | class [01;36m[KPubTest[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:9:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+ 1294 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+  101 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+   89 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/pub_test.dir/build.make:76: CMakeFiles/pub_test.dir/test/pub_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pub_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

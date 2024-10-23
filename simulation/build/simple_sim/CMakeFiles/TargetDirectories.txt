@@ -1,6 +1,8 @@
 /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/uninstall.dir
 /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/simple_sim_uninstall.dir
-/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/squad.dir
+/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/pub_test.dir
+/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/zero_pub.dir
+/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/pub_control.dir
 /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/test.dir
 /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/edit_cache.dir
 /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/rebuild_cache.dir

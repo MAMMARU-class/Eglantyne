@@ -1,0 +1,41 @@
+[  2%] Built target simple_sim__cpp
+[ 11%] Built target simple_sim__rosidl_generator_c
+[ 17%] Built target pub_test
+[ 17%] Built target ament_cmake_python_copy_simple_sim
+[ 20%] [32mBuilding CXX object CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o[0m
+[ 28%] Built target simple_sim__rosidl_typesupport_introspection_cpp
+[ 37%] Built target simple_sim__rosidl_typesupport_cpp
+[ 45%] Built target simple_sim__rosidl_typesupport_c
+[ 54%] Built target simple_sim__rosidl_typesupport_introspection_c
+[ 62%] Built target simple_sim__rosidl_typesupport_fastrtps_cpp
+[ 71%] Built target simple_sim__rosidl_typesupport_fastrtps_c
+[ 71%] Built target simple_sim
+[ 74%] Built target simple_sim__py
+[ 80%] Built target simple_sim__rosidl_generator_py
+[ 88%] Built target simple_sim__rosidl_typesupport_fastrtps_c__pyext
+[ 91%] Built target simple_sim__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target simple_sim__rosidl_typesupport_c__pyext
+running egg_info
+writing simple_sim.egg-info/PKG-INFO
+writing dependency_links to simple_sim.egg-info/dependency_links.txt
+writing top-level names to simple_sim.egg-info/top_level.txt
+reading manifest file 'simple_sim.egg-info/SOURCES.txt'
+writing manifest file 'simple_sim.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_simple_sim_egg
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::timer_callback()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:33:35:[m[K [01;31m[Kerror: [m[K‘[01m[KJointTrajectpryPoint[m[K’ is not a member of ‘[01m[Ktrajectory_msgs::msg[m[K’; did you mean ‘[01m[KJointTrajectoryPoint[m[K’?
+   33 |             trajectory_msgs::msg::[01;31m[KJointTrajectpryPoint[m[K pos;
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[KJointTrajectoryPoint[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+   34 |             [01;31m[Kpos[m[K = order.front();
+      |             [01;31m[K^~~[m[K
+      |             [32m[Kpow[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::update_motions(const JointTrajectory&) const[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:46:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotion_list[m[K’ was not declared in this scope; did you mean ‘[01m[Kmosion_list[m[K’?
+   46 |         order.insert(order.end(), [01;31m[Kmotion_list[m[K.begin(), motion_list.end());
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+      |                                   [32m[Kmosion_list[m[K
+gmake[2]: *** [CMakeFiles/pub_control.dir/build.make:76: CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:620: CMakeFiles/pub_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

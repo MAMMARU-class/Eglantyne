@@ -1,0 +1,31 @@
+[0.024s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.067s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.252s] -- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.302s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.306s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.318s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.337s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.365s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.591s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.651s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.657s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.887s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.968s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.984s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.162s] [31mCMake Error at CMakeLists.txt:32 (install):
+[1.162s]   install does not recognize sub-command TARGETES
+[1.162s] 
+[1.162s] [0m
+[1.169s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.169s] -- Configured cppcheck include dirs: 
+[1.169s] -- Configured cppcheck exclude dirs and/or files: 
+[1.170s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.170s] -- Added test 'lint_cmake' to check CMake code style
+[1.171s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.173s] -- Added test 'uncrustify' to check C / C++ code style
+[1.173s] -- Configured uncrustify additional arguments: 
+[1.174s] -- Added test 'xmllint' to check XML markup files
+[1.175s] -- Configuring incomplete, errors occurred!
+[1.175s] See also "/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles/CMakeOutput.log".
+[1.188s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[1.192s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

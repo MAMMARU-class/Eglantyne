@@ -1,0 +1,27 @@
+[0.009s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.038s] [ 50%] Built target pub_test
+[0.038s] [ 66%] Built target pub_control
+[0.041s] [ 83%] [32mBuilding CXX object CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.o[0m
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:28:37:[m[K [01;35m[Kwarning: [m[Kfor increment expression has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[1.266s]    28 |     for (int count=0; count++; [01;35m[Kcount<max_count[m[K;){
+[1.266s]       |                                [01;35m[K~~~~~^~~~~~~~~~[m[K
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:28:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[1.266s]    28 |     for [34m[K([m[Kint count=0; count++; count<max_count[01;31m[K;[m[K){
+[1.266s]       |         [34m[K~[m[K                                     [01;31m[K^[m[K
+[1.266s]       |                                               [32m[K)[m[K
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:28:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[1.266s]    28 |     [01;35m[Kfor[m[K (int count=0; count++; count<max_count;){
+[1.266s]       |     [01;35m[K^~~[m[K
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:28:48:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+[1.266s]    28 |     for (int count=0; count++; count<max_count;[01;36m[K)[m[K{
+[1.266s]       |                                                [01;36m[K^[m[K
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:28:48:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[1.268s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_publish[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publish[m[K’?
+[1.268s]    38 |     [01;31m[Kpub_publish[m[K(motion);
+[1.268s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.268s]       |     [32m[Krmw_publish[m[K
+[1.650s] gmake[2]: *** [CMakeFiles/zero_pub.dir/build.make:76: CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.o] Error 1
+[1.650s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/zero_pub.dir/all] Error 2
+[1.650s] gmake: *** [Makefile:146: all] Error 2
+[1.652s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

@@ -1,0 +1,8 @@
+[0.224s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.383s] [ 50%] [32mBuilding CXX object CMakeFiles/squad.dir/example/squad.cpp.o[0m
+[0.446s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/example/squad.cpp: No such file or directory
+[0.446s] compilation terminated.
+[0.448s] gmake[2]: *** [CMakeFiles/squad.dir/build.make:76: CMakeFiles/squad.dir/example/squad.cpp.o] Error 1
+[0.448s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/squad.dir/all] Error 2
+[0.449s] gmake: *** [Makefile:146: all] Error 2
+[0.452s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

@@ -1,0 +1,10 @@
+[ 66%] Built target pub_test
+[ 66%] Built target pub_control
+[ 83%] [32mBuilding CXX object CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:38:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >[m[K’ has no member named ‘[01m[Kpublish[m[K’
+   38 |     pub.[01;31m[Kpublish[m[K(motion);
+      |         [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/zero_pub.dir/build.make:76: CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/zero_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

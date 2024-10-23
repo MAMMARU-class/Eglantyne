@@ -1,0 +1,107 @@
+[0.009s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.036s] [  2%] Built target simple_sim__cpp
+[0.037s] [  5%] Built target ament_cmake_python_copy_simple_sim
+[0.037s] [ 11%] Built target simple_sim__rosidl_generator_c
+[0.042s] [ 17%] Built target pub_test
+[0.042s] [ 20%] [32mBuilding CXX object CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o[0m
+[0.047s] [ 28%] Built target simple_sim__rosidl_typesupport_cpp
+[0.048s] [ 37%] Built target simple_sim__rosidl_typesupport_introspection_cpp
+[0.049s] [ 45%] Built target simple_sim__rosidl_typesupport_fastrtps_cpp
+[0.049s] [ 54%] Built target simple_sim__rosidl_typesupport_introspection_c
+[0.050s] [ 62%] Built target simple_sim__rosidl_typesupport_c
+[0.051s] [ 71%] Built target simple_sim__rosidl_typesupport_fastrtps_c
+[0.060s] [ 71%] Built target simple_sim
+[0.070s] [ 74%] Built target simple_sim__py
+[0.082s] [ 80%] Built target simple_sim__rosidl_generator_py
+[0.094s] [ 94%] Built target simple_sim__rosidl_typesupport_fastrtps_c__pyext
+[0.094s] [ 94%] Built target simple_sim__rosidl_typesupport_introspection_c__pyext
+[0.094s] [ 97%] Built target simple_sim__rosidl_typesupport_c__pyext
+[0.157s] running egg_info
+[0.163s] writing simple_sim.egg-info/PKG-INFO
+[0.164s] writing dependency_links to simple_sim.egg-info/dependency_links.txt
+[0.164s] writing top-level names to simple_sim.egg-info/top_level.txt
+[0.181s] reading manifest file 'simple_sim.egg-info/SOURCES.txt'
+[0.182s] writing manifest file 'simple_sim.egg-info/SOURCES.txt'
+[0.197s] [ 97%] Built target ament_cmake_python_build_simple_sim_egg
+[1.239s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:41:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectpry_msgs[m[K’ does not name a type
+[1.239s]    41 |     void update_motions(const [01;31m[Ktrajectpry_msgs[m[K::msg::JointTrajectpry & motion) const
+[1.239s]       |                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.239s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:41:51:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.240s]    41 |     void update_motions(const trajectpry_msgs::msg[01;31m[K::[m[KJointTrajectpry & motion) const
+[1.240s]       |                                                   [01;31m[K^~[m[K
+[1.240s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:41:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.240s]    41 |     void update_motions[34m[K([m[Kconst trajectpry_msgs::msg[01;31m[K:[m[K[32m[K:[m[KJointTrajectpry & motion) const
+[1.240s]       |                        [34m[K~[m[K                          [01;31m[K^[m[K[32m[K~[m[K
+[1.240s]       |                                                   [32m[K)[m[K
+[1.240s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:41:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.240s]    41 |     void update_motions(const trajectpry_msgs::[01;31m[Kmsg[m[K::JointTrajectpry & motion) const
+[1.240s]       |                                                [01;31m[K^~~[m[K
+[1.240s]       |                                                   [32m[K;[m[K
+[1.241s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:41:53:[m[K [01;31m[Kerror: [m[K‘[01m[KJointTrajectpry[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[1.242s]    41 |     void update_motions(const trajectpry_msgs::msg::[01;31m[KJointTrajectpry[m[K & motion) const
+[1.242s]       |                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.243s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:55:48:[m[K [01;31m[Kerror: [m[K‘[01m[KJointTrajectpry[m[K’ is not a member of ‘[01m[Ktrajectory_msgs::msg[m[K’; did you mean ‘[01m[KJointTrajectory[m[K’?
+[1.243s]    55 |     rclcpp::Subscription<trajectory_msgs::msg::[01;31m[KJointTrajectpry[m[K>::SharedPtr subscription_;
+[1.243s]       |                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.244s]       |                                                [32m[KJointTrajectory[m[K
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:55:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.244s]    55 |     rclcpp::Subscription<trajectory_msgs::msg::JointTrajectpry[01;31m[K>[m[K::SharedPtr subscription_;
+[1.244s]       |                                                               [01;31m[K^[m[K
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:55:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:55:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:55:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:55:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.244s]    55 |     rclcpp::Subscription<trajectory_msgs::msg::JointTrajectpry>::[01;31m[KSharedPtr[m[K subscription_;
+[1.244s]       |                                                                  [01;31m[K^~~~~~~~~[m[K
+[1.244s]       |                                                                           [32m[K;[m[K
+[1.245s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:55:76:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[1.245s]    55 |     rclcpp::Subscription<trajectory_msgs::msg::JointTrajectpry>::SharedPtr [01;31m[Ksubscription_[m[K;
+[1.245s]       |                                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[1.245s]       |                                                                            [32m[Krmw_subscription_t[m[K
+[1.256s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In constructor ‘[01m[KPubControl::PubControl()[m[K’:
+[1.256s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscrption_[m[K’ was not declared in this scope
+[1.256s]    22 |         [01;31m[Ksubscrption_[m[K = this->create_subscription<trajectory_msgs::msg::JointTrajectory>(
+[1.256s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[1.256s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:23:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K_1[m[K’
+[1.256s]    23 |             "/motion_list_command", 10, std::bind(&PubControl::update_motions, this [01;31m[K_1[m[K));
+[1.256s]       |                                                                                     [01;31m[K^~[m[K
+[1.256s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:23:50:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.256s]    23 |             "/motion_list_command", 10, std::bind[01;36m[K([m[K&PubControl::update_motions, this _1));
+[1.256s]       |                                                  [01;36m[K^[m[K
+[1.280s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::timer_callback()[m[K’:
+[1.280s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+[1.280s]    32 |             [01;31m[Kpos[m[K = order.front();
+[1.280s]       |             [01;31m[K^~~[m[K
+[1.280s]       |             [32m[Kpow[m[K
+[1.522s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.522s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:6[m[K:
+[1.522s] /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (PubControl::*(PubControl*))(...)> >[m[K’:
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [with MessageT = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (PubControl::*(PubControl*))(...)>][m[K’
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (PubControl::*(PubControl*))(...)>; MessageT = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (PubControl::*(PubControl*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void>, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (PubControl::*(PubControl*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void>, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (PubControl::*(PubControl*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void>, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (PubControl::*(PubControl*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void>, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[1.523s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:22:88:[m[K   required from here
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[1.523s]    51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+[1.523s]       |         [01;31m[K^~~~~~~~~[m[K
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[1.523s]    57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+[1.523s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[1.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+[1.523s]    59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+[1.523s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.498s] gmake[2]: *** [CMakeFiles/pub_control.dir/build.make:76: CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o] Error 1
+[2.498s] gmake[1]: *** [CMakeFiles/Makefile2:620: CMakeFiles/pub_control.dir/all] Error 2
+[2.498s] gmake: *** [Makefile:146: all] Error 2
+[2.500s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

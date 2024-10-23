@@ -1,0 +1,43 @@
+[0.009s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.034s] [  2%] Built target simple_sim__cpp
+[0.035s] [ 11%] Built target simple_sim__rosidl_generator_c
+[0.038s] [ 17%] Built target pub_test
+[0.042s] [ 17%] Built target ament_cmake_python_copy_simple_sim
+[0.043s] [ 20%] [32mBuilding CXX object CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o[0m
+[0.055s] [ 28%] Built target simple_sim__rosidl_typesupport_introspection_cpp
+[0.056s] [ 37%] Built target simple_sim__rosidl_typesupport_cpp
+[0.058s] [ 45%] Built target simple_sim__rosidl_typesupport_c
+[0.059s] [ 54%] Built target simple_sim__rosidl_typesupport_introspection_c
+[0.059s] [ 62%] Built target simple_sim__rosidl_typesupport_fastrtps_cpp
+[0.062s] [ 71%] Built target simple_sim__rosidl_typesupport_fastrtps_c
+[0.071s] [ 71%] Built target simple_sim
+[0.081s] [ 74%] Built target simple_sim__py
+[0.092s] [ 80%] Built target simple_sim__rosidl_generator_py
+[0.104s] [ 88%] Built target simple_sim__rosidl_typesupport_fastrtps_c__pyext
+[0.104s] [ 91%] Built target simple_sim__rosidl_typesupport_introspection_c__pyext
+[0.104s] [ 97%] Built target simple_sim__rosidl_typesupport_c__pyext
+[0.159s] running egg_info
+[0.166s] writing simple_sim.egg-info/PKG-INFO
+[0.166s] writing dependency_links to simple_sim.egg-info/dependency_links.txt
+[0.166s] writing top-level names to simple_sim.egg-info/top_level.txt
+[0.183s] reading manifest file 'simple_sim.egg-info/SOURCES.txt'
+[0.183s] writing manifest file 'simple_sim.egg-info/SOURCES.txt'
+[0.199s] [ 97%] Built target ament_cmake_python_build_simple_sim_egg
+[1.260s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::timer_callback()[m[K’:
+[1.260s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:33:35:[m[K [01;31m[Kerror: [m[K‘[01m[KJointTrajectpryPoint[m[K’ is not a member of ‘[01m[Ktrajectory_msgs::msg[m[K’; did you mean ‘[01m[KJointTrajectoryPoint[m[K’?
+[1.260s]    33 |             trajectory_msgs::msg::[01;31m[KJointTrajectpryPoint[m[K pos;
+[1.260s]       |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.260s]       |                                   [32m[KJointTrajectoryPoint[m[K
+[1.263s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+[1.263s]    34 |             [01;31m[Kpos[m[K = order.front();
+[1.263s]       |             [01;31m[K^~~[m[K
+[1.263s]       |             [32m[Kpow[m[K
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::update_motions(const JointTrajectory&) const[m[K’:
+[1.266s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:46:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotion_list[m[K’ was not declared in this scope; did you mean ‘[01m[Kmosion_list[m[K’?
+[1.267s]    46 |         order.insert(order.end(), [01;31m[Kmotion_list[m[K.begin(), motion_list.end());
+[1.267s]       |                                   [01;31m[K^~~~~~~~~~~[m[K
+[1.267s]       |                                   [32m[Kmosion_list[m[K
+[2.575s] gmake[2]: *** [CMakeFiles/pub_control.dir/build.make:76: CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o] Error 1
+[2.575s] gmake[1]: *** [CMakeFiles/Makefile2:620: CMakeFiles/pub_control.dir/all] Error 2
+[2.575s] gmake: *** [Makefile:146: all] Error 2
+[2.578s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

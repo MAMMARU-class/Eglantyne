@@ -1,0 +1,4 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::update_motions(const JointTrajectory&) const[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:43:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotion[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   43 |     void update_motions([01;35m[Kconst trajectory_msgs::msg::JointTrajectory & motion[m[K) const
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K

@@ -13,6 +13,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -26,6 +27,21 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(pub_test src/test/pub_test.cpp)
+ament_target_dependencies(pub_test rclcpp trajectory_msgs)
+
+add_executable(zero_pub src/test/zero_pub.cpp)
+ament_target_dependencies(zero_pub rclcpp trajectory_msgs)
+
+add_executable(pub_control src/controller/pub_control.cpp)
+ament_target_dependencies(pub_control rclcpp trajectory_msgs)
+
+install(TARGETS
+  pub_test
+  zero_pub
+  pub_control
+  DESTINATION lib/${PROJECT_NAME}/)
+
 install(
   DIRECTORY description/launch description/urdf
   DESTINATION share/${PROJECT_NAME}/)
@@ -34,11 +50,5 @@ install(
   DIRECTORY simenv/launch simenv/config
   DESTINATION share/${PROJECT_NAME}/)
 
-add_executable(squad example/squad.cpp)
-ament_target_dependencies(squad rclcpp trajectory_msgs)
-
-install(
-  DIRECTORY example/
-  DESTINATION lib/${PROJECT_NAME}/)
 
 ament_package()

@@ -1,0 +1,6 @@
+{
+  "package_name": "simple_sim",
+  "non_idl_tuples": [
+    "/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim:msg/Motion.msg"
+  ]
+}

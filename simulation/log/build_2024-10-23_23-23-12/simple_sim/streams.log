@@ -1,0 +1,36 @@
+[0.010s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.037s] [  2%] Built target simple_sim__cpp
+[0.038s] [  8%] Built target ament_cmake_python_copy_simple_sim
+[0.038s] [ 11%] Built target simple_sim__rosidl_generator_c
+[0.040s] [ 14%] [32mBuilding CXX object CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o[0m
+[0.042s] [ 20%] Built target pub_test
+[0.056s] [ 28%] Built target simple_sim__rosidl_typesupport_fastrtps_cpp
+[0.059s] [ 37%] Built target simple_sim__rosidl_typesupport_introspection_cpp
+[0.060s] [ 45%] Built target simple_sim__rosidl_typesupport_cpp
+[0.063s] [ 54%] Built target simple_sim__rosidl_typesupport_introspection_c
+[0.064s] [ 71%] Built target simple_sim__rosidl_typesupport_c
+[0.064s] [ 71%] Built target simple_sim__rosidl_typesupport_fastrtps_c
+[0.074s] [ 71%] Built target simple_sim
+[0.084s] [ 74%] Built target simple_sim__py
+[0.095s] [ 80%] Built target simple_sim__rosidl_generator_py
+[0.107s] [ 97%] Built target simple_sim__rosidl_typesupport_c__pyext
+[0.107s] [ 97%] Built target simple_sim__rosidl_typesupport_introspection_c__pyext
+[0.107s] [ 97%] Built target simple_sim__rosidl_typesupport_fastrtps_c__pyext
+[0.159s] running egg_info
+[0.166s] writing simple_sim.egg-info/PKG-INFO
+[0.166s] writing dependency_links to simple_sim.egg-info/dependency_links.txt
+[0.166s] writing top-level names to simple_sim.egg-info/top_level.txt
+[0.184s] reading manifest file 'simple_sim.egg-info/SOURCES.txt'
+[0.184s] writing manifest file 'simple_sim.egg-info/SOURCES.txt'
+[0.200s] [ 97%] Built target ament_cmake_python_build_simple_sim_egg
+[1.289s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::update_motions(trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >::SharedPtr) const[m[K’:
+[1.289s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:46:50:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >[m[K’
+[1.289s]    46 |         order.insert(order.begin(), motion_points[01;31m[K->[m[Kbegin(), motion_points->end());
+[1.289s]       |                                                  [01;31m[K^~[m[K
+[1.289s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:46:74:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::vector<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> > > >[m[K’
+[1.289s]    46 |         order.insert(order.begin(), motion_points->begin(), motion_points[01;31m[K->[m[Kend());
+[1.289s]       |                                                                          [01;31m[K^~[m[K
+[2.619s] gmake[2]: *** [CMakeFiles/pub_control.dir/build.make:76: CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o] Error 1
+[2.619s] gmake[1]: *** [CMakeFiles/Makefile2:620: CMakeFiles/pub_control.dir/all] Error 2
+[2.619s] gmake: *** [Makefile:146: all] Error 2
+[2.621s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

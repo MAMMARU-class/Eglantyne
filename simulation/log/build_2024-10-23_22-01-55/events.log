@@ -1,0 +1,309 @@
+[0.000000] (-) TimerEvent: {}
+[0.000277] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000298] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000308] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000315] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000322] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000330] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000337] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000344] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000351] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000358] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000365] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.000373] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.000379] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.000386] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.000394] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.000401] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.000407] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.000414] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.000423] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.000861] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.005646] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.006131] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.006582] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('OLDPWD', '/home/hibiki/Robomech_HR/Eglantyne'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1630'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpie2dx99yidf_5079'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1599,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1599'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/50f37287_65a7_4a00_895b_25e9814cefed'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TNRZV2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.019221] (simple_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.069083] (simple_sim) StdoutLine: {'line': b'-- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.083435] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.084806] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.088148] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.093616] (simple_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.100110] (-) TimerEvent: {}
+[0.100635] (simple_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.165795] (simple_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.180443] (simple_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.181272] (simple_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200313] (-) TimerEvent: {}
+[0.246227] (simple_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.267184] (simple_sim) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.271784] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.275329] (simple_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.300423] (-) TimerEvent: {}
+[0.400633] (-) TimerEvent: {}
+[0.405929] (simple_sim) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.500812] (-) TimerEvent: {}
+[0.556005] (simple_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.601012] (-) TimerEvent: {}
+[0.613250] (simple_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.628991] (simple_sim) StdoutLine: {'line': b'-- Found PythonInterp: /home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[0.631118] (simple_sim) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.650604] (simple_sim) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[0.650693] (simple_sim) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/python3\n'}
+[0.650725] (simple_sim) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.650750] (simple_sim) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.659976] (simple_sim) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[0.701190] (-) TimerEvent: {}
+[0.703909] (simple_sim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.704202] (simple_sim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.704259] (simple_sim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.704683] (simple_sim) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.705240] (simple_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.705645] (simple_sim) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.706637] (simple_sim) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.706699] (simple_sim) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.707007] (simple_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.713836] (simple_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.744409] (simple_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[0.746275] (simple_sim) StdoutLine: {'line': b'-- Build files have been written to: /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim\n'}
+[0.760257] (simple_sim) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.764675] (simple_sim) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.766056] (simple_sim) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_simple_sim\n'}
+[0.796682] (simple_sim) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/pub_test.dir/src/test/pub_test.cpp.o\x1b[0m\n'}
+[0.801378] (-) TimerEvent: {}
+[0.886147] (simple_sim) StdoutLine: {'line': b'running egg_info\n'}
+[0.887203] (simple_sim) StdoutLine: {'line': b'creating simple_sim.egg-info\n'}
+[0.894809] (simple_sim) StdoutLine: {'line': b'writing simple_sim.egg-info/PKG-INFO\n'}
+[0.895060] (simple_sim) StdoutLine: {'line': b'writing dependency_links to simple_sim.egg-info/dependency_links.txt\n'}
+[0.895247] (simple_sim) StdoutLine: {'line': b'writing top-level names to simple_sim.egg-info/top_level.txt\n'}
+[0.895328] (simple_sim) StdoutLine: {'line': b"writing manifest file 'simple_sim.egg-info/SOURCES.txt'\n"}
+[0.901484] (-) TimerEvent: {}
+[0.914962] (simple_sim) StdoutLine: {'line': b"reading manifest file 'simple_sim.egg-info/SOURCES.txt'\n"}
+[0.915414] (simple_sim) StdoutLine: {'line': b"writing manifest file 'simple_sim.egg-info/SOURCES.txt'\n"}
+[0.925741] (simple_sim) StdoutLine: {'line': b'[  9%] Built target simple_sim__cpp\n'}
+[0.929805] (simple_sim) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[0.930001] (simple_sim) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[0.930242] (simple_sim) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.932713] (simple_sim) StdoutLine: {'line': b'[ 18%] Built target ament_cmake_python_build_simple_sim_egg\n'}
+[0.933658] (simple_sim) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/simple_sim__rosidl_generator_c.dir/rosidl_generator_c/simple_sim/msg/detail/motion__functions.c.o\x1b[0m\n'}
+[1.001691] (-) TimerEvent: {}
+[1.058153] (simple_sim) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/simple_sim__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/simple_sim/msg/motion__type_support.cpp.o\x1b[0m\n'}
+[1.069428] (simple_sim) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/simple_sim__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/simple_sim/msg/detail/dds_fastrtps/motion__type_support.cpp.o\x1b[0m\n'}
+[1.070097] (simple_sim) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/simple_sim__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/simple_sim/msg/detail/motion__type_support.cpp.o\x1b[0m\n'}
+[1.083599] (simple_sim) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking C shared library libsimple_sim__rosidl_generator_c.so\x1b[0m\n'}
+[1.101893] (-) TimerEvent: {}
+[1.145910] (simple_sim) StdoutLine: {'line': b'[ 33%] Built target simple_sim__rosidl_generator_c\n'}
+[1.150887] (simple_sim) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.151078] (simple_sim) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.151173] (simple_sim) StdoutLine: {'line': b'[ 42%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.201950] (-) TimerEvent: {}
+[1.282294] (simple_sim) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/simple_sim__rosidl_typesupport_c.dir/rosidl_typesupport_c/simple_sim/msg/motion__type_support.cpp.o\x1b[0m\n'}
+[1.292965] (simple_sim) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/simple_sim__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/simple_sim/msg/detail/motion__type_support.c.o\x1b[0m\n'}
+[1.299752] (simple_sim) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/simple_sim__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/simple_sim/msg/detail/motion__type_support_c.cpp.o\x1b[0m\n'}
+[1.302051] (-) TimerEvent: {}
+[1.321138] (simple_sim) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libsimple_sim__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.321581] (simple_sim) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking C shared library libsimple_sim__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.321725] (simple_sim) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libsimple_sim__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.347153] (simple_sim) StdoutLine: {'line': b'[ 60%] Built target simple_sim__rosidl_typesupport_introspection_c\n'}
+[1.349885] (simple_sim) StdoutLine: {'line': b'[ 60%] Built target simple_sim__rosidl_typesupport_c\n'}
+[1.354537] (simple_sim) StdoutLine: {'line': b'[ 60%] Built target simple_sim__rosidl_typesupport_cpp\n'}
+[1.402205] (-) TimerEvent: {}
+[1.404160] (simple_sim) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libsimple_sim__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.439444] (simple_sim) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libsimple_sim__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.454177] (simple_sim) StdoutLine: {'line': b'[ 66%] Built target simple_sim__rosidl_typesupport_introspection_cpp\n'}
+[1.491180] (simple_sim) StdoutLine: {'line': b'[ 66%] Built target simple_sim__rosidl_typesupport_fastrtps_cpp\n'}
+[1.492038] (simple_sim) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libsimple_sim__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[1.502299] (-) TimerEvent: {}
+[1.541685] (simple_sim) StdoutLine: {'line': b'[ 69%] Built target simple_sim__rosidl_typesupport_fastrtps_c\n'}
+[1.550321] (simple_sim) StdoutLine: {'line': b'[ 69%] Built target simple_sim\n'}
+[1.558611] (simple_sim) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[1.602503] (-) TimerEvent: {}
+[1.702844] (-) TimerEvent: {}
+[1.712112] (simple_sim) StdoutLine: {'line': b'[ 72%] Built target simple_sim__py\n'}
+[1.719374] (simple_sim) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/simple_sim__rosidl_generator_py.dir/rosidl_generator_py/simple_sim/msg/_motion_s.c.o\x1b[0m\n'}
+[1.802984] (-) TimerEvent: {}
+[1.811206] (simple_sim) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/simple_sim/libsimple_sim__rosidl_generator_py.so\x1b[0m\n'}
+[1.840749] (simple_sim) StdoutLine: {'line': b'[ 78%] Built target simple_sim__rosidl_generator_py\n'}
+[1.849695] (simple_sim) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/simple_sim__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/simple_sim/_simple_sim_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[1.849856] (simple_sim) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/simple_sim__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/simple_sim/_simple_sim_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[1.849946] (simple_sim) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/simple_sim__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/simple_sim/_simple_sim_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[1.903082] (-) TimerEvent: {}
+[1.905150] (simple_sim) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/simple_sim/simple_sim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[1.907195] (simple_sim) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/simple_sim/simple_sim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[1.915943] (simple_sim) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/simple_sim/simple_sim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[1.926264] (simple_sim) StdoutLine: {'line': b'[ 96%] Built target simple_sim__rosidl_typesupport_introspection_c__pyext\n'}
+[1.928890] (simple_sim) StdoutLine: {'line': b'[ 96%] Built target simple_sim__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.938482] (simple_sim) StdoutLine: {'line': b'[ 96%] Built target simple_sim__rosidl_typesupport_c__pyext\n'}
+[2.003300] (-) TimerEvent: {}
+[2.103547] (-) TimerEvent: {}
+[2.203918] (-) TimerEvent: {}
+[2.304289] (-) TimerEvent: {}
+[2.404663] (-) TimerEvent: {}
+[2.505037] (-) TimerEvent: {}
+[2.605409] (-) TimerEvent: {}
+[2.705784] (-) TimerEvent: {}
+[2.806147] (-) TimerEvent: {}
+[2.906504] (-) TimerEvent: {}
+[3.006880] (-) TimerEvent: {}
+[3.107372] (-) TimerEvent: {}
+[3.207691] (-) TimerEvent: {}
+[3.308035] (-) TimerEvent: {}
+[3.408367] (-) TimerEvent: {}
+[3.508613] (-) TimerEvent: {}
+[3.577839] (simple_sim) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pub_test\x1b[0m\n'}
+[3.608816] (-) TimerEvent: {}
+[3.709111] (-) TimerEvent: {}
+[3.721770] (simple_sim) StdoutLine: {'line': b'[100%] Built target pub_test\n'}
+[3.726521] (simple_sim) CommandEnded: {'returncode': 0}
+[3.769543] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'install'}
+[3.773053] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('OLDPWD', '/home/hibiki/Robomech_HR/Eglantyne'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1630'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpie2dx99yidf_5079'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1599,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1599'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/50f37287_65a7_4a00_895b_25e9814cefed'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TNRZV2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.775900] (simple_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.776110] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/rosidl_interfaces/simple_sim\n'}
+[3.776188] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim\n'}
+[3.776219] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg\n'}
+[3.776365] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.776403] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/motion.h\n'}
+[3.776429] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail\n'}
+[3.776451] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__functions.c\n'}
+[3.776475] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__functions.h\n'}
+[3.776498] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__struct.h\n'}
+[3.776521] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__type_support.h\n'}
+[3.776544] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/library_path.sh\n'}
+[3.777034] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/library_path.dsv\n'}
+[3.777147] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_generator_c.so\n'}
+[3.777219] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_generator_c.so" to ""\n'}
+[3.777284] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim\n'}
+[3.777311] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg\n'}
+[3.777336] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail\n'}
+[3.777362] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__rosidl_typesupport_fastrtps_c.h\n'}
+[3.777409] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.777434] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_fastrtps_c.so\n'}
+[3.777485] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.777531] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim\n'}
+[3.777574] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg\n'}
+[3.777599] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail\n'}
+[3.777639] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__traits.hpp\n'}
+[3.777684] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__struct.hpp\n'}
+[3.777709] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__builder.hpp\n'}
+[3.777755] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/motion.hpp\n'}
+[3.777781] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim\n'}
+[3.777836] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg\n'}
+[3.777861] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail\n'}
+[3.777885] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/dds_fastrtps\n'}
+[3.777925] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.777954] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.777984] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.778027] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.778090] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim\n'}
+[3.778117] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg\n'}
+[3.778141] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail\n'}
+[3.778164] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__rosidl_typesupport_introspection_c.h\n'}
+[3.778203] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__type_support.c\n'}
+[3.778248] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.778271] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_introspection_c.so\n'}
+[3.778304] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.778346] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_c.so\n'}
+[3.778408] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_c.so" to ""\n'}
+[3.778455] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim\n'}
+[3.778479] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg\n'}
+[3.778501] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail\n'}
+[3.778540] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.778585] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/include/simple_sim/simple_sim/msg/detail/motion__type_support.cpp\n'}
+[3.778607] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_introspection_cpp.so\n'}
+[3.778687] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.778721] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_cpp.so\n'}
+[3.778808] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_typesupport_cpp.so" to ""\n'}
+[3.778842] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/pythonpath.sh\n'}
+[3.778880] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/pythonpath.dsv\n'}
+[3.778920] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim-0.0.0-py3.10.egg-info\n'}
+[3.778966] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.779009] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.779050] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.779093] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.779125] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim\n'}
+[3.779168] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/libsimple_sim__rosidl_generator_py.so\n'}
+[3.779215] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/msg\n'}
+[3.779240] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/msg/__init__.py\n'}
+[3.779286] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/msg/_motion_s.c\n'}
+[3.779309] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/msg/_motion.py\n'}
+[3.779357] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/_simple_sim_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.779380] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/_simple_sim_s.ep.rosidl_typesupport_c.c\n'}
+[3.779422] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.779470] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/__init__.py\n'}
+[3.779492] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.779538] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.779561] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/_simple_sim_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.797925] (simple_sim) StdoutLine: {'line': b"Listing '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim'...\n"}
+[3.798011] (simple_sim) StdoutLine: {'line': b"Compiling '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/__init__.py'...\n"}
+[3.798051] (simple_sim) StdoutLine: {'line': b"Listing '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/msg'...\n"}
+[3.798084] (simple_sim) StdoutLine: {'line': b"Compiling '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/msg/__init__.py'...\n"}
+[3.798112] (simple_sim) StdoutLine: {'line': b"Compiling '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/msg/_motion.py'...\n"}
+[3.800467] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.800531] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.800599] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.800674] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.800716] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.800760] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages/simple_sim/simple_sim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.800804] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_generator_py.so\n'}
+[3.800865] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/libsimple_sim__rosidl_generator_py.so" to ""\n'}
+[3.800914] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/msg/Motion.idl\n'}
+[3.800958] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/msg/Motion.msg\n'}
+[3.802036] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_test\n'}
+[3.802615] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_test" to ""\n'}
+[3.802639] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch\n'}
+[3.802975] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/view_robot.launch.py\n'}
+[3.803007] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf\n'}
+[3.803036] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/ros2_control_conf.xacro\n'}
+[3.803064] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/gazebo_setup.xacro\n'}
+[3.803119] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info\n'}
+[3.803145] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_body.xacro\n'}
+[3.803173] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_arm.xacro\n'}
+[3.803200] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_leg.xacro\n'}
+[3.803226] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/shape_macro.xacro\n'}
+[3.803252] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/eglantyne.xacro\n'}
+[3.803292] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch\n'}
+[3.803318] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/eglantyne_controller.launch.py\n'}
+[3.803342] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config\n'}
+[3.803366] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config/eglantyne_controller.yaml\n'}
+[3.803527] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/package_run_dependencies/simple_sim\n'}
+[3.803951] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/parent_prefix_path/simple_sim\n'}
+[3.803998] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.sh\n'}
+[3.804025] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.dsv\n'}
+[3.804068] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.sh\n'}
+[3.804094] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.dsv\n'}
+[3.804131] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.bash\n'}
+[3.804175] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.sh\n'}
+[3.804205] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.zsh\n'}
+[3.804243] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.dsv\n'}
+[3.804285] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.dsv\n'}
+[3.804537] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/packages/simple_sim\n'}
+[3.804574] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_generator_cExport.cmake\n'}
+[3.804636] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.804693] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.804748] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.804802] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_generator_cppExport.cmake\n'}
+[3.804857] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.804913] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.804968] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.805018] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.805072] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_cExport.cmake\n'}
+[3.805120] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.805175] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.805225] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.805278] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_cppExport.cmake\n'}
+[3.805330] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_sim__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.805384] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_generator_pyExport.cmake\n'}
+[3.805436] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/export_simple_sim__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.805484] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/rosidl_cmake-extras.cmake\n'}
+[3.805531] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.805579] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.805625] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.805674] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.805721] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.805767] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.805815] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig.cmake\n'}
+[3.805859] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig-version.cmake\n'}
+[3.805899] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.xml\n'}
+[3.807029] (simple_sim) CommandEnded: {'returncode': 0}
+[3.809192] (-) TimerEvent: {}
+[3.864125] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 0}
+[3.864487] (-) EventReactorShutdown: {}

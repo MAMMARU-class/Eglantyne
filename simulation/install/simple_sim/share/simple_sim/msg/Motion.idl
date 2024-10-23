@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from simple_sim/msg/Motion.msg
+// generated code does not contain a copyright notice
+
+#include "trajectory_msgs/msg/JointTrajectoryPoint.idl"
+
+module simple_sim {
+  module msg {
+    struct Motion {
+      sequence<trajectory_msgs::msg::JointTrajectoryPoint> motion;
+    };
+  };
+};

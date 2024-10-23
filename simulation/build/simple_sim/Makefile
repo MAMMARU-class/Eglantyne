@@ -198,41 +198,115 @@ simple_sim_uninstall/fast:
 .PHONY : simple_sim_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named squad
+# Target rules for targets named pub_test
 
 # Build rule for target.
-squad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 squad
-.PHONY : squad
+pub_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_test
+.PHONY : pub_test
 
 # fast build rule for target.
-squad/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/build
-.PHONY : squad/fast
+pub_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_test.dir/build.make CMakeFiles/pub_test.dir/build
+.PHONY : pub_test/fast
 
-example/squad.o: example/squad.cpp.o
-.PHONY : example/squad.o
+#=============================================================================
+# Target rules for targets named zero_pub
+
+# Build rule for target.
+zero_pub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zero_pub
+.PHONY : zero_pub
+
+# fast build rule for target.
+zero_pub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_pub.dir/build.make CMakeFiles/zero_pub.dir/build
+.PHONY : zero_pub/fast
+
+#=============================================================================
+# Target rules for targets named pub_control
+
+# Build rule for target.
+pub_control: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_control
+.PHONY : pub_control
+
+# fast build rule for target.
+pub_control/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/build
+.PHONY : pub_control/fast
+
+src/controller/pub_control.o: src/controller/pub_control.cpp.o
+.PHONY : src/controller/pub_control.o
 
 # target to build an object file
-example/squad.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/example/squad.cpp.o
-.PHONY : example/squad.cpp.o
+src/controller/pub_control.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o
+.PHONY : src/controller/pub_control.cpp.o
 
-example/squad.i: example/squad.cpp.i
-.PHONY : example/squad.i
+src/controller/pub_control.i: src/controller/pub_control.cpp.i
+.PHONY : src/controller/pub_control.i
 
 # target to preprocess a source file
-example/squad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/example/squad.cpp.i
-.PHONY : example/squad.cpp.i
+src/controller/pub_control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.i
+.PHONY : src/controller/pub_control.cpp.i
 
-example/squad.s: example/squad.cpp.s
-.PHONY : example/squad.s
+src/controller/pub_control.s: src/controller/pub_control.cpp.s
+.PHONY : src/controller/pub_control.s
 
 # target to generate assembly for a file
-example/squad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/squad.dir/build.make CMakeFiles/squad.dir/example/squad.cpp.s
-.PHONY : example/squad.cpp.s
+src/controller/pub_control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.s
+.PHONY : src/controller/pub_control.cpp.s
+
+src/test/pub_test.o: src/test/pub_test.cpp.o
+.PHONY : src/test/pub_test.o
+
+# target to build an object file
+src/test/pub_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_test.dir/build.make CMakeFiles/pub_test.dir/src/test/pub_test.cpp.o
+.PHONY : src/test/pub_test.cpp.o
+
+src/test/pub_test.i: src/test/pub_test.cpp.i
+.PHONY : src/test/pub_test.i
+
+# target to preprocess a source file
+src/test/pub_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_test.dir/build.make CMakeFiles/pub_test.dir/src/test/pub_test.cpp.i
+.PHONY : src/test/pub_test.cpp.i
+
+src/test/pub_test.s: src/test/pub_test.cpp.s
+.PHONY : src/test/pub_test.s
+
+# target to generate assembly for a file
+src/test/pub_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_test.dir/build.make CMakeFiles/pub_test.dir/src/test/pub_test.cpp.s
+.PHONY : src/test/pub_test.cpp.s
+
+src/test/zero_pub.o: src/test/zero_pub.cpp.o
+.PHONY : src/test/zero_pub.o
+
+# target to build an object file
+src/test/zero_pub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_pub.dir/build.make CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.o
+.PHONY : src/test/zero_pub.cpp.o
+
+src/test/zero_pub.i: src/test/zero_pub.cpp.i
+.PHONY : src/test/zero_pub.i
+
+# target to preprocess a source file
+src/test/zero_pub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_pub.dir/build.make CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.i
+.PHONY : src/test/zero_pub.cpp.i
+
+src/test/zero_pub.s: src/test/zero_pub.cpp.s
+.PHONY : src/test/zero_pub.s
+
+# target to generate assembly for a file
+src/test/zero_pub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_pub.dir/build.make CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.s
+.PHONY : src/test/zero_pub.cpp.s
 
 # Help Target
 help:
@@ -249,10 +323,18 @@ help:
 	@echo "... test"
 	@echo "... simple_sim_uninstall"
 	@echo "... uninstall"
-	@echo "... squad"
-	@echo "... example/squad.o"
-	@echo "... example/squad.i"
-	@echo "... example/squad.s"
+	@echo "... pub_control"
+	@echo "... pub_test"
+	@echo "... zero_pub"
+	@echo "... src/controller/pub_control.o"
+	@echo "... src/controller/pub_control.i"
+	@echo "... src/controller/pub_control.s"
+	@echo "... src/test/pub_test.o"
+	@echo "... src/test/pub_test.i"
+	@echo "... src/test/pub_test.s"
+	@echo "... src/test/zero_pub.o"
+	@echo "... src/test/zero_pub.i"
+	@echo "... src/test/zero_pub.s"
 .PHONY : help
 
 

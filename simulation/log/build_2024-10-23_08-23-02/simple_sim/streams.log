@@ -1,0 +1,55 @@
+[0.016s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_test.dir/test/pub_test.cpp.o[0m
+[1.762s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In constructor ‘[01m[KPubTest::PubTest()[m[K’:
+[1.762s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:17:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[1.762s]    17 |             [01;31m[K1000ms[m[K, std::bind(&PubTest::timer_callback, this)
+[1.762s]       |             [01;31m[K^~~~~~[m[K
+[1.766s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[1.766s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ktrajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’
+[1.766s]    24 |         positions [01;31m[K->[m[Kjoint_names = ["arm_pitch_right", "arm_roll_right", "hand_right",
+[1.766s]       |                   [01;31m[K^~[m[K
+[1.766s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:36:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[1.766s]    24 |         positions ->joint_names = [[01;31m[K"arm_pitch_right"[m[K, "arm_roll_right", "hand_right",
+[1.767s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.767s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+[1.767s]    24 |         positions ->joint_names = ["arm_pitch_right"[01;31m[K,[m[K "arm_roll_right", "hand_right",
+[1.767s]       |                                                     [01;31m[K^[m[K
+[1.767s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In lambda function:
+[1.767s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:24:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[1.767s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[1.767s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:37:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[1.767s]    29 |         std::vector<double> pos1 = [[01;31m[K0.0[m[K, 0.0, -0.8,
+[1.768s]       |                                     [01;31m[K^~~[m[K
+[1.768s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+[1.768s]    29 |         std::vector<double> pos1 = [0.0[01;31m[K,[m[K 0.0, -0.8,
+[1.768s]       |                                        [01;31m[K^[m[K
+[1.768s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In lambda function:
+[1.768s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[1.768s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[1.768s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:40:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KPubTest::timer_callback()::<lambda()>[m[K’ to non-scalar type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ requested
+[1.768s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:29:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[1.769s]    29 |         std::vector<double> pos1 = [0.0, [01;31m[K0.0[m[K, -0.8,
+[1.769s]       |                                          [01;31m[K^~~[m[K
+[1.769s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:33:37:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[1.769s]    33 |         std::vector<double> pos2 = [[01;31m[K0.0[m[K, 0.0, 0.0,
+[1.769s]       |                                     [01;31m[K^~~[m[K
+[1.769s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:33:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+[1.769s]    33 |         std::vector<double> pos2 = [0.0[01;31m[K,[m[K 0.0, 0.0,
+[1.769s]       |                                        [01;31m[K^[m[K
+[1.769s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In lambda function:
+[1.769s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:33:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[1.769s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[1.770s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:33:40:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KPubTest::timer_callback()::<lambda()>[m[K’ to non-scalar type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ requested
+[1.770s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:33:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[1.770s]    33 |         std::vector<double> pos2 = [0.0, [01;31m[K0.0[m[K, 0.0,
+[1.770s]       |                                          [01;31m[K^~~[m[K
+[1.770s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:38:42:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ktrajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’
+[1.770s]    38 |         if(count_++ % 2 == 0){ positions [01;31m[K->[m[K points -> positions = pos1;
+[1.770s]       |                                          [01;31m[K^~[m[K
+[1.770s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:39:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Ktrajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’
+[1.770s]    39 |         }else{positions [01;31m[K->[m[K points -> positions = pos2; }
+[1.770s]       |                         [01;31m[K^~[m[K
+[2.446s] gmake[2]: *** [CMakeFiles/pub_test.dir/build.make:76: CMakeFiles/pub_test.dir/test/pub_test.cpp.o] Error 1
+[2.446s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pub_test.dir/all] Error 2
+[2.447s] gmake: *** [Makefile:146: all] Error 2
+[2.450s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

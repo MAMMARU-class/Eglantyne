@@ -1,0 +1,35 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/pub_test.dir/test/pub_test.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:[m[K In member function ‘[01m[Kvoid PubTest::timer_callback()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:31:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing JointTrajectoryPoint = struct trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kresize[m[K’
+   31 |         pos1.[01;31m[Kresize[m[K(joint_names.size());
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:35:58:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint[m[K’ {aka ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+   35 |                           0.0, 0.0, -0.5, 0.25, -0.5, 0.0[01;31m[K}[m[K;
+      |                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp:7[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >& trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::operator=(const trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&)[m[K’
+   36 | struct [01;36m[KJointTrajectoryPoint_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >& trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::operator=(trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&&[m[K’
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:38:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing JointTrajectoryPoint = struct trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kresize[m[K’
+   38 |         pos2.[01;31m[Kresize[m[K(joint_names.size());
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:42:55:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint[m[K’ {aka ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+   42 |                           0.0, 0.0, 0.0, 0.0, 0.0, 0.0[01;31m[K}[m[K;
+      |                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp:7[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/test/pub_test.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >& trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::operator=(const trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&)[m[K’
+   36 | struct [01;36m[KJointTrajectoryPoint_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >& trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::operator=(trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&&[m[K’
+gmake[2]: *** [CMakeFiles/pub_test.dir/build.make:76: CMakeFiles/pub_test.dir/test/pub_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pub_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
