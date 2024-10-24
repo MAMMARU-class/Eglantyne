@@ -1,0 +1,7 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_gazebo/src/contact_sensor.cpp:19:10:[m[K [01;31m[Kfatal error: [m[Kchamp/utils/urdf_loader.h: No such file or directory
+   19 | #include [01;31m[K<champ/utils/urdf_loader.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/contact_sensor.dir/build.make:76: CMakeFiles/contact_sensor.dir/src/contact_sensor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/contact_sensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 10  # Hz
+    update_rate: 250  # Hz
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -35,13 +35,57 @@ joint_trajectory_controller:
       - foot_roll_left
 
     command_interfaces:
-      - position
-      - velocity
+      # - position
+      # - velocity
+      - effort
 
     state_interfaces:
       - position
       - velocity
-      # - effort
 
-    parameters:
-      max_velocity: 0.5
+    # for torque 0.7
+    # gains:
+    #   arm_pitch_right  : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   arm_roll_right   : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   hand_right       : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+      
+    #   arm_pitch_left   : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   arm_roll_left    : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   hand_left        : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+      
+    #   leg_yaw_right    : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   leg_roll_right   : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   leg_upper_right  : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   leg_under_right  : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   foot_pitch_right : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   foot_roll_right  : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    
+    #   leg_yaw_left     : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   leg_roll_left    : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   leg_upper_left   : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   leg_under_left   : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   foot_pitch_left  : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+    #   foot_roll_left   : {p: 35500.0, i: 0.1, d: 85.0, i_clamp: 2.5}
+      
+    gains:
+      arm_pitch_right  : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      arm_roll_right   : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      hand_right       : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      
+      arm_pitch_left   : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      arm_roll_left    : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      hand_left        : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      
+      leg_yaw_right    : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      leg_roll_right   : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      leg_upper_right  : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      leg_under_right  : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      foot_pitch_right : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      foot_roll_right  : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+    
+      leg_yaw_left     : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      leg_roll_left    : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      leg_upper_left   : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      leg_under_left   : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      foot_pitch_left  : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}
+      foot_roll_left   : {p: 100.0, i: 0.1, d: 0.2, i_clamp: 2.5}

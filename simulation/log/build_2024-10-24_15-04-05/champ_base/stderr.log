@@ -1,0 +1,23 @@
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/src/state_estimation.cpp:28[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/include/state_estimation.h:35:10:[m[K [01;31m[Kfatal error: [m[Kchamp/odometry/odometry.h: No such file or directory
+   35 | #include [01;31m[K<champ/odometry/odometry.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/state_estimation.dir/build.make:76: CMakeFiles/state_estimation.dir/src/state_estimation.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/state_estimation.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/src/quadruped_controller.cpp:29[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/include/quadruped_controller.h:38:10:[m[K [01;31m[Kfatal error: [m[Kchamp/body_controller/body_controller.h: No such file or directory
+   38 | #include [01;31m[K<champ/body_controller/body_controller.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/quadruped_controller.dir/build.make:76: CMakeFiles/quadruped_controller.dir/src/quadruped_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/quadruped_controller.dir/all] Error 2
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/src/message_relay.cpp:28[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/include/message_relay.h:39:10:[m[K [01;31m[Kfatal error: [m[Kchamp/utils/urdf_loader.h: No such file or directory
+   39 | #include [01;31m[K<champ/utils/urdf_loader.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/message_relay.dir/build.make:76: CMakeFiles/message_relay.dir/src/message_relay.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/message_relay.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

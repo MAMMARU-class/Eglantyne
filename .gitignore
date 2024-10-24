@@ -1,5 +1,6 @@
 ./simulation/src/ros2_control_demos
 ./simulation/src/gazebo_ros_control
+./simulation/src/champ
 ./simulation/log
 ./simulation/install
 ./simulation/build

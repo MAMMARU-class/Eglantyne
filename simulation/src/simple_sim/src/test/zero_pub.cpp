@@ -17,14 +17,15 @@ int main(int argc, char** argv)
 
     std::vector<double> initial = {0.0, 0.0, -0.8,
                           0.0, 0.0, -0.8,
-                          0.0, 0.0, -0.5, 1.05, -0.5, 0.0,
-                          0.0, 0.0, -0.5, 1.05, -0.5, 0.0};
-    std::vector<double> goal = {0.0, 0.0, 0.0,
-                          0.0, 0.0, 0.0,
-                          0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-                          0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+                          0.0, 0.0, -0.32, 1.15, -0.8, 0.0,
+                          0.0, 0.0, -0.32, 1.15, -0.8, 0.0};
+    std::vector<double> goal = {0.0, 0.0, -0.8,
+                          0.0, 0.0, -0.8,
+                          0.0, 0.0, -0.44, 1.455, -1.014, 0.0,
+                          0.0, 0.0, -0.44, 1.455, -1.014, 0.0};
     
-    int max_count = 150;
+    int max_count = 50;
+    for (int loop=0; loop<50; loop++){
     for (int count=0; count<max_count; count++){
         trajectory_msgs::msg::JointTrajectoryPoint pos;
         std::vector<double> positions(18);
@@ -33,6 +34,16 @@ int main(int argc, char** argv)
         }
         pos.positions = positions;
         motion.points.push_back(pos);
+    }
+    for (int count=0; count<max_count; count++){
+        trajectory_msgs::msg::JointTrajectoryPoint pos;
+        std::vector<double> positions(18);
+        for(int j=0; j<18; j++){
+            positions[j] = (goal[j] * (max_count-count) + initial[j] * count) / max_count;
+        }
+        pos.positions = positions;
+        motion.points.push_back(pos);
+    }
     }
     
     pub->publish(motion);

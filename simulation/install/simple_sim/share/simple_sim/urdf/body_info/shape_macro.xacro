@@ -1,5 +1,23 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="eglantyne">
+    <xacro:macro name="surface">
+        <surcafe>
+            <friction>
+                <ode>
+                    <mu1>50</mu1>
+                    <mu2>25</mu2>
+                </ode>
+            </friction>
+            <contact>
+                <ode>
+                    <kp>25000</kp>
+                    <kd>0.05</kd>
+                    <damping_factor>0.004</damping_factor>
+                </ode>
+            </contact>
+        </surcafe>
+    </xacro:macro>
+    
     <xacro:macro name="box_link" params="name x y z ofsx ofsy ofsz mass collision">
         <link name = "${name}_link">
             <visual>
@@ -28,6 +46,8 @@
                          izz="${(1/12) * mass * (x*x + y*y) * 0.000001}" />
                 <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
             </inertial>
+
+            <xacro:macro name="surcafe"/>
         </link>
     </xacro:macro>
 
@@ -60,6 +80,8 @@
                          izz="${(1/2) * mass * radius*radius  * 0.000001}" />
                 <origin rpy="0 0 0" xyz="${ofsx * 0.001} ${ofsy * 0.001} ${ofsz * 0.001}"/>
             </inertial>
+
+            <xacro:macro name="surcafe"/>
         </link>
     </xacro:macro>
 </robot>

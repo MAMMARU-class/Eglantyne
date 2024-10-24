@@ -1,0 +1,69 @@
+[0.006s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ_base': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ LD_LIBRARY_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base
+[0.043s] -- The C compiler identification is GNU 11.4.0
+[0.084s] -- The CXX compiler identification is GNU 11.4.0
+[0.091s] -- Detecting C compiler ABI info
+[0.133s] -- Detecting C compiler ABI info - done
+[0.138s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.138s] -- Detecting C compile features
+[0.139s] -- Detecting C compile features - done
+[0.140s] -- Detecting CXX compiler ABI info
+[0.191s] -- Detecting CXX compiler ABI info - done
+[0.199s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.199s] -- Detecting CXX compile features
+[0.200s] -- Detecting CXX compile features - done
+[0.202s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.393s] -- Found Python3: /home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.448s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.472s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.474s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.479s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.486s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.496s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.522s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.523s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.579s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.603s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.630s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.675s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.676s] -- Found Threads: TRUE  
+[0.709s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.709s] -- Found champ_msgs: 0.1.0 (/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/share/champ_msgs/cmake)
+[0.730s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.780s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.802s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.826s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.939s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.955s] -- Found champ: 0.1.0 (/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ/share/champ/cmake)
+[1.019s] -- Configuring done
+[1.051s] -- Generating done
+[1.052s] -- Build files have been written to: /home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ_base
+[1.059s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ_base' returned '0': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ LD_LIBRARY_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base
+[1.060s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ_base': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ LD_LIBRARY_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ_base -- -j16 -l16
+[1.082s] [ 16%] [32mBuilding CXX object CMakeFiles/quadruped_controller.dir/src/quadruped_controller.cpp.o[0m
+[1.082s] [ 16%] [32mBuilding CXX object CMakeFiles/message_relay.dir/src/message_relay.cpp.o[0m
+[1.082s] [ 25%] [32mBuilding CXX object CMakeFiles/state_estimation.dir/src/state_estimation.cpp.o[0m
+[1.403s] In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/src/state_estimation.cpp:28[m[K:
+[1.403s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/include/state_estimation.h:35:10:[m[K [01;31m[Kfatal error: [m[Kchamp/odometry/odometry.h: No such file or directory
+[1.403s]    35 | #include [01;31m[K<champ/odometry/odometry.h>[m[K
+[1.403s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.404s] In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/src/quadruped_controller.cpp:29[m[K:
+[1.404s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/include/quadruped_controller.h:38:10:[m[K [01;31m[Kfatal error: [m[Kchamp/body_controller/body_controller.h: No such file or directory
+[1.404s]    38 | #include [01;31m[K<champ/body_controller/body_controller.h>[m[K
+[1.404s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.404s] compilation terminated.
+[1.404s] compilation terminated.
+[1.404s] In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/src/message_relay.cpp:28[m[K:
+[1.404s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ_base/include/message_relay.h:39:10:[m[K [01;31m[Kfatal error: [m[Kchamp/utils/urdf_loader.h: No such file or directory
+[1.405s]    39 | #include [01;31m[K<champ/utils/urdf_loader.h>[m[K
+[1.405s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.405s] compilation terminated.
+[1.405s] gmake[2]: *** [CMakeFiles/quadruped_controller.dir/build.make:76: CMakeFiles/quadruped_controller.dir/src/quadruped_controller.cpp.o] Error 1
+[1.405s] gmake[2]: *** [CMakeFiles/state_estimation.dir/build.make:76: CMakeFiles/state_estimation.dir/src/state_estimation.cpp.o] Error 1
+[1.405s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/quadruped_controller.dir/all] Error 2
+[1.405s] gmake[1]: *** Waiting for unfinished jobs....
+[1.405s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/state_estimation.dir/all] Error 2
+[1.406s] gmake[2]: *** [CMakeFiles/message_relay.dir/build.make:76: CMakeFiles/message_relay.dir/src/message_relay.cpp.o] Error 1
+[1.406s] gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/message_relay.dir/all] Error 2
+[1.406s] gmake: *** [Makefile:146: all] Error 2
+[1.408s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ_base' returned '2': AMENT_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ LD_LIBRARY_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ_base -- -j16 -l16

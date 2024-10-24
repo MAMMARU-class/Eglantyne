@@ -1,0 +1,2 @@
+Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ': /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ
+Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/champ' returned '1': /usr/bin/cmake /home/hibiki/Robomech_HR/Eglantyne/simulation/src/champ/champ -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ

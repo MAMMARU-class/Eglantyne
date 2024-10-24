@@ -18,10 +18,10 @@
 
         <axis xyz="0 0 1"/>
         <xacro:if value="${dir == 'right'}">
-            <limit lower="-3.14" upper="1.57" effort="10.0" velocity="1.0"/>
+            <limit lower="-3.14" upper="1.57" effort="25" velocity="6.8"/>
         </xacro:if>
         <xacro:if value="${dir == 'left'}">
-            <limit lower="-1.57" upper="3.14" effort="10.0" velocity="1.0"/>
+            <limit lower="-1.57" upper="3.14" effort="25" velocity="6.8"/>
         </xacro:if>
     </joint>
 
@@ -43,10 +43,10 @@
 
         <axis xyz="1 0 0"/>
         <xacro:if value="${dir == 'right'}">
-            <limit lower="${-3.14 * 7 / 6}" upper="${3.14 / 6}" effort="10.0" velocity="1.0"/>
+            <limit lower="${-3.14 * 7 / 6}" upper="${3.14 / 6}" effort="25" velocity="6.8"/>
         </xacro:if>
         <xacro:if value="${dir == 'left'}">
-            <limit lower="${-3.14 / 6}" upper="${3.14 * 7 / 6}" effort="10.0" velocity="1.0"/>
+            <limit lower="${-3.14 / 6}" upper="${3.14 * 7 / 6}" effort="25" velocity="6.8"/>
         </xacro:if>
     </joint>
     
@@ -61,7 +61,7 @@
         <origin xyz="0 0 -0.08284" rpy="0 0 0"/>
 
         <axis xyz="0 1 0"/>
-        <limit lower="-3.14" upper="${3.14 / 4}" effort="10.0" velocity="1.0"/>
+        <limit lower="-3.14" upper="${3.14 / 4}" effort="25" velocity="6.8"/>
     </joint>
 
 </xacro:macro>
