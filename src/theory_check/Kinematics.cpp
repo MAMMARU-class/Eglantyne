@@ -47,16 +47,16 @@ void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
         forward(link);
         // err : 6 dementional vector (P, w)
         VectorXd err = calcerr(link, P_ref, R_ref); // 6 dementional
-        if (err.norm() < std::numeric_limits<double>::epsilon()){
+        if (err.norm() < 1e-5){
             return;
         }else{
             MatrixXd Jacobi = calcJacobi(link_list); // 6*link_size matrix
             double lambda = 0.5;
             VectorXd deltaq(link_size);
             deltaq = lambda * Jacobi.completeOrthogonalDecomposition().pseudoInverse() * err;
-            cout << "\n" << 50 - i << " times" << endl;
-            cout << "norm of error : " << err.norm() << endl;
-            cout << "delta q : \n" << deltaq << endl;
+            // cout << "\n" << 50 - i << " times" << endl;
+            // cout << "norm of error : " << err.norm() << endl;
+            // cout << "delta q : \n" << deltaq << endl;
 
             q_vec += 180.0 / M_PI * deltaq;
             int link_id = 0;
@@ -105,24 +105,24 @@ VectorXd Kinematics::calcerr(Link* link, Vector3d P_ref, Matrix3d R_ref){
 
 // convert rotation error to angluler velocity
 Vector3d Kinematics::rot2omega(Link* link, Matrix3d R_ref){
-    Vector3d w;
+    // Vector3d w;
     
-    Matrix3d R_now = link->getR_w();
+    // Matrix3d R_now = link->getR_w();
     Vector3d el;
-    el << R_now(2,1) - R_now(1,2),
-          R_now(0,2) - R_now(2,0),
-          R_now(1,0) - R_now(0,1);
+    el << R_ref(2,1) - R_ref(1,2),
+          R_ref(0,2) - R_ref(2,0),
+          R_ref(1,0) - R_ref(0,1);
     double norm_el = el.norm();
 
     if (norm_el > std::numeric_limits<double>::epsilon()){
         return link->getq() / norm_el * el;
-    }else if (R_now(0,0) > 0 && R_now(1,1) > 0 && R_now(2,2) > 0){
+    }else if (R_ref(0,0) > 0 && R_ref(1,1) > 0 && R_ref(2,2) > 0){
         return Vector3d::Zero();
     }else{
         Vector3d v;
-        v << R_now(0,0) + 1,
-             R_now(1,1) + 1,
-             R_now(2,2) + 1;
+        v << R_ref(0,0) + 1,
+             R_ref(1,1) + 1,
+             R_ref(2,2) + 1;
         return M_PI / 2 * v;
     }
 }

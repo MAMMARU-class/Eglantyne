@@ -1,0 +1,60 @@
+[ 25%] Built target pub_test
+[ 50%] Built target zero_pub
+[ 75%] Built target pub_control
+[ 87%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o[0m
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:[m[K In member function ‘[01m[Kvoid WalkTest::pub_walk_trajectory(std_msgs::msg::String) const[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:61:18:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KWalkTest::step_dir[m[K’ in read-only object
+   61 |         [01;31m[Kstep_dir *= -1[m[K;
+      |         [01;31m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:[m[K In member function ‘[01m[Kstd::vector<double, std::allocator<double> > WalkTest::calc_foot_pos()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:8:15:[m[K [01;31m[Kerror: [m[K‘[01m[KCOM_p_start[m[K’ is not a member of ‘[01m[KEigen::Vector2d[m[K’ {aka ‘[01m[KEigen::Matrix<double, 2, 1>[m[K’}
+    8 |     Vector2d::[01;31m[KCOM_p_start[m[K = COM_p_aim - aim_step;
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:9:15:[m[K [01;31m[Kerror: [m[K‘[01m[KCOM_v_start[m[K’ is not a member of ‘[01m[KEigen::Vector2d[m[K’ {aka ‘[01m[KEigen::Matrix<double, 2, 1>[m[K’}
+    9 |     Vector2d::[01;31m[KCOM_v_start[m[K = COM_v_aim;
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:21:25:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kdouble[m[K’)
+   21 |     aim_step[0] = COEF_A[01;31m[K*(C-1)[m[K / D * (COM_p_aim - C*)
+      |                         [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:32:20:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kdouble[m[K’)
+   32 | #define D ( COEF_A [01;31m[K* (C-1)[m[K*(C-1) + COEF_B * (S/TC)*(S/TC) )
+      |                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:21:34:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KD[m[K’
+   21 |     aim_step[0] = COEF_A*(C-1) / [01;36m[KD[m[K * (COM_p_aim - C*)
+      |                                  [01;36m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:32:43:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kdouble[m[K’)
+   32 | #define D ( COEF_A * (C-1)*(C-1) + COEF_B [01;31m[K* (S/TC)[m[K*(S/TC) )
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:21:34:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KD[m[K’
+   21 |     aim_step[0] = COEF_A*(C-1) / [01;36m[KD[m[K * (COM_p_aim - C*)
+      |                                  [01;36m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:21:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   21 |     aim_step[0] = COEF_A*(C-1) / D * (COM_p_aim - C*[01;31m[K)[m[K
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:22:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   22 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:[m[K In function ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > > WalkTest()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:26:2:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   26 | {[01;35m[K}[m[K
+      |  [01;35m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:31:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<WalkTest>()[m[K’
+   31 |     rclcpp::spin([01;31m[Kstd::make_shared<WalkTest>()[m[K);
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:3[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:31:44:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+   31 |     rclcpp::spin([01;31m[Kstd::make_shared<WalkTest>()[m[K);
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:31:44:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KWalkTest[m[K’
+gmake[2]: *** [CMakeFiles/walk_test.dir/build.make:76: CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/walk_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

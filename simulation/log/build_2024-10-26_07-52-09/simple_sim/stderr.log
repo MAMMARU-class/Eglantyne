@@ -1,0 +1,7 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/controller/pub_control.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_state_[m[K’ was not declared in this scope
+   86 |     [01;31m[Kpub_state_[m[K -> publish(msg);
+      |     [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pub_control.dir/build.make:76: CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pub_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

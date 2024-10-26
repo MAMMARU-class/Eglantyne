@@ -29,8 +29,7 @@ void setup(){
 }
 
 int main(void){
-    using std::cout;
-    using std::endl;
+    using std::cout; using std::endl;
 
     setup();
     hip_pitch.setq(-23);
@@ -42,18 +41,73 @@ int main(void){
     P_ref << -33,
              -30,
              -160;
+    // P_ref << 30,
+    //          -45,
+    //          -100;
     Matrix3d R_ref;
     R_ref << 1, 0, 0,
              0, 1, 0,
              0, 0, 1;
     Kinematics::inverse(&toe_roll, P_ref, R_ref);
     std::vector<Link*> link_list = Kinematics::showFromBody(&toe_roll);
+    cout << "\n**********************************\n" << endl;
     for (const auto& link : link_list){
         cout << link->name() << " : " << link->getq() << endl;
     }
 
-    cout << "\n\nendeffector P_w : \n" << toe_roll.getP_w() << endl;
-    cout <<   "\nendeffector R_w : \n" << toe_roll.getR_w() << endl;
+    cout << "\nendeffector P_w : \n" << toe_roll.getP_w() << endl;
+    cout << "\nendeffector R_w : \n" << toe_roll.getR_w() << "\n\n" << endl;
+    cout << "\n**********************************\n" << endl;
+
+    // P_ref << -33,
+    //          -30,
+    //          -156;
+    // Kinematics::inverse(&toe_roll, P_ref, R_ref);
+    // cout << "\n**********************************\n" << endl;
+    // for (const auto& link : link_list){
+    //     cout << link->name() << " : " << link->getq() << endl;
+    // }
+    // cout << "\nendeffector P_w : \n" << toe_roll.getP_w() << endl;
+    // cout << "\nendeffector R_w : \n" << toe_roll.getR_w() << "\n\n" << endl;
+    // cout << "\n**********************************\n" << endl;
+
+    // P_ref << -33,
+    //          -30,
+    //          -156;
+    // Kinematics::inverse(&toe_roll, P_ref, R_ref);
+    // cout << "\n**********************************\n" << endl;
+    // for (const auto& link : link_list){
+    //     cout << link->name() << " : " << link->getq() << endl;
+    // }
+    // cout << "\nendeffector P_w : \n" << toe_roll.getP_w() << endl;
+    // cout << "\nendeffector R_w : \n" << toe_roll.getR_w() << "\n\n" << endl;
+    // cout << "\n**********************************\n" << endl;
+
+    // P_ref << -33,
+    //          -30,
+    //          -154;
+    // Kinematics::inverse(&toe_roll, P_ref, R_ref);
+    // cout << "\n**********************************\n" << endl;
+    // for (const auto& link : link_list){
+    //     cout << link->name() << " : " << link->getq() << endl;
+    // }
+    // cout << "\nendeffector P_w : \n" << toe_roll.getP_w() << endl;
+    // cout << "\nendeffector R_w : \n" << toe_roll.getR_w() << "\n\n" << endl;
+    // cout << "\n**********************************\n" << endl;
+
+    for (int i; i<5000; i++){
+        P_ref << -33,
+                -30,
+                -160 + i/50;
+        Kinematics::inverse(&toe_roll, P_ref, R_ref);
+        cout << "\n**********************************\n" << endl;
+        for (const auto& link : link_list){
+            cout << link->name() << " : " << link->getq() << endl;
+        }
+        cout << "\nendeffector P_w : \n" << toe_roll.getP_w() << endl;
+        cout << "\nendeffector R_w : \n" << toe_roll.getR_w() << "\n\n" << endl;
+        cout << "\n**********************************\n" << endl;
+    }
 
     return 0;
 }

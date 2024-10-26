@@ -1,0 +1,5 @@
+[ 50%] Built target pub_control
+[ 50%] Built target pub_test
+[ 75%] Built target zero_pub
+[ 87%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable walk_test[0m

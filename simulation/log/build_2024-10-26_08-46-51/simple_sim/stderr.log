@@ -1,0 +1,8 @@
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:9[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/../module/Link.h:5:9:[m[K [01;31m[Kfatal error: [m[KEigen/Dense: No such file or directory
+    5 | #include[01;31m[K<Eigen/Dense>[m[K
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/walk_test.dir/build.make:76: CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/walk_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

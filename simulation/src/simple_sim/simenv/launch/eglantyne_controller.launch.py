@@ -52,17 +52,11 @@ def generate_launch_description():
         arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
     )
 
-    # load_joint_state_broadcaster = ExecuteProcess(
-    #     cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-    #          'joint_state_broadcaster'],
-    #     output='screen'
-    # )
-
-    # load_joint_trajectory_controller = ExecuteProcess(
-    #     cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-    #          'joint_trajectory_controller'],
-    #     output='screen'
-    # )
+    position_publisher = Node(
+        package="simple_sim",
+        executable = "pub_control",
+        output = "screen",
+    )
 
     return LaunchDescription([
         control_node,
@@ -71,4 +65,5 @@ def generate_launch_description():
         # load_joint_trajectory_controller,
         joint_state_broadcaster_spawner,
         robot_controller_spawner,
+        position_publisher,
     ])

@@ -2,7 +2,10 @@
     "files.associations": {
         "*.sdf": "xml",
         "*.urdf": "xml",
+        "*.xacro": "xml",
         "core": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp"
     }
 }

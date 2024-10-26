@@ -14,6 +14,7 @@ find_package(rclcpp_action REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -27,19 +28,32 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+include_directories(
+  PUBLIC $<BUILD_INTERFACE:${EIGEN3_INCLUDE_DIR}>)
+
+set(MODULE
+  src/module/Kinematics.cpp
+  src/module/Link.cpp
+)
+
+add_executable(pub_control simenv/controller/pub_control.cpp)
+ament_target_dependencies(pub_control rclcpp trajectory_msgs std_msgs)
+
+# test codes
 add_executable(pub_test src/test/pub_test.cpp)
 ament_target_dependencies(pub_test rclcpp trajectory_msgs)
 
 add_executable(zero_pub src/test/zero_pub.cpp)
 ament_target_dependencies(zero_pub rclcpp trajectory_msgs)
 
-add_executable(pub_control src/controller/pub_control.cpp)
-ament_target_dependencies(pub_control rclcpp trajectory_msgs)
+add_executable(walk_test src/test/walk_test.cpp ${MODULE})
+ament_target_dependencies(walk_test rclcpp trajectory_msgs std_msgs)
 
 install(TARGETS
+  pub_control
   pub_test
   zero_pub
-  pub_control
+  walk_test
   DESTINATION lib/${PROJECT_NAME}/)
 
 install(
@@ -49,6 +63,5 @@ install(
 install(
   DIRECTORY simenv/launch simenv/config
   DESTINATION share/${PROJECT_NAME}/)
-
 
 ament_package()

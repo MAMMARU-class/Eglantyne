@@ -1,0 +1,12 @@
+[ 20%] Built target pub_control
+[ 40%] Built target zero_pub
+[ 60%] Built target pub_test
+[ 70%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/module/Link.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Link.cpp:[m[K In member function ‘[01m[Kvoid Link::setq(double)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Link.cpp:25:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   25 |     if (abs(q)<1e-4){ q=0[01;31m[K [m[K[32m[K}[m[K
+      |                          [01;31m[K^[m[K[32m[K~[m[K
+      |                          [32m[K;[m[K
+gmake[2]: *** [CMakeFiles/walk_test.dir/build.make:104: CMakeFiles/walk_test.dir/src/module/Link.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/walk_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

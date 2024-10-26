@@ -198,6 +198,19 @@ simple_sim_uninstall/fast:
 .PHONY : simple_sim_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named pub_control
+
+# Build rule for target.
+pub_control: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_control
+.PHONY : pub_control
+
+# fast build rule for target.
+pub_control/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/build
+.PHONY : pub_control/fast
+
+#=============================================================================
 # Target rules for targets named pub_test
 
 # Build rule for target.
@@ -224,41 +237,89 @@ zero_pub/fast:
 .PHONY : zero_pub/fast
 
 #=============================================================================
-# Target rules for targets named pub_control
+# Target rules for targets named walk_test
 
 # Build rule for target.
-pub_control: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_control
-.PHONY : pub_control
+walk_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 walk_test
+.PHONY : walk_test
 
 # fast build rule for target.
-pub_control/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/build
-.PHONY : pub_control/fast
+walk_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/build
+.PHONY : walk_test/fast
 
-src/controller/pub_control.o: src/controller/pub_control.cpp.o
-.PHONY : src/controller/pub_control.o
+simenv/controller/pub_control.o: simenv/controller/pub_control.cpp.o
+.PHONY : simenv/controller/pub_control.o
 
 # target to build an object file
-src/controller/pub_control.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o
-.PHONY : src/controller/pub_control.cpp.o
+simenv/controller/pub_control.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.o
+.PHONY : simenv/controller/pub_control.cpp.o
 
-src/controller/pub_control.i: src/controller/pub_control.cpp.i
-.PHONY : src/controller/pub_control.i
+simenv/controller/pub_control.i: simenv/controller/pub_control.cpp.i
+.PHONY : simenv/controller/pub_control.i
 
 # target to preprocess a source file
-src/controller/pub_control.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.i
-.PHONY : src/controller/pub_control.cpp.i
+simenv/controller/pub_control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.i
+.PHONY : simenv/controller/pub_control.cpp.i
 
-src/controller/pub_control.s: src/controller/pub_control.cpp.s
-.PHONY : src/controller/pub_control.s
+simenv/controller/pub_control.s: simenv/controller/pub_control.cpp.s
+.PHONY : simenv/controller/pub_control.s
 
 # target to generate assembly for a file
-src/controller/pub_control.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.s
-.PHONY : src/controller/pub_control.cpp.s
+simenv/controller/pub_control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.s
+.PHONY : simenv/controller/pub_control.cpp.s
+
+src/module/Kinematics.o: src/module/Kinematics.cpp.o
+.PHONY : src/module/Kinematics.o
+
+# target to build an object file
+src/module/Kinematics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.o
+.PHONY : src/module/Kinematics.cpp.o
+
+src/module/Kinematics.i: src/module/Kinematics.cpp.i
+.PHONY : src/module/Kinematics.i
+
+# target to preprocess a source file
+src/module/Kinematics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.i
+.PHONY : src/module/Kinematics.cpp.i
+
+src/module/Kinematics.s: src/module/Kinematics.cpp.s
+.PHONY : src/module/Kinematics.s
+
+# target to generate assembly for a file
+src/module/Kinematics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.s
+.PHONY : src/module/Kinematics.cpp.s
+
+src/module/Link.o: src/module/Link.cpp.o
+.PHONY : src/module/Link.o
+
+# target to build an object file
+src/module/Link.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Link.cpp.o
+.PHONY : src/module/Link.cpp.o
+
+src/module/Link.i: src/module/Link.cpp.i
+.PHONY : src/module/Link.i
+
+# target to preprocess a source file
+src/module/Link.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Link.cpp.i
+.PHONY : src/module/Link.cpp.i
+
+src/module/Link.s: src/module/Link.cpp.s
+.PHONY : src/module/Link.s
+
+# target to generate assembly for a file
+src/module/Link.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Link.cpp.s
+.PHONY : src/module/Link.cpp.s
 
 src/test/pub_test.o: src/test/pub_test.cpp.o
 .PHONY : src/test/pub_test.o
@@ -283,6 +344,30 @@ src/test/pub_test.s: src/test/pub_test.cpp.s
 src/test/pub_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_test.dir/build.make CMakeFiles/pub_test.dir/src/test/pub_test.cpp.s
 .PHONY : src/test/pub_test.cpp.s
+
+src/test/walk_test.o: src/test/walk_test.cpp.o
+.PHONY : src/test/walk_test.o
+
+# target to build an object file
+src/test/walk_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o
+.PHONY : src/test/walk_test.cpp.o
+
+src/test/walk_test.i: src/test/walk_test.cpp.i
+.PHONY : src/test/walk_test.i
+
+# target to preprocess a source file
+src/test/walk_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/test/walk_test.cpp.i
+.PHONY : src/test/walk_test.cpp.i
+
+src/test/walk_test.s: src/test/walk_test.cpp.s
+.PHONY : src/test/walk_test.s
+
+# target to generate assembly for a file
+src/test/walk_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/test/walk_test.cpp.s
+.PHONY : src/test/walk_test.cpp.s
 
 src/test/zero_pub.o: src/test/zero_pub.cpp.o
 .PHONY : src/test/zero_pub.o
@@ -325,13 +410,23 @@ help:
 	@echo "... uninstall"
 	@echo "... pub_control"
 	@echo "... pub_test"
+	@echo "... walk_test"
 	@echo "... zero_pub"
-	@echo "... src/controller/pub_control.o"
-	@echo "... src/controller/pub_control.i"
-	@echo "... src/controller/pub_control.s"
+	@echo "... simenv/controller/pub_control.o"
+	@echo "... simenv/controller/pub_control.i"
+	@echo "... simenv/controller/pub_control.s"
+	@echo "... src/module/Kinematics.o"
+	@echo "... src/module/Kinematics.i"
+	@echo "... src/module/Kinematics.s"
+	@echo "... src/module/Link.o"
+	@echo "... src/module/Link.i"
+	@echo "... src/module/Link.s"
 	@echo "... src/test/pub_test.o"
 	@echo "... src/test/pub_test.i"
 	@echo "... src/test/pub_test.s"
+	@echo "... src/test/walk_test.o"
+	@echo "... src/test/walk_test.i"
+	@echo "... src/test/walk_test.s"
 	@echo "... src/test/zero_pub.o"
 	@echo "... src/test/zero_pub.i"
 	@echo "... src/test/zero_pub.s"

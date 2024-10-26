@@ -1,0 +1,111 @@
+[0.009s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.037s] [ 50%] Built target zero_pub
+[0.037s] [ 50%] Built target pub_test
+[0.037s] [ 75%] Built target pub_control
+[0.042s] [ 87%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o[0m
+[1.625s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:[m[K In member function ‘[01m[Kstd::vector<double, std::allocator<double> > WalkTest::calc_foot_pos()[m[K’:
+[1.626s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:6:21:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 2, 1> >, const Eigen::Matrix<double, 2, 1> >[m[K’ to ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 2, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+[1.626s]     6 |     m2_step[0] = [01;31m[K-1 * aim_step[m[K;
+[1.626s]       |                  [01;31m[K~~~^~~~~~~~~~[m[K
+[1.626s]       |                     [01;31m[K|[m[K
+[1.626s]       |                     [01;31m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Matrix<double, 2, 1> >, const Eigen::Matrix<double, 2, 1> >[m[K
+[1.626s] In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[1.626s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:20:12:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[1.626s]    20 | #define SX [01;31m[K=[m[K 100.0
+[1.626s]       |            [01;31m[K^[m[K
+[1.626s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:8:18:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KSX[m[K’
+[1.626s]     8 |     Vector2d ofs{[01;36m[KSX[m[K, dir*SY};
+[1.626s]       |                  [01;36m[K^~[m[K
+[1.629s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:8:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kdir[m[K’ was not declared in this scope; did you mean ‘[01m[Kdiv[m[K’?
+[1.629s]     8 |     Vector2d ofs{SX, [01;31m[Kdir[m[K*SY};
+[1.629s]       |                      [01;31m[K^~~[m[K
+[1.629s]       |                      [32m[Kdiv[m[K
+[1.629s] In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[1.629s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:21:12:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[1.629s]    21 | #define SY [01;31m[K=[m[K 60.0
+[1.629s]       |            [01;31m[K^[m[K
+[1.630s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:8:26:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KSY[m[K’
+[1.630s]     8 |     Vector2d ofs{SX, dir*[01;36m[KSY[m[K};
+[1.630s]       |                          [01;36m[K^~[m[K
+[1.630s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:8:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Matrix<double, 2, 1>::Matrix(<brace-enclosed initializer list>)[m[K’
+[1.630s]     8 |     Vector2d ofs{SX, dir*SY[01;31m[K}[m[K;
+[1.630s]       |                            [01;31m[K^[m[K
+[1.630s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:295[m[K,
+[1.630s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[1.630s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/../module/Link.h:5[m[K,
+[1.630s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:10[m[K,
+[1.630s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:435:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::RotationBase<OtherDerived, Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::ColsAtCompileTime>&) [with OtherDerived = OtherDerived; _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.630s]   435 |     explicit [01;36m[KMatrix[m[K(const RotationBase<OtherDerived,ColsAtCompileTime>& r);
+[1.630s]       |              [01;36m[K^~~~~~[m[K
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:435:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:422:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = OtherDerived; _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.630s]   422 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const EigenBase<OtherDerived> &other)
+[1.630s]       |                         [01;36m[K^~~~~~[m[K
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:422:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:337:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T0, class T1> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T0&, const T1&) [with T0 = T0; T1 = T1; _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.630s]   337 |     [01;36m[KMatrix[m[K(const T0& x, const T1& y)
+[1.630s]       |     [01;36m[K^~~~~~[m[K
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:337:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:329:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T&) [with T = T; _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.630s]   329 |     explicit [01;36m[KMatrix[m[K(const T& x)
+[1.630s]       |              [01;36m[K^~~~~~[m[K
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:329:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:296:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... ArgTypes> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&, const ArgTypes& ...) [with ArgTypes = {ArgTypes ...}; _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.630s]   296 |     [01;36m[KMatrix[m[K(const Scalar& a0, const Scalar& a1, const Scalar& a2,  const Scalar& a3, const ArgTypes&... args)
+[1.630s]       |     [01;36m[K^~~~~~[m[K
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:296:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:414:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&) [with _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.630s]   414 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Matrix& other) : Base(other)
+[1.630s]       |                         [01;36m[K^~~~~~[m[K
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:414:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[1.630s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:401:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double][m[K’
+[1.630s]   401 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Scalar& x, const Scalar& y, const Scalar& z, const Scalar& w)
+[1.631s]       |                         [01;36m[K^~~~~~[m[K
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:401:25:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 2 provided
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:389:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double][m[K’
+[1.631s]   389 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Scalar& x, const Scalar& y, const Scalar& z)
+[1.631s]       |                         [01;36m[K^~~~~~[m[K
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:389:25:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:321:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const std::initializer_list<std::initializer_list<typename Eigen::internal::traits<Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols> >::Scalar> >&) [with _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1; typename Eigen::internal::traits<Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols> >::Scalar = double][m[K’
+[1.631s]   321 |     explicit EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const std::initializer_list<std::initializer_list<Scalar>>& list) : Base(list) {}
+[1.631s]       |                                  [01;36m[K^~~~~~[m[K
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:321:34:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:273:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&&) [with _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.631s]   273 |     [01;36m[KMatrix[m[K(Matrix&& other) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_constructible<Scalar>::value)
+[1.631s]       |     [01;36m[K^~~~~~[m[K
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:273:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:267:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(Eigen::internal::constructor_without_unaligned_array_assert) [with _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.631s]   267 |     explicit [01;36m[KMatrix[m[K(internal::constructor_without_unaligned_array_assert)
+[1.631s]       |              [01;36m[K^~~~~~[m[K
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:267:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:259:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix() [with _Scalar = double; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K’
+[1.631s]   259 |     [01;36m[KMatrix[m[K() : Base()
+[1.631s]       |     [01;36m[K^~~~~~[m[K
+[1.631s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:259:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[1.631s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:12:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.631s]    12 | [01;35m[K}[m[K
+[1.631s]       | [01;35m[K^[m[K
+[1.631s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:[m[K In function ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > > WalkTest()[m[K’:
+[1.631s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:16:2:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.631s]    16 | {[01;35m[K}[m[K
+[1.631s]       |  [01;35m[K^[m[K
+[1.631s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.631s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:23:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<WalkTest>()[m[K’
+[1.631s]    23 |     rclcpp::spin([01;31m[Kstd::make_shared<WalkTest>()[m[K);
+[1.631s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.631s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[1.631s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:3[m[K,
+[1.631s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[1.631s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.631s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.631s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.631s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.631s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:23:44:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.632s]    23 |     rclcpp::spin([01;31m[Kstd::make_shared<WalkTest>()[m[K);
+[1.632s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.632s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:23:44:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KWalkTest[m[K’
+[2.960s] gmake[2]: *** [CMakeFiles/walk_test.dir/build.make:76: CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o] Error 1
+[2.960s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/walk_test.dir/all] Error 2
+[2.960s] gmake: *** [Makefile:146: all] Error 2
+[2.962s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

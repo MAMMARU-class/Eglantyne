@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o"
-  "CMakeFiles/pub_control.dir/src/controller/pub_control.cpp.o.d"
+  "CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.o"
+  "CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.o.d"
   "pub_control"
   "pub_control.pdb"
 )

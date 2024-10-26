@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: in function `WalkTest::traj_to_motion()':
+walk_test.cpp:(.text+0x2631): undefined reference to `WalkTest::printList(rclcpp::Logger, std::vector<double, std::allocator<double> > const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/walk_test.dir/build.make:207: walk_test] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/walk_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
