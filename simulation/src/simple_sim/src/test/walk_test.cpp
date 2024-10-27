@@ -48,7 +48,7 @@ void WalkTest::COM_traj_zero()
         trajy = yp_0 * cosh(t/Tc) + Tc*yv_0*sinh(t/Tc);
         COM_traj_next.push_back({0,trajy, Z});
         
-        RCLCPP_INFO(this->get_logger(), "COM trajectory: x: %d, y: %f ", 0, trajy);
+        // RCLCPP_INFO(this->get_logger(), "COM trajectory: x: %d, y: %f ", 0, trajy);
     }
     COM_p_aim << 0, -trajy; COM_v_aim << 0, -yv_0;
 }
@@ -62,7 +62,7 @@ void WalkTest::calc_COM_traj_next()
         trajy = ( COM_p_start(1) - aim_step(1) )*cosh(t/Tc) + Tc*COM_v_start(1)*sinh(t/Tc);
         COM_traj_next.push_back({trajx, trajy, Z});
 
-        RCLCPP_INFO(this->get_logger(), "next COM trajectory: x: %f, y: %f ", trajx, trajy);
+        // RCLCPP_INFO(this->get_logger(), "next COM trajectory: x: %f, y: %f ", trajx, trajy);
     }
 }
 
@@ -79,7 +79,7 @@ void WalkTest::calc_swing_foot_traj()
         trajz = H * sin(theta);
         swing_foot_traj.push_back({trajx, trajy, trajz});
 
-        RCLCPP_INFO(this->get_logger(), "swing foot trajectory: x: %f, y: %f, z:%f ", trajx, trajy, trajz);
+        // RCLCPP_INFO(this->get_logger(), "swing foot trajectory: x: %f, y: %f, z:%f ", trajx, trajy, trajz);
     }
 }
 
@@ -92,43 +92,35 @@ void WalkTest::integrate_traj()
         body_to_fixed_foot_point = -1 * (*COM_traj.begin());
         body_to_fixed_foot_point(0) += FULC_TO_FOOT_JOINT;
         body_to_fixed_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
-
+        // discard value under 0.1
         body_to_fixed_foot_point(0) = std::floor(body_to_fixed_foot_point(0) * 10) / 10.0 ;
         body_to_fixed_foot_point(1) = std::floor(body_to_fixed_foot_point(1) * 10) / 10.0 ;
         body_to_fixed_foot_point(2) = std::floor(body_to_fixed_foot_point(2) * 10) / 10.0 ;
 
         body_to_fixed_foot_traj.push_back(body_to_fixed_foot_point);
-        // RCLCPP_INFO(this->get_logger(), "body to fixed leg trajectory: x: %f, y: %f, z:%f ",
-        //     body_to_fixed_foot_point(0), body_to_fixed_foot_point(1), body_to_fixed_foot_point(2));
-
 
         body_to_swing_foot_point = -1 * (*COM_traj.begin()) + (*swing_foot_traj.begin());
         body_to_swing_foot_point(0) += FULC_TO_FOOT_JOINT;
         body_to_swing_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
         // discard value under 0.1
-        // for (int i=0; i<3; i++){
-        //     body_to_swing_foot_point(i) = std::floor(body_to_swing_foot_point(i) * 10) / 10.0; }
         body_to_swing_foot_point(0) = std::floor(body_to_swing_foot_point(0) * 10) / 10.0 ;
         body_to_swing_foot_point(1) = std::floor(body_to_swing_foot_point(1) * 10) / 10.0 ;
         body_to_swing_foot_point(2) = std::floor(body_to_swing_foot_point(2) * 10) / 10.0 ;
 
         body_to_swing_foot_traj.push_back(body_to_swing_foot_point);
-        // RCLCPP_INFO(this->get_logger(), "body to swing leg trajectory: x: %f, y: %f, z:%f ",
-        //     body_to_swing_foot_point(0), body_to_swing_foot_point(1), body_to_swing_foot_point(2));
-
 
         COM_traj.erase(COM_traj.begin());
         swing_foot_traj.erase(swing_foot_traj.begin());
     }
     
-    for (size_t i=0; i<body_to_fixed_foot_traj.size(); ++i){
-        RCLCPP_INFO(this->get_logger(), "body to fixed leg trajectory: x: %f, y: %f, z:%f ",
-            body_to_fixed_foot_traj[i](0), body_to_fixed_foot_traj[i](1), body_to_fixed_foot_traj[i](2));
-    }
-    for (size_t i=0; i<body_to_swing_foot_traj.size(); ++i){
-        RCLCPP_INFO(this->get_logger(), "body to swing leg trajectory: x: %f, y: %f, z:%f ",
-            body_to_swing_foot_traj[i](0), body_to_swing_foot_traj[i](1), body_to_swing_foot_traj[i](2));
-    }    
+    // for (size_t i=0; i<body_to_fixed_foot_traj.size(); ++i){
+    //     RCLCPP_INFO(this->get_logger(), "body to fixed leg trajectory: x: %f, y: %f, z:%f ",
+    //         body_to_fixed_foot_traj[i](0), body_to_fixed_foot_traj[i](1), body_to_fixed_foot_traj[i](2));
+    // }
+    // for (size_t i=0; i<body_to_swing_foot_traj.size(); ++i){
+    //     RCLCPP_INFO(this->get_logger(), "body to swing leg trajectory: x: %f, y: %f, z:%f ",
+    //         body_to_swing_foot_traj[i](0), body_to_swing_foot_traj[i](1), body_to_swing_foot_traj[i](2));
+    // }    
 
     // initialize
     COM_traj = {};
@@ -199,7 +191,7 @@ void WalkTest::pub_walk_trajectory(const std_msgs::msg::String msg)
         for (size_t i=0; i<positions.size(); ++i){
             ss << positions[i];
             if (i < positions.size() - 1){ ss << ", "; }}
-        // RCLCPP_INFO(this->get_logger(), "positions: [%s]", ss.str().c_str());
+        RCLCPP_INFO(this->get_logger(), "positions: [%s]", ss.str().c_str());
         
         motion.points.push_back(pos);
     }

@@ -18,7 +18,7 @@ public:
 
     void setDefaultP(double x, double y, double z);
     void setDefaultA(double x, double y, double z);
-    void setq(double q);
+    void setq(double q); // radian
     void setDefault(string name, double px, double py, double pz, double ax, double ay, double az, double q, Link* parent);
 
     // getter of local info
