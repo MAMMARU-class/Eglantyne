@@ -32,6 +32,12 @@ void Kinematics::forward(Link* link){
     return;
 }
 
+double err_norm(VectorXd err){
+    Vector3d err1 = err.segment(0,3);
+    Vector3d err2 = err.segment(3,3);
+    return err1.norm() + err2.norm();
+}
+
 void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
     std::vector<Link*> link_list = showFromBody(link);
     int link_size = link_list.size();
@@ -43,19 +49,18 @@ void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
         vec_id++;
     }
 
-    for (int i=50; i>0; i--){
+    for (int i=10; i>0; i--){
         forward(link);
         // err : 6 dementional vector (P, w)
         VectorXd err = calcerr(link, P_ref, R_ref); // 6 dementional
-        if (err.norm() < 1e-5){
+        if (err_norm(err) < 1e-5){
             return;
         }else{
             MatrixXd Jacobi = calcJacobi(link_list); // 6*link_size matrix
             double lambda = 0.5;
             VectorXd deltaq(link_size);
             deltaq = lambda * Jacobi.completeOrthogonalDecomposition().pseudoInverse() * err;
-
-            q_vec += 180.0 / M_PI * deltaq;
+            q_vec += deltaq;
             int link_id = 0;
             for (const auto& link : link_list){
                 link->setq(q_vec(link_id));
@@ -91,9 +96,10 @@ VectorXd Kinematics::calcerr(Link* link, Vector3d P_ref, Matrix3d R_ref){
     VectorXd errVec(6);
     
     Vector3d P_err = P_ref - link->getP_w();
+
     Matrix3d R_now = link->getR_w();
     Matrix3d R_err = R_now.inverse() * R_ref;
-    Vector3d w_err = R_now * rot2omega(link, R_err);
+    Vector3d w_err = R_now * rot2omega(R_err);
 
     errVec.segment(0,3) = P_err;
     errVec.segment(3,3) = w_err;
@@ -101,7 +107,7 @@ VectorXd Kinematics::calcerr(Link* link, Vector3d P_ref, Matrix3d R_ref){
 }
 
 // convert rotation error to angluler velocity
-Vector3d Kinematics::rot2omega(Link* link, Matrix3d R_ref){
+Vector3d Kinematics::rot2omega(Matrix3d R_ref){
     // Vector3d w;
     
     // Matrix3d R_now = link->getR_w();
@@ -112,7 +118,7 @@ Vector3d Kinematics::rot2omega(Link* link, Matrix3d R_ref){
     double norm_el = el.norm();
 
     if (norm_el > std::numeric_limits<double>::epsilon()){
-        return link->getq() / norm_el * el;
+        return atan2(norm_el, R_ref(0,0)+R_ref(1,1)+R_ref(2,2) + 1) / norm_el * el;
     }else if (R_ref(0,0) > 0 && R_ref(1,1) > 0 && R_ref(2,2) > 0){
         return Vector3d::Zero();
     }else{
@@ -121,5 +127,13 @@ Vector3d Kinematics::rot2omega(Link* link, Matrix3d R_ref){
              R_ref(1,1) + 1,
              R_ref(2,2) + 1;
         return M_PI / 2 * v;
+    }
+}
+
+void setQ(VectorXd q_vec, std::vector<Link*> link_list){
+    int link_id = 0;
+    for (const auto& link : link_list){
+        link->setq(q_vec(link_id));
+        link_id++;
     }
 }

@@ -1,0 +1,25 @@
+[ 20%] Built target pub_test
+[ 50%] Built target zero_pub
+[ 50%] [32mBuilding CXX object CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/module/Link.cpp.o[0m
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Kinematics.cpp:1[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Kinematics.h:8:10:[m[K [01;31m[Kfatal error: [m[KLink_rad.h: No such file or directory
+    8 | #include [01;31m[K"Link_rad.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/walk_test.dir/build.make:90: CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.hpp:13[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/walk_test.cpp:1[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/../module/Kinematics.h:8:10:[m[K [01;31m[Kfatal error: [m[KLink_rad.h: No such file or directory
+    8 | #include [01;31m[K"Link_rad.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/walk_test.dir/build.make:76: CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/walk_test.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 90%] [32m[1mLinking CXX executable pub_control[0m
+[ 90%] Built target pub_control
+gmake: *** [Makefile:146: all] Error 2

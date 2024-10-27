@@ -1,0 +1,4 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Kinematics.cpp:[m[K In function ‘[01m[KEigen::Vector3d Kinematics::rot2omega(Link*, Eigen::Matrix3d)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Kinematics.cpp:110:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  110 | Vector3d Kinematics::rot2omega([01;35m[KLink* link[m[K, Matrix3d R_ref){
+      |                                [01;35m[K~~~~~~^~~~[m[K

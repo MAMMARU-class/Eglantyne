@@ -85,26 +85,35 @@ void WalkTest::integrate_traj()
 {
     Vector3d body_to_fixed_foot_point;
     Vector3d body_to_swing_foot_point;
+
     while(!COM_traj.empty() && !swing_foot_traj.empty()){
         body_to_fixed_foot_point = -1 * (*COM_traj.begin());
         body_to_fixed_foot_point(0) += FULC_TO_FOOT_JOINT;
         body_to_fixed_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
-        // discard value under 0.1
-        for (int i=0; i<3; i++){
-            body_to_fixed_foot_point(i) = std::floor(body_to_fixed_foot_point(i) * 10) / 10.0; }
+
+        body_to_fixed_foot_point(0) = std::floor(body_to_fixed_foot_point(0) * 10) / 10.0 ;
+        body_to_fixed_foot_point(1) = std::floor(body_to_fixed_foot_point(1) * 10) / 10.0 ;
+        body_to_fixed_foot_point(2) = std::floor(body_to_fixed_foot_point(2) * 10) / 10.0 ;
+
         body_to_fixed_foot_traj.push_back(body_to_fixed_foot_point);
         RCLCPP_INFO(this->get_logger(), "body to fixed leg trajectory: x: %f, y: %f, z:%f ",
             body_to_fixed_foot_point(0), body_to_fixed_foot_point(1), body_to_fixed_foot_point(2));
+
 
         body_to_swing_foot_point = -1 * (*COM_traj.begin()) + (*swing_foot_traj.begin());
         body_to_swing_foot_point(0) += FULC_TO_FOOT_JOINT;
         body_to_swing_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
         // discard value under 0.1
-        for (int i=0; i<3; i++){
-            body_to_swing_foot_point(i) = std::floor(body_to_swing_foot_point(i) * 10) / 10.0; }
+        // for (int i=0; i<3; i++){
+        //     body_to_swing_foot_point(i) = std::floor(body_to_swing_foot_point(i) * 10) / 10.0; }
+        body_to_swing_foot_point(0) = std::floor(body_to_swing_foot_point(0) * 10) / 10.0 ;
+        body_to_swing_foot_point(1) = std::floor(body_to_swing_foot_point(1) * 10) / 10.0 ;
+        body_to_swing_foot_point(2) = std::floor(body_to_swing_foot_point(2) * 10) / 10.0 ;
+
         body_to_swing_foot_traj.push_back(body_to_swing_foot_point);
         RCLCPP_INFO(this->get_logger(), "body to swing leg trajectory: x: %f, y: %f, z:%f ",
             body_to_swing_foot_point(0), body_to_swing_foot_point(1), body_to_swing_foot_point(2));
+
 
         COM_traj.erase(COM_traj.begin());
         swing_foot_traj.erase(swing_foot_traj.begin());
@@ -196,35 +205,21 @@ void WalkTest::setup_link(){
     body.setname("body");
     leg_yaw_right.setDefault("leg_yaw_right", 0,-30,0, 0,0,1, 0, &body);
     leg_roll_right.setDefault("leg_roll_right", 0,0,-22.2, 1,0,0, 0, &leg_yaw_right);
-    leg_upper_right.setDefault("leg_upper_right", 0,0,-26.01, 0,1,0, -25.22, &leg_roll_right);
-    leg_under_right.setDefault("leg_under_right", 0,0,-78.02, 0,1,0, 83.34, &leg_upper_right);
-    foot_pitch_right.setDefault("foot_pitch_right", 0,0,-78.02, 0,1,0, -58.12, &leg_under_right);
+    leg_upper_right.setDefault("leg_upper_right", 0,0,-26.01, 0,1,0, -18.31 * (PI / 180), &leg_roll_right);
+    leg_under_right.setDefault("leg_under_right", 0,0,-78.02, 0,1,0, 65.8 * (PI / 180), &leg_upper_right);
+    foot_pitch_right.setDefault("foot_pitch_right", 0,0,-78.02, 0,1,0, -45.88 * (PI / 180), &leg_under_right);
     foot_roll_right.setDefault("foot_roll_right", 0,0,0, 1,0,0, 0, &foot_pitch_right);
 
     leg_yaw_left.setDefault("leg_yaw_left", 0,30,0, 0,0,1, 0, &body);
     leg_roll_left.setDefault("leg_roll_left", 0,0,-22.2, 1,0,0, 0, &leg_yaw_left);
-    leg_upper_left.setDefault("leg_upper_left", 0,0,-26.01, 0,1,0, -25.22, &leg_roll_left);
-    leg_under_left.setDefault("leg_under_left", 0,0,-78.02, 0,1,0, 83.34, &leg_upper_left);
-    foot_pitch_left.setDefault("foot_pitch_left", 0,0,-78.02, 0,1,0, -58.12, &leg_under_left);
+    leg_upper_left.setDefault("leg_upper_left", 0,0,-26.01, 0,1,0, -18.31 * (PI / 180), &leg_roll_left);
+    leg_under_left.setDefault("leg_under_left", 0,0,-78.02, 0,1,0, 65.8 * (PI / 180), &leg_upper_left);
+    foot_pitch_left.setDefault("foot_pitch_left", 0,0,-78.02, 0,1,0, -45.88 * (PI / 180), &leg_under_left);
     foot_roll_left.setDefault("foot_roll_left", 0,0,0, 1,0,0, 0, &foot_pitch_left);
 
     link_vec = {&leg_yaw_right, &leg_roll_right, &leg_upper_right, &leg_under_right, &foot_pitch_right, &foot_roll_right,
                 &leg_yaw_left,  &leg_roll_left,  &leg_upper_left,  &leg_under_left,  &foot_pitch_left,  &foot_roll_left  };
 }
-
-// void printList(rclcpp::Logger logger, const std::vector<double>& list)
-// {
-//     std::stringstream ss;
-//     ss << "[";
-//     for (size_t i=0; i<list.size(); ++i){
-//         ss << list[i];
-//         if (i < list.size() - 1){
-//             ss << ",";
-//         }
-//     }
-//     ss << "]";
-//     RCLCPP_INFO(logger, "leg positions: %s", ss.str().c_str());
-// }
 
 int main(int argc, char* argv[])
 {

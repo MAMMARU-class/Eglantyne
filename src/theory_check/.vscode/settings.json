@@ -6,6 +6,9 @@
         "core": "cpp",
         "string": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "ostream": "cpp",
+        "*.inc": "cpp",
+        "complex": "cpp"
     }
 }

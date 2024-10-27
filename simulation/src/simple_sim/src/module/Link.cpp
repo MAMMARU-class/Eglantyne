@@ -22,7 +22,9 @@ void Link::setDefaultA(double x, double y, double z){
     A_l = A_l.normalized();
 }
 void Link::setq(double q){
-    if (abs(q) < 1e-4) { q = 0; }
+    // ignore under 0.2 deg
+    if (abs(q) < 3e-3) { q = 0; }
+    q = std::floor(q*100) / 100.0;
     this->q = q;
 }
 void Link::setDefault(string name, double px, double py, double pz, double ax, double ay, double az, double q, Link* parent){
@@ -37,6 +39,7 @@ Vector3d Link::getP_l(){ return P_l; }
 Matrix3d Link::getR_l(){ calcR_l(); return R_l; }
 Vector3d Link::getA_l(){ return A_l; }
 double Link::getq(){ return q; }
+double Link::getq_deg(){ return q * 180 / M_PI; }
 
 void Link::setP_w(Vector3d P_w){ this->P_w = P_w; }
 void Link::setR_w(Matrix3d R_w){ this->R_w = R_w; }
@@ -75,14 +78,11 @@ Matrix4d Link::getState_l(){
 }
 
 void Link::calcR_l(){
-    // angle to radians
-    double angleRadians = q * M_PI / 180.0;
-
     // make rotation matrix using axis matrix
     Matrix3d K;
     K << 0, -A_l.z(), A_l.y(),
          A_l.z(), 0, -A_l.x(),
          -A_l.y(), A_l.x(), 0;
 
-    R_l = Matrix3d::Identity() + sin(angleRadians) * K + (1- cos(angleRadians)) * K * K;
+    R_l = Matrix3d::Identity() + sin(q) * K + (1- cos(q)) * K * K;
 }

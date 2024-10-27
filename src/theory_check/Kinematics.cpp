@@ -43,7 +43,7 @@ void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
         vec_id++;
     }
 
-    for (int i=50; i>0; i--){
+    for (int i=10; i>0; i--){
         forward(link);
         // err : 6 dementional vector (P, w)
         VectorXd err = calcerr(link, P_ref, R_ref); // 6 dementional
@@ -54,9 +54,9 @@ void Kinematics::inverse(Link* link, Vector3d P_ref, Matrix3d R_ref){
             double lambda = 0.5;
             VectorXd deltaq(link_size);
             deltaq = lambda * Jacobi.completeOrthogonalDecomposition().pseudoInverse() * err;
-            // cout << "\n" << 50 - i << " times" << endl;
-            // cout << "norm of error : " << err.norm() << endl;
-            // cout << "delta q : \n" << deltaq << endl;
+            cout << "\n" << 10 - i << " times" << endl;
+            cout << "norm of error : " << err.norm() << endl;
+            cout << "delta q : \n" << deltaq << endl;
 
             q_vec += 180.0 / M_PI * deltaq;
             int link_id = 0;

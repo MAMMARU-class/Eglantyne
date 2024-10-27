@@ -25,7 +25,6 @@ public:
             20ms, std::bind(&PubControl::timer_callback, this));
 
         pub_state_ = this->create_publisher<std_msgs::msg::String>("/motion_trigger", 10);
-        
     }
 private:
     void timer_callback()
@@ -69,7 +68,6 @@ private:
     {
         std::vector< trajectory_msgs::msg::JointTrajectoryPoint > motion_points = motion->points;
         order.insert(order.end(), motion_points.begin(), motion_points.end());
-
     }
 
     std::vector<std::string> joint_names =  {"arm_pitch_right", "arm_roll_right", "hand_right", 
