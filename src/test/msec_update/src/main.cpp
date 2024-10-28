@@ -95,7 +95,7 @@ void loop() {
 また参照できないものを参照することを防ぐために必ずリストの中の最後の値は消さないようにする。
 また、.size()や.empty()も使えないらしいので、イテレータの引き算からリストの長さを計算することにした。
 */
-int aim = 4000;
+
 long currentMillis_1;
 long prevMillis_1 = 0;
 void motor1_update(void *motion_data) {
