@@ -8,6 +8,7 @@ void MotionController::setSerial(IcsHardSerialClass* serial1, IcsHardSerialClass
     // serial1->begin(); serial2->begin();
 }
 void MotionController::init_home(double t){
+    setTrig(STAY);
     std::vector<double> current;
     std::vector<double> home;
     for(auto* link : link_set){
@@ -23,6 +24,30 @@ void MotionController::init_home(double t){
         }
         add_motion(motion);
     }
+    std::vector<double> init_end_home = home;
+    init_end_home.push_back(WALK);
+    add_motion(init_end_home);
+}
+void MotionController::init_zero(double t){
+    setTrig(STAY);
+    std::vector<double> current;
+    std::vector<double> zero;
+    for(auto* link : link_set){
+        current.push_back(link->getq_current());
+        zero.push_back(0.0);
+    }
+    
+    int step_end = t*1000 / CONTROL_CYCLE;
+    for(int step=0; step<step_end; step++){
+        std::vector<double> motion(current.size());
+        for(int id=0; id<current.size(); id++){
+            motion[id] = ( current[id]*( (double)(step_end-step) ) + zero[id]*( (double)(step) ) ) / (double)step_end;
+        }
+        add_motion(motion);
+    }
+    // std::vector<double> init_end_home = zero;
+    // init_end_home.push_back(INIT_HOME);
+    // add_motion(init_end_home);
 }
 
 void MotionController::add_motion(std::vector<double> motion){

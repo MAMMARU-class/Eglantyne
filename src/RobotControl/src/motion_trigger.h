@@ -1,4 +1,5 @@
-#define INIT 1
-#define STAY 2
-#define WALKING 3
-#define WALK_FIRST_STEP 4
+#define STAY 4
+
+#define INIT_HOME 1
+#define INIT_ZERO 3
+#define WALK 6

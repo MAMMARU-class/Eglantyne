@@ -15,30 +15,30 @@ using Eigen::Vector2d; using Eigen::Vector3d;
 #define COEF_B 1
 #define D ( COEF_A * (C-1)*(C-1) + COEF_B * (S/Tc)*(S/Tc) )
 
-double sx=100;
-double sy=60;
+static double sx=100;
+static double sy=60;
 
 // dirction of step n
 // swing leg == left if step_dir == 1
-int step_dir;
-Vector2d m2_step; // foot pos at n-2 step (origin: n-1 step)
-Vector2d aim_step; // foot pos aim of on going walk (n step. origin: n-1 step)
-Vector2d p1_step; // foot pos at n+1 step (origin: n-1 step)
+static int step_dir;
+static Vector2d m2_step; // foot pos at n-2 step (origin: n-1 step)
+static Vector2d aim_step; // foot pos aim of on going walk (n step. origin: n-1 step)
+static Vector2d p1_step; // foot pos at n+1 step (origin: n-1 step)
 
-Vector2d COM_p_start;
-Vector2d COM_v_start;
-Vector2d COM_p_aim;
-Vector2d COM_v_aim;
+static Vector2d COM_p_start;
+static Vector2d COM_v_start;
+static Vector2d COM_p_aim;
+static Vector2d COM_v_aim;
 
-std::vector< Vector3d > COM_traj;
-std::vector< Vector3d > COM_traj_next;
-std::vector< Vector3d > swing_foot_traj;
-std::vector< Vector3d > body_to_fixed_foot_traj;
-std::vector< Vector3d > body_to_swing_foot_traj;
+static std::vector< Vector3d > COM_traj;
+static std::vector< Vector3d > COM_traj_next;
+static std::vector< Vector3d > swing_foot_traj;
+static std::vector< Vector3d > body_to_fixed_foot_traj;
+static std::vector< Vector3d > body_to_swing_foot_traj;
 
-std::vector< std::vector<double> > foot_motion;
+static std::vector< std::vector<double> > foot_motion;
 
-void calc_COM_traj_zero();
+static void calc_COM_traj_zero();
 void MotionController::InitWalkMotion(){
     step_dir   = -1;
     m2_step   << 0, 60;
@@ -51,17 +51,18 @@ void MotionController::InitWalkMotion(){
 }
 
 // foot pos at n+1 step
-void calc_foot_pos();
+static void calc_foot_pos();
 // COM traj at n step
-void calc_COM_traj_next();
+static void calc_COM_traj_next();
 // swing leg traj at n step
-void calc_swing_foot_traj();
+static void calc_swing_foot_traj();
 // integrate COM traj with foot traj
-void integrate_traj();
+static void integrate_traj();
 // convert trajectory to joint angle for each
-void traj_to_motion();
+static void traj_to_motion();
 
-std::vector< std::vector<double> > MotionController::CalcWalkMotion(double joy_sx, double joy_sy){
+void MotionController::oneWalkMotion(double joy_sx, double joy_sy){
+    setTrig(STAY);
     sx = joy_sx; sy = joy_sy;
 
     std::vector<double> arm_angle;
@@ -76,28 +77,30 @@ std::vector< std::vector<double> > MotionController::CalcWalkMotion(double joy_s
 
     COM_traj = COM_traj_next;
     COM_traj_next = {};
-    void calc_foot_pos();
-    void calc_COM_traj_next();
-    void calc_swing_foot_traj();
-    void integrate_traj();
-    void traj_to_motion();
+    calc_foot_pos();
+    calc_COM_traj_next();
+    calc_swing_foot_traj();
+    init_zero(3);
+    // void integrate_traj();
+    // void traj_to_motion();
 
-    std::vector< std::vector<double> > walk_motion_list;
-    while (!foot_motion.empty()){
-        std::vector<double> foot_positions = foot_motion.front();
-        foot_motion.erase(foot_motion.begin());
+    // bool is_flag=true;
+    // while (!foot_motion.empty()){
+    //     std::vector<double> foot_positions = foot_motion.front();
+    //     foot_motion.erase(foot_motion.begin());
         
-        std::vector<double> positions = arm_angle;
-        positions.insert(positions.end(), foot_positions.begin(), foot_positions.end());
-
-        walk_motion_list.push_back(positions);
-    }
-    walk_motion_list.front().push_back(WALK_FIRST_STEP);
-    return walk_motion_list;
+    //     std::vector<double> positions = arm_angle;
+    //     positions.insert(positions.end(), foot_positions.begin(), foot_positions.end());
+    //     if(is_flag){
+    //         positions.push_back(WALK);
+    //         is_flag = false;
+    //     }
+    //     add_motion(positions);
+    // }
 }
 
 
-void calc_foot_pos(){
+static void calc_foot_pos(){
     // shift foot step and com info
     COM_p_start = COM_p_aim - aim_step;
     COM_v_start = COM_v_aim;
@@ -127,7 +130,7 @@ void calc_foot_pos(){
     COM_v_aim(1) = S/Tc * COM_p_start(1) +    C*COM_v_start(1) - S/Tc *aim_step(1);
 }
 
-void calc_COM_traj_zero()
+static void calc_COM_traj_zero()
 {
     double trajy;
     double yp_0 = -sy/2;
@@ -139,7 +142,7 @@ void calc_COM_traj_zero()
     COM_p_aim << 0, -trajy; COM_v_aim << 0, -yv_0;
 }
 
-void calc_COM_traj_next(){
+static void calc_COM_traj_next(){
     double trajx, trajy;
     for(double t=0; t<=Tsup+0.01; t+=CONTROL_CYCLE*0.001){
         trajx = ( COM_p_start(0) - aim_step(0) )*cosh(t/Tc) + Tc*COM_v_start(0)*sinh(t/Tc);
@@ -148,7 +151,7 @@ void calc_COM_traj_next(){
     }
 }
 
-void calc_swing_foot_traj(){
+static void calc_swing_foot_traj(){
     double trajx, trajy, trajz;
     double lx = aim_step(0) - m2_step(0);
     double ly = aim_step(1) - m2_step(1);
@@ -162,7 +165,7 @@ void calc_swing_foot_traj(){
     }
 }
 
-void integrate_traj(double BaseToCOM, double EndToFoot, double FlucToFootJoint){
+static void integrate_traj(double BaseToCOM, double EndToFoot, double FlucToFootJoint){
     Vector3d body_to_fixed_foot_point;
     Vector3d body_to_swing_foot_point;
 
@@ -195,7 +198,7 @@ void integrate_traj(double BaseToCOM, double EndToFoot, double FlucToFootJoint){
     swing_foot_traj = {};
 }
 
-void traj_to_motion(RobotLink* endeffector_right, RobotLink* endeffector_left, std::vector<RobotLink*> link_list){
+static void traj_to_motion(RobotLink* endeffector_right, RobotLink* endeffector_left, std::vector<RobotLink*> link_list){
     Eigen::Matrix3d R_ref;
     R_ref << 1, 0, 0,
              0, 1, 0,

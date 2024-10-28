@@ -14,6 +14,7 @@ public:
     std::vector<RobotLink*> getLinkSet();
 
     void init_home(double t);
+    void init_zero(double t);
     void add_motion(std::vector<double> motion);
     void add_motion_list(std::vector< std::vector<double> > new_motion_list);
     // get next motion from list, and move robot
@@ -31,10 +32,9 @@ public:
 
     // motions
     // basic
-    std::vector< std::vector<double> > home(double t);
 
     void InitWalkMotion();
-    std::vector< std::vector<double> > CalcWalkMotion(double joy_sx, double joy_sy);
+    void oneWalkMotion(double joy_sx, double joy_sy);
 
 
 private:

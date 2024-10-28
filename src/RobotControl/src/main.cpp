@@ -24,35 +24,40 @@ void setup(){
   Eglantyne.setLink();
   krs1.begin(); krs2.begin();
   Eglantyne.init_home(3);
+  // Eglantyne.setTrig(INIT_HOME);
+
+  xTaskCreatePinnedToCore(
+    update, "update", 
+    2048, &Eglantyne, 10, &_spinner, 0 );
 
   // WiFi.begin(ssid, password);
   // while (WiFi.status() != WL_CONNECTED) { delay(500); }
   // if (!client.connect(serverIP, serverPort)){ return; }
   // client.println("connected");
-
-  xTaskCreatePinnedToCore(
-    update, "update", 
-    2048, &Eglantyne, 10, &_spinner, 0 );
 }
 
 void loop(){
   while(true){
     // client.println(Eglantyne.getTrig());
-    // switch (Eglantyne.getTrig()){
-    //   case INIT:
-    //     break;
-    //   case STAY:
-    //     Eglantyne.setTrig(WALK_FIRST_STEP);
-    //     break;
-    //   case WALK_FIRST_STEP:
-    //     Eglantyne.add_motion_list(Eglantyne.CalcWalkMotion(100, 60));
-    //     Eglantyne.setTrig(WALKING);
-    //     break;
+    switch (Eglantyne.getTrig()){
+      case STAY:
+        break;
+      
+      case INIT_HOME:
+        Eglantyne.init_home(3);
+        break;
+      case INIT_ZERO:
+        Eglantyne.init_zero(3);
+        break;
 
-    //   default:
-    //     break;
-    // }
-    delay(20);
+      case WALK:
+        Eglantyne.oneWalkMotion(100, 60);
+        break;
+
+      default:
+        break;
+    }
+    delay(1);
   }
 }
 
