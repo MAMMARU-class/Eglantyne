@@ -13,15 +13,16 @@ IcsHardSerialClass krs2(&Serial1, MYEN2, BAUDRATE, TIMEOUT, MYRX2, MYTX2);
 void setup() {
   krs1.begin();
   krs2.begin();
+
+  krs1.setPos(1, 7500);
+  krs2.setPos(1, 7500);
 }
 
 void loop() {
-    int now1, now2;
-
-    now1 = krs1.setPos(6, 7300);
-    now2 = krs2.setPos(1, 3600);
+    krs1.setPos(1, 7300);
+    krs2.setPos(1, 3600);
     delay(500);
-    now1 = krs1.setPos(6, 7800);
-    now2 = krs2.setPos(1, 10000);
+    krs1.setPos(1, 7800);
+    krs2.setPos(1, 10000);
     delay(500);
 }
