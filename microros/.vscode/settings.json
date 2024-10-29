@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.sdf": "xml",
+        "*.urdf": "xml",
+        "*.xacro": "xml",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
+    }
+}

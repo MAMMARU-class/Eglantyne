@@ -78,12 +78,7 @@ void setup() {
 
 
   // setting of trajectory_msgs/msg/JointTrajectory
-  // set headder
-  trajectory.header.frame_id.data = (char *)malloc(10 * sizeof(char));
-  strcpy(trajectory.header.frame_id.data, "base_link");
-  trajectory.header.frame_id.size = strlen(trajectory.header.frame_id.data);
-  trajectory.header.frame_id.capacity = 10;
-  // initialize points (list)
+  // initialize points
   trajectory.points.size = 5;
   trajectory.points.capacity = 8;
   trajectory.points.data = (JointTrajectoryPoint *)malloc(trajectory.points.capacity * sizeof(JointTrajectoryPoint));
