@@ -66,5 +66,5 @@ void Robot::setLink(){
         &arm_pitch_left, &arm_roll_left, &hand_left,
         &leg_yaw_right, &leg_roll_right, &leg_upper_right, &leg_under_right, &foot_pitch_right, &foot_roll_right,
         &leg_yaw_left, &leg_roll_left, &leg_upper_left, &leg_under_left, &foot_pitch_left, &foot_roll_left };
-}
 
+}

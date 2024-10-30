@@ -17,13 +17,7 @@ public:
     Robot();
     void setSerial(IcsHardSerialClass* serial1, IcsHardSerialClass* serial2);
     void setLink();
-
     void init_home(float t);
-    void init_zero(float t);
-    // void add_motion(vector<double> motion);
-    void add_trajectorypoint_list(vector< vector<double> > new_trajectorypoint_list);
-
-    int next_motion();
     void move_all(vector<double> motion);
 
 private:
@@ -31,7 +25,7 @@ private:
     IcsHardSerialClass* serial1;
     IcsHardSerialClass* serial2;
 
-    vector< JointTrajectoryPoint > trajectorypoint_list;
+    // vector< vector<double> > motion_list;
 
     // link object
     vector<RobotLink*> link_set;
