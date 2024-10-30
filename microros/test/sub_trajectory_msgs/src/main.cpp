@@ -19,6 +19,8 @@
 #endif
 
 #define CONTROL_CYCLE 20
+#define MAX_MOTION 100
+#define LINK_SIZE 18
 
 #define BAUDRATE 115200
 #define TIMEOUT 1000
@@ -54,34 +56,23 @@ void error_loop() {
 }
 
 void subscription_callback(const void * msgin){
-  // const JointTrajectory* msg = (const JointTrajectory *)msgin;
-  pos = 3500;
-  // RCSOFTCHECK(rcl_publish(&rcv_check, &rcv_check_msg, NULL));
+  const JointTrajectory* msg = (const JointTrajectory *)msgin;
+  RCSOFTCHECK(rcl_publish(&rcv_check, &rcv_check_msg, NULL));
 
   // copy received message to trajectory_pub
-  // set headder
-  // trajectory_pub.header.frame_id.data = (char *)malloc(10 * sizeof(char));
-  // strcpy(trajectory_pub.header.frame_id.data, "traj_rcv");
-  // trajectory_pub.header.frame_id.size = strlen(trajectory_pub.header.frame_id.data);
-  // trajectory_pub.header.frame_id.capacity = 10;
-  // // initialize points (list)
-  // trajectory_pub.points.size = msg->points.size;
-  // trajectory_pub.points.capacity = msg->points.capacity;
-  // trajectory_pub.points.data = (JointTrajectoryPoint *)malloc(trajectory_pub.points.capacity * sizeof(JointTrajectoryPoint));
-  // // add position data to points
-  // for(size_t i=0; i<trajectory_pub.points.size; i++){
-  //   trajectory_msgs__msg__JointTrajectoryPoint__init(&trajectory_pub.points.data[i]);
+  // initialize points (list)
+  int points_size = msg->points.size;
+  trajectory_pub.points.data = (JointTrajectoryPoint *)malloc(MAX_MOTION* sizeof(JointTrajectoryPoint));
+  trajectory_pub.points.size = points_size;
+  trajectory_pub.points.capacity = MAX_MOTION;
+  for(int i=0; i<points_size; i++){
+    trajectory_msgs__msg__JointTrajectoryPoint__init(&trajectory_pub.points.data[i]);
+    trajectory_pub.points.data[i].positions.data = msg->points.data[i].positions.data;
+    trajectory_pub.points.data[i].positions.size = msg->points.data[i].positions.size;
+    trajectory_pub.points.data[i].positions.capacity = msg->points.data[i].positions.capacity;
+  }
 
-  //   trajectory_pub.points.data[i].positions.size = msg->points.data[i].positions.size;
-  //   trajectory_pub.points.data[i].positions.capacity = msg->points.data[i].positions.size;
-  //   trajectory_pub.points.data[i].positions.data = (double *)malloc(trajectory_pub.points.data[i].positions.capacity * sizeof(double));
-
-  //   for(size_t j=0; j<trajectory_pub.points.data[i].positions.size; ++j){
-  //     trajectory_pub.points.data[i].positions.data[j] = msg->points.data[i].positions.data[j];
-  //   }
-  // }
-
-  // RCSOFTCHECK(rcl_publish(&publisher, &trajectory_pub, NULL));
+  RCSOFTCHECK(rcl_publish(&publisher, &trajectory_pub, NULL));
 }
 
 void setup() {
@@ -124,6 +115,39 @@ void setup() {
     &executor, &subscriber, &trajectory_rcv, &subscription_callback, ON_NEW_DATA));
   
   rcv_check_msg.data = 0;
+
+  trajectory_rcv.header.frame_id.data = (char * )malloc(5*sizeof(char));
+  trajectory_rcv.header.frame_id.size = 0;
+  trajectory_rcv.header.frame_id.capacity = 1;
+  
+  trajectory_rcv.joint_names.data = (rosidl_runtime_c__String *)malloc(1*sizeof(rosidl_runtime_c__String));
+  trajectory_rcv.joint_names.size = 0;
+  trajectory_rcv.joint_names.capacity = 1;
+  trajectory_rcv.joint_names.data[0].data = (char * )malloc(1*sizeof(char));
+  trajectory_rcv.joint_names.data[0].size = 0;
+  trajectory_rcv.joint_names.data[0].capacity = 1;
+
+  trajectory_rcv.points.data = (trajectory_msgs__msg__JointTrajectoryPoint *)malloc(MAX_MOTION*sizeof(trajectory_msgs__msg__JointTrajectoryPoint));
+  trajectory_rcv.points.size = 0;
+  trajectory_rcv.points.capacity = MAX_MOTION;
+  
+  for(int i=0; i<MAX_MOTION; i++){
+    trajectory_rcv.points.data[i].positions.data = (double *)malloc( (LINK_SIZE+1)*sizeof(double));
+    trajectory_rcv.points.data[i].positions.size = 0;
+    trajectory_rcv.points.data[i].positions.capacity = LINK_SIZE + 1;
+
+    trajectory_rcv.points.data[i].velocities.data = (double * )malloc(1*sizeof(double));
+    trajectory_rcv.points.data[i].velocities.size = 0;
+    trajectory_rcv.points.data[i].velocities.capacity = 1;
+
+    trajectory_rcv.points.data[i].accelerations.data = (double *)malloc(1*sizeof(double));
+    trajectory_rcv.points.data[i].accelerations.size = 0;
+    trajectory_rcv.points.data[i].accelerations.capacity = 1;
+
+    trajectory_rcv.points.data[i].effort.data = (double * )malloc(1*sizeof(double));
+    trajectory_rcv.points.data[i].effort.size = 0;
+    trajectory_rcv.points.data[i].effort.capacity = 1;
+  }
 }
 
 long currentMillis;
