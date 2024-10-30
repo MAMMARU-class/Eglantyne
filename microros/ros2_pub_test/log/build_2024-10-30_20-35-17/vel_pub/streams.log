@@ -1,0 +1,13 @@
+[0.010s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16
+[0.045s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o[0m
+[1.483s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.483s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:23:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+[1.483s]    23 |     [01;31m[Kfor[m[K(int i=0; i<max; i++){
+[1.483s]       |     [01;31m[K^~~[m[K
+[1.485s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:23:18:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[1.485s]    23 |     for(int i=0; [01;31m[Ki[m[K<max; i++){
+[1.485s]       |                  [01;31m[K^[m[K
+[1.973s] gmake[2]: *** [CMakeFiles/simple_vel_pub.dir/build.make:76: CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o] Error 1
+[1.973s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_vel_pub.dir/all] Error 2
+[1.973s] gmake: *** [Makefile:146: all] Error 2
+[1.975s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16

@@ -1,0 +1,17 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:28:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing JointTrajectory = struct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpush_back[m[K’
+   28 |         motion_list.[01;31m[Kpush_back[m[K(pos);
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:36:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing JointTrajectory = struct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpush_back[m[K’
+   36 |         motion_list.[01;31m[Kpush_back[m[K(pos);
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:44:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing JointTrajectory = struct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpush_back[m[K’
+   44 |         motion_list.[01;31m[Kpush_back[m[K(pos);
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:52:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing JointTrajectory = struct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpush_back[m[K’
+   52 |         motion_list.[01;31m[Kpush_back[m[K(pos);
+      |                     [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_vel_pub.dir/build.make:76: CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_vel_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

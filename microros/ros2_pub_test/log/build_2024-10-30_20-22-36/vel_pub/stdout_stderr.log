@@ -1,0 +1,4 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o[0m
+gmake[2]: *** [CMakeFiles/simple_vel_pub.dir/build.make:76: CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_vel_pub.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,12 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:57:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpub[m[K’
+   57 |     motion_list.points.push_back(pos)
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+   58 | 
+   59 |     [32m[Kpub[m[K->publish(motion_list);
+      |     [32m[K~~~[m[K                               
+gmake[2]: *** [CMakeFiles/simple_vel_pub.dir/build.make:76: CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_vel_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

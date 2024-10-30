@@ -1,0 +1,2 @@
+Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16
+Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16

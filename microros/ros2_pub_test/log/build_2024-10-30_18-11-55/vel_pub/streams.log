@@ -1,0 +1,11 @@
+[0.021s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o[0m
+[2.667s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.667s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:61:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ki[m[K’
+[2.667s]    61 |     for(int i=0; i<20[01;31m[K [m[K[32m[Ki[m[K++){
+[2.668s]       |                      [01;31m[K^[m[K[32m[K~[m[K
+[2.668s]       |                      [32m[K;[m[K
+[3.615s] gmake[2]: *** [CMakeFiles/simple_vel_pub.dir/build.make:76: CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o] Error 1
+[3.615s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_vel_pub.dir/all] Error 2
+[3.615s] gmake: *** [Makefile:146: all] Error 2
+[3.619s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16

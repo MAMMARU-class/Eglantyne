@@ -1,0 +1,17 @@
+[33mCMake Warning (dev) at CMakeLists.txt:29 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcp.hpp: No such file or directory
+    6 | #include [01;31m[K"rclcpp/rclcp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simple_vel_pub.dir/build.make:76: CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_vel_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

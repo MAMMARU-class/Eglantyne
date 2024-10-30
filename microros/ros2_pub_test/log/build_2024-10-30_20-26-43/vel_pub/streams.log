@@ -1,0 +1,25 @@
+[0.015s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o[0m
+[3.267s] [100%] [32m[1mLinking CXX executable simple_vel_pub[0m
+[3.384s] [100%] Built target simple_vel_pub
+[3.389s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub -- -j16 -l16
+[3.411s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub
+[3.413s] -- Install configuration: ""
+[3.413s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/lib/vel_pub/simple_vel_pub
+[3.414s] -- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/lib/vel_pub/simple_vel_pub" to ""
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/ament_index/resource_index/package_run_dependencies/vel_pub
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/ament_index/resource_index/parent_prefix_path/vel_pub
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/environment/ament_prefix_path.sh
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/environment/ament_prefix_path.dsv
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/environment/path.sh
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/environment/path.dsv
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/local_setup.bash
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/local_setup.sh
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/local_setup.zsh
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/local_setup.dsv
+[3.414s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/package.dsv
+[3.414s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/ament_index/resource_index/packages/vel_pub
+[3.415s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/cmake/vel_pubConfig.cmake
+[3.415s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/cmake/vel_pubConfig-version.cmake
+[3.415s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub/share/vel_pub/package.xml
+[3.415s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/build/vel_pub

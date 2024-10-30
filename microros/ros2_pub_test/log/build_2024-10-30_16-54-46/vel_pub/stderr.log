@@ -1,0 +1,7 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/src/vel_pub/src/simple_vel_pub.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcp.hpp: No such file or directory
+    6 | #include [01;31m[K"rclcpp/rclcp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simple_vel_pub.dir/build.make:76: CMakeFiles/simple_vel_pub.dir/src/simple_vel_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_vel_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
