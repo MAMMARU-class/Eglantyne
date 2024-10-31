@@ -1,0 +1,53 @@
+[0.009s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.037s] [ 28%] Built target pub_test
+[0.037s] [ 28%] Built target esp_control
+[0.039s] [ 57%] Built target walk_test
+[0.039s] [ 71%] Built target pub_control
+[0.039s] [ 85%] Built target zero_pub
+[0.040s] [ 92%] [32mBuilding CXX object CMakeFiles/squwad_esp.dir/src/test/squwad_esp.cpp.o[0m
+[1.238s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:14:12:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before string constant
+[1.238s]    14 |     ; Node([01;31m[K"squwad test"[m[K), count_(0)
+[1.238s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[1.238s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:14:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+[1.238s]    14 |     ; Node[34m[K([m[K[01;31m[K"[m[K[32m[Ksquwad test"[m[K), count_(0)
+[1.238s]       |           [34m[K~[m[K[01;31m[K^[m[K[32m[K~~~~~~~~~~~~[m[K
+[1.238s]       |            [32m[K)[m[K
+[1.238s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:21:53:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[1.238s]    21 |     void pub_squwad_trajectory(const std_msgs::msg::[01;31m[KInt32[m[K msg){
+[1.238s]       |                                                     [01;31m[K^~~~~[m[K
+[1.238s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:[m[K In member function ‘[01m[Kvoid SquwadTest::pub_squwad_trajectory(int)[m[K’:
+[1.238s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:22:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[Kmsg[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[1.238s]    22 |         if (msg.[01;31m[Kdata[m[K != SQUWAD){ return; }
+[1.238s]       |                 [01;31m[K^~~~[m[K
+[1.243s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_motion_list[m[K’ was not declared in this scope
+[1.243s]    59 |         [01;31m[Kpub_motion_list[m[K->publish(motion);
+[1.243s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.243s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:[m[K At global scope:
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:64:5:[m[K [01;35m[Kwarning: [m[Ksecond argument of ‘[01m[Kint main(int, char***)[m[K’ should be ‘[01m[Kchar **[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+[1.244s]    64 | int [01;35m[Kmain[m[K(int argc, char** argv[])
+[1.244s]       |     [01;35m[K^~~~[m[K
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:[m[K In function ‘[01m[Kint main(int, char***)[m[K’:
+[1.244s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:66:24:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kchar***[m[K’ to ‘[01m[Kconst char* const*[m[K’
+[1.244s]    66 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+[1.244s]       |                        [01;31m[K^~~~[m[K
+[1.244s]       |                        [01;31m[K|[m[K
+[1.244s]       |                        [01;31m[Kchar***[m[K
+[1.244s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.244s]                  from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:6[m[K:
+[1.244s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:77:24:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid rclcpp::init(int, const char* const*, const rclcpp::InitOptions&, rclcpp::SignalHandlerOptions)[m[K’
+[1.244s]    77 |   [01;36m[Kchar const * const * argv[m[K,
+[1.244s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.489s] gmake[2]: *** [CMakeFiles/squwad_esp.dir/build.make:76: CMakeFiles/squwad_esp.dir/src/test/squwad_esp.cpp.o] Error 1
+[1.489s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/squwad_esp.dir/all] Error 2
+[1.489s] gmake: *** [Makefile:146: all] Error 2
+[1.491s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:/home/hibiki/Robomech_HR/Eglantyne/microros/ros2_pub_test/install/vel_pub /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

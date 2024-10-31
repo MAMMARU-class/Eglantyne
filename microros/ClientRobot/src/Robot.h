@@ -8,7 +8,8 @@
 #include "motion_trig.h"
 #include <trajectory_msgs/msg/joint_trajectory.h>
 
-#define CONTROL_CYCLE 50 // ms
+#define CONTROL_CYCLE 20 // ms
+#define LINK_SIZE 18
 using JointTrajectoryPoint = trajectory_msgs__msg__JointTrajectoryPoint;
 using std::vector;
 using std::array;
@@ -18,20 +19,18 @@ public:
     Robot();
     void setSerial(IcsHardSerialClass* serial1, IcsHardSerialClass* serial2);
     void setLink();
-    // vector<float> init_home(float t);
-    array<float, 18> init_home(float t);
-    // void move_all(vector<float> motion);
-    void move_all(array<float, 18> motion);
+    array<float, LINK_SIZE> init_home(float t);
+    array<float, LINK_SIZE> home();
+    array<float, LINK_SIZE> current();
+    void move_all(array<float, LINK_SIZE> motion);
 
 private:
     // serial
     IcsHardSerialClass* serial1;
     IcsHardSerialClass* serial2;
 
-    // vector< vector<float> > motion_list;
-
     // link object
-    vector<RobotLink*> link_set;
+    array<RobotLink*, LINK_SIZE> link_set;
     RobotLink body;
 
     RobotLink arm_pitch_right;

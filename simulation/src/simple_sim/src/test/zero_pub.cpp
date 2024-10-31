@@ -28,10 +28,10 @@ int main(int argc, char** argv)
                           0.0, 0.0, 0.0,
                           0.0, 0.0, 0.0, 0.0, 0., 0.0,
                           0.0, 0.0, 0.0, 0.0, 0., 0.0};
-    std::vector<double> goal = {0.0, 0.0, -0.8,
-                          0.0, 0.0, -0.8,
-                          0.0, 0.0, -0.44, 1.455, -1.014, 0.0,
-                          0.0, 0.0, -0.44, 1.455, -1.014, 0.0};
+    std::vector<double> goal = {0.2, -0.3, -0.8,
+                          0.2, 0.3, -0.8,
+                          0.0, 0.0, -1.8, 2.455, -1.314, 0.0,
+                          0.0, 0.0, -1.8, 2.455, -1.314, 0.0};
     
     
     int max_count = 10;
@@ -45,10 +45,12 @@ int main(int argc, char** argv)
         // for(int j=0; j<18; j++){
         //     positions[j] = (initial[j] * (max_count-count) + goal[j] * count) / max_count;
         // }
-        std::vector<double> positions(link_count);
+        std::vector<double> positions(link_count+1);
         for(int j=0; j<link_count; j++){
             positions[j] = (initial[j] * (max_count-count) + goal[j] * count) / max_count;
         }
+        positions[link_count] = 1;
+        // positions[link_count+1] = 0;
         pos.positions = positions;
         motion.points.push_back(pos);
 

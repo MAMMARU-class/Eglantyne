@@ -1,0 +1,15 @@
+[ 16%] Built target pub_test
+[ 33%] Built target pub_control
+[ 50%] Built target zero_pub
+[ 58%] [32mBuilding CXX object CMakeFiles/esp_control.dir/simenv/controller/esp_control.cpp.o[0m
+[ 91%] Built target walk_test
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/esp_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::timer_callback()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/esp_control.cpp:38:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpositions[m[K’ was not declared in this scope
+   38 |             [01;31m[Kpositions[m[K.points.push_back(pos);
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/esp_control.cpp:41:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kpositions[m[K’ was not declared in this scope
+   41 |         pub_for_esp_ -> publish([01;31m[Kpositions[m[K);
+      |                                 [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/esp_control.dir/build.make:76: CMakeFiles/esp_control.dir/simenv/controller/esp_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/esp_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

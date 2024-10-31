@@ -1,0 +1,5 @@
+[ 16%] Built target pub_test
+[ 33%] Built target pub_control
+[ 41%] [32mBuilding CXX object CMakeFiles/esp_control.dir/simenv/controller/esp_control.cpp.o[0m
+[ 58%] Built target zero_pub
+[ 91%] Built target walk_test

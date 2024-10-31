@@ -3,5 +3,6 @@
 
 #define NO_TRIG 0
 #define WALK 1
+#define SQUWAD 2
 
 #endif

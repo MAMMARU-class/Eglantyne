@@ -52,7 +52,6 @@ private:
         publisher_ -> publish(positions);
     }
 
-    
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr publisher_;
     size_t count_;

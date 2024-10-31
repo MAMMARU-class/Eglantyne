@@ -1,0 +1,49 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:14:12:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before string constant
+   14 |     ; Node([01;31m[K"squwad test"[m[K), count_(0)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:14:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+   14 |     ; Node[34m[K([m[K[01;31m[K"[m[K[32m[Ksquwad test"[m[K), count_(0)
+      |           [34m[K~[m[K[01;31m[K^[m[K[32m[K~~~~~~~~~~~~[m[K
+      |            [32m[K)[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:21:53:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+   21 |     void pub_squwad_trajectory(const std_msgs::msg::[01;31m[KInt32[m[K msg){
+      |                                                     [01;31m[K^~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:61:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   61 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:[m[K In member function ‘[01m[Kvoid SquwadTest::pub_squwad_trajectory(int)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:22:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[Kmsg[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   22 |         if (msg.[01;31m[Kdata[m[K != SQUWAD){ return; }
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_motion_list[m[K’ was not declared in this scope
+   59 |         [01;31m[Kpub_motion_list[m[K->publish(motion);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:[m[K At global scope:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:64:5:[m[K [01;35m[Kwarning: [m[Ksecond argument of ‘[01m[Kint main(int, char***)[m[K’ should be ‘[01m[Kchar **[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+   64 | int [01;35m[Kmain[m[K(int argc, char** argv[])
+      |     [01;35m[K^~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:[m[K In function ‘[01m[Kint main(int, char***)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:66:24:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kchar***[m[K’ to ‘[01m[Kconst char* const*[m[K’
+   66 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+      |                        [01;31m[K^~~~[m[K
+      |                        [01;31m[K|[m[K
+      |                        [01;31m[Kchar***[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/squwad_esp.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:77:24:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid rclcpp::init(int, const char* const*, const rclcpp::InitOptions&, rclcpp::SignalHandlerOptions)[m[K’
+   77 |   [01;36m[Kchar const * const * argv[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/squwad_esp.dir/build.make:76: CMakeFiles/squwad_esp.dir/src/test/squwad_esp.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/squwad_esp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -39,6 +39,9 @@ set(MODULE
 add_executable(pub_control simenv/controller/pub_control.cpp)
 ament_target_dependencies(pub_control rclcpp trajectory_msgs std_msgs)
 
+add_executable(esp_control simenv/controller/esp_control.cpp)
+ament_target_dependencies(esp_control rclcpp trajectory_msgs)
+
 # test codes
 add_executable(pub_test src/test/pub_test.cpp)
 ament_target_dependencies(pub_test rclcpp trajectory_msgs)
@@ -46,13 +49,18 @@ ament_target_dependencies(pub_test rclcpp trajectory_msgs)
 add_executable(zero_pub src/test/zero_pub.cpp)
 ament_target_dependencies(zero_pub rclcpp trajectory_msgs)
 
+add_executable(squwad_esp src/test/squwad_esp.cpp)
+ament_target_dependencies(squwad_esp rclcpp trajectory_msgs std_msgs)
+
 add_executable(walk_test src/test/walk_test.cpp ${MODULE})
 ament_target_dependencies(walk_test rclcpp trajectory_msgs std_msgs)
 
 install(TARGETS
   pub_control
+  esp_control
   pub_test
   zero_pub
+  squwad_esp
   walk_test
   DESTINATION lib/${PROJECT_NAME}/)
 

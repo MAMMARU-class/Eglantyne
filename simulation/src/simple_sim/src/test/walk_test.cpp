@@ -175,6 +175,7 @@ void WalkTest::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
 
     // motion includes { right arm (3), left arm (3), right foot (3), left foot(3) }
     trajectory_msgs::msg::JointTrajectory motion;
+    int count = 0;
     while (!foot_motion.empty()){
         trajectory_msgs::msg::JointTrajectoryPoint pos;
 
@@ -183,6 +184,8 @@ void WalkTest::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
         std::vector<double> positions = arm_angle;
         
         positions.insert(positions.end(), foot_positions.begin(), foot_positions.end());
+        if(count == 5){positions.push_back(WALK);
+        }else{positions.push_back(0);}
         pos.positions = positions;
 
         // print position data
@@ -193,9 +196,10 @@ void WalkTest::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
         RCLCPP_INFO(this->get_logger(), "positions: [%s]", ss.str().c_str());
         
         motion.points.push_back(pos);
+        count++;
     }
     
-    motion.points[5].positions.push_back(WALK);
+    // motion.points[5].positions[19] = WALK;
     pub_motion_list_ -> publish(motion);
 
     // initialize

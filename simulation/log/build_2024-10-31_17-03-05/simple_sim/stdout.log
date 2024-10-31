@@ -1,0 +1,6 @@
+[ 14%] Built target pub_test
+[ 50%] Built target pub_control
+[ 50%] [32mBuilding CXX object CMakeFiles/squwad_esp.dir/src/test/squwad_esp.cpp.o[0m
+[ 50%] Built target esp_control
+[ 64%] Built target zero_pub
+[ 92%] Built target walk_test

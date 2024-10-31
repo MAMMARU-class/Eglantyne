@@ -112,9 +112,8 @@ private:
 
     std::vector< std::vector<double> > foot_motion;
 
-    std::vector<double> arm_angle = {0.0, 0.0, -0.8, 0.0, 0.0, -0.8};
+    std::vector<double> arm_angle = {0.523, -0.349, -0.785, 0.523, 0.349, -0.785};
     
-    // void printList(rclcpp::Logger logger, const std::vector<double>& list);
     void COM_traj_zero();
 
 
