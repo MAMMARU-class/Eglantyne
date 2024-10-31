@@ -15,36 +15,63 @@ int main(int argc, char** argv)
 
     trajectory_msgs::msg::JointTrajectory motion;
 
-    std::vector<double> initial = {0.0, 0.0, -0.8,
-                          0.0, 0.0, -0.8,
-                          0.0, 0.0, -0.32, 1.15, -0.8, 0.0,
-                          0.0, 0.0, -0.32, 1.15, -0.8, 0.0};
+    // std::vector<double> initial = {0.0, 0.0, -0.8,
+    //                       0.0, 0.0, -0.8,
+    //                       0.0, 0.0, -0.32, 1.15, -0.8, 0.0,
+    //                       0.0, 0.0, -0.32, 1.15, -0.8, 0.0};
+    // std::vector<double> goal = {0.0, 0.0, -0.8,
+    //                       0.0, 0.0, -0.8,
+    //                       0.0, 0.0, -0.44, 1.455, -1.014, 0.0,
+    //                       0.0, 0.0, -0.44, 1.455, -1.014, 0.0};
+    
+    std::vector<double> initial = {0.0, 0.0, 0.0,
+                          0.0, 0.0, 0.0,
+                          0.0, 0.0, 0.0, 0.0, 0., 0.0,
+                          0.0, 0.0, 0.0, 0.0, 0., 0.0};
     std::vector<double> goal = {0.0, 0.0, -0.8,
                           0.0, 0.0, -0.8,
                           0.0, 0.0, -0.44, 1.455, -1.014, 0.0,
                           0.0, 0.0, -0.44, 1.455, -1.014, 0.0};
     
-    int max_count = 50;
-    for (int loop=0; loop<50; loop++){
+    
+    int max_count = 10;
+    int link_count = 18;
+    // int msg_per_times = 10;
+    // int msg_count = 0;
+    // for (int loop=0; loop<50; loop++){
     for (int count=0; count<max_count; count++){
         trajectory_msgs::msg::JointTrajectoryPoint pos;
-        std::vector<double> positions(18);
-        for(int j=0; j<18; j++){
+        // std::vector<double> positions(18);
+        // for(int j=0; j<18; j++){
+        //     positions[j] = (initial[j] * (max_count-count) + goal[j] * count) / max_count;
+        // }
+        std::vector<double> positions(link_count);
+        for(int j=0; j<link_count; j++){
             positions[j] = (initial[j] * (max_count-count) + goal[j] * count) / max_count;
         }
         pos.positions = positions;
         motion.points.push_back(pos);
+
+        // if(msg_count == msg_per_times){
+        //     pub->publish(motion);
+        //     motion.points = {};
+        //     msg_count=0;
+        // }else{msg_count++;}
     }
-    for (int count=0; count<max_count; count++){
-        trajectory_msgs::msg::JointTrajectoryPoint pos;
-        std::vector<double> positions(18);
-        for(int j=0; j<18; j++){
-            positions[j] = (goal[j] * (max_count-count) + initial[j] * count) / max_count;
-        }
-        pos.positions = positions;
-        motion.points.push_back(pos);
-    }
-    }
+    // for (int count=0; count<max_count; count++){
+    //     trajectory_msgs::msg::JointTrajectoryPoint pos;
+    //     // std::vector<double> positions(18);
+    //     // for(int j=0; j<18; j++){
+    //     //     positions[j] = (goal[j] * (max_count-count) + initial[j] * count) / max_count;
+    //     // }
+    //     std::vector<double> positions(link_count);
+    //     for(int j=0; j<link_count; j++){
+    //         positions[j] = (initial[j] * (max_count-count) + goal[j] * count) / max_count;
+    //     }
+    //     pos.positions = positions;
+    //     motion.points.push_back(pos);
+    // }
+    // }
     
     pub->publish(motion);
     while (rclcpp::ok()) 

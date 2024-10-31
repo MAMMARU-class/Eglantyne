@@ -1584,10 +1584,10 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
   /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
   /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
   /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Link.h \
   /usr/include/eigen3/Eigen/Dense \
   /usr/include/eigen3/Eigen/Core \
@@ -1796,12 +1796,11 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Kinematics.h \
-  /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Link.h
+  /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/module/Link.h \
+  /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/motion_trig.h
 
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
@@ -1959,8 +1958,6 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
-
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp:
@@ -2038,6 +2035,8 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
 /usr/include/c++/11/cxxabi.h:
 
 /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
+
+/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/motion_trig.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
@@ -2230,6 +2229,8 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
 /opt/ros/humble/include/rcutils/rcutils/time.h:
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
@@ -2740,6 +2741,8 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
@@ -3373,6 +3376,8 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp:
+
 /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
@@ -3548,8 +3553,6 @@ CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o: /home/hibiki/Robomech_HR/Egla
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 

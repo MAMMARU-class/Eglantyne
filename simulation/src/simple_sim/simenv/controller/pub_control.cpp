@@ -6,8 +6,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "trajectory_msgs/msg/joint_trajectory.hpp"
 #include "std_msgs/msg/string.hpp"
-
-#define WALK_TRIG (0) // walk_trig
+#include "std_msgs/msg/int32.hpp"
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -24,15 +23,15 @@ public:
         timer_ = this->create_wall_timer(
             20ms, std::bind(&PubControl::timer_callback, this));
 
-        pub_state_ = this->create_publisher<std_msgs::msg::String>("/motion_trigger", 10);
+        pub_state_ = this->create_publisher<std_msgs::msg::Int32>("/motion_trigger", 10);
     }
 private:
     void timer_callback()
     {
         if(order.empty()){
-            auto msg = std_msgs::msg::String();
-            msg.data = "walk_trig";
-            pub_state_ -> publish(msg);
+            // auto msg = std_msgs::msg::Int32();
+            // msg.data = 1;
+            // pub_state_ -> publish(msg);
             return;
         }
         trajectory_msgs::msg::JointTrajectory positions;
@@ -48,14 +47,9 @@ private:
             RCLCPP_INFO(this->get_logger(), "exception received : %f", motion_trig);
             pos.positions.erase(pos.positions.end());
 
-            switch (int(motion_trig)){
-                case WALK_TRIG:
-                    auto msg = std_msgs::msg::String();
-                    msg.data = "walk_trig";
-                    pub_state_ -> publish(msg);
-                    break;
-            }
-
+            auto msg = std_msgs::msg::Int32();
+            msg.data = (int)motion_trig;
+            pub_state_->publish(msg);
         }
 
         // publishe position data
@@ -78,7 +72,7 @@ private:
     
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_positions_;
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_state_;
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr pub_state_;
     rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory>::SharedPtr sub_motion_list_;
 };
 

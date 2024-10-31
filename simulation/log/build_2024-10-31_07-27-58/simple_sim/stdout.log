@@ -1,0 +1,4 @@
+[ 20%] Built target pub_control
+[ 40%] Built target pub_test
+[ 50%] [32mBuilding CXX object CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.o[0m
+[ 90%] Built target walk_test

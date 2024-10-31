@@ -12,6 +12,7 @@
 #include "trajectory_msgs/msg/joint_trajectory_point.h"
 // other needed libs
 #include <vector>
+#include <deque>
 #include <mutex>
 // my libs
 #include "IcsHardSerialClass.h"
@@ -22,14 +23,22 @@
 #error This example is only avaliable for Arduino framework with serial transport.
 #endif
 
+// using
+using std::array;
+using std::vector;
+using std::deque;
+
 // control info
 #define MAX_MOTION 60
+// #define MAX_MOTION_SAVE 200
 #define LINK_SIZE 18
+#define EXP_RATIO 10 // the ratio of motion expansion
 bool serial_onboard = false;
 std::mutex mtx; // stop reading motion_list while publishing to motor
 TaskHandle_t _spinner; // other thread
 void update_servo(void *param);
-std::vector< std::vector<double> > motion_list;
+// vector< vector<float> > motion_list;
+deque< array<float, 20> > motion_list;
 
 // motor serial
 #define BAUDRATE 115200
@@ -47,9 +56,12 @@ using Int32 = std_msgs__msg__Int32;
 // recv
 JointTrajectory trajectory_rcv;
 void trajectory_rcv_init();
+trajectory_msgs__msg__JointTrajectoryPoint points[MAX_MOTION];
+double positions[MAX_MOTION][LINK_SIZE+2];
 // trig
 int motion_trigger_check;
 Int32 motion_trigger;
+Int32 state;
 
 // rcl needed
 rclc_executor_t executor;
@@ -58,9 +70,10 @@ rcl_allocator_t rclc_allocator;
 rcl_node_t node;
 rcl_timer_t timer;
 
-// microros body
+// pub sub
 rcl_subscription_t traj_msg_subscriber;
 rcl_publisher_t motion_trigger_pubrisher;
+rcl_publisher_t state_publisher;
 
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
 #define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
@@ -69,17 +82,26 @@ rcl_publisher_t motion_trigger_pubrisher;
 void error_loop() { while(1) { delay(100); } }
 
 // update motoin_list
+array<float, 20> motion_get;
 void update_motions(const void * msgin){
+
+  state.data = 2;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
+
   const JointTrajectory* msg = (const JointTrajectory *)msgin;
   int points_size = msg->points.size;
 
   for(int i=0; i<points_size; i++){
-    std::vector<double> motion;
+    // vector<float> motion;
     for(int link=0; link<msg->points.data[i].positions.size; link++){
-      motion.push_back(msg->points.data[i].positions.data[link]);
+      // motion.push_back((float)msg->points.data[i].positions.data[link]);
+      motion_get[link] = (float)msg->points.data[i].positions.data[link];
     }
-    motion_list.push_back(motion);
+    motion_list.push_back(motion_get);
   }
+
+  state.data = 3;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 }
 
 void setup() {
@@ -108,16 +130,28 @@ void setup() {
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
     "/motion_trigger"));
 
+  RCCHECK(rclc_publisher_init_default(
+    &state_publisher,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+    "/robot_state"));
+
+
   // create executor
   RCCHECK(rclc_executor_init(&executor, &support.context, 1, &rclc_allocator));
   RCCHECK(rclc_executor_add_subscription(
     &executor, &traj_msg_subscriber, &trajectory_rcv, &update_motions, ON_NEW_DATA));
 
   trajectory_rcv_init();
-  
+  // motion_list = (vector< array<float, 20> >* )malloc(MAX_MOTION_SAVE*sizeof(vector< array<float, 20> >));
+
+  state.data = 0;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
+
   xTaskCreatePinnedToCore(
     update_servo, "update_servo", 
     2048, NULL, 10, &_spinner, 0 );
+
 }
 
 // spin node if motor doesn't move
@@ -140,24 +174,54 @@ void update_servo(void *param){
   Eglantyne.setSerial(&krs1, &krs2);
   Eglantyne.setLink();
   krs1.begin(); krs2.begin();
-  Eglantyne.init_home(3);
+  // vector<float> motion_aim;
+  array<float, 18> motion_ex;
+  array<float, 18> motion;
+  array<float, 18> motion_aim;
+  array<float, 20> motion_read;
+  motion_aim = Eglantyne.init_home(3);
 
+  int count = 0;
   while(true) {
     currentMillis = millis();
     if(currentMillis - prevMillis > CONTROL_CYCLE){
-      // client.println("update");
       prevMillis = currentMillis;
-      if(!motion_list.empty()){
-        std::vector<double> motion;
+      // if(!motion_list.empty()){
+      if( !(motion_list.empty() && count == 0) ){
+        // vector<float> motion;
+        // mtx.lock();
+        // motion_aim = motion_list.front(); motion_list.erase(motion_list.begin());
+        // mtx.unlock();
 
-        mtx.lock();
-        motion = motion_list.front(); motion_list.erase(motion_list.begin());
-        mtx.unlock();
-
-        if(motion.size() > LINK_SIZE){
-          motion_trigger_check = motion.back();
+        if(count == 0){
+          motion_ex = motion_aim;
+          mtx.lock();
+          motion_read = motion_list.front();
+          // motion_list.erase(motion_list.begin());
+          motion_list.pop_front();
+          mtx.unlock();
+          for(int i=0; i<LINK_SIZE; i++){
+            motion_aim[i] = motion_read[i];
+          }
+          // if(motion_read.size() > LINK_SIZE){
+          //   motion_trigger_check = motion_read.back();
+          // }
         }
+
+        for(int i=0; i<LINK_SIZE; i++){
+          motion[i] = ( motion_ex[i]*(EXP_RATIO-count) + motion_aim[i]*count ) / EXP_RATIO;
+          // motion[i] = motion_aim[i];
+        }
+        count++;
+        if(count == EXP_RATIO){
+          count = 0;
+        }
+
+        // if(motion.size() > LINK_SIZE){
+        //   motion_trigger_check = motion.back();
+        // }
         serial_onboard = true;
+        // Eglantyne.move_all(motion_aim);
         Eglantyne.move_all(motion);
         serial_onboard = false;
 
@@ -170,36 +234,15 @@ void update_servo(void *param){
 
 // initialize message buffer
 void trajectory_rcv_init(){
-  trajectory_rcv.header.frame_id.data = (char * )malloc(5*sizeof(char));
-  trajectory_rcv.header.frame_id.size = 0;
-  trajectory_rcv.header.frame_id.capacity = 1;
-  
-  trajectory_rcv.joint_names.data = (rosidl_runtime_c__String *)malloc(1*sizeof(rosidl_runtime_c__String));
-  trajectory_rcv.joint_names.size = 0;
-  trajectory_rcv.joint_names.capacity = 1;
-  trajectory_rcv.joint_names.data[0].data = (char * )malloc(1*sizeof(char));
-  trajectory_rcv.joint_names.data[0].size = 0;
-  trajectory_rcv.joint_names.data[0].capacity = 1;
-
-  trajectory_rcv.points.data = (trajectory_msgs__msg__JointTrajectoryPoint *)malloc(MAX_MOTION*sizeof(trajectory_msgs__msg__JointTrajectoryPoint));
+  // trajectory_rcv.points.data = (trajectory_msgs__msg__JointTrajectoryPoint *)malloc(MAX_MOTION*sizeof(trajectory_msgs__msg__JointTrajectoryPoint));
+  trajectory_rcv.points.data = points;
   trajectory_rcv.points.size = 0;
   trajectory_rcv.points.capacity = MAX_MOTION;
   
   for(int i=0; i<MAX_MOTION; i++){
-    trajectory_rcv.points.data[i].positions.data = (double *)malloc( (LINK_SIZE+1)*sizeof(double));
+    // trajectory_rcv.points.data[i].positions.data = (double *)malloc( (LINK_SIZE+1)*sizeof(double));
+    trajectory_rcv.points.data[i].positions.data = positions[i];
     trajectory_rcv.points.data[i].positions.size = 0;
     trajectory_rcv.points.data[i].positions.capacity = LINK_SIZE + 1;
-
-    trajectory_rcv.points.data[i].velocities.data = (double * )malloc(1*sizeof(double));
-    trajectory_rcv.points.data[i].velocities.size = 0;
-    trajectory_rcv.points.data[i].velocities.capacity = 1;
-
-    trajectory_rcv.points.data[i].accelerations.data = (double *)malloc(1*sizeof(double));
-    trajectory_rcv.points.data[i].accelerations.size = 0;
-    trajectory_rcv.points.data[i].accelerations.capacity = 1;
-
-    trajectory_rcv.points.data[i].effort.data = (double * )malloc(1*sizeof(double));
-    trajectory_rcv.points.data[i].effort.size = 0;
-    trajectory_rcv.points.data[i].effort.capacity = 1;
   }
 }

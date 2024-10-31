@@ -157,11 +157,10 @@ void WalkTest::traj_to_motion()
     body_to_swing_foot_traj = {};
 }
 
-void WalkTest::pub_walk_trajectory(const std_msgs::msg::String msg)
+void WalkTest::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
 {
+    if(msg.data != WALK){ return; }
     if (COM_traj_next.empty()){ COM_traj_zero(); }
-    std::string motion_trig = msg.data;
-    if (motion_trig != "walk_trig"){ return; }
 
     COM_traj = COM_traj_next;
     COM_traj_next = {};
@@ -196,7 +195,7 @@ void WalkTest::pub_walk_trajectory(const std_msgs::msg::String msg)
         motion.points.push_back(pos);
     }
     
-    (*motion.points.begin()).positions.push_back(WALK_TRIG);
+    motion.points[5].positions.push_back(WALK);
     pub_motion_list_ -> publish(motion);
 
     // initialize

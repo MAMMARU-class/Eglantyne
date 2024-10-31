@@ -1,0 +1,7 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/test/zero_pub.cpp:30:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kint[m[K’
+   30 |     [01;31m[Kint[m[K msg_count = 0;
+      |     [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/zero_pub.dir/build.make:76: CMakeFiles/zero_pub.dir/src/test/zero_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/zero_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

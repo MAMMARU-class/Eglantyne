@@ -8,24 +8,27 @@
 #include "motion_trig.h"
 #include <trajectory_msgs/msg/joint_trajectory.h>
 
-#define CONTROL_CYCLE 20 // ms
+#define CONTROL_CYCLE 50 // ms
 using JointTrajectoryPoint = trajectory_msgs__msg__JointTrajectoryPoint;
 using std::vector;
+using std::array;
 
 class Robot{
 public:
     Robot();
     void setSerial(IcsHardSerialClass* serial1, IcsHardSerialClass* serial2);
     void setLink();
-    void init_home(float t);
-    void move_all(vector<double> motion);
+    // vector<float> init_home(float t);
+    array<float, 18> init_home(float t);
+    // void move_all(vector<float> motion);
+    void move_all(array<float, 18> motion);
 
 private:
     // serial
     IcsHardSerialClass* serial1;
     IcsHardSerialClass* serial2;
 
-    // vector< vector<double> > motion_list;
+    // vector< vector<float> > motion_list;
 
     // link object
     vector<RobotLink*> link_set;

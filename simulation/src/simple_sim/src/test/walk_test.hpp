@@ -8,13 +8,13 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "trajectory_msgs/msg/joint_trajectory.hpp"
-#include "std_msgs/msg/string.hpp"
+// #include "std_msgs/msg/string.hpp"
+#include "std_msgs/msg/int32.hpp"
 #include "../module/Link.h"
 #include "../module/Kinematics.h"
+#include "../motion/motion_trig.h"
 
 // step firsts with right foot and x defference = 0
-
-#define WALK_TRIG 0 // walk_trig
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -50,7 +50,7 @@ public:
         setup_link();
 
         pub_motion_list_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/motion_list_command", 10);
-        sub_trig_ = this->create_subscription<std_msgs::msg::String>(
+        sub_trig_ = this->create_subscription<std_msgs::msg::Int32>(
             "/motion_trigger", 10, std::bind(&WalkTest::pub_walk_trajectory, this, _1));
 
         RCLCPP_INFO(this->get_logger(), "done with node setup");
@@ -68,7 +68,7 @@ private:
     void traj_to_motion();
 
     // publish motion set
-    void pub_walk_trajectory(const std_msgs::msg::String msg);
+    void pub_walk_trajectory(const std_msgs::msg::Int32 msg);
 
     Link body;
     Link leg_yaw_right;
@@ -119,6 +119,6 @@ private:
 
 
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_motion_list_;
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_trig_;
+    rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr sub_trig_;
 };
 
