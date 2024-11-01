@@ -18,9 +18,10 @@ void OmuniDirWalk::calc_foot_pos()
     m2_step = -aim_step;
     aim_step = p1_step - aim_step;
 
-    if(step_dir > 0 && dy > 0){dy = 0;
-    }else if(step_dir < 0 && dy < 0){dy = 0;}
-    sy += dy;
+    // if(step_dir > 0 && dy < 0){dy = 0;
+    // }else if(step_dir < 0 && dy > 0){dy = 0;}
+    sy = DEFALUT_Y+(step_dir*dy);
+    if(sy < DEFALUT_Y){ sy=DEFALUT_Y; }
 
     Vector2d ofs{sx, -step_dir*sy};
     // Vector2d ofs{sx, -step_dir*sy};
@@ -45,6 +46,7 @@ void OmuniDirWalk::calc_foot_pos()
     COM_p_aim(1) = C    * COM_p_start(1) + Tc*S*COM_v_start(1) + (1-C)*aim_step(1);
     COM_v_aim(1) = S/Tc * COM_p_start(1) +    C*COM_v_start(1) - S/Tc *aim_step(1);
 
+    RCLCPP_INFO(this->get_logger(), "sx : %f, dy : %f", sx, dy);
     RCLCPP_INFO(this->get_logger(), "n-2     step: x: %f, y: %f", m2_step(0),  m2_step(1));
     RCLCPP_INFO(this->get_logger(), "n (aim) step: x: %f, y: %f", aim_step(0), aim_step(1));
     RCLCPP_INFO(this->get_logger(), "n+1     step: x: %f, y: %f", p1_step(0),  p1_step(1));
@@ -201,11 +203,11 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
         pos.positions = positions;
 
         // print position data
-        std::stringstream ss;
-        for (size_t i=0; i<positions.size(); ++i){
-            ss << positions[i];
-            if (i < positions.size() - 1){ ss << ", "; }}
-        RCLCPP_INFO(this->get_logger(), "positions: [%s]", ss.str().c_str());
+        // std::stringstream ss;
+        // for (size_t i=0; i<positions.size(); ++i){
+        //     ss << positions[i];
+        //     if (i < positions.size() - 1){ ss << ", "; }}
+        // RCLCPP_INFO(this->get_logger(), "positions: [%s]", ss.str().c_str());
         
         motion.points.push_back(pos);
         count++;

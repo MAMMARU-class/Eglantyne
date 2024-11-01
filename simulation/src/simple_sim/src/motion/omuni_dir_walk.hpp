@@ -43,7 +43,7 @@ using Eigen::Vector2d; using Eigen::Vector3d;
 
 #define DEFALUT_Y (80)
 #define X_MAX 100
-#define Y_MAX 100
+#define Y_MAX 50
 #define THETA_MAX 45
 
 class OmuniDirWalk : public rclcpp::Node
@@ -98,7 +98,7 @@ private:
     std::vector<Link*> link_vec;
 
     // changeble variables
-    double sx=50;
+    double sx=0;
     double dy=0;
     double sy=DEFALUT_Y;
     double theta;

@@ -1,0 +1,55 @@
+[ 11%] Built target squwad_esp
+[ 22%] Built target pub_control
+[ 33%] Built target zero_pub
+[ 55%] Built target walk_test
+[ 66%] Built target esp_control
+[ 77%] Built target pub_test
+[ 83%] [32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::calc_foot_pos()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OmuniDirWalk[m[K’ has no member named ‘[01m[Kget_logge[m[K’; did you mean ‘[01m[Kget_logger[m[K’?
+   48 |     RCLCPP_INFO(this->[01;31m[Kget_logge[m[K(), "sx : %f, dy : %f", sx, dy);
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OmuniDirWalk[m[K’ has no member named ‘[01m[Kget_logge[m[K’; did you mean ‘[01m[Kget_logger[m[K’?
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:48:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   48 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logge(), "sx : %f, dy : %f", sx, dy);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:48:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   48 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logge(), "sx : %f, dy : %f", sx, dy);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:48:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   48 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logge(), "sx : %f, dy : %f", sx, dy);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1[m[K:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OmuniDirWalk[m[K’ has no member named ‘[01m[Kget_logge[m[K’; did you mean ‘[01m[Kget_logger[m[K’?
+   48 |     RCLCPP_INFO(this->[01;31m[Kget_logge[m[K(), "sx : %f, dy : %f", sx, dy);
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OmuniDirWalk[m[K’ has no member named ‘[01m[Kget_logge[m[K’; did you mean ‘[01m[Kget_logger[m[K’?
+   48 |     RCLCPP_INFO(this->[01;31m[Kget_logge[m[K(), "sx : %f, dy : %f", sx, dy);
+      |                       [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
