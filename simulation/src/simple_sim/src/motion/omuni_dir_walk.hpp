@@ -18,7 +18,7 @@
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
-using Eigen::Vector2d; using Eigen::Vector3d;
+using Eigen::Vector2d; using Eigen::Vector3d; using Eigen::Vector4d;
 using Eigen::Matrix2d;
 
 #define INTERVAL 20 // ms
@@ -45,7 +45,7 @@ using Eigen::Matrix2d;
 #define DEFALUT_Y (80)
 #define X_MAX 100
 #define Y_MAX 50
-#define THETA_MAX 40
+#define THETA_MAX (45 * M_PI / 180)
 
 class OmuniDirWalk : public rclcpp::Node
 {
@@ -99,10 +99,10 @@ private:
     std::vector<Link*> link_vec;
 
     // changeble variables
-    double sx;
+    double dx;
     double dy;
+    double dtheta;
     double sy;
-    double theta;
 
     // dirction of step n
     // swing leg == left if step_dir == 1
@@ -111,18 +111,23 @@ private:
     Vector2d aim_step; // foot pos aim of on going walk (n step. origin: n-1 step)
     Vector2d p1_step; // foot pos at n+1 step (origin: n-1 step)
 
+    double m2_theta;
+    double aim_theta;
+    double p1_theta;
+
     Vector2d COM_p_start;
     Vector2d COM_v_start;
     Vector2d COM_p_aim;
     Vector2d COM_v_aim;
 
-    Matrix2d XYRot;
+    Matrix2d m_aim_XYRot;
+    Matrix2d p1_XYRot;
 
-    std::vector< Vector3d > COM_traj;
-    std::vector< Vector3d > COM_traj_next;
-    std::vector< Vector3d > swing_foot_traj;
-    std::vector< Vector3d > body_to_fixed_foot_traj;
-    std::vector< Vector3d > body_to_swing_foot_traj;
+    std::vector< Vector4d > COM_traj;
+    std::vector< Vector4d > COM_traj_next;
+    std::vector< Vector4d > swing_foot_traj;
+    std::vector< Vector4d > body_to_fixed_foot_traj;
+    std::vector< Vector4d > body_to_swing_foot_traj;
 
     std::vector< std::vector<double> > foot_motion;
 
