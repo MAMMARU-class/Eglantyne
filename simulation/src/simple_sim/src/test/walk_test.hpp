@@ -20,14 +20,14 @@ using namespace std::chrono_literals;
 using std::placeholders::_1;
 using Eigen::Vector2d; using Eigen::Vector3d;
 
-#define INTERVAL 20 // ms
+#define INTERVAL 80 // ms
 
 // fixed variables
 #define Z 237.4 // grand to COM
 #define BASE_TO_COM 40.0
 #define END_TO_FOOT 37.4
-#define FULC_TO_FOOT_JOINT -33
-#define H 15.0 // foot height while walking 
+#define FULC_TO_FOOT_JOINT -28
+#define H 25.0 // foot height while walking 
 #define G (9.81 * 1000) // mm/s^2
 #define PI 3.1415
 
@@ -89,8 +89,8 @@ private:
     std::vector<Link*> link_vec;
 
     // changeble variables
-    double sx=100;
-    double sy=60;
+    double sx=50;
+    double sy=80;
 
     // dirction of step n
     // swing leg == left if step_dir == 1

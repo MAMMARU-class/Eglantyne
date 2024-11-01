@@ -36,7 +36,7 @@ private:
                             0.0, 0.0, -1.8, 2.455, -1.314, 0.0,
                             0.0, 0.0, -1.8, 2.455, -1.314, 0.0};
         
-        int max_count = 20;
+        int max_count = 3;
         int link_count = 18;
 
         for (int count=0; count<max_count; count++){
@@ -45,7 +45,9 @@ private:
             for(int j=0; j<link_count; j++){
                 positions[j] = (initial[j] * (max_count-count) + goal[j] * count) / max_count;
             }
-            positions[link_count] = 0;
+            if(count == 1){positions[link_count] = SQUWAD;
+            }else{positions[link_count] = 0;}
+            
             pos.positions = positions;
             motion.points.push_back(pos);
         }

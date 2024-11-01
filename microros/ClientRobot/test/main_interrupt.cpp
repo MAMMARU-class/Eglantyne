@@ -34,7 +34,8 @@ using std::deque;
 int comp_ratio;
 bool serial_onboard = false;
 std::mutex mtx; // stop reading motion_list while publishing to motor
-TaskHandle_t _spinner[2]; // other thread
+TaskHandle_t _rclc_spinner;
+TaskHandle_t _servo_spinner;
 void update_servo(void *param);
 void update_rclc(void *param);
 // vector< vector<float> > motion_list;
@@ -68,7 +69,7 @@ rclc_executor_t executor;
 rclc_support_t support;
 rcl_allocator_t rclc_allocator;
 rcl_node_t node;
-rcl_timer_t timer;
+// rcl_timer_t timer;
 
 // pub sub
 rcl_subscription_t traj_msg_subscriber;
@@ -77,6 +78,19 @@ rcl_publisher_t state_publisher;
 
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
 #define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
+
+// timer
+#define _TIMERINTERRUPT_LOGLEVEL_ 4
+#include "ESP32_New_TimerInterrupt.h"
+#define PIN_D19 19
+bool IRAM_ATTR TimerHandler(void * timerNo);
+#define TIMER_INTERVAL_MS 1000
+ESP32Timer ITimer0(0);
+
+array<float, LINK_SIZE> motion_ex;
+array<float, LINK_SIZE> motion;
+array<float, LINK_SIZE> motion_aim;
+array<float, LINK_SIZE+1> motion_read;
 
 // Error handle loop
 void error_loop() { while(1) { delay(100); } }
@@ -92,18 +106,9 @@ void update_motions(const void * msgin){
   int points_size = msg->points.size;
 
   for(int i=0; i<points_size; i++){
-    // vector<float> motion;
     for(int link=0; link<msg->points.data[i].positions.size; link++){
-      // motion.push_back((float)msg->points.data[i].positions.data[link]);
       motion_get[link] = (float)msg->points.data[i].positions.data[link];    
     }
-
-    // motion_trigger.data = (int)msg->points.data[i].positions.data[LINK_SIZE];
-    // RCSOFTCHECK(rcl_publish(&motion_trigger_pubrisher, &motion_trigger, NULL));
-    // motion_trigger.data = (int)msg->points.data[i].positions.data[LINK_SIZE+1];
-    // RCSOFTCHECK(rcl_publish(&motion_trigger_pubrisher, &motion_trigger, NULL));
-    // motion_trigger_check = 0;
-
     motion_list.push_back(motion_get);
   }
 
@@ -114,12 +119,9 @@ void update_motions(const void * msgin){
 void setup() {
   set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.38.177", 8888);
   delay(2000);
-
   rclc_allocator = rcl_get_default_allocator();
-
   //create init_options
   RCCHECK(rclc_support_init(&support, 0, NULL, &rclc_allocator));
-
   // create node
   RCCHECK(rclc_node_init_default(&node, "micro_ros_platformio_node", "", &support));
 
@@ -136,13 +138,11 @@ void setup() {
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
     "/motion_trigger"));
-
   RCCHECK(rclc_publisher_init_default(
     &state_publisher,
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
     "/robot_state"));
-
 
   // create executor
   RCCHECK(rclc_executor_init(&executor, &support.context, 1, &rclc_allocator));
@@ -154,44 +154,88 @@ void setup() {
   state.data = 0;
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 
-  xTaskCreatePinnedToCore(
-    update_servo, "update_servo", 
-    2048, NULL, 10, &_spinner[0], 0 );
+  // xTaskCreatePinnedToCore(
+  //   update_servo, "update_servo", 
+  //   2048, NULL, 10, &_servo_spinner, 0 );
 
   xTaskCreatePinnedToCore(
     update_rclc, "update_rclc", 
-    2048, NULL, 1, &_spinner[1], 0 );
+    2048, NULL, 1, &_rclc_spinner, 0 );
+  
+  state.data = 1;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
+
+  // timer
+  pinMode(PIN_D19, OUTPUT);
+  if(ITimer0.attachInterruptInterval(TIMER_INTERVAL_MS*1000, TimerHandler)){
+    state.data = 2;
+    RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
+  }
+
+  Eglantyne.setSerial(&krs1, &krs2);
+  Eglantyne.setLink();
+  krs1.begin(); krs2.begin();
+  motion_ex = Eglantyne.current();
+  motion_aim = Eglantyne.init_home(3);
 }
 
-// spin node if motor doesn't move
-void loop() {
-  // while(serial_onboard){delay(100);}
-  // RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
-  // if(motion_trigger_check != 0){
-  //   motion_trigger.data = (int)motion_trigger_check;
-  //   RCSOFTCHECK(rcl_publish(&motion_trigger_pubrisher, &motion_trigger, NULL));
-  //   motion_trigger_check = 0;
-  // }
-  // delay(100);
-}
+void loop() {delay(10);}
 
 void update_rclc(void *param){
   while(true){
-  while(serial_onboard){delay(5);}
-  RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(5)));
-  if(motion_trigger_check != 0){
-    motion_trigger.data = (int)motion_trigger_check;
-    RCSOFTCHECK(rcl_publish(&motion_trigger_pubrisher, &motion_trigger, NULL));
-    motion_trigger_check = 0;
-  }
-  delay(5);
+    RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(5)));
+    if(motion_trigger_check != 0){
+      motion_trigger.data = (int)motion_trigger_check;
+      RCSOFTCHECK(rcl_publish(&motion_trigger_pubrisher, &motion_trigger, NULL));
+      motion_trigger_check = 0;
+    }
+    delay(10);
   }
 }
+
+
+int servo_control_count = 0;
+void IRAM_ATTR onTimer(){
+  state.data = 9;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
+  // if( !(motion_list.empty() && servo_control_count == 0) ){
+  //   if(servo_control_count == 0){
+  //     motion_ex = motion_aim;
+  //     mtx.lock();
+  //     motion_read = motion_list.front(); motion_list.pop_front();
+  //     mtx.unlock();
+  //     for(int i=0; i<LINK_SIZE; i++){
+  //       motion_aim[i] = motion_read[i];
+  //     }
+  //     if(motion_read[LINK_SIZE] != 0){
+  //       motion_trigger_check = motion_read[LINK_SIZE];
+  //     }
+  //   }
+
+  //   for(int i=0; i<LINK_SIZE; i++){
+  //     motion[i] = ( motion_ex[i]*(COMP_RATIO_DEFALUT-servo_control_count) + motion_aim[i]*servo_control_count ) / COMP_RATIO_DEFALUT;
+  //   }
+  //   servo_control_count++;
+  //   // if(servo_control_count >= COMP_RATIO_DEFALUT*comp_ratio){
+  //   if(servo_control_count == COMP_RATIO_DEFALUT){
+  //     servo_control_count = 0;
+  //   }
+
+  //   // if(motion.size() > LINK_SIZE){
+  //   //   motion_trigger_check = motion.back();
+  //   // }
+  //   serial_onboard = true;
+  //   Eglantyne.move_all(motion);
+  //   serial_onboard = false;
+  // }
+}
+
 
 // update motor position every CONTROL_CYCLE ms
 long currentMillis;
 long prevMillis = 0;
 void update_servo(void *param){
+  // vTaskSuspend(_rclc_spinner);
   // init robot
   Eglantyne.setSerial(&krs1, &krs2);
   Eglantyne.setLink();
@@ -202,6 +246,7 @@ void update_servo(void *param){
   array<float, LINK_SIZE> motion_aim;
   array<float, LINK_SIZE+1> motion_read;
   motion_aim = Eglantyne.init_home(3);
+  // vTaskResume(_rclc_spinner);
   // int init_max = 3000 / (CONTROL_CYCLE*5);
   // for(int i=0; i<init_max; i++){
   //   array<float, LINK_SIZE+1> init_motion;
@@ -250,6 +295,7 @@ void update_servo(void *param){
         delay(1);
       }else{delay(1);}
     delay(1);
+    // vTaskResume(_rclc_spinner);
     }
   }
 }
@@ -265,4 +311,21 @@ void trajectory_rcv_init(){
     trajectory_rcv.points.data[i].positions.size = 0;
     trajectory_rcv.points.data[i].positions.capacity = LINK_SIZE+1;
   }
+}
+
+
+
+
+bool IRAM_ATTR TimerHandler(void * timerNo)
+{
+	static bool toggle0 = false;
+
+	//timer interrupt toggles pin PIN_D19
+  digitalWrite(19, toggle0);
+	toggle0 = !toggle0;
+
+  state.data = 3;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
+  
+	return true;
 }
