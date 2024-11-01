@@ -2,6 +2,7 @@
 using std::cosh; using std::sinh;
 using std::cos;  using std::sin;
 using Eigen::Vector2d; using Eigen::Vector3d;
+using Eigen::Matrix2d;
 
 void OmuniDirWalk::update_joy_order(const sensor_msgs::msg::Joy msg){
     this->sx = X_MAX*msg.axes[1];
@@ -11,6 +12,9 @@ void OmuniDirWalk::update_joy_order(const sensor_msgs::msg::Joy msg){
 
 void OmuniDirWalk::calc_foot_pos()
 {
+    if( theta/abs(theta) == step_dir/abs(step_dir) ){ theta=0; }
+    XYRot << cos(theta), -sin(theta),
+             sin(theta),  cos(theta);
     // shift foot step and com info
     COM_p_start = COM_p_aim - aim_step;
     COM_v_start = COM_v_aim;
@@ -174,7 +178,14 @@ void OmuniDirWalk::traj_to_motion()
 void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
 {
     if(msg.data != WALK){ return; }
-    if (COM_traj_next.empty()){ COM_traj_zero(); }
+    if (COM_traj_next.empty()){
+        sx = 0; sy = DEFALUT_Y; theta = 0;
+        step_dir = -1;
+        m2_step << 0, DEFALUT_Y;
+        aim_step << 0, DEFALUT_Y;
+        p1_step << 0, 0;
+        COM_traj_zero();
+    }
 
     COM_traj = COM_traj_next;
     COM_traj_next = {};
