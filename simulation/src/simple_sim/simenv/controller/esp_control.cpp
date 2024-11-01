@@ -11,6 +11,8 @@
 using namespace std::chrono_literals;
 using std::placeholders::_1;
 
+#define MAX_MOTION 10
+
 class PubControl : public rclcpp::Node
 {
 public:
@@ -30,7 +32,7 @@ private:
 
         trajectory_msgs::msg::JointTrajectory motion_list;
         // max 10 motion
-        for(int i=0; i<10; i++){
+        for(int i=0; i<MAX_MOTION; i++){
             if(!order.empty()){
                 trajectory_msgs::msg::JointTrajectoryPoint pos;
                 pos = order.front();

@@ -29,8 +29,8 @@ using std::vector;
 using std::deque;
 
 // control info
-#define MAX_MOTION 60
-#define COMP_RATIO_DEFALUT 5 // the ratio of motion completion
+#define MAX_MOTION 10
+#define COMP_RATIO_DEFALUT 4 // the ratio of motion completion
 int comp_ratio;
 bool serial_onboard = false;
 std::mutex mtx; // stop reading motion_list while publishing to motor

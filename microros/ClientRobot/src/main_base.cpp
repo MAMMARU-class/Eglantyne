@@ -25,8 +25,8 @@
 
 // using
 using std::array;
-using std::vector;
 using std::deque;
+using std::vector;
 
 // control info
 #define MAX_MOTION 11
@@ -39,12 +39,12 @@ TaskHandle_t _servo_spinner;
 void update_servo(void *param);
 void update_rclc(void *param);
 // vector< vector<float> > motion_list;
-deque< array<float, LINK_SIZE+1> > motion_list;
+deque<array<float, LINK_SIZE + 1>> motion_list;
 
 // motor serial
 #define BAUDRATE 115200
 #define TIMEOUT 1000
-IcsHardSerialClass krs1(&Serial,  MYEN1, BAUDRATE, TIMEOUT, MYRX1, MYTX1);
+IcsHardSerialClass krs1(&Serial, MYEN1, BAUDRATE, TIMEOUT, MYRX1, MYTX1);
 IcsHardSerialClass krs2(&Serial1, MYEN2, BAUDRATE, TIMEOUT, MYRX2, MYTX2);
 
 // robot control object
@@ -58,7 +58,7 @@ using Int32 = std_msgs__msg__Int32;
 JointTrajectory trajectory_rcv;
 void trajectory_rcv_init();
 trajectory_msgs__msg__JointTrajectoryPoint points[MAX_MOTION];
-double positions[MAX_MOTION][LINK_SIZE+1];
+double positions[MAX_MOTION][LINK_SIZE + 1];
 // trig
 float motion_trigger_check;
 Int32 motion_trigger;
@@ -76,25 +76,47 @@ rcl_subscription_t traj_msg_subscriber;
 rcl_publisher_t motion_trigger_pubrisher;
 rcl_publisher_t state_publisher;
 
-#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
-#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
+#define RCCHECK(fn)              \
+  {                              \
+    rcl_ret_t temp_rc = fn;      \
+    if ((temp_rc != RCL_RET_OK)) \
+    {                            \
+      error_loop();              \
+    }                            \
+  }
+#define RCSOFTCHECK(fn)          \
+  {                              \
+    rcl_ret_t temp_rc = fn;      \
+    if ((temp_rc != RCL_RET_OK)) \
+    {                            \
+    }                            \
+  }
 
 // Error handle loop
-void error_loop() { while(1) { delay(100); } }
+void error_loop()
+{
+  while (1)
+  {
+    delay(100);
+  }
+}
 
 // update motoin_list
-array<float, LINK_SIZE+1> motion_get;
-void update_motions(const void * msgin){
+array<float, LINK_SIZE + 1> motion_get;
+void update_motions(const void *msgin)
+{
 
   state.data = 2;
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 
-  const JointTrajectory* msg = (const JointTrajectory *)msgin;
+  const JointTrajectory *msg = (const JointTrajectory *)msgin;
   int points_size = msg->points.size;
 
-  for(int i=0; i<points_size; i++){
-    for(int link=0; link<msg->points.data[i].positions.size; link++){
-      motion_get[link] = (float)msg->points.data[i].positions.data[link];    
+  for (int i = 0; i < points_size; i++)
+  {
+    for (int link = 0; link < msg->points.data[i].positions.size; link++)
+    {
+      motion_get[link] = (float)msg->points.data[i].positions.data[link];
     }
     motion_list.push_back(motion_get);
   }
@@ -103,38 +125,39 @@ void update_motions(const void * msgin){
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 }
 
-void setup() {
+void setup()
+{
   set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.38.177", 8888);
   delay(2000);
   rclc_allocator = rcl_get_default_allocator();
-  //create init_options
+  // create init_options
   RCCHECK(rclc_support_init(&support, 0, NULL, &rclc_allocator));
   // create node
   RCCHECK(rclc_node_init_default(&node, "micro_ros_platformio_node", "", &support));
 
   // create subscription
   RCCHECK(rclc_subscription_init_default(
-    &traj_msg_subscriber,
-    &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(trajectory_msgs, msg, JointTrajectory),
-    "/motion_list_command_for_esp"));
+      &traj_msg_subscriber,
+      &node,
+      ROSIDL_GET_MSG_TYPE_SUPPORT(trajectory_msgs, msg, JointTrajectory),
+      "/motion_list_command_for_esp"));
 
   // create publisher
   RCCHECK(rclc_publisher_init_default(
-    &motion_trigger_pubrisher,
-    &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
-    "/motion_trigger"));
+      &motion_trigger_pubrisher,
+      &node,
+      ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+      "/motion_trigger"));
   RCCHECK(rclc_publisher_init_default(
-    &state_publisher,
-    &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
-    "/robot_state"));
+      &state_publisher,
+      &node,
+      ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+      "/robot_state"));
 
   // create executor
   RCCHECK(rclc_executor_init(&executor, &support.context, 1, &rclc_allocator));
   RCCHECK(rclc_executor_add_subscription(
-    &executor, &traj_msg_subscriber, &trajectory_rcv, &update_motions, ON_NEW_DATA));
+      &executor, &traj_msg_subscriber, &trajectory_rcv, &update_motions, ON_NEW_DATA));
 
   trajectory_rcv_init();
 
@@ -142,42 +165,46 @@ void setup() {
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 
   xTaskCreatePinnedToCore(
-    update_servo, "update_servo", 
-    2048, NULL, 10, &_servo_spinner, 0 );
-
+      update_servo, "update_servo",
+      2048, NULL, configMAX_PRIORITIES, &_servo_spinner, 0);
   xTaskCreatePinnedToCore(
-    update_rclc, "update_rclc", 
-    2048, NULL, 1, &_rclc_spinner, 0 );
+      update_rclc, "update_rclc",
+      2048, NULL, 1, &_rclc_spinner, 0);
 }
 
-void loop() {delay(10);}
+void loop() { delay(10); }
 
-void update_rclc(void *param){
-  while(true){
+void update_rclc(void *param)
+{
+  while (true)
+  {
     RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(5)));
-    if(motion_trigger_check != 0){
+    if (motion_trigger_check != 0)
+    {
       motion_trigger.data = (int)motion_trigger_check;
       RCSOFTCHECK(rcl_publish(&motion_trigger_pubrisher, &motion_trigger, NULL));
       motion_trigger_check = 0;
+      // vTaskDelay(pdMS_TO_TICKS(2000));
     }
-    delay(10);
   }
 }
 
 // update motor position every CONTROL_CYCLE ms
 long currentMillis;
 long prevMillis = 0;
-void update_servo(void *param){
+void update_servo(void *param)
+{
   // vTaskSuspend(_rclc_spinner);
   // init robot
   Eglantyne.setSerial(&krs1, &krs2);
   Eglantyne.setLink();
-  krs1.begin(); krs2.begin();
+  krs1.begin();
+  krs2.begin();
   // vector<float> motion_aim;
   array<float, LINK_SIZE> motion_ex = Eglantyne.current();
   array<float, LINK_SIZE> motion;
   array<float, LINK_SIZE> motion_aim;
-  array<float, LINK_SIZE+1> motion_read;
+  array<float, LINK_SIZE + 1> motion_read;
   motion_aim = Eglantyne.init_home(3);
   // vTaskResume(_rclc_spinner);
   // int init_max = 3000 / (CONTROL_CYCLE*5);
@@ -190,31 +217,40 @@ void update_servo(void *param){
   // }
 
   int count = 0;
-  while(true) {
+  while (true)
+  {
     currentMillis = millis();
-    if(currentMillis - prevMillis > CONTROL_CYCLE){
+    if (currentMillis - prevMillis > CONTROL_CYCLE)
+    {
       prevMillis = currentMillis;
       // if(!motion_list.empty()){
-      if( !(motion_list.empty() && count == 0) ){
-        if(count == 0){
+      if (!(motion_list.empty() && count == 0))
+      {
+        if (count == 0)
+        {
           motion_ex = motion_aim;
           mtx.lock();
-          motion_read = motion_list.front(); motion_list.pop_front();
+          motion_read = motion_list.front();
+          motion_list.pop_front();
           mtx.unlock();
-          for(int i=0; i<LINK_SIZE; i++){
+          for (int i = 0; i < LINK_SIZE; i++)
+          {
             motion_aim[i] = motion_read[i];
           }
-          if(motion_read[LINK_SIZE] != 0){
+          if (motion_read[LINK_SIZE] != 0)
+          {
             motion_trigger_check = motion_read[LINK_SIZE];
           }
         }
 
-        for(int i=0; i<LINK_SIZE; i++){
-          motion[i] = ( motion_ex[i]*(COMP_RATIO_DEFALUT-count) + motion_aim[i]*count ) / COMP_RATIO_DEFALUT;
+        for (int i = 0; i < LINK_SIZE; i++)
+        {
+          motion[i] = (motion_ex[i] * (COMP_RATIO_DEFALUT - count) + motion_aim[i] * count) / COMP_RATIO_DEFALUT;
         }
         count++;
         // if(count >= COMP_RATIO_DEFALUT*comp_ratio){
-        if(count == COMP_RATIO_DEFALUT){
+        if (count == COMP_RATIO_DEFALUT)
+        {
           count = 0;
         }
 
@@ -226,22 +262,28 @@ void update_servo(void *param){
         serial_onboard = false;
 
         delay(1);
-      }else{delay(1);}
-    delay(1);
-    // vTaskResume(_rclc_spinner);
+      }
+      else
+      {
+        delay(1);
+      }
+      delay(1);
+      // vTaskResume(_rclc_spinner);
     }
   }
 }
 
 // initialize message buffer
-void trajectory_rcv_init(){
+void trajectory_rcv_init()
+{
   trajectory_rcv.points.data = points;
   trajectory_rcv.points.size = 0;
   trajectory_rcv.points.capacity = MAX_MOTION;
-  
-  for(int i=0; i<MAX_MOTION; i++){
+
+  for (int i = 0; i < MAX_MOTION; i++)
+  {
     trajectory_rcv.points.data[i].positions.data = positions[i];
     trajectory_rcv.points.data[i].positions.size = 0;
-    trajectory_rcv.points.data[i].positions.capacity = LINK_SIZE+1;
+    trajectory_rcv.points.data[i].positions.capacity = LINK_SIZE + 1;
   }
 }

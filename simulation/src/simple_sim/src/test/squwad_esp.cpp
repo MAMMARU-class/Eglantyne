@@ -47,7 +47,7 @@ private:
             }
             if(count == 1){positions[link_count] = SQUWAD;
             }else{positions[link_count] = 0;}
-            
+
             pos.positions = positions;
             motion.points.push_back(pos);
         }
