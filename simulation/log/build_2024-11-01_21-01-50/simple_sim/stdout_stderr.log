@@ -1,0 +1,33 @@
+[ 12%] Built target squwad_esp
+[ 37%] Built target pub_control
+[ 37%] Built target pub_test
+[ 50%] Built target esp_control
+[ 62%] Built target zero_pub
+[ 87%] Built target walk_test
+[ 93%] [32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o[0m
+[100%] [32m[1mLinking CXX executable omuni_dir_walk[0m
+/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::traj_to_motion()':
+omuni_dir_walk.cpp:(.text+0x2389): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x2403): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x2482): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x24fc): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x261f): undefined reference to `Link::getq()'
+/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::setup_link()':
+omuni_dir_walk.cpp:(.text+0x35e7): undefined reference to `Link::setname(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3699): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x374b): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3805): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x38bf): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3979): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o:omuni_dir_walk.cpp:(.text+0x3a23): more undefined references to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)' follow
+/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::OmuniDirWalk()':
+omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x10c): undefined reference to `Link::Link()'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x121): undefined reference to `Link::Link()'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x136): undefined reference to `Link::Link()'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x14b): undefined reference to `Link::Link()'
+/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x160): undefined reference to `Link::Link()'
+/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o:omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x175): more undefined references to `Link::Link()' follow
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:183: omuni_dir_walk] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

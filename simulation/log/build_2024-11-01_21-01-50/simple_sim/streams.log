@@ -1,0 +1,35 @@
+[0.008s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.037s] [ 12%] Built target squwad_esp
+[0.038s] [ 37%] Built target pub_control
+[0.038s] [ 37%] Built target pub_test
+[0.040s] [ 50%] Built target esp_control
+[0.041s] [ 62%] Built target zero_pub
+[0.042s] [ 87%] Built target walk_test
+[0.042s] [ 93%] [32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o[0m
+[7.871s] [100%] [32m[1mLinking CXX executable omuni_dir_walk[0m
+[8.192s] /usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::traj_to_motion()':
+[8.192s] omuni_dir_walk.cpp:(.text+0x2389): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+[8.192s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x2403): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+[8.193s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x2482): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+[8.193s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x24fc): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'
+[8.193s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x261f): undefined reference to `Link::getq()'
+[8.194s] /usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::setup_link()':
+[8.194s] omuni_dir_walk.cpp:(.text+0x35e7): undefined reference to `Link::setname(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+[8.194s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3699): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+[8.194s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x374b): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+[8.194s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3805): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+[8.194s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x38bf): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+[8.195s] /usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3979): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'
+[8.195s] /usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o:omuni_dir_walk.cpp:(.text+0x3a23): more undefined references to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)' follow
+[8.196s] /usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::OmuniDirWalk()':
+[8.196s] omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x10c): undefined reference to `Link::Link()'
+[8.196s] /usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x121): undefined reference to `Link::Link()'
+[8.196s] /usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x136): undefined reference to `Link::Link()'
+[8.196s] /usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x14b): undefined reference to `Link::Link()'
+[8.196s] /usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x160): undefined reference to `Link::Link()'
+[8.197s] /usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o:omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x175): more undefined references to `Link::Link()' follow
+[8.230s] collect2: error: ld returned 1 exit status
+[8.231s] gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:183: omuni_dir_walk] Error 1
+[8.231s] gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+[8.231s] gmake: *** [Makefile:146: all] Error 2
+[8.233s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

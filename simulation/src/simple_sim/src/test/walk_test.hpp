@@ -20,7 +20,7 @@ using namespace std::chrono_literals;
 using std::placeholders::_1;
 using Eigen::Vector2d; using Eigen::Vector3d;
 
-#define INTERVAL 160 // ms
+#define INTERVAL 20 // ms
 
 // fixed variables
 #define Z 237.4 // grand to COM

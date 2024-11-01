@@ -1,0 +1,7 @@
+[ 11%] Built target zero_pub
+[ 22%] Built target esp_control
+[ 33%] Built target pub_control
+[ 55%] Built target walk_test
+[ 66%] Built target squwad_esp
+[ 77%] Built target pub_test
+[ 83%] [32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o[0m

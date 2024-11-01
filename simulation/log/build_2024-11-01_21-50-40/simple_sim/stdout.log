@@ -1,0 +1,7 @@
+[ 11%] Built target zero_pub
+[ 22%] Built target esp_control
+[ 33%] Built target pub_test
+[ 55%] Built target omuni_dir_walk
+[ 77%] Built target walk_test
+[ 88%] Built target squwad_esp
+[ 94%] [32mBuilding CXX object CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.o[0m

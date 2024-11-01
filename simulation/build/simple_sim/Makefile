@@ -224,6 +224,19 @@ esp_control/fast:
 .PHONY : esp_control/fast
 
 #=============================================================================
+# Target rules for targets named omuni_dir_walk
+
+# Build rule for target.
+omuni_dir_walk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omuni_dir_walk
+.PHONY : omuni_dir_walk
+
+# fast build rule for target.
+omuni_dir_walk/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/build
+.PHONY : omuni_dir_walk/fast
+
+#=============================================================================
 # Target rules for targets named pub_test
 
 # Build rule for target.
@@ -328,6 +341,7 @@ src/module/Kinematics.o: src/module/Kinematics.cpp.o
 
 # target to build an object file
 src/module/Kinematics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/module/Kinematics.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.o
 .PHONY : src/module/Kinematics.cpp.o
 
@@ -336,6 +350,7 @@ src/module/Kinematics.i: src/module/Kinematics.cpp.i
 
 # target to preprocess a source file
 src/module/Kinematics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/module/Kinematics.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.i
 .PHONY : src/module/Kinematics.cpp.i
 
@@ -344,6 +359,7 @@ src/module/Kinematics.s: src/module/Kinematics.cpp.s
 
 # target to generate assembly for a file
 src/module/Kinematics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/module/Kinematics.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Kinematics.cpp.s
 .PHONY : src/module/Kinematics.cpp.s
 
@@ -352,6 +368,7 @@ src/module/Link.o: src/module/Link.cpp.o
 
 # target to build an object file
 src/module/Link.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/module/Link.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Link.cpp.o
 .PHONY : src/module/Link.cpp.o
 
@@ -360,6 +377,7 @@ src/module/Link.i: src/module/Link.cpp.i
 
 # target to preprocess a source file
 src/module/Link.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/module/Link.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Link.cpp.i
 .PHONY : src/module/Link.cpp.i
 
@@ -368,8 +386,33 @@ src/module/Link.s: src/module/Link.cpp.s
 
 # target to generate assembly for a file
 src/module/Link.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/module/Link.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/src/module/Link.cpp.s
 .PHONY : src/module/Link.cpp.s
+
+src/motion/omuni_dir_walk.o: src/motion/omuni_dir_walk.cpp.o
+.PHONY : src/motion/omuni_dir_walk.o
+
+# target to build an object file
+src/motion/omuni_dir_walk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o
+.PHONY : src/motion/omuni_dir_walk.cpp.o
+
+src/motion/omuni_dir_walk.i: src/motion/omuni_dir_walk.cpp.i
+.PHONY : src/motion/omuni_dir_walk.i
+
+# target to preprocess a source file
+src/motion/omuni_dir_walk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.i
+.PHONY : src/motion/omuni_dir_walk.cpp.i
+
+src/motion/omuni_dir_walk.s: src/motion/omuni_dir_walk.cpp.s
+.PHONY : src/motion/omuni_dir_walk.s
+
+# target to generate assembly for a file
+src/motion/omuni_dir_walk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.s
+.PHONY : src/motion/omuni_dir_walk.cpp.s
 
 src/test/pub_test.o: src/test/pub_test.cpp.o
 .PHONY : src/test/pub_test.o
@@ -483,6 +526,7 @@ help:
 	@echo "... simple_sim_uninstall"
 	@echo "... uninstall"
 	@echo "... esp_control"
+	@echo "... omuni_dir_walk"
 	@echo "... pub_control"
 	@echo "... pub_test"
 	@echo "... squwad_esp"
@@ -500,6 +544,9 @@ help:
 	@echo "... src/module/Link.o"
 	@echo "... src/module/Link.i"
 	@echo "... src/module/Link.s"
+	@echo "... src/motion/omuni_dir_walk.o"
+	@echo "... src/motion/omuni_dir_walk.i"
+	@echo "... src/motion/omuni_dir_walk.s"
 	@echo "... src/test/pub_test.o"
 	@echo "... src/test/pub_test.i"
 	@echo "... src/test/pub_test.s"

@@ -1,0 +1,32 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/pub_control.cpp:[m[K In member function ‘[01m[Kvoid PubControl::timer_callback()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/pub_control.cpp:40:58:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::JointTrajectoryPoint_(int)[m[K’
+   40 |         trajectory_msgs::msg::JointTrajectoryPoint pos(18[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp:7[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/pub_control.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:46:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<ContainerAllocator>::JointTrajectoryPoint_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   46 |   explicit [01;36m[KJointTrajectoryPoint_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:46:61:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std::allocator<void>&[m[K’
+   46 |   explicit JointTrajectoryPoint_([01;36m[Kconst ContainerAllocator & _alloc[m[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/joint_trajectory.hpp:7[m[K,
+                 from [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/pub_control.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:40:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<ContainerAllocator>::JointTrajectoryPoint_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   40 |   explicit [01;36m[KJointTrajectoryPoint_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:40:76:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Krosidl_runtime_cpp::MessageInitialization[m[K’
+   40 | tTrajectoryPoint_([01;36m[Krosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL[m[K)
+      |                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::JointTrajectoryPoint_(const trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&)[m[K’
+   36 | struct [01;36m[KJointTrajectoryPoint_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >::JointTrajectoryPoint_(trajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Ktrajectory_msgs::msg::JointTrajectoryPoint_<std::allocator<void> >&&[m[K’
+gmake[2]: *** [CMakeFiles/pub_control.dir/build.make:76: CMakeFiles/pub_control.dir/simenv/controller/pub_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/pub_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

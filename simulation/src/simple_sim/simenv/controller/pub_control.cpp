@@ -23,7 +23,7 @@ public:
         timer_ = this->create_wall_timer(
             20ms, std::bind(&PubControl::timer_callback, this));
 
-        pub_state_ = this->create_publisher<std_msgs::msg::Int32>("/motion_trigger", 10);
+        pub_trig_ = this->create_publisher<std_msgs::msg::Int32>("/motion_trigger", 10);
     }
 private:
     void timer_callback()
@@ -31,25 +31,28 @@ private:
         if(order.empty()){
             // auto msg = std_msgs::msg::Int32();
             // msg.data = 1;
-            // pub_state_ -> publish(msg);
+            // pub_trig_ -> publish(msg);
             return;
         }
         trajectory_msgs::msg::JointTrajectory positions;
         positions.joint_names = this->joint_names;
 
         trajectory_msgs::msg::JointTrajectoryPoint pos;
-        pos = order.front();
+        std::vector<double> positions_temp(18);
+        pos.positions = positions_temp;
+        for(int i=0; i<18; i++){
+            pos.positions[i] = order[0].positions[i];
+        }
+        pos.positions[3] *= -1;
+        pos.positions[11] *= -1;
+        pos.positions[17] *= -1;
+        double motion_trig = order[0].positions[18];
         order.erase(order.begin());
 
-        // publish motion state message
-        if (sizeof(pos.positions) / sizeof(pos.positions[0]) > 18){
-            double motion_trig = pos.positions.back();
-            RCLCPP_INFO(this->get_logger(), "exception received : %f", motion_trig);
-            pos.positions.erase(pos.positions.end());
-
+        if (motion_trig != 0){
             auto msg = std_msgs::msg::Int32();
             msg.data = (int)motion_trig;
-            pub_state_->publish(msg);
+            pub_trig_->publish(msg);
         }
 
         // publishe position data
@@ -72,7 +75,7 @@ private:
     
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_positions_;
-    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr pub_state_;
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr pub_trig_;
     rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory>::SharedPtr sub_motion_list_;
 };
 

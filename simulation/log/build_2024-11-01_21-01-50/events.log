@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.000490] (-) JobUnselected: {'identifier': 'champ'}
+[0.000591] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000653] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000672] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000690] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000708] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000725] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000742] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000759] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.000775] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000792] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000809] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000825] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000842] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000858] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000874] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000891] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000907] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000923] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000939] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.000956] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.000972] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.000988] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.001003] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.001019] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.001035] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.001051] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.001069] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.001088] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.006028] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.006587] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.007135] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5498'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpqdrokehiidf_18534'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1660,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc69ce73_236d_4d40_91ae_163cc758587c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6CKFW2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.037629] (simple_sim) StdoutLine: {'line': b'[ 12%] Built target squwad_esp\n'}
+[0.038754] (simple_sim) StdoutLine: {'line': b'[ 37%] Built target pub_control\n'}
+[0.038903] (simple_sim) StdoutLine: {'line': b'[ 37%] Built target pub_test\n'}
+[0.041184] (simple_sim) StdoutLine: {'line': b'[ 50%] Built target esp_control\n'}
+[0.041640] (simple_sim) StdoutLine: {'line': b'[ 62%] Built target zero_pub\n'}
+[0.042888] (simple_sim) StdoutLine: {'line': b'[ 87%] Built target walk_test\n'}
+[0.042941] (simple_sim) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o\x1b[0m\n'}
+[0.099887] (-) TimerEvent: {}
+[0.200102] (-) TimerEvent: {}
+[0.300317] (-) TimerEvent: {}
+[0.400669] (-) TimerEvent: {}
+[0.501010] (-) TimerEvent: {}
+[0.601260] (-) TimerEvent: {}
+[0.701616] (-) TimerEvent: {}
+[0.801888] (-) TimerEvent: {}
+[0.902217] (-) TimerEvent: {}
+[1.002459] (-) TimerEvent: {}
+[1.102694] (-) TimerEvent: {}
+[1.202993] (-) TimerEvent: {}
+[1.303249] (-) TimerEvent: {}
+[1.403509] (-) TimerEvent: {}
+[1.503750] (-) TimerEvent: {}
+[1.604072] (-) TimerEvent: {}
+[1.704312] (-) TimerEvent: {}
+[1.804592] (-) TimerEvent: {}
+[1.904874] (-) TimerEvent: {}
+[2.005135] (-) TimerEvent: {}
+[2.105417] (-) TimerEvent: {}
+[2.205643] (-) TimerEvent: {}
+[2.305911] (-) TimerEvent: {}
+[2.406162] (-) TimerEvent: {}
+[2.506490] (-) TimerEvent: {}
+[2.606717] (-) TimerEvent: {}
+[2.706953] (-) TimerEvent: {}
+[2.807258] (-) TimerEvent: {}
+[2.907500] (-) TimerEvent: {}
+[3.007714] (-) TimerEvent: {}
+[3.108050] (-) TimerEvent: {}
+[3.208310] (-) TimerEvent: {}
+[3.308574] (-) TimerEvent: {}
+[3.408806] (-) TimerEvent: {}
+[3.509069] (-) TimerEvent: {}
+[3.609304] (-) TimerEvent: {}
+[3.709580] (-) TimerEvent: {}
+[3.809839] (-) TimerEvent: {}
+[3.910057] (-) TimerEvent: {}
+[4.010385] (-) TimerEvent: {}
+[4.110616] (-) TimerEvent: {}
+[4.210871] (-) TimerEvent: {}
+[4.311088] (-) TimerEvent: {}
+[4.411275] (-) TimerEvent: {}
+[4.511472] (-) TimerEvent: {}
+[4.611716] (-) TimerEvent: {}
+[4.711960] (-) TimerEvent: {}
+[4.812210] (-) TimerEvent: {}
+[4.912470] (-) TimerEvent: {}
+[5.012702] (-) TimerEvent: {}
+[5.112935] (-) TimerEvent: {}
+[5.213199] (-) TimerEvent: {}
+[5.313471] (-) TimerEvent: {}
+[5.413689] (-) TimerEvent: {}
+[5.513939] (-) TimerEvent: {}
+[5.614185] (-) TimerEvent: {}
+[5.714408] (-) TimerEvent: {}
+[5.814618] (-) TimerEvent: {}
+[5.914875] (-) TimerEvent: {}
+[6.015102] (-) TimerEvent: {}
+[6.115398] (-) TimerEvent: {}
+[6.215620] (-) TimerEvent: {}
+[6.315969] (-) TimerEvent: {}
+[6.416312] (-) TimerEvent: {}
+[6.516555] (-) TimerEvent: {}
+[6.616797] (-) TimerEvent: {}
+[6.717049] (-) TimerEvent: {}
+[6.817291] (-) TimerEvent: {}
+[6.917536] (-) TimerEvent: {}
+[7.017779] (-) TimerEvent: {}
+[7.118018] (-) TimerEvent: {}
+[7.218234] (-) TimerEvent: {}
+[7.318457] (-) TimerEvent: {}
+[7.418714] (-) TimerEvent: {}
+[7.519010] (-) TimerEvent: {}
+[7.619221] (-) TimerEvent: {}
+[7.719450] (-) TimerEvent: {}
+[7.819686] (-) TimerEvent: {}
+[7.872288] (simple_sim) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable omuni_dir_walk\x1b[0m\n'}
+[7.919787] (-) TimerEvent: {}
+[8.020124] (-) TimerEvent: {}
+[8.120383] (-) TimerEvent: {}
+[8.193144] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::traj_to_motion()':\n"}
+[8.193304] (simple_sim) StderrLine: {'line': b"omuni_dir_walk.cpp:(.text+0x2389): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'\n"}
+[8.193373] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x2403): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'\n"}
+[8.193632] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x2482): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'\n"}
+[8.193877] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x24fc): undefined reference to `Kinematics::inverse(Link*, Eigen::Matrix<double, 3, 1, 0, 3, 1>, Eigen::Matrix<double, 3, 3, 0, 3, 3>)'\n"}
+[8.194082] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x261f): undefined reference to `Link::getq()'\n"}
+[8.194580] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::setup_link()':\n"}
+[8.194676] (simple_sim) StderrLine: {'line': b"omuni_dir_walk.cpp:(.text+0x35e7): undefined reference to `Link::setname(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'\n"}
+[8.194821] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3699): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'\n"}
+[8.195028] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x374b): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'\n"}
+[8.195182] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3805): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'\n"}
+[8.195443] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x38bf): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'\n"}
+[8.195620] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text+0x3979): undefined reference to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)'\n"}
+[8.195861] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o:omuni_dir_walk.cpp:(.text+0x3a23): more undefined references to `Link::setDefault(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double, double, double, double, Link*)' follow\n"}
+[8.196606] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o: in function `OmuniDirWalk::OmuniDirWalk()':\n"}
+[8.196684] (simple_sim) StderrLine: {'line': b"omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x10c): undefined reference to `Link::Link()'\n"}
+[8.196838] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x121): undefined reference to `Link::Link()'\n"}
+[8.197099] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x136): undefined reference to `Link::Link()'\n"}
+[8.197328] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x14b): undefined reference to `Link::Link()'\n"}
+[8.197521] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x160): undefined reference to `Link::Link()'\n"}
+[8.197746] (simple_sim) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o:omuni_dir_walk.cpp:(.text._ZN12OmuniDirWalkC2Ev[_ZN12OmuniDirWalkC5Ev]+0x175): more undefined references to `Link::Link()' follow\n"}
+[8.220463] (-) TimerEvent: {}
+[8.231030] (simple_sim) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[8.231609] (simple_sim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:183: omuni_dir_walk] Error 1\n'}
+[8.231858] (simple_sim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2\n'}
+[8.232033] (simple_sim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.233519] (simple_sim) CommandEnded: {'returncode': 2}
+[8.277130] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 2}
+[8.287647] (-) EventReactorShutdown: {}

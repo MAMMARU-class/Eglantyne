@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000233] (-) JobUnselected: {'identifier': 'champ'}
+[0.000593] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000684] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000706] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000726] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000745] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000764] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000783] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000802] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.000820] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000839] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000857] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000876] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000894] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000912] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000931] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000949] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000970] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000988] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.001007] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.001026] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.001044] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.001062] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.001080] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.001099] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.001117] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.001135] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.001156] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.001179] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.006712] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.007291] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.007960] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5498'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpqdrokehiidf_18534'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1660,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc69ce73_236d_4d40_91ae_163cc758587c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6CKFW2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.039251] (simple_sim) StdoutLine: {'line': b'[ 12%] Built target esp_control\n'}
+[0.040367] (simple_sim) StdoutLine: {'line': b'[ 25%] Built target squwad_esp\n'}
+[0.041098] (simple_sim) StdoutLine: {'line': b'[ 37%] Built target pub_test\n'}
+[0.041593] (simple_sim) StdoutLine: {'line': b'[ 50%] Built target pub_control\n'}
+[0.043283] (simple_sim) StdoutLine: {'line': b'[ 62%] Built target zero_pub\n'}
+[0.045077] (simple_sim) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o\x1b[0m\n'}
+[0.047571] (simple_sim) StdoutLine: {'line': b'[ 93%] Built target walk_test\n'}
+[0.099818] (-) TimerEvent: {}
+[0.200074] (-) TimerEvent: {}
+[0.300340] (-) TimerEvent: {}
+[0.400640] (-) TimerEvent: {}
+[0.501065] (-) TimerEvent: {}
+[0.601301] (-) TimerEvent: {}
+[0.701675] (-) TimerEvent: {}
+[0.801934] (-) TimerEvent: {}
+[0.902156] (-) TimerEvent: {}
+[1.002409] (-) TimerEvent: {}
+[1.102647] (-) TimerEvent: {}
+[1.202933] (-) TimerEvent: {}
+[1.303213] (-) TimerEvent: {}
+[1.403511] (-) TimerEvent: {}
+[1.503780] (-) TimerEvent: {}
+[1.604114] (-) TimerEvent: {}
+[1.704337] (-) TimerEvent: {}
+[1.804566] (-) TimerEvent: {}
+[1.844865] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[1.845042] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KOmuniDirWalk::OmuniDirWalk()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.845103] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:60:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_joy_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.845150] (simple_sim) StderrLine: {'line': b'   60 |         \x1b[01;31m\x1b[Ksub_joy_\x1b[m\x1b[K = this->create_subscription<std::msgs::msg::Int32>(\n'}
+[1.845197] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.845795] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:60:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsgs\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.845895] (simple_sim) StderrLine: {'line': b'   60 |         sub_joy_ = this->create_subscription<std::\x1b[01;31m\x1b[Kmsgs\x1b[m\x1b[K::msg::Int32>(\n'}
+[1.845936] (simple_sim) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.845976] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:60:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.846017] (simple_sim) StderrLine: {'line': b'   60 |         sub_joy_ = this->\x1b[01;31m\x1b[Kcreate_subscription<std::msgs::msg::Int32>\x1b[m\x1b[K(\n'}
+[1.846053] (simple_sim) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.846610] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[1.846748] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[1.846817] (simple_sim) StderrLine: {'line': b'/usr/include/c++/11/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (OmuniDirWalk::*)(), OmuniDirWalk*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.846881] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:768:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (OmuniDirWalk::*)(), OmuniDirWalk*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.846943] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:789:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (OmuniDirWalk::*)(); _BoundArgs = {OmuniDirWalk*, const std::_Placeholder<1>&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.847008] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:61:34:\x1b[m\x1b[K   required from here\n'}
+[1.847067] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for pointer-to-member\n'}
+[1.847126] (simple_sim) StderrLine: {'line': b'  755 |       static_assert(_Varargs::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K\n'}
+[1.847184] (simple_sim) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[1.847244] (simple_sim) StderrLine: {'line': b'  756 | \x1b[01;31m\x1b[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1\x1b[m\x1b[K\n'}
+[1.847304] (simple_sim) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.847361] (simple_sim) StderrLine: {'line': b'  757 | \x1b[01;31m\x1b[K                    : sizeof...(_BoundArgs) == _Arity::value + 1\x1b[m\x1b[K,\n'}
+[1.847417] (simple_sim) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.847486] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(false ? (2 >= (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)) : (2 == (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[1.847633] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[1.847692] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:60:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KOmuniDirWalk::create_subscription<<expression error> >(const char [5], int, std::_Bind_helper<false, void (OmuniDirWalk::*)(), OmuniDirWalk*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.847757] (simple_sim) StderrLine: {'line': b'   60 |         sub_joy_ = \x1b[01;31m\x1b[Kthis->create_subscription<std::msgs::msg::Int32>(\x1b[m\x1b[K\n'}
+[1.847814] (simple_sim) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.847879] (simple_sim) StderrLine: {'line': b'   61 | \x1b[01;31m\x1b[K            "/joy", 10, std::bind(&OmuniDirWalk::update_joy_order, this, _1))\x1b[m\x1b[K;\n'}
+[1.847936] (simple_sim) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.848083] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[1.848119] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.848147] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.848174] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.848200] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[1.848225] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[1.848251] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.848283] (simple_sim) StderrLine: {'line': b'   92 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_subscription(\n'}
+[1.848309] (simple_sim) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.848335] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.848361] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[1.848384] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:60:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.848407] (simple_sim) StderrLine: {'line': b'   60 |         sub_joy_ = \x1b[01;31m\x1b[Kthis->create_subscription<std::msgs::msg::Int32>(\x1b[m\x1b[K\n'}
+[1.848431] (simple_sim) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.848462] (simple_sim) StderrLine: {'line': b'   61 | \x1b[01;31m\x1b[K            "/joy", 10, std::bind(&OmuniDirWalk::update_joy_order, this, _1))\x1b[m\x1b[K;\n'}
+[1.848488] (simple_sim) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.848511] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.848536] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:6:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid OmuniDirWalk::update_joy_order(sensor_msgs::msg::Joy)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.848564] (simple_sim) StderrLine: {'line': b'    6 | void \x1b[01;31m\x1b[KOmuniDirWalk\x1b[m\x1b[K::update_joy_order(const sensor_msgs::msg::Joy msg){\n'}
+[1.848592] (simple_sim) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.848618] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[1.848649] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:66:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid OmuniDirWalk::update_joy_order()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.848678] (simple_sim) StderrLine: {'line': b'   66 |     void \x1b[01;36m\x1b[Kupdate_joy_order\x1b[m\x1b[K();\n'}
+[1.848704] (simple_sim) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.848729] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass OmuniDirWalk\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[1.848757] (simple_sim) StderrLine: {'line': b'   49 | class \x1b[01;36m\x1b[KOmuniDirWalk\x1b[m\x1b[K : public rclcpp::Node\n'}
+[1.848780] (simple_sim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.904651] (-) TimerEvent: {}
+[2.004920] (-) TimerEvent: {}
+[2.105172] (-) TimerEvent: {}
+[2.205402] (-) TimerEvent: {}
+[2.305656] (-) TimerEvent: {}
+[2.405997] (-) TimerEvent: {}
+[2.506252] (-) TimerEvent: {}
+[2.606514] (-) TimerEvent: {}
+[2.706749] (-) TimerEvent: {}
+[2.807017] (-) TimerEvent: {}
+[2.907357] (-) TimerEvent: {}
+[3.007628] (-) TimerEvent: {}
+[3.107854] (-) TimerEvent: {}
+[3.208190] (-) TimerEvent: {}
+[3.308508] (-) TimerEvent: {}
+[3.408733] (-) TimerEvent: {}
+[3.508979] (-) TimerEvent: {}
+[3.553200] (simple_sim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1\n'}
+[3.553331] (simple_sim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2\n'}
+[3.553386] (simple_sim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.554801] (simple_sim) CommandEnded: {'returncode': 2}
+[3.602515] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 2}
+[3.609082] (-) TimerEvent: {}
+[3.612937] (-) EventReactorShutdown: {}

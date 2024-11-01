@@ -13,6 +13,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(Eigen3 REQUIRED)
 
@@ -42,6 +43,10 @@ ament_target_dependencies(pub_control rclcpp trajectory_msgs std_msgs)
 add_executable(esp_control simenv/controller/esp_control.cpp)
 ament_target_dependencies(esp_control rclcpp trajectory_msgs)
 
+#motions
+add_executable(omuni_dir_walk src/motion/omuni_dir_walk.cpp ${MODULE})
+ament_target_dependencies(omuni_dir_walk rclcpp trajectory_msgs std_msgs sensor_msgs)
+
 # test codes
 add_executable(pub_test src/test/pub_test.cpp)
 ament_target_dependencies(pub_test rclcpp trajectory_msgs)
@@ -58,7 +63,11 @@ ament_target_dependencies(walk_test rclcpp trajectory_msgs std_msgs)
 install(TARGETS
   pub_control
   esp_control
+
+  omuni_dir_walk
+
   pub_test
+
   zero_pub
   squwad_esp
   walk_test
