@@ -196,6 +196,7 @@ void update_servo(void *param)
 {
   // vTaskSuspend(_rclc_spinner);
   // init robot
+  delay(2000);
   Eglantyne.setSerial(&krs1, &krs2);
   Eglantyne.setLink();
   krs1.begin();

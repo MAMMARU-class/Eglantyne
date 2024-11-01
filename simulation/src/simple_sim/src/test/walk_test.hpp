@@ -20,7 +20,7 @@ using namespace std::chrono_literals;
 using std::placeholders::_1;
 using Eigen::Vector2d; using Eigen::Vector3d;
 
-#define INTERVAL 80 // ms
+#define INTERVAL 160 // ms
 
 // fixed variables
 #define Z 237.4 // grand to COM
@@ -31,7 +31,7 @@ using Eigen::Vector2d; using Eigen::Vector3d;
 #define G (9.81 * 1000) // mm/s^2
 #define PI 3.1415
 
-#define Tsup 0.8 // s
+#define Tsup 1.2 // s
 #define Tc std::sqrt(Z / G)
 #define C std::cosh(Tsup / Tc)
 #define S std::sinh(Tsup / Tc)
