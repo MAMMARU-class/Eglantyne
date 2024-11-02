@@ -23,6 +23,27 @@ void loop() {
     krs2.setPos(1, 3600);
     delay(500);
     krs1.setPos(1, 7800);
-    krs2.setPos(1, 10000);
+    krs2.setPos(1, 7500);
+    // krs2.setPos(2, 7500);
+    // krs2.setPos(3, 7500);
+    // krs2.setPos(7, 7500);
+    // delay(500);
+    // krs2.setPos(4, 7500);
+    // krs2.setPos(5, 7500);
+    // krs2.setPos(6, 7500);
+    // krs2.setPos(8, 7500);
+    // delay(500);
+    // krs2.setPos(9, 7500);
+    // krs2.setPos(10, 7500);
+    // krs2.setPos(11, 7500);
+    // krs2.setPos(12, 7500);
+    // krs2.setPos(13, 7500);
+
+    // krs2.setPos(14, 7500);
+    // krs2.setPos(15, 7500);
+    // krs2.setPos(16, 7500);
+    // krs2.setPos(17, 7500);
+    // krs2.setPos(18, 7500);
+
     delay(500);
 }

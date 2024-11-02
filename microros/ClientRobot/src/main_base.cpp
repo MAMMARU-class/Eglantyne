@@ -30,7 +30,7 @@ using std::vector;
 
 // control info
 #define MAX_MOTION 11
-#define COMP_RATIO_DEFALUT 2 // the ratio of motion completion
+#define COMP_RATIO_DEFALUT 6 // the ratio of motion completion
 int comp_ratio;
 bool serial_onboard = false;
 std::mutex mtx; // stop reading motion_list while publishing to motor
@@ -105,8 +105,7 @@ void error_loop()
 array<float, LINK_SIZE + 1> motion_get;
 void update_motions(const void *msgin)
 {
-
-  state.data = 2;
+  state.data = 5;
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 
   const JointTrajectory *msg = (const JointTrajectory *)msgin;
@@ -121,13 +120,13 @@ void update_motions(const void *msgin)
     motion_list.push_back(motion_get);
   }
 
-  state.data = 3;
+  state.data = 6;
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 }
 
 void setup()
 {
-  set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.38.177", 8888);
+  set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.230.255", 8888);
   delay(2000);
   rclc_allocator = rcl_get_default_allocator();
   // create init_options
@@ -170,6 +169,9 @@ void setup()
   xTaskCreatePinnedToCore(
       update_rclc, "update_rclc",
       2048, NULL, 1, &_rclc_spinner, 0);
+
+  state.data = 1;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
 }
 
 void loop() { delay(10); }
@@ -194,9 +196,11 @@ long currentMillis;
 long prevMillis = 0;
 void update_servo(void *param)
 {
+  delay(2000);
+  state.data = 3;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
   // vTaskSuspend(_rclc_spinner);
   // init robot
-  delay(2000);
   Eglantyne.setSerial(&krs1, &krs2);
   Eglantyne.setLink();
   krs1.begin();
@@ -206,7 +210,11 @@ void update_servo(void *param)
   array<float, LINK_SIZE> motion;
   array<float, LINK_SIZE> motion_aim;
   array<float, LINK_SIZE + 1> motion_read;
-  motion_aim = Eglantyne.init_home(3);
+  // motion_aim = Eglantyne.init_home(3);
+  Eglantyne.move_all(Eglantyne.home());
+
+  state.data = 4;
+  RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
   // vTaskResume(_rclc_spinner);
   // int init_max = 3000 / (CONTROL_CYCLE*5);
   // for(int i=0; i<init_max; i++){

@@ -9,7 +9,7 @@
 
 #include "std_msgs/msg/int32.h"
 #include "std_msgs/msg/header.h"
-#include "trajectory_msgs/msg/joint_trajectory.h"
+#include "trajectory_msgs/msg/joint_trajectory.h"d
 #include "trajectory_msgs/msg/joint_trajectory_point.h"
 
 #include "IcsHardSerialClass.h"

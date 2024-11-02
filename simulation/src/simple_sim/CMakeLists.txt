@@ -51,6 +51,9 @@ ament_target_dependencies(joy_handler rclcpp std_msgs sensor_msgs)
 add_executable(omuni_dir_walk src/motion/omuni_dir_walk.cpp ${MODULE})
 ament_target_dependencies(omuni_dir_walk rclcpp trajectory_msgs std_msgs sensor_msgs)
 
+# add_executable(basic_motion src/motion/basic_motion.cpp ${MODULE})
+# ament_target_dependencies(basic_motion rclcpp tra)
+
 # test codes
 add_executable(pub_test src/test/pub_test.cpp)
 ament_target_dependencies(pub_test rclcpp trajectory_msgs)

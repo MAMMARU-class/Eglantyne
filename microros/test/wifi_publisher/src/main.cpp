@@ -40,7 +40,7 @@ void timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
 }
 
 void setup() {
-  set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.38.177", 8888);
+  set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.230.255", 8888);
   delay(2000);
 
   allocator = rcl_get_default_allocator();
