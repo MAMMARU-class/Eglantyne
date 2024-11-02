@@ -1,0 +1,11 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::calc_foot_pos()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:56:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K{[m[K’ token
+   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == [01;31m[K{[m[K0,0}){
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+   53 |     if[34m[K([m[Kdx == 0 && dy == 0 && dtheta == 0 && p1_step ==[01;31m[K [m[K[32m[K{[m[K0,0}){
+      |       [34m[K~[m[K                                               [01;31m[K^[m[K[32m[K~[m[K
+      |                                                       [32m[K)[m[K
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

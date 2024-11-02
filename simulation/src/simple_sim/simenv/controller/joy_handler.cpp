@@ -17,8 +17,6 @@ public:
     PubControl()
     : Node("pub_control")
     {
-        sub_motion_list_ = this->create_subscription<trajectory_msgs::msg::JointTrajectory>(
-            "/motion_list_command", 10, std::bind(&PubControl::update_motions, this, _1));
         pub_for_esp_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/motion_list_command_for_esp", 10);
         timer_ = this->create_wall_timer(
             100ms, std::bind(&PubControl::timer_callback, this));

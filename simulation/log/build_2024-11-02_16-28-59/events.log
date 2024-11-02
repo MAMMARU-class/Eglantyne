@@ -1,0 +1,770 @@
+[0.000000] (-) TimerEvent: {}
+[0.000191] (-) JobUnselected: {'identifier': 'champ'}
+[0.000227] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000251] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000274] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000295] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000317] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000338] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000409] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000433] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.000455] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000476] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000497] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000519] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000539] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000561] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000583] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000605] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000627] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000649] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000674] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.000695] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.000716] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.000737] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.000760] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.000783] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.000804] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.000824] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.000849] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.000875] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.010131] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.010853] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.011593] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3792'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp8jnkt754idf_28037'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo/bin:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base/bin:/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1644,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1644'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9529dfd7_5ac6_4390_ac63_3380ae3284ae'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MCDUW2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup/lib/python3.10/site-packages:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ')]), 'shell': False}
+[0.061034] (simple_sim) StdoutLine: {'line': b'[ 11%] Built target esp_control\n'}
+[0.062008] (simple_sim) StdoutLine: {'line': b'[ 22%] Built target pub_control\n'}
+[0.065846] (simple_sim) StdoutLine: {'line': b'[ 33%] Built target pub_test\n'}
+[0.067308] (simple_sim) StdoutLine: {'line': b'[ 55%] Built target zero_pub\n'}
+[0.067589] (simple_sim) StdoutLine: {'line': b'[ 55%] Built target squwad_esp\n'}
+[0.072421] (simple_sim) StdoutLine: {'line': b'[ 77%] Built target walk_test\n'}
+[0.072584] (simple_sim) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o\x1b[0m\n'}
+[0.099429] (-) TimerEvent: {}
+[0.199723] (-) TimerEvent: {}
+[0.300004] (-) TimerEvent: {}
+[0.400285] (-) TimerEvent: {}
+[0.500581] (-) TimerEvent: {}
+[0.600844] (-) TimerEvent: {}
+[0.701129] (-) TimerEvent: {}
+[0.801462] (-) TimerEvent: {}
+[0.901735] (-) TimerEvent: {}
+[1.002027] (-) TimerEvent: {}
+[1.102487] (-) TimerEvent: {}
+[1.202791] (-) TimerEvent: {}
+[1.303095] (-) TimerEvent: {}
+[1.403454] (-) TimerEvent: {}
+[1.503710] (-) TimerEvent: {}
+[1.604009] (-) TimerEvent: {}
+[1.704425] (-) TimerEvent: {}
+[1.804724] (-) TimerEvent: {}
+[1.905041] (-) TimerEvent: {}
+[2.005338] (-) TimerEvent: {}
+[2.105660] (-) TimerEvent: {}
+[2.205985] (-) TimerEvent: {}
+[2.306323] (-) TimerEvent: {}
+[2.406630] (-) TimerEvent: {}
+[2.457615] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OmuniDirWalk::calc_foot_pos()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.457851] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.457965] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (\x1b[01;35m\x1b[K0\x1b[m\x1b[K,0)){\n'}
+[2.458552] (simple_sim) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.458654] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator==\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.458745] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && \x1b[32m\x1b[Kp1_step\x1b[m\x1b[K \x1b[01;31m\x1b[K==\x1b[m\x1b[K \x1b[34m\x1b[K(0,0)\x1b[m\x1b[K){\n'}
+[2.458828] (simple_sim) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[2.458908] (simple_sim) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K|\x1b[m\x1b[K            \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[2.458985] (simple_sim) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K|\x1b[m\x1b[K            \x1b[34m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.459217] (simple_sim) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[KEigen::Vector2d {aka Eigen::Matrix<double, 2, 1>}\x1b[m\x1b[K\n'}
+[2.459303] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:273\x1b[m\x1b[K,\n'}
+[2.459390] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.459470] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/../module/Link.h:5\x1b[m\x1b[K,\n'}
+[2.459547] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:13\x1b[m\x1b[K,\n'}
+[2.459624] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.459700] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:290:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class OtherDerived> bool Eigen::MatrixBase<Derived>::operator==(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = OtherDerived; Derived = Eigen::Matrix<double, 2, 1>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.459781] (simple_sim) StderrLine: {'line': b'  290 |     EIGEN_DEVICE_FUNC inline bool \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const MatrixBase<OtherDerived>& other) const\n'}
+[2.459859] (simple_sim) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.459936] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:290:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.460157] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::MatrixBase<Derived>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.460236] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.460313] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.460399] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/utility:70\x1b[m\x1b[K,\n'}
+[2.460478] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:38\x1b[m\x1b[K,\n'}
+[2.460555] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[2.460631] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.460707] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.460783] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:466:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.460862] (simple_sim) StderrLine: {'line': b'  466 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n'}
+[2.461068] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.461147] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:466:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.461227] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<_T1, _T2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.461567] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.461652] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.461730] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.461809] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/array:40\x1b[m\x1b[K,\n'}
+[2.461887] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.461964] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[2.462041] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.462120] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.462197] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:420:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.462655] (simple_sim) StderrLine: {'line': b'  420 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const reverse_iterator<_Iterator>& __x,\n'}
+[2.462740] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.462819] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:420:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.462899] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.462982] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.463061] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.463138] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.463217] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/array:40\x1b[m\x1b[K,\n'}
+[2.463296] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.463806] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[2.464294] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.464737] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.464829] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:459:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.464946] (simple_sim) StderrLine: {'line': b'  459 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const reverse_iterator<_IteratorL>& __x,\n'}
+[2.465051] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.465095] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:459:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.465133] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.465173] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.465210] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.465245] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.465299] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/array:40\x1b[m\x1b[K,\n'}
+[2.465332] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.465385] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[2.465418] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.465457] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.465490] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1585:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.465527] (simple_sim) StderrLine: {'line': b' 1585 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const move_iterator<_IteratorL>& __x,\n'}
+[2.465561] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.465593] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1585:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.465625] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.465662] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.465696] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.465728] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.465759] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/array:40\x1b[m\x1b[K,\n'}
+[2.465791] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.465822] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[2.465854] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.465885] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.465916] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1648:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.465950] (simple_sim) StderrLine: {'line': b' 1648 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const move_iterator<_Iterator>& __x,\n'}
+[2.465983] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.466014] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1648:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.466048] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.466082] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.466116] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.466148] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.466179] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[2.466212] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.466244] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.466276] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:276:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.466310] (simple_sim) StderrLine: {'line': b'  276 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)\n'}
+[2.466345] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.466380] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:276:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.466413] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.466446] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.466479] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.466511] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[2.466544] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.466578] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.466612] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1524:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.466644] (simple_sim) StderrLine: {'line': b' 1524 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const tuple<_TElements...>& __t,\n'}
+[2.466677] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.466711] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1524:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.466745] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::tuple<_Tps ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.466778] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.466811] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.466844] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[2.466881] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.466928] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.467083] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:718:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _Args> bool std::operator==(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.467190] (simple_sim) StderrLine: {'line': b'  718 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept\n'}
+[2.467280] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.467378] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:718:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.467470] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<_Res(_ArgTypes ...)>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.467570] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.467652] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.467736] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[2.467817] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.467895] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.467973] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:725:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _Args> bool std::operator==(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.468055] (simple_sim) StderrLine: {'line': b'  725 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept\n'}
+[2.468131] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.468221] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:725:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.468297] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<_Res(_ArgTypes ...)>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.468432] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.468497] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.468537] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:40\x1b[m\x1b[K,\n'}
+[2.468572] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:61\x1b[m\x1b[K,\n'}
+[2.468607] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.468650] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.468685] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:218:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> bool std::operator==(const std::allocator<_Tp1>&, const std::allocator<_T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.468724] (simple_sim) StderrLine: {'line': b'  218 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const allocator<_T1>&, const allocator<_T2>&)\n'}
+[2.468757] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.468793] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:218:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.468832] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::allocator<_Tp1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.468869] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.468903] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.468937] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:47\x1b[m\x1b[K,\n'}
+[2.468970] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:61\x1b[m\x1b[K,\n'}
+[2.469002] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.469035] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.469068] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2134:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::operator==(const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.469104] (simple_sim) StderrLine: {'line': b' 2134 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,\n'}
+[2.469139] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.469172] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2134:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.469204] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.469238] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.469270] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.469303] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:47\x1b[m\x1b[K,\n'}
+[2.469334] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:61\x1b[m\x1b[K,\n'}
+[2.469374] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.469406] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.469439] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::operator==(const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.469473] (simple_sim) StderrLine: {'line': b' 2148 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,\n'}
+[2.469506] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.469538] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_map.h:2148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.469570] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.469603] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.469636] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.469667] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[2.469699] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[2.469733] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:2\x1b[m\x1b[K,\n'}
+[2.469765] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.469796] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1892:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.469828] (simple_sim) StderrLine: {'line': b' 1892 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n'}
+[2.469860] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.469892] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1892:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.469923] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.469955] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.469986] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.470017] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.470048] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.470078] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.470110] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:753:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.470143] (simple_sim) StderrLine: {'line': b'  753 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unique_ptr<_Tp, _Dp>& __x,\n'}
+[2.470173] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.470204] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:753:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.470235] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.470272] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.470304] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.470335] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.470373] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.470407] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.470438] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:760:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.470471] (simple_sim) StderrLine: {'line': b'  760 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept\n'}
+[2.470503] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.470534] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:760:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.470566] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.470599] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.470630] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.470663] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.470695] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.470727] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.470757] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:767:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.470790] (simple_sim) StderrLine: {'line': b'  767 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept\n'}
+[2.470822] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.470853] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:767:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.470885] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.470918] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.470950] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.470984] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iosfwd:40\x1b[m\x1b[K,\n'}
+[2.471019] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:52\x1b[m\x1b[K,\n'}
+[2.471051] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.471082] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.471114] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.471145] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/postypes.h:222:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.471178] (simple_sim) StderrLine: {'line': b'  222 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)\n'}
+[2.471210] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.471242] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/postypes.h:222:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.471273] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::fpos<_StateT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.471306] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.471337] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.471372] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[2.471405] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.471436] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.471467] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.471498] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1410:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.471531] (simple_sim) StderrLine: {'line': b' 1410 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const __shared_ptr<_Tp1, _Lp>& __a,\n'}
+[2.471562] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.471594] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1410:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.471626] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp1, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.471662] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.471694] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.471725] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[2.471757] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.471789] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.471820] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.471852] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1416:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.471883] (simple_sim) StderrLine: {'line': b' 1416 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept\n'}
+[2.471915] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.471946] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1416:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.471977] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.472012] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.472045] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.472079] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[2.472111] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.472143] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.472174] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.472205] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1436:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.472237] (simple_sim) StderrLine: {'line': b' 1436 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept\n'}
+[2.472269] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.472300] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1436:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.472334] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.472372] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.472404] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.472435] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.472466] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.472497] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.472528] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:437:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> bool std::operator==(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.472560] (simple_sim) StderrLine: {'line': b'  437 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept\n'}
+[2.472592] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.472624] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:437:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.472656] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.472694] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.472727] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.472759] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.472791] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.472825] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.472857] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:443:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::operator==(const std::shared_ptr<_Tp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.472892] (simple_sim) StderrLine: {'line': b'  443 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept\n'}
+[2.472926] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.472958] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:443:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.472992] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.473028] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.473061] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.473094] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.473127] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.473160] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.473193] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:464:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::operator==(std::nullptr_t, const std::shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.473227] (simple_sim) StderrLine: {'line': b'  464 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept\n'}
+[2.473259] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.473291] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:464:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.473322] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.473360] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.473392] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.473424] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[2.473456] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.473488] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:4\x1b[m\x1b[K,\n'}
+[2.473520] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.473552] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:535:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator==(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.473586] (simple_sim) StderrLine: {'line': b'  535 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(basic_string_view<_CharT, _Traits> __x,\n'}
+[2.473618] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.473648] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:535:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.473683] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.473717] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.473749] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.473781] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[2.473813] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.473846] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:4\x1b[m\x1b[K,\n'}
+[2.473878] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.473911] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:541:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator==(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.473946] (simple_sim) StderrLine: {'line': b'  541 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(basic_string_view<_CharT, _Traits> __x,\n'}
+[2.473978] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.474011] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:541:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.474044] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.474077] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.474109] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.474142] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[2.474174] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.474206] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:4\x1b[m\x1b[K,\n'}
+[2.474238] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.474270] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:564:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator==(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.474304] (simple_sim) StderrLine: {'line': b'  564 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,\n'}
+[2.474340] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.474377] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:564:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.474411] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.474445] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.474478] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.474511] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.474544] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:4\x1b[m\x1b[K,\n'}
+[2.474576] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.474609] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6226:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.474643] (simple_sim) StderrLine: {'line': b' 6226 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[2.474676] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.474707] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6226:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.474741] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.474776] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.474809] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.474842] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.474873] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:4\x1b[m\x1b[K,\n'}
+[2.474905] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.474937] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6234:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.474975] (simple_sim) StderrLine: {'line': b' 6234 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const basic_string<_CharT>& __lhs,\n'}
+[2.475009] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.475041] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6234:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.475073] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.475107] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.475139] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.475172] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.475204] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:4\x1b[m\x1b[K,\n'}
+[2.475235] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.475269] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6248:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.475303] (simple_sim) StderrLine: {'line': b' 6248 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[2.475335] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.475372] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6248:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.475405] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.475438] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.475470] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.475502] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.475534] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:4\x1b[m\x1b[K,\n'}
+[2.475565] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.475596] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6289:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.475632] (simple_sim) StderrLine: {'line': b' 6289 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const _CharT* __lhs,\n'}
+[2.475664] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.475696] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6289:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.475728] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.475761] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.475793] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.475825] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/locale_facets.h:48\x1b[m\x1b[K,\n'}
+[2.475857] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_ios.h:37\x1b[m\x1b[K,\n'}
+[2.475889] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ios:44\x1b[m\x1b[K,\n'}
+[2.475921] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/istream:38\x1b[m\x1b[K,\n'}
+[2.475956] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/sstream:38\x1b[m\x1b[K,\n'}
+[2.475987] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:5\x1b[m\x1b[K,\n'}
+[2.476019] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.476052] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/streambuf_iterator.h:226:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.476087] (simple_sim) StderrLine: {'line': b'  226 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const istreambuf_iterator<_CharT, _Traits>& __a,\n'}
+[2.476119] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.476151] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/streambuf_iterator.h:226:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.476184] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::istreambuf_iterator<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.476218] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.476251] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.476283] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/set:61\x1b[m\x1b[K,\n'}
+[2.476317] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[2.476351] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.476386] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.476418] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.476449] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.476481] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:985:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.476513] (simple_sim) StderrLine: {'line': b'  985 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const set<_Key, _Compare, _Alloc>& __x,\n'}
+[2.476545] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.476577] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:985:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.476609] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::set<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.476644] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.476676] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.476708] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/set:62\x1b[m\x1b[K,\n'}
+[2.476740] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[2.476773] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.476809] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.476841] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.476873] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.476904] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multiset.h:971:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.476937] (simple_sim) StderrLine: {'line': b'  971 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const multiset<_Key, _Compare, _Alloc>& __x,\n'}
+[2.476969] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.477002] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multiset.h:971:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.477034] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multiset<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.477068] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.477100] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.477132] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/list:63\x1b[m\x1b[K,\n'}
+[2.477165] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:23\x1b[m\x1b[K,\n'}
+[2.477197] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.477229] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.477261] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.477292] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.477324] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.477363] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_list.h:2030:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.477396] (simple_sim) StderrLine: {'line': b' 2030 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n'}
+[2.477429] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.477460] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_list.h:2030:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.477493] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::list<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.477526] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.477558] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.477590] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/map:61\x1b[m\x1b[K,\n'}
+[2.477622] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K,\n'}
+[2.477657] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.477690] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.477722] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.477755] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.477787] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.477821] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:1463:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.477857] (simple_sim) StderrLine: {'line': b' 1463 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[2.477890] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.477922] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:1463:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.477955] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::map<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.477989] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.478022] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.478055] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/map:62\x1b[m\x1b[K,\n'}
+[2.478087] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K,\n'}
+[2.478121] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.478154] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.478189] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.478222] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.478254] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.478289] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multimap.h:1128:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.478323] (simple_sim) StderrLine: {'line': b' 1128 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[2.478362] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.478395] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multimap.h:1128:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.478426] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.478462] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.478494] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.478527] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_set:47\x1b[m\x1b[K,\n'}
+[2.478559] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:26\x1b[m\x1b[K,\n'}
+[2.478590] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[2.478622] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.478654] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.478688] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.478720] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.478752] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.478783] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1804:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::operator==(const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.478817] (simple_sim) StderrLine: {'line': b' 1804 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,\n'}
+[2.478850] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.478881] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1804:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.478914] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.478948] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.478980] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.479014] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/unordered_set:47\x1b[m\x1b[K,\n'}
+[2.479046] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:26\x1b[m\x1b[K,\n'}
+[2.479077] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[2.479109] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.479142] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.479174] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.479206] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.479238] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.479273] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1818:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::operator==(const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.479307] (simple_sim) StderrLine: {'line': b' 1818 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,\n'}
+[2.479338] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.479376] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unordered_set.h:1818:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.479409] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.479443] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.479474] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.479506] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[2.479538] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.479571] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.479602] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.479635] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.479668] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.479701] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.479733] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.479765] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.479798] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.479829] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.479861] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.479893] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1045:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::operator==(const std::optional<_Tp>&, const std::optional<_Up>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.479925] (simple_sim) StderrLine: {'line': b' 1045 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n'}
+[2.479958] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.479990] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1045:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.480022] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.480055] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.480087] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.480119] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[2.480152] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.480186] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.480218] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.480250] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.480282] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.480314] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.480348] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.480388] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.480421] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.480456] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.480493] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.480526] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1105:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator==(const std::optional<_Tp>&, std::nullopt_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.480559] (simple_sim) StderrLine: {'line': b' 1105 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const optional<_Tp>& __lhs, nullopt_t) noexcept\n'}
+[2.480591] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.480624] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1105:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.480657] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.480691] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.480725] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.480757] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[2.480788] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.480820] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.480852] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.480888] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.480926] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.480958] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.480993] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.481026] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.481059] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.481090] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.481121] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.481156] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1116:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator==(std::nullopt_t, const std::optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.481191] (simple_sim) StderrLine: {'line': b' 1116 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullopt_t, const optional<_Tp>& __rhs) noexcept\n'}
+[2.481225] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.481260] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1116:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.481296] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.481330] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.481371] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.481407] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[2.481442] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.481475] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.481508] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.481562] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.481612] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.481648] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.481682] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.481718] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.481756] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.481791] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.481827] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.481863] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1173:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::operator==(const std::optional<_Tp>&, const _Up&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.481900] (simple_sim) StderrLine: {'line': b' 1173 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const optional<_Tp>& __lhs, const _Up& __rhs)\n'}
+[2.481939] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.481983] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1173:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.482024] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.482063] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.482098] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.482133] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[2.482166] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.482198] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.482230] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.482262] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.482295] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.482327] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.482367] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.482400] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.482432] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.482463] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.482497] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.482531] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1179:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Up, _Tp> std::operator==(const _Up&, const std::optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.482564] (simple_sim) StderrLine: {'line': b' 1179 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const _Up& __lhs, const optional<_Tp>& __rhs)\n'}
+[2.482596] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.482627] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1179:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.482659] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.482692] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.482724] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.482759] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.482791] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.482823] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.482856] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.482891] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.482925] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.482958] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.483004] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.483168] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.483271] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.483363] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.483459] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.483538] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1232:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _Types> constexpr bool std::operator==(const std::variant<_Types ...>&, const std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.483617] (simple_sim) StderrLine: {'line': b' 1232 |   \x1b[01;36m\x1b[K_VARIANT_RELATION_FUNCTION_TEMPLATE\x1b[m\x1b[K(==, equal)\n'}
+[2.483693] (simple_sim) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.483768] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1232:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.483843] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.483925] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.484001] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.484076] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[2.484152] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.484227] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/../module/Link.h:5\x1b[m\x1b[K,\n'}
+[2.484308] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:13\x1b[m\x1b[K,\n'}
+[2.484394] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.484473] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:464:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator==(const std::complex<_Tp>&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.484551] (simple_sim) StderrLine: {'line': b'  464 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const complex<_Tp>& __x, const complex<_Tp>& __y)\n'}
+[2.484626] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.484700] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:464:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.484775] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.484859] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.484934] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.485007] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[2.485081] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.485155] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/../module/Link.h:5\x1b[m\x1b[K,\n'}
+[2.485230] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:13\x1b[m\x1b[K,\n'}
+[2.485304] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.485387] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:469:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator==(const std::complex<_Tp>&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.485473] (simple_sim) StderrLine: {'line': b'  469 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const complex<_Tp>& __x, const _Tp& __y)\n'}
+[2.485548] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.485622] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:469:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.485701] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.485786] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.485868] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.485943] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[2.486017] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.486091] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/../module/Link.h:5\x1b[m\x1b[K,\n'}
+[2.486165] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:13\x1b[m\x1b[K,\n'}
+[2.486239] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.486313] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:475:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator==(const _Tp&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.486398] (simple_sim) StderrLine: {'line': b'  475 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const _Tp& __x, const complex<_Tp>& __y)\n'}
+[2.486475] (simple_sim) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.486549] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:475:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.486623] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:53:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.486700] (simple_sim) StderrLine: {'line': b'   53 |     if(dx == 0 && dy == 0 && dtheta == 0 && p1_step == (0,0\x1b[01;36m\x1b[K)\x1b[m\x1b[K){\n'}
+[2.486775] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.486850] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/ios_base.h:46\x1b[m\x1b[K,\n'}
+[2.486924] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ios:42\x1b[m\x1b[K,\n'}
+[2.486999] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/istream:38\x1b[m\x1b[K,\n'}
+[2.487073] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/sstream:38\x1b[m\x1b[K,\n'}
+[2.487147] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:5\x1b[m\x1b[K,\n'}
+[2.487221] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.487295] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:362:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator==(const std::error_code&, const std::error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.487377] (simple_sim) StderrLine: {'line': b'  362 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_code& __lhs, const error_code& __rhs) noexcept\n'}
+[2.487457] (simple_sim) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.487531] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:362:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.487613] (simple_sim) StderrLine: {'line': b'  362 |   operator==(\x1b[01;36m\x1b[Kconst error_code& __lhs\x1b[m\x1b[K, const error_code& __rhs) noexcept\n'}
+[2.487687] (simple_sim) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.487761] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:368:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator==(const std::error_code&, const std::error_condition&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.487836] (simple_sim) StderrLine: {'line': b'  368 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_code& __lhs, const error_condition& __rhs) noexcept\n'}
+[2.487911] (simple_sim) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.487984] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:368:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.488061] (simple_sim) StderrLine: {'line': b'  368 |   operator==(\x1b[01;36m\x1b[Kconst error_code& __lhs\x1b[m\x1b[K, const error_condition& __rhs) noexcept\n'}
+[2.488135] (simple_sim) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.488209] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator==(const std::error_condition&, const std::error_condition&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.488288] (simple_sim) StderrLine: {'line': b'  376 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_condition& __lhs,\n'}
+[2.488373] (simple_sim) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.488453] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:376:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_condition&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.488535] (simple_sim) StderrLine: {'line': b'  376 |   operator==(\x1b[01;36m\x1b[Kconst error_condition& __lhs\x1b[m\x1b[K,\n'}
+[2.488610] (simple_sim) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.488685] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:408:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator==(const std::error_condition&, const std::error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.488760] (simple_sim) StderrLine: {'line': b'  408 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_condition& __lhs, const error_code& __rhs) noexcept\n'}
+[2.488835] (simple_sim) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.488909] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:408:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_condition&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.488986] (simple_sim) StderrLine: {'line': b'  408 |   operator==(\x1b[01;36m\x1b[Kconst error_condition& __lhs\x1b[m\x1b[K, const error_code& __rhs) noexcept\n'}
+[2.489064] (simple_sim) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.489139] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/future:48\x1b[m\x1b[K,\n'}
+[2.489213] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.489288] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.489368] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.489448] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.489523] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_thread.h:287:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator==(std::thread::id, std::thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.489598] (simple_sim) StderrLine: {'line': b'  287 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(thread::id __x, thread::id __y) noexcept\n'}
+[2.489672] (simple_sim) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.489746] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_thread.h:287:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.489823] (simple_sim) StderrLine: {'line': b'  287 |   operator==(\x1b[01;36m\x1b[Kthread::id __x\x1b[m\x1b[K, thread::id __y) noexcept\n'}
+[2.489897] (simple_sim) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.489972] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.490045] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.490119] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.490193] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.490268] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.490345] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.490427] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.490502] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.490576] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.490650] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.490724] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:9\x1b[m\x1b[K,\n'}
+[2.490798] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.490877] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1239:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::operator==(std::monostate, std::monostate)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.490953] (simple_sim) StderrLine: {'line': b' 1239 |   constexpr bool \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(monostate, monostate) noexcept { return true; }\n'}
+[2.491029] (simple_sim) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.491104] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1239:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::monostate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.491185] (simple_sim) StderrLine: {'line': b' 1239 |   constexpr bool operator==(\x1b[01;36m\x1b[Kmonostate\x1b[m\x1b[K, monostate) noexcept { return true; }\n'}
+[2.491260] (simple_sim) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.506772] (-) TimerEvent: {}
+[2.607045] (-) TimerEvent: {}
+[2.707372] (-) TimerEvent: {}
+[2.807657] (-) TimerEvent: {}
+[2.908086] (-) TimerEvent: {}
+[3.008468] (-) TimerEvent: {}
+[3.108741] (-) TimerEvent: {}
+[3.208992] (-) TimerEvent: {}
+[3.309259] (-) TimerEvent: {}
+[3.409507] (-) TimerEvent: {}
+[3.509784] (-) TimerEvent: {}
+[3.610063] (-) TimerEvent: {}
+[3.710331] (-) TimerEvent: {}
+[3.810579] (-) TimerEvent: {}
+[3.910932] (-) TimerEvent: {}
+[4.011258] (-) TimerEvent: {}
+[4.111588] (-) TimerEvent: {}
+[4.211893] (-) TimerEvent: {}
+[4.312184] (-) TimerEvent: {}
+[4.412479] (-) TimerEvent: {}
+[4.512803] (-) TimerEvent: {}
+[4.613126] (-) TimerEvent: {}
+[4.713409] (-) TimerEvent: {}
+[4.813732] (-) TimerEvent: {}
+[4.914027] (-) TimerEvent: {}
+[5.014374] (-) TimerEvent: {}
+[5.114658] (-) TimerEvent: {}
+[5.214960] (-) TimerEvent: {}
+[5.315268] (-) TimerEvent: {}
+[5.359242] (simple_sim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1\n'}
+[5.359485] (simple_sim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2\n'}
+[5.359698] (simple_sim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.361136] (simple_sim) CommandEnded: {'returncode': 2}
+[5.415366] (-) TimerEvent: {}
+[5.452758] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 2}
+[5.485278] (-) EventReactorShutdown: {}

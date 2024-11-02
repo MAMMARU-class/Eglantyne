@@ -66,6 +66,10 @@ void OmuniDirWalk::calc_foot_pos()
     COM_p_aim(1) = C    * COM_p_start(1) + Tc*S*COM_v_start(1) + (1-C)*aim_step(1);
     COM_v_aim(1) = S/Tc * COM_p_start(1) +    C*COM_v_start(1) - S/Tc *aim_step(1);
 
+    if( abs(dx) < 3 && abs(dy) < 5 && abs(dtheta) < 0.05 && abs(p1_step(0)) < 3 && abs(p1_step(1)) < 3 ){
+        COM_v_aim << 0, 0;
+    }
+
     RCLCPP_INFO(this->get_logger(), "dx : %f, dy : %f, dtheta : %f", dx, dy, dtheta);
     RCLCPP_INFO(this->get_logger(), "n-2     step: x: %f, y: %f, theta: %f", m2_step(0),  m2_step(1), m2_theta);
     RCLCPP_INFO(this->get_logger(), "n (aim) step: x: %f, y: %f, theta: %f", aim_step(0), aim_step(1), aim_theta);
@@ -194,6 +198,9 @@ void OmuniDirWalk::traj_to_motion()
 void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
 {
     if(msg.data != WALK){ return; }
+    if(dx == 0 && dy == 0 && dtheta == 0 && COM_v_aim(0) == 0 && COM_v_aim(1) == 0){
+        RCLCPP_INFO(this->get_logger(), "no motion detected");
+        return; }
     if (COM_traj_next.empty()){
         dx = 0; dy = 0; dtheta = 0;
         sy = DEFALUT_Y;

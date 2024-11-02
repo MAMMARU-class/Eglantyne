@@ -1,0 +1,8 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::pub_walk_trajectory(std_msgs::msg::Int32)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:201:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kdthea[m[K’ was not declared in this scope; did you mean ‘[01m[Kdtheta[m[K’?
+  201 |     if(dx == 0 && dy == 0 && [01;31m[Kdthea[m[K == 0 && COM_v_aim(0) == 0 && COM_v_aim(1) == 0){
+      |                              [01;31m[K^~~~~[m[K
+      |                              [32m[Kdtheta[m[K
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
