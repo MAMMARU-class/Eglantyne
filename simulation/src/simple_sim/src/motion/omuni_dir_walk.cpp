@@ -12,9 +12,6 @@ void OmuniDirWalk::update_joy_order(const sensor_msgs::msg::Joy msg){
 
 void OmuniDirWalk::calc_foot_pos()
 {
-    RCLCPP_INFO(this->get_logger(), "n-2     step before: x: %f, y: %f", m2_step(0), m2_step(1));
-    RCLCPP_INFO(this->get_logger(), "n (aim) step before: x: %f, y: %f", aim_step(0), aim_step(1));
-    RCLCPP_INFO(this->get_logger(), "n+1     step before: x: %f, y: %f", p1_step(0), p1_step(1));
     // shift theta
     if( dtheta/abs(dtheta) == step_dir/abs(step_dir) ){ dtheta=0; }
     m2_theta = -aim_theta;
@@ -25,6 +22,8 @@ void OmuniDirWalk::calc_foot_pos()
                    sin(-aim_theta),  cos(-aim_theta);
     p1_XYRot << cos(p1_theta), -sin(p1_theta),
                 sin(p1_theta),  cos(p1_theta);
+    m1_to_p1_XYRot << cos(p1_theta+aim_theta), -sin(p1_theta+aim_theta),
+                      sin(p1_theta+aim_theta),  cos(p1_theta+aim_theta);
 
     // shift COM
     COM_p_start = COM_p_aim - aim_step;
@@ -41,6 +40,7 @@ void OmuniDirWalk::calc_foot_pos()
     if(sy < DEFALUT_Y){ sy=DEFALUT_Y; }
     Vector2d ofs{dx, -step_dir*sy};
     p1_step =aim_step + ofs;
+    p1_step = m1_to_p1_XYRot*p1_step;
 
     // model aim (origin: n-1 step)
     COM_p_aim << dx / 2,
@@ -67,10 +67,9 @@ void OmuniDirWalk::calc_foot_pos()
     COM_v_aim(1) = S/Tc * COM_p_start(1) +    C*COM_v_start(1) - S/Tc *aim_step(1);
 
     RCLCPP_INFO(this->get_logger(), "dx : %f, dy : %f, dtheta : %f", dx, dy, dtheta);
-    RCLCPP_INFO(this->get_logger(), "n-2 theta : %f, n theta : %f, n+1 theta : %f", m2_theta, aim_theta, p1_theta);
-    RCLCPP_INFO(this->get_logger(), "n-2     step: x: %f, y: %f", m2_step(0),  m2_step(1));
-    RCLCPP_INFO(this->get_logger(), "n (aim) step: x: %f, y: %f", aim_step(0), aim_step(1));
-    RCLCPP_INFO(this->get_logger(), "n+1     step: x: %f, y: %f", p1_step(0),  p1_step(1));
+    RCLCPP_INFO(this->get_logger(), "n-2     step: x: %f, y: %f, theta: %f", m2_step(0),  m2_step(1), m2_theta);
+    RCLCPP_INFO(this->get_logger(), "n (aim) step: x: %f, y: %f, theta: %f", aim_step(0), aim_step(1), aim_theta);
+    RCLCPP_INFO(this->get_logger(), "n+1     step: x: %f, y: %f, theta: %f", p1_step(0),  p1_step(1), p1_theta);
 }
 
 void OmuniDirWalk::COM_traj_zero()

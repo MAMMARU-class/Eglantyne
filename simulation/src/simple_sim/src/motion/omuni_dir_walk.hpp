@@ -21,7 +21,8 @@ using std::placeholders::_1;
 using Eigen::Vector2d; using Eigen::Vector3d; using Eigen::Vector4d;
 using Eigen::Matrix2d;
 
-#define INTERVAL 20 // ms
+// #define INTERVAL 20 // ms
+#define INTERVAL 20 // ms for esp
 
 // fixed variables
 #define Z 257.4 // grand to COM
@@ -43,9 +44,9 @@ using Eigen::Matrix2d;
 #define WALK_STEP Tsup / INTERVAL * 1000
 
 #define DEFALUT_Y (80)
-#define X_MAX 100
+#define X_MAX 70
 #define Y_MAX 50
-#define THETA_MAX (45 * M_PI / 180)
+#define THETA_MAX (10 * M_PI / 180)
 
 class OmuniDirWalk : public rclcpp::Node
 {
@@ -122,6 +123,7 @@ private:
 
     Matrix2d m_aim_XYRot;
     Matrix2d p1_XYRot;
+    Matrix2d m1_to_p1_XYRot;
 
     std::vector< Vector4d > COM_traj;
     std::vector< Vector4d > COM_traj_next;
