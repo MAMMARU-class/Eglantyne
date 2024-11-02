@@ -4,58 +4,65 @@
 #include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "trajectory_msgs/msg/joint_trajectory.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "std_msgs/msg/int32.hpp"
+#include "sensor_msgs/msg/joy.hpp"
+
+#include "../../src/motion/motion_trig.h"
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
+using Int32 = std_msgs::msg::Int32;
 
-class PubControl : public rclcpp::Node
+class JoyHandler : public rclcpp::Node
 {
 public:
-    PubControl()
-    : Node("pub_control")
+    JoyHandler()
+    : Node("joy_handler")
     {
-        pub_for_esp_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/motion_list_command_for_esp", 10);
-        timer_ = this->create_wall_timer(
-            100ms, std::bind(&PubControl::timer_callback, this));
+        sub_joy_ = this->create_subscription<sensor_msgs::msg::Joy>(
+            "/joy", 10, std::bind(&JoyHandler::update_joy_order, this, _1));
+        sub_trig_ = this->create_subscription<Int32>(
+            "/motion_trigger", 10, std::bind(&JoyHandler::check_state, this, _1));
+        pub_trig_ = this->create_publisher<Int32>("/motion_trigger", 1);
     }
 private:
-    void timer_callback()
-    {
-        if(order.empty()){ return; }
-
-        trajectory_msgs::msg::JointTrajectory motion_list;
-        // max 10 motion
-        for(int i=0; i<MAX_MOTION; i++){
-            if(!order.empty()){
-                trajectory_msgs::msg::JointTrajectoryPoint pos;
-                pos = order.front();
-                order.erase(order.begin());
-                motion_list.points.push_back(pos);
+    void update_joy_order(sensor_msgs::msg::Joy joy_input){
+        Int32 trig;
+        if(state == STAY){
+            if(joy_input.buttons[4] == 1){
+                trig.data = WAKE_FRONT;
+                pub_trig_->publish(trig);
+            }else if(joy_input.buttons[5] == 1){
+                trig.data = WAKE_BACK;
+                pub_trig_->publish(trig);
+            }else if(!(joy_input.axes[0] == 0 && 
+                       joy_input.axes[1] == 0 && 
+                       joy_input.axes[2] == 0 && 
+                       joy_input.axes[3] == 0 && 
+                       joy_input.axes[4] == 0 && 
+                       joy_input.axes[5] == 0)){
+                trig.data = WALK;
+                pub_trig_->publish(trig);
             }
         }
-        // publishe position data
-        pub_for_esp_ -> publish(motion_list);
     }
 
-    void update_motions(const trajectory_msgs::msg::JointTrajectory::SharedPtr motion) 
-    {
-        std::vector< trajectory_msgs::msg::JointTrajectoryPoint > motion_points = motion->points;
-        order.insert(order.end(), motion_points.begin(), motion_points.end());
-    }    
-    std::vector< trajectory_msgs::msg::JointTrajectoryPoint > order;
+    void check_state(Int32 trig){
+        this->state = trig.data;
+    }
     
-    rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_for_esp_;
-    rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory>::SharedPtr sub_motion_list_;
+    int state = STAY;
+
+    rclcpp::Subscription<Int32>::SharedPtr sub_trig_;
+    rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr sub_joy_;
+    rclcpp::Publisher<Int32>::SharedPtr pub_trig_;
 };
 
 int main(int argc, char* argv[])
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<PubControl>());
+    rclcpp::spin(std::make_shared<JoyHandler>());
     rclcpp::shutdown();
     return 0;
 }

@@ -1,0 +1,7 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::pub_walk_trajectory(std_msgs::msg::Int32)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:205:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp::Subscription<std_msgs::msg::Int32_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass rclcpp::Subscription<std_msgs::msg::Int32_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  205 |         sub_trig_->[01;31m[Kpublish[m[K(trig);
+      |                    [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

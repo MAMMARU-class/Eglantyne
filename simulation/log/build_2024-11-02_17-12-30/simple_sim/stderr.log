@@ -1,0 +1,13 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:[m[K In member function ‘[01m[Kvoid JoyHandler::update_joy_order(sensor_msgs::msg::Joy)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:35:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpub_trig_[m[K’
+   35 |                 [01;31m[Kpub_trig_[m[K->publish(trig)
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:[m[K In member function ‘[01m[Kvoid JoyHandler::check_state(Int32)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:23:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KInt32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int32_<std::allocator<void> >[m[K’} to ‘[01m[Kint[m[K’ in assignment
+   51 |         this->state = [01;31m[Ktrig[m[K;
+      |                       [01;31m[K^~~~[m[K
+      |                       [01;31m[K|[m[K
+      |                       [01;31m[KInt32 {aka std_msgs::msg::Int32_<std::allocator<void> >}[m[K
+gmake[2]: *** [CMakeFiles/joy_handler.dir/build.make:76: CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/joy_handler.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

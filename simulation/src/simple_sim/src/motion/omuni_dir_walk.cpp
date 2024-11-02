@@ -82,7 +82,7 @@ void OmuniDirWalk::COM_traj_zero()
     double yp_0 = -sy/2;
     double yv_0 = -1 * yp_0*(C-1)/(Tc*S);
     RCLCPP_INFO(this->get_logger(), "COM start: y: %f, dy/dt: %f ", yp_0, yv_0);
-    for(double t=0; t<=Tsup+0.01; t+=INTERVAL*0.001){
+    for(double t=0; t<=Tsup+0.01; t+=CONTROL_CYCLE*0.001){
         trajy = yp_0 * cosh(t/Tc) + Tc*yv_0*sinh(t/Tc);
         COM_traj_next.push_back({0,trajy, Z, 0});
         
@@ -95,7 +95,7 @@ void OmuniDirWalk::COM_traj_zero()
 void OmuniDirWalk::calc_COM_traj_next()
 {
     double trajx, trajy, trajtheta;
-    for(double t=0; t<=Tsup+0.01; t+=INTERVAL*0.001){
+    for(double t=0; t<=Tsup+0.01; t+=CONTROL_CYCLE*0.001){
         trajx = ( COM_p_start(0) - aim_step(0) )*cosh(t/Tc) + Tc*COM_v_start(0)*sinh(t/Tc);
         trajy = ( COM_p_start(1) - aim_step(1) )*cosh(t/Tc) + Tc*COM_v_start(1)*sinh(t/Tc);
         trajtheta = (p1_theta-aim_theta) * (Tsup-t)/Tsup;
@@ -111,7 +111,7 @@ void OmuniDirWalk::calc_swing_foot_traj()
     double lx = aim_step(0) - m2_step(0);
     double ly = aim_step(1) - m2_step(1);
 
-    for(double t=0; t<=Tsup+0.01; t+=INTERVAL*0.001){
+    for(double t=0; t<=Tsup+0.01; t+=CONTROL_CYCLE*0.001){
         double theta = PI * t/Tsup;
         trajx = lx/2 * (1-cos(theta)) + m2_step(0);
         trajy = ly/2 * (1-cos(theta)) + m2_step(1);
@@ -200,6 +200,9 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
     if(msg.data != WALK){ return; }
     if(dx == 0 && dy == 0 && dtheta == 0 && COM_v_aim(0) == 0 && COM_v_aim(1) == 0){
         RCLCPP_INFO(this->get_logger(), "no motion detected");
+        std_msgs::msg::Int32 trig;
+        trig.data = STAY;
+        pub_trig_->publish(trig);
         return; }
     if (COM_traj_next.empty()){
         dx = 0; dy = 0; dtheta = 0;

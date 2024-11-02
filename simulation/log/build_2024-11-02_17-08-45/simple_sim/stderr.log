@@ -1,0 +1,8 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Ktrajectory_msgs/msg/joint_trajectory.hpp: No such file or directory
+    7 | #include [01;31m[K"trajectory_msgs/msg/joint_trajectory.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/joy_handler.dir/build.make:76: CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/joy_handler.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

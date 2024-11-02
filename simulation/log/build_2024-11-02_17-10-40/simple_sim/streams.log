@@ -1,0 +1,33 @@
+[0.009s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.036s] [ 10%] Built target esp_control
+[0.036s] [ 20%] Built target zero_pub
+[0.036s] [ 30%] Built target pub_control
+[0.038s] [ 40%] Built target pub_test
+[0.038s] [ 45%] [32mBuilding CXX object CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o[0m
+[0.040s] [ 55%] Built target squwad_esp
+[0.040s] [ 75%] Built target omuni_dir_walk
+[0.042s] [ 95%] Built target walk_test
+[1.442s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:[m[K In member function ‘[01m[Kvoid JoyHandler::update_joy_order(sensor_msgs::msg::Joy)[m[K’:
+[1.442s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:35:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpub_trig_[m[K’
+[1.442s]    35 |                 [01;31m[Kpub_trig_[m[K->publish(trig)
+[1.442s]       |                 [01;31m[K^~~~~~~~~[m[K
+[1.442s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:39:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K{[m[K’ token
+[1.442s]    39 |             }else if(!(joy_input.axes == [01;31m[K{[m[K0,0,0,0,0,0})){
+[1.442s]       |                                          [01;31m[K^[m[K
+[1.442s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:39:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+[1.442s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:39:23:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.442s]    39 |             }else if(![01;36m[K([m[Kjoy_input.axes == {0,0,0,0,0,0})){
+[1.442s]       |                       [01;36m[K^[m[K
+[1.443s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:39:56:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[1.443s]    39 |             }else if(!(joy_input.axes == {0,0,0,0,0,0})[01;31m[K)[m[K{
+[1.443s]       |                                                        [01;31m[K^[m[K
+[1.443s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:[m[K In member function ‘[01m[Kvoid JoyHandler::check_state(Int32)[m[K’:
+[1.443s] [01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:46:23:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KInt32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int32_<std::allocator<void> >[m[K’} to ‘[01m[Kint[m[K’ in assignment
+[1.443s]    46 |         this->state = [01;31m[Ktrig[m[K;
+[1.443s]       |                       [01;31m[K^~~~[m[K
+[1.443s]       |                       [01;31m[K|[m[K
+[1.443s]       |                       [01;31m[KInt32 {aka std_msgs::msg::Int32_<std::allocator<void> >}[m[K
+[3.394s] gmake[2]: *** [CMakeFiles/joy_handler.dir/build.make:76: CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o] Error 1
+[3.394s] gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/joy_handler.dir/all] Error 2
+[3.394s] gmake: *** [Makefile:146: all] Error 2
+[3.395s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16

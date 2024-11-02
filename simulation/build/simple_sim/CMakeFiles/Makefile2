@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_si
 # The main recursive "all" target.
 all: CMakeFiles/pub_control.dir/all
 all: CMakeFiles/esp_control.dir/all
+all: CMakeFiles/joy_handler.dir/all
 all: CMakeFiles/omuni_dir_walk.dir/all
 all: CMakeFiles/pub_test.dir/all
 all: CMakeFiles/zero_pub.dir/all
@@ -81,6 +82,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/simple_sim_uninstall.dir/clean
 clean: CMakeFiles/pub_control.dir/clean
 clean: CMakeFiles/esp_control.dir/clean
+clean: CMakeFiles/joy_handler.dir/clean
 clean: CMakeFiles/omuni_dir_walk.dir/clean
 clean: CMakeFiles/pub_test.dir/clean
 clean: CMakeFiles/zero_pub.dir/clean
@@ -147,7 +149,7 @@ CMakeFiles/simple_sim_uninstall.dir/clean:
 CMakeFiles/pub_control.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_control.dir/build.make CMakeFiles/pub_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=7,8 "Built target pub_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=9,10 "Built target pub_control"
 .PHONY : CMakeFiles/pub_control.dir/all
 
 # Build rule for subdir invocation for target.
@@ -193,13 +195,39 @@ CMakeFiles/esp_control.dir/clean:
 .PHONY : CMakeFiles/esp_control.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/joy_handler.dir
+
+# All Build rule for target.
+CMakeFiles/joy_handler.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_handler.dir/build.make CMakeFiles/joy_handler.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_handler.dir/build.make CMakeFiles/joy_handler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=3,4 "Built target joy_handler"
+.PHONY : CMakeFiles/joy_handler.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/joy_handler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/joy_handler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles 0
+.PHONY : CMakeFiles/joy_handler.dir/rule
+
+# Convenience name for target.
+joy_handler: CMakeFiles/joy_handler.dir/rule
+.PHONY : joy_handler
+
+# clean rule for target.
+CMakeFiles/joy_handler.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_handler.dir/build.make CMakeFiles/joy_handler.dir/clean
+.PHONY : CMakeFiles/joy_handler.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/omuni_dir_walk.dir
 
 # All Build rule for target.
 CMakeFiles/omuni_dir_walk.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/omuni_dir_walk.dir/build.make CMakeFiles/omuni_dir_walk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=3,4,5,6 "Built target omuni_dir_walk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=5,6,7,8 "Built target omuni_dir_walk"
 .PHONY : CMakeFiles/omuni_dir_walk.dir/all
 
 # Build rule for subdir invocation for target.
@@ -225,7 +253,7 @@ CMakeFiles/omuni_dir_walk.dir/clean:
 CMakeFiles/pub_test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_test.dir/build.make CMakeFiles/pub_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_test.dir/build.make CMakeFiles/pub_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=9,10 "Built target pub_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=11,12 "Built target pub_test"
 .PHONY : CMakeFiles/pub_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -251,7 +279,7 @@ CMakeFiles/pub_test.dir/clean:
 CMakeFiles/zero_pub.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_pub.dir/build.make CMakeFiles/zero_pub.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zero_pub.dir/build.make CMakeFiles/zero_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=17,18 "Built target zero_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=19,20 "Built target zero_pub"
 .PHONY : CMakeFiles/zero_pub.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +305,7 @@ CMakeFiles/zero_pub.dir/clean:
 CMakeFiles/squwad_esp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/squwad_esp.dir/build.make CMakeFiles/squwad_esp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/squwad_esp.dir/build.make CMakeFiles/squwad_esp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=11,12 "Built target squwad_esp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=13,14 "Built target squwad_esp"
 .PHONY : CMakeFiles/squwad_esp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -303,7 +331,7 @@ CMakeFiles/squwad_esp.dir/clean:
 CMakeFiles/walk_test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/walk_test.dir/build.make CMakeFiles/walk_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=13,14,15,16 "Built target walk_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim/CMakeFiles --progress-num=15,16,17,18 "Built target walk_test"
 .PHONY : CMakeFiles/walk_test.dir/all
 
 # Build rule for subdir invocation for target.

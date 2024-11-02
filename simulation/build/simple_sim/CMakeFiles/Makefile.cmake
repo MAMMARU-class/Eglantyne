@@ -838,6 +838,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/simple_sim_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/pub_control.dir/DependInfo.cmake"
   "CMakeFiles/esp_control.dir/DependInfo.cmake"
+  "CMakeFiles/joy_handler.dir/DependInfo.cmake"
   "CMakeFiles/omuni_dir_walk.dir/DependInfo.cmake"
   "CMakeFiles/pub_test.dir/DependInfo.cmake"
   "CMakeFiles/zero_pub.dir/DependInfo.cmake"

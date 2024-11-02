@@ -37,11 +37,15 @@ set(MODULE
   src/module/Link.cpp
 )
 
+# controllers
 add_executable(pub_control simenv/controller/pub_control.cpp)
 ament_target_dependencies(pub_control rclcpp trajectory_msgs std_msgs)
 
 add_executable(esp_control simenv/controller/esp_control.cpp)
 ament_target_dependencies(esp_control rclcpp trajectory_msgs)
+
+add_executable(joy_handler simenv/controller/joy_handler.cpp)
+ament_target_dependencies(joy_handler rclcpp std_msgs sensor_msgs)
 
 #motions
 add_executable(omuni_dir_walk src/motion/omuni_dir_walk.cpp ${MODULE})
@@ -61,16 +65,20 @@ add_executable(walk_test src/test/walk_test.cpp ${MODULE})
 ament_target_dependencies(walk_test rclcpp trajectory_msgs std_msgs)
 
 install(TARGETS
+  # main controllers
   pub_control
   esp_control
+  joy_handler
 
+  # main motions
   omuni_dir_walk
 
+  # test motions
   pub_test
-
   zero_pub
   squwad_esp
   walk_test
+
   DESTINATION lib/${PROJECT_NAME}/)
 
 install(

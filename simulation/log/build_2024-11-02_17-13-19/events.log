@@ -1,0 +1,86 @@
+[0.000000] (-) TimerEvent: {}
+[0.000429] (-) JobUnselected: {'identifier': 'champ'}
+[0.000496] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000517] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000536] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000553] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000570] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000587] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000603] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000619] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.000635] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000652] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000668] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000684] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000700] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000716] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000731] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000748] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000763] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000797] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000818] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.000828] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.000838] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.000845] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.000852] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.000859] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.000867] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.000873] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.000883] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.000895] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.006146] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.006757] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.007375] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3792'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp86w7gowhidf_30497'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1644,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1644'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cbb212e6_9a66_40b5_afaf_086e6cc045aa'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MCDUW2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.041640] (simple_sim) StdoutLine: {'line': b'[ 10%] Built target pub_control\n'}
+[0.042734] (simple_sim) StdoutLine: {'line': b'[ 30%] Built target pub_test\n'}
+[0.043171] (simple_sim) StdoutLine: {'line': b'[ 30%] Built target zero_pub\n'}
+[0.045250] (simple_sim) StdoutLine: {'line': b'[ 40%] Built target esp_control\n'}
+[0.045683] (simple_sim) StdoutLine: {'line': b'[ 50%] Built target squwad_esp\n'}
+[0.045784] (simple_sim) StdoutLine: {'line': b'[ 70%] Built target omuni_dir_walk\n'}
+[0.047110] (simple_sim) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o\x1b[0m\n'}
+[0.047701] (simple_sim) StdoutLine: {'line': b'[ 95%] Built target walk_test\n'}
+[0.099751] (-) TimerEvent: {}
+[0.200100] (-) TimerEvent: {}
+[0.300368] (-) TimerEvent: {}
+[0.400694] (-) TimerEvent: {}
+[0.501037] (-) TimerEvent: {}
+[0.601365] (-) TimerEvent: {}
+[0.701690] (-) TimerEvent: {}
+[0.802079] (-) TimerEvent: {}
+[0.902310] (-) TimerEvent: {}
+[1.002554] (-) TimerEvent: {}
+[1.102794] (-) TimerEvent: {}
+[1.203119] (-) TimerEvent: {}
+[1.303340] (-) TimerEvent: {}
+[1.402746] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid JoyHandler::check_state(Int32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.402906] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:52:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 in assignment\n'}
+[1.402948] (simple_sim) StderrLine: {'line': b'   52 |         this->state = \x1b[01;31m\x1b[Ktrig\x1b[m\x1b[K;\n'}
+[1.402978] (simple_sim) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.403005] (simple_sim) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.403032] (simple_sim) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[KInt32 {aka std_msgs::msg::Int32_<std::allocator<void> >}\x1b[m\x1b[K\n'}
+[1.403428] (-) TimerEvent: {}
+[1.503612] (-) TimerEvent: {}
+[1.603829] (-) TimerEvent: {}
+[1.704044] (-) TimerEvent: {}
+[1.804267] (-) TimerEvent: {}
+[1.904518] (-) TimerEvent: {}
+[2.004895] (-) TimerEvent: {}
+[2.105199] (-) TimerEvent: {}
+[2.205446] (-) TimerEvent: {}
+[2.305778] (-) TimerEvent: {}
+[2.406010] (-) TimerEvent: {}
+[2.506290] (-) TimerEvent: {}
+[2.606543] (-) TimerEvent: {}
+[2.706783] (-) TimerEvent: {}
+[2.807012] (-) TimerEvent: {}
+[2.907238] (-) TimerEvent: {}
+[3.007505] (-) TimerEvent: {}
+[3.107765] (-) TimerEvent: {}
+[3.208007] (-) TimerEvent: {}
+[3.287425] (simple_sim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/joy_handler.dir/build.make:76: CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o] Error 1\n'}
+[3.287575] (simple_sim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/joy_handler.dir/all] Error 2\n'}
+[3.287792] (simple_sim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.289101] (simple_sim) CommandEnded: {'returncode': 2}
+[3.308080] (-) TimerEvent: {}
+[3.350965] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 2}
+[3.361290] (-) EventReactorShutdown: {}

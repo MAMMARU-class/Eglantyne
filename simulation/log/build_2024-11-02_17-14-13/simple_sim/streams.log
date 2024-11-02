@@ -1,0 +1,54 @@
+[0.008s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[0.037s] [ 10%] Built target squwad_esp
+[0.037s] [ 20%] Built target esp_control
+[0.037s] [ 30%] Built target pub_control
+[0.037s] [ 40%] Built target zero_pub
+[0.037s] [ 50%] Built target pub_test
+[0.038s] [ 55%] [32mBuilding CXX object CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o[0m
+[0.039s] [ 75%] Built target omuni_dir_walk
+[0.042s] [ 95%] Built target walk_test
+[6.343s] [100%] [32m[1mLinking CXX executable joy_handler[0m
+[6.655s] [100%] Built target joy_handler
+[6.660s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim -- -j16 -l16
+[6.697s] Invoking command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim
+[6.699s] -- Install configuration: ""
+[6.699s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_control
+[6.699s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/esp_control
+[6.699s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/joy_handler
+[6.702s] -- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/joy_handler" to ""
+[6.702s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/omuni_dir_walk
+[6.702s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_test
+[6.702s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/zero_pub
+[6.702s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/squwad_esp
+[6.702s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/walk_test
+[6.702s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/view_robot.launch.py
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/ros2_control_conf.xacro
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/gazebo_setup.xacro
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_body.xacro
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_arm.xacro
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_leg.xacro
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/shape_macro.xacro
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/eglantyne.xacro
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/eglantyne_controller.launch.py
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config/eglantyne_controller.yaml
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/package_run_dependencies/simple_sim
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/parent_prefix_path/simple_sim
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.sh
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.dsv
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.sh
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.dsv
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.bash
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.sh
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.zsh
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.dsv
+[6.703s] -- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.dsv
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/packages/simple_sim
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig.cmake
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig-version.cmake
+[6.703s] -- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.xml
+[6.704s] Invoked command in '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim

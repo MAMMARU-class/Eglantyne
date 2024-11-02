@@ -1,5 +1,6 @@
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_control
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/esp_control
+/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/joy_handler
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/omuni_dir_walk
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_test
 /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/zero_pub

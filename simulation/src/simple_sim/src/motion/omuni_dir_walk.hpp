@@ -21,9 +21,6 @@ using std::placeholders::_1;
 using Eigen::Vector2d; using Eigen::Vector3d; using Eigen::Vector4d;
 using Eigen::Matrix2d;
 
-// #define INTERVAL 20 // ms
-#define INTERVAL 20 // ms for esp
-
 // fixed variables
 #define Z 257.4 // grand to COM
 #define BASE_TO_COM 40.0
@@ -41,7 +38,7 @@ using Eigen::Matrix2d;
 #define COEF_B 1
 #define D ( COEF_A * (C-1)*(C-1) + COEF_B * (S/Tc)*(S/Tc) )
 
-#define WALK_STEP Tsup / INTERVAL * 1000
+#define WALK_STEP Tsup / CONTROL_CYCLE * 1000
 
 #define DEFALUT_Y (80)
 #define X_MAX 70
@@ -59,6 +56,7 @@ public:
         pub_motion_list_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/motion_list_command", 10);
         sub_trig_ = this->create_subscription<std_msgs::msg::Int32>(
             "/motion_trigger", 10, std::bind(&OmuniDirWalk::pub_walk_trajectory, this, _1));
+        pub_trig_ = this->create_publisher<std_msgs::msg::Int32>("/motion_trigger", 1);
         sub_joy_ = this->create_subscription<sensor_msgs::msg::Joy>(
             "/joy", 10, std::bind(&OmuniDirWalk::update_joy_order, this, _1));
         
@@ -140,5 +138,6 @@ private:
 
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_motion_list_;
     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr sub_trig_;
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr pub_trig_;
     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr sub_joy_;
 };

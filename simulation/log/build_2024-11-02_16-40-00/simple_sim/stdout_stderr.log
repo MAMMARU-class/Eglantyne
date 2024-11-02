@@ -1,0 +1,20 @@
+[ 11%] Built target pub_test
+[ 22%] Built target zero_pub
+[ 33%] Built target pub_control
+[ 38%] [32mBuilding CXX object CMakeFiles/squwad_esp.dir/src/test/squwad_esp.cpp.o[0m
+[ 50%] Built target esp_control
+[ 55%] [32mBuilding CXX object CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::pub_walk_trajectory(std_msgs::msg::Int32)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:205:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_trig[m[K’ was not declared in this scope; did you mean ‘[01m[Ksub_trig_[m[K’?
+  205 |         [01;31m[Ksub_trig[m[K->publish(trig);
+      |         [01;31m[K^~~~~~~~[m[K
+      |         [32m[Ksub_trig_[m[K
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 66%] [32m[1mLinking CXX executable squwad_esp[0m
+[ 66%] Built target squwad_esp
+[ 72%] [32m[1mLinking CXX executable walk_test[0m
+[ 83%] Built target walk_test
+gmake: *** [Makefile:146: all] Error 2

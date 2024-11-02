@@ -1,0 +1,8 @@
+[  5%] [32mBuilding CXX object CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o[0m
+[ 15%] Built target pub_test
+[ 25%] Built target pub_control
+[ 35%] Built target esp_control
+[ 45%] Built target zero_pub
+[ 55%] Built target squwad_esp
+[ 75%] Built target omuni_dir_walk
+[ 95%] Built target walk_test

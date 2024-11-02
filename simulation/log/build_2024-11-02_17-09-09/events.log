@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.000540] (-) JobUnselected: {'identifier': 'champ'}
+[0.000625] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000691] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000711] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000729] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000748] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000766] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000783] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000800] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.000818] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000835] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000852] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000869] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000886] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000903] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000920] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000937] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000954] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000971] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000989] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.001006] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.001023] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.001040] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.001057] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.001074] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.001091] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.001108] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.001127] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.001148] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.006680] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.008303] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.008348] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3792'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp86w7gowhidf_30497'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1644,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1644'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cbb212e6_9a66_40b5_afaf_086e6cc045aa'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MCDUW2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.034646] (simple_sim) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o\x1b[0m\n'}
+[0.039403] (simple_sim) StdoutLine: {'line': b'[ 15%] Built target pub_test\n'}
+[0.040180] (simple_sim) StdoutLine: {'line': b'[ 25%] Built target pub_control\n'}
+[0.040524] (simple_sim) StdoutLine: {'line': b'[ 35%] Built target esp_control\n'}
+[0.041346] (simple_sim) StdoutLine: {'line': b'[ 45%] Built target zero_pub\n'}
+[0.044528] (simple_sim) StdoutLine: {'line': b'[ 55%] Built target squwad_esp\n'}
+[0.045966] (simple_sim) StdoutLine: {'line': b'[ 75%] Built target omuni_dir_walk\n'}
+[0.046269] (simple_sim) StdoutLine: {'line': b'[ 95%] Built target walk_test\n'}
+[0.099952] (-) TimerEvent: {}
+[0.200323] (-) TimerEvent: {}
+[0.300612] (-) TimerEvent: {}
+[0.400981] (-) TimerEvent: {}
+[0.501349] (-) TimerEvent: {}
+[0.601649] (-) TimerEvent: {}
+[0.701906] (-) TimerEvent: {}
+[0.802147] (-) TimerEvent: {}
+[0.902388] (-) TimerEvent: {}
+[1.002730] (-) TimerEvent: {}
+[1.103048] (-) TimerEvent: {}
+[1.203294] (-) TimerEvent: {}
+[1.303561] (-) TimerEvent: {}
+[1.336675] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:14:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsgs\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.336831] (simple_sim) StderrLine: {'line': b'   14 | using Int32 = std_msgs::\x1b[01;31m\x1b[Kmsgs\x1b[m\x1b[K::Int32;\n'}
+[1.336870] (simple_sim) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.336901] (simple_sim) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.336930] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:29:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.336961] (simple_sim) StderrLine: {'line': b'   29 |     void update_joy_order(\x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::Joy joy_input){\n'}
+[1.336993] (simple_sim) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.337024] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:29:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kjoy_input\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.337056] (simple_sim) StderrLine: {'line': b'   29 |     void update_joy_order(sensor_msgs::msg::Joy \x1b[01;31m\x1b[Kjoy_input\x1b[m\x1b[K){\n'}
+[1.337085] (simple_sim) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.337114] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:44:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.337144] (simple_sim) StderrLine: {'line': b'   44 |     void check_state(\x1b[01;31m\x1b[KInt32\x1b[m\x1b[K trig){\n'}
+[1.337377] (simple_sim) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.337423] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.337461] (simple_sim) StderrLine: {'line': b'   50 |     rclcpp::Subscription<\x1b[01;31m\x1b[KInt32\x1b[m\x1b[K>::SharedPtr sub_trig_;\n'}
+[1.337494] (simple_sim) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.337524] (simple_sim) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\n'}
+[1.337552] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.337578] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:8\x1b[m\x1b[K:\n'}
+[1.337603] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:122:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.337630] (simple_sim) StderrLine: {'line': b'  122 | using \x1b[01;36m\x1b[KInt32\x1b[m\x1b[K =\n'}
+[1.337655] (simple_sim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.337680] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.337706] (simple_sim) StderrLine: {'line': b'   50 |     rclcpp::Subscription<Int32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr sub_trig_;\n'}
+[1.337732] (simple_sim) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.337758] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.337786] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[1.337813] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[1.337996] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.338067] (simple_sim) StderrLine: {'line': b'   50 |     rclcpp::Subscription<Int32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sub_trig_;\n'}
+[1.338102] (simple_sim) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.338132] (simple_sim) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.339269] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_trig_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.339349] (simple_sim) StderrLine: {'line': b'   50 |     rclcpp::Subscription<Int32>::SharedPtr \x1b[01;31m\x1b[Ksub_trig_\x1b[m\x1b[K;\n'}
+[1.339386] (simple_sim) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.343247] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.343329] (simple_sim) StderrLine: {'line': b'   51 |     rclcpp::Subscription<\x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::Joy>::SharedPtr sub_joy_;\n'}
+[1.343366] (simple_sim) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.343396] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.343432] (simple_sim) StderrLine: {'line': b'   51 |     rclcpp::Subscription<sensor_msgs::msg::Joy\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr sub_joy_;\n'}
+[1.343460] (simple_sim) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.343488] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.343515] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[1.343542] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[1.343568] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.343595] (simple_sim) StderrLine: {'line': b'   51 |     rclcpp::Subscription<sensor_msgs::msg::Joy>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sub_joy_;\n'}
+[1.343621] (simple_sim) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.343646] (simple_sim) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.343672] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint JoyHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.343698] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint JoyHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.343724] (simple_sim) StderrLine: {'line': b'   50 |     rclcpp::Subscription<Int32>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K sub_trig_;\n'}
+[1.343749] (simple_sim) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.344343] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:51:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_joy_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.344415] (simple_sim) StderrLine: {'line': b'   51 |     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr \x1b[01;31m\x1b[Ksub_joy_\x1b[m\x1b[K;\n'}
+[1.344456] (simple_sim) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.344485] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:52:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.344520] (simple_sim) StderrLine: {'line': b'   52 |     rclcpp::Publisher<\x1b[01;31m\x1b[KInt32\x1b[m\x1b[K>::SharedPtr pub_trig_;\n'}
+[1.344549] (simple_sim) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.344577] (simple_sim) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\n'}
+[1.344604] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.344632] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:8\x1b[m\x1b[K:\n'}
+[1.344658] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:122:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.344685] (simple_sim) StderrLine: {'line': b'  122 | using \x1b[01;36m\x1b[KInt32\x1b[m\x1b[K =\n'}
+[1.344712] (simple_sim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.344737] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:52:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.344764] (simple_sim) StderrLine: {'line': b'   52 |     rclcpp::Publisher<Int32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr pub_trig_;\n'}
+[1.344788] (simple_sim) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.344811] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:52:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.344837] (simple_sim) StderrLine: {'line': b'   52 |     rclcpp::Publisher<Int32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K pub_trig_;\n'}
+[1.344860] (simple_sim) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.344885] (simple_sim) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.344911] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:52:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint JoyHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.344936] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:50:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint JoyHandler::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.344961] (simple_sim) StderrLine: {'line': b'   50 |     rclcpp::Subscription<Int32>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K sub_trig_;\n'}
+[1.344984] (simple_sim) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.345411] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:52:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_trig_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.345446] (simple_sim) StderrLine: {'line': b'   52 |     rclcpp::Publisher<Int32>::SharedPtr \x1b[01;31m\x1b[Kpub_trig_\x1b[m\x1b[K;\n'}
+[1.345475] (simple_sim) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.349650] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KJoyHandler::JoyHandler()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.349789] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:22:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_joy_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.349838] (simple_sim) StderrLine: {'line': b'   22 |         \x1b[01;31m\x1b[Ksub_joy_\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::Joy>(\n'}
+[1.349870] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.353642] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:22:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.353725] (simple_sim) StderrLine: {'line': b'   22 |         sub_joy_ = this->create_subscription<\x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::msg::Joy>(\n'}
+[1.353760] (simple_sim) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.353791] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:22:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.353819] (simple_sim) StderrLine: {'line': b'   22 |         sub_joy_ = this->\x1b[01;31m\x1b[Kcreate_subscription<sensor_msgs::msg::Joy>\x1b[m\x1b[K(\n'}
+[1.353845] (simple_sim) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.353871] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:23:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOmuniDirWalk\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.353898] (simple_sim) StderrLine: {'line': b'   23 |             "/joy", 10, std::bind(&\x1b[01;31m\x1b[KOmuniDirWalk\x1b[m\x1b[K::update_joy_order, this, _1));\n'}
+[1.353924] (simple_sim) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.357271] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_trig_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.357355] (simple_sim) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[Ksub_trig_\x1b[m\x1b[K = this->create_subscription<Int32>(\n'}
+[1.357390] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.357523] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:24:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.357594] (simple_sim) StderrLine: {'line': b'   24 |         sub_trig_ = this->create_subscription<\x1b[01;31m\x1b[KInt32\x1b[m\x1b[K>(\n'}
+[1.357627] (simple_sim) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.357660] (simple_sim) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\n'}
+[1.357687] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.357713] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:8\x1b[m\x1b[K:\n'}
+[1.357735] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:122:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.357758] (simple_sim) StderrLine: {'line': b'  122 | using \x1b[01;36m\x1b[KInt32\x1b[m\x1b[K =\n'}
+[1.357781] (simple_sim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.357802] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:25:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOmuniDirWalk\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.357824] (simple_sim) StderrLine: {'line': b'   25 |             "/motion_trigger", 10, std::bind(&\x1b[01;31m\x1b[KOmuniDirWalk\x1b[m\x1b[K::check_state, this, _1));\n'}
+[1.357848] (simple_sim) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.361132] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_trig_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.361207] (simple_sim) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[Kpub_trig_\x1b[m\x1b[K = this->create_publisher<Int32>("/motion_trigger", 1);\n'}
+[1.361242] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.361272] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:26:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KJoyHandler::create_publisher<Int32>(const char [16], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.361302] (simple_sim) StderrLine: {'line': b'   26 |         pub_trig_ = \x1b[01;31m\x1b[Kthis->create_publisher<Int32>("/motion_trigger", 1)\x1b[m\x1b[K;\n'}
+[1.361330] (simple_sim) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.361510] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.361562] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.361593] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.361620] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:6\x1b[m\x1b[K:\n'}
+[1.361649] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.361680] (simple_sim) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[1.361715] (simple_sim) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.361740] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.361766] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid JoyHandler::update_joy_order(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.361791] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.361821] (simple_sim) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[KInt32\x1b[m\x1b[K trig;\n'}
+[1.361847] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.361870] (simple_sim) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\n'}
+[1.361894] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.361918] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:8\x1b[m\x1b[K:\n'}
+[1.361945] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:122:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.361971] (simple_sim) StderrLine: {'line': b'  122 | using \x1b[01;36m\x1b[KInt32\x1b[m\x1b[K =\n'}
+[1.361996] (simple_sim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.365278] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:32:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoy_input\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.365356] (simple_sim) StderrLine: {'line': b'   32 |             if(\x1b[01;31m\x1b[Kjoy_input\x1b[m\x1b[K.buttons[4] == 1){\n'}
+[1.365391] (simple_sim) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.368116] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:33:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrig\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.368191] (simple_sim) StderrLine: {'line': b'   33 |                 \x1b[01;31m\x1b[Ktrig\x1b[m\x1b[K.data = WAKE_FRONT\n'}
+[1.368225] (simple_sim) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.370846] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:36:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrig\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.370938] (simple_sim) StderrLine: {'line': b'   36 |                 \x1b[01;31m\x1b[Ktrig\x1b[m\x1b[K.data = WAKE_BACK;\n'}
+[1.370973] (simple_sim) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.374597] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:37:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_trig_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.374717] (simple_sim) StderrLine: {'line': b'   37 |                 \x1b[01;31m\x1b[Kpub_trig_\x1b[m\x1b[K->publish(trig);\n'}
+[1.374784] (simple_sim) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.374845] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:38:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.374904] (simple_sim) StderrLine: {'line': b'   38 |             }else if(!(joy_input.axes == \x1b[01;31m\x1b[K{\x1b[m\x1b[K0,0,0,0,0,0})){\n'}
+[1.374962] (simple_sim) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.375020] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:38:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.375078] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:38:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.375135] (simple_sim) StderrLine: {'line': b'   38 |             }else if(!\x1b[01;36m\x1b[K(\x1b[m\x1b[Kjoy_input.axes == {0,0,0,0,0,0})){\n'}
+[1.375192] (simple_sim) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.375249] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:38:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.375306] (simple_sim) StderrLine: {'line': b'   38 |             }else if(!(joy_input.axes == {0,0,0,0,0,0})\x1b[01;31m\x1b[K)\x1b[m\x1b[K{\n'}
+[1.375362] (simple_sim) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.375426] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/simenv/controller/joy_handler.cpp:29:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KJoy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.375492] (simple_sim) StderrLine: {'line': b'   29 |     void update_joy_order(\x1b[01;35m\x1b[Ksensor_msgs::msg::Joy\x1b[m\x1b[K joy_input){\n'}
+[1.375550] (simple_sim) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.403677] (-) TimerEvent: {}
+[1.504023] (-) TimerEvent: {}
+[1.604384] (-) TimerEvent: {}
+[1.627168] (simple_sim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/joy_handler.dir/build.make:76: CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o] Error 1\n'}
+[1.627508] (simple_sim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/joy_handler.dir/all] Error 2\n'}
+[1.627653] (simple_sim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.628909] (simple_sim) CommandEnded: {'returncode': 2}
+[1.677082] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 2}
+[1.687455] (-) EventReactorShutdown: {}

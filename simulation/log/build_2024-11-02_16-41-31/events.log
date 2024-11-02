@@ -1,0 +1,186 @@
+[0.000000] (-) TimerEvent: {}
+[0.000463] (-) JobUnselected: {'identifier': 'champ'}
+[0.000574] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000648] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000674] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000695] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000713] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000729] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000746] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000763] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.000779] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000796] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000812] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000828] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000844] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000861] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000877] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000893] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000908] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000924] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000940] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.000957] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.000972] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.000988] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.001004] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.001020] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.001035] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.001051] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.001070] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.001090] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.008635] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.009223] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.009769] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base/lib:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3792'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp8jnkt754idf_28037'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo/bin:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base/bin:/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1644,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1644'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9529dfd7_5ac6_4390_ac63_3380ae3284ae'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MCDUW2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/python3.10/site-packages:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing/lib/python3.10/site-packages:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup/lib/python3.10/site-packages:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_9:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_8:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_7:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_6:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_15:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_5:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_4:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_3:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_2:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_14:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_12:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_11:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_10:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_example_1:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/gazebo_ros2_control_demos:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_teleop:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_navigation:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_gazebo:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_bringup:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_base:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_msgs:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_description:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ_config:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/ros2_control_demo_testing:/opt/ros/humble:/home/hibiki/Robomech_HR/Eglantyne/simulation/install/champ')]), 'shell': False}
+[0.050549] (simple_sim) StdoutLine: {'line': b'[ 11%] Built target zero_pub\n'}
+[0.052454] (simple_sim) StdoutLine: {'line': b'[ 22%] Built target esp_control\n'}
+[0.053730] (simple_sim) StdoutLine: {'line': b'[ 33%] Built target squwad_esp\n'}
+[0.054040] (simple_sim) StdoutLine: {'line': b'[ 44%] Built target pub_control\n'}
+[0.054583] (simple_sim) StdoutLine: {'line': b'[ 55%] Built target pub_test\n'}
+[0.059453] (simple_sim) StdoutLine: {'line': b'[ 77%] Built target walk_test\n'}
+[0.062500] (simple_sim) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o\x1b[0m\n'}
+[0.099848] (-) TimerEvent: {}
+[0.200075] (-) TimerEvent: {}
+[0.300342] (-) TimerEvent: {}
+[0.400618] (-) TimerEvent: {}
+[0.500904] (-) TimerEvent: {}
+[0.601185] (-) TimerEvent: {}
+[0.701525] (-) TimerEvent: {}
+[0.801870] (-) TimerEvent: {}
+[0.902140] (-) TimerEvent: {}
+[1.002445] (-) TimerEvent: {}
+[1.102705] (-) TimerEvent: {}
+[1.202996] (-) TimerEvent: {}
+[1.303285] (-) TimerEvent: {}
+[1.403661] (-) TimerEvent: {}
+[1.503977] (-) TimerEvent: {}
+[1.604268] (-) TimerEvent: {}
+[1.704565] (-) TimerEvent: {}
+[1.804852] (-) TimerEvent: {}
+[1.905178] (-) TimerEvent: {}
+[2.005501] (-) TimerEvent: {}
+[2.105838] (-) TimerEvent: {}
+[2.206124] (-) TimerEvent: {}
+[2.306444] (-) TimerEvent: {}
+[2.306833] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.307138] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KOmuniDirWalk::OmuniDirWalk()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.307242] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:62:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32_<std::allocator<void> >::Int32_(const char [16], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.307331] (simple_sim) StderrLine: {'line': b'   62 |         pub_trig_ = this->create_publisher<std_msgs::msg::Int32("/motion_trigger", 1\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.307413] (simple_sim) StderrLine: {'line': b'      |                                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.307496] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[2.307580] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:12\x1b[m\x1b[K,\n'}
+[2.307803] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.307982] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:45:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32_<ContainerAllocator>::Int32_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.308072] (simple_sim) StderrLine: {'line': b'   45 |   explicit \x1b[01;36m\x1b[KInt32_\x1b[m\x1b[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[2.308150] (simple_sim) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.308224] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:45:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [16]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::allocator<void>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.308299] (simple_sim) StderrLine: {'line': b'   45 |   explicit Int32_(\x1b[01;36m\x1b[Kconst ContainerAllocator & _alloc\x1b[m\x1b[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[2.308372] (simple_sim) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.308445] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:36:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32_<ContainerAllocator>::Int32_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.308521] (simple_sim) StderrLine: {'line': b'   36 |   explicit \x1b[01;36m\x1b[KInt32_\x1b[m\x1b[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[2.308598] (simple_sim) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.308680] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:36:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[2.308754] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std_msgs::msg::Int32_<std::allocator<void> >::Int32_(const std_msgs::msg::Int32_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.308834] (simple_sim) StderrLine: {'line': b'   32 | struct \x1b[01;36m\x1b[KInt32_\x1b[m\x1b[K\n'}
+[2.308906] (simple_sim) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.308977] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[2.309050] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std_msgs::msg::Int32_<std::allocator<void> >::Int32_(std_msgs::msg::Int32_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.309122] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[2.309194] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.309272] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:62:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.309345] (simple_sim) StderrLine: {'line': b'   62 |         pub_trig_ = this->\x1b[01;31m\x1b[Kcreate_publisher<std_msgs::msg::Int32("/motion_trigger", 1)\x1b[m\x1b[K;\n'}
+[2.309422] (simple_sim) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.309495] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:62:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > >::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.309573] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.309656] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.309731] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.309803] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.309882] (simple_sim) StderrLine: {'line': b'  363 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[2.309956] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.310027] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.310112] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.310185] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:62:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.310258] (simple_sim) StderrLine: {'line': b'   62 |         pub_trig_ = this->\x1b[01;36m\x1b[Kcreate_publisher<std_msgs::msg::Int32("/motion_trigger", 1)\x1b[m\x1b[K;\n'}
+[2.310330] (simple_sim) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.310402] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.310473] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.310545] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.310624] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.310704] (simple_sim) StderrLine: {'line': b'  374 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[2.310776] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.310848] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.310920] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.310991] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:62:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.311063] (simple_sim) StderrLine: {'line': b'   62 |         pub_trig_ = this->\x1b[01;36m\x1b[Kcreate_publisher<std_msgs::msg::Int32("/motion_trigger", 1)\x1b[m\x1b[K;\n'}
+[2.311135] (simple_sim) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.311205] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.311277] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.311348] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.311424] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.311506] (simple_sim) StderrLine: {'line': b'  391 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[2.311577] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.311658] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.311732] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.311806] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:62:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.311880] (simple_sim) StderrLine: {'line': b'   62 |         pub_trig_ = this->\x1b[01;36m\x1b[Kcreate_publisher<std_msgs::msg::Int32("/motion_trigger", 1)\x1b[m\x1b[K;\n'}
+[2.311952] (simple_sim) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.312029] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.312101] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.312173] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.312246] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.312321] (simple_sim) StderrLine: {'line': b'  399 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[2.312392] (simple_sim) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.312464] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.312534] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.312613] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:62:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.312691] (simple_sim) StderrLine: {'line': b'   62 |         pub_trig_ = this->\x1b[01;36m\x1b[Kcreate_publisher<std_msgs::msg::Int32("/motion_trigger", 1)\x1b[m\x1b[K;\n'}
+[2.312762] (simple_sim) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.312833] (simple_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.312904] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.hpp:3\x1b[m\x1b[K,\n'}
+[2.312974] (simple_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:1\x1b[m\x1b[K:\n'}
+[2.313050] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.313124] (simple_sim) StderrLine: {'line': b'  359 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[2.313195] (simple_sim) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.313267] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > > >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.313340] (simple_sim) StderrLine: {'line': b'  359 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[2.313411] (simple_sim) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.313481] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.313558] (simple_sim) StderrLine: {'line': b'  383 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[2.313638] (simple_sim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.313711] (simple_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32_<std::allocator<void> > > >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.313790] (simple_sim) StderrLine: {'line': b'  383 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[2.313862] (simple_sim) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.406581] (-) TimerEvent: {}
+[2.506897] (-) TimerEvent: {}
+[2.607209] (-) TimerEvent: {}
+[2.707462] (-) TimerEvent: {}
+[2.807762] (-) TimerEvent: {}
+[2.908057] (-) TimerEvent: {}
+[3.008344] (-) TimerEvent: {}
+[3.108653] (-) TimerEvent: {}
+[3.208974] (-) TimerEvent: {}
+[3.309269] (-) TimerEvent: {}
+[3.409604] (-) TimerEvent: {}
+[3.509885] (-) TimerEvent: {}
+[3.610162] (-) TimerEvent: {}
+[3.710492] (-) TimerEvent: {}
+[3.810930] (-) TimerEvent: {}
+[3.911340] (-) TimerEvent: {}
+[4.011667] (-) TimerEvent: {}
+[4.111967] (-) TimerEvent: {}
+[4.212260] (-) TimerEvent: {}
+[4.312617] (-) TimerEvent: {}
+[4.412899] (-) TimerEvent: {}
+[4.513192] (-) TimerEvent: {}
+[4.613558] (-) TimerEvent: {}
+[4.713839] (-) TimerEvent: {}
+[4.814107] (-) TimerEvent: {}
+[4.914380] (-) TimerEvent: {}
+[5.014679] (-) TimerEvent: {}
+[5.114987] (-) TimerEvent: {}
+[5.184795] (simple_sim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1\n'}
+[5.184996] (simple_sim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/omuni_dir_walk.dir/all] Error 2\n'}
+[5.185235] (simple_sim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.186965] (simple_sim) CommandEnded: {'returncode': 2}
+[5.215091] (-) TimerEvent: {}
+[5.276344] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 2}
+[5.286898] (-) EventReactorShutdown: {}

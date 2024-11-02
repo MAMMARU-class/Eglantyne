@@ -224,6 +224,19 @@ esp_control/fast:
 .PHONY : esp_control/fast
 
 #=============================================================================
+# Target rules for targets named joy_handler
+
+# Build rule for target.
+joy_handler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joy_handler
+.PHONY : joy_handler
+
+# fast build rule for target.
+joy_handler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_handler.dir/build.make CMakeFiles/joy_handler.dir/build
+.PHONY : joy_handler/fast
+
+#=============================================================================
 # Target rules for targets named omuni_dir_walk
 
 # Build rule for target.
@@ -311,6 +324,30 @@ simenv/controller/esp_control.s: simenv/controller/esp_control.cpp.s
 simenv/controller/esp_control.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/esp_control.dir/build.make CMakeFiles/esp_control.dir/simenv/controller/esp_control.cpp.s
 .PHONY : simenv/controller/esp_control.cpp.s
+
+simenv/controller/joy_handler.o: simenv/controller/joy_handler.cpp.o
+.PHONY : simenv/controller/joy_handler.o
+
+# target to build an object file
+simenv/controller/joy_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_handler.dir/build.make CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o
+.PHONY : simenv/controller/joy_handler.cpp.o
+
+simenv/controller/joy_handler.i: simenv/controller/joy_handler.cpp.i
+.PHONY : simenv/controller/joy_handler.i
+
+# target to preprocess a source file
+simenv/controller/joy_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_handler.dir/build.make CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.i
+.PHONY : simenv/controller/joy_handler.cpp.i
+
+simenv/controller/joy_handler.s: simenv/controller/joy_handler.cpp.s
+.PHONY : simenv/controller/joy_handler.s
+
+# target to generate assembly for a file
+simenv/controller/joy_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_handler.dir/build.make CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.s
+.PHONY : simenv/controller/joy_handler.cpp.s
 
 simenv/controller/pub_control.o: simenv/controller/pub_control.cpp.o
 .PHONY : simenv/controller/pub_control.o
@@ -526,6 +563,7 @@ help:
 	@echo "... simple_sim_uninstall"
 	@echo "... uninstall"
 	@echo "... esp_control"
+	@echo "... joy_handler"
 	@echo "... omuni_dir_walk"
 	@echo "... pub_control"
 	@echo "... pub_test"
@@ -535,6 +573,9 @@ help:
 	@echo "... simenv/controller/esp_control.o"
 	@echo "... simenv/controller/esp_control.i"
 	@echo "... simenv/controller/esp_control.s"
+	@echo "... simenv/controller/joy_handler.o"
+	@echo "... simenv/controller/joy_handler.i"
+	@echo "... simenv/controller/joy_handler.s"
 	@echo "... simenv/controller/pub_control.o"
 	@echo "... simenv/controller/pub_control.i"
 	@echo "... simenv/controller/pub_control.s"
