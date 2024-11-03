@@ -30,7 +30,7 @@ using std::vector;
 
 // control info
 #define MAX_MOTION 11
-#define COMP_RATIO_DEFALUT 6 // the ratio of motion completion
+#define COMP_RATIO_DEFALUT 3 // the ratio of motion completion
 int comp_ratio;
 bool serial_onboard = false;
 std::mutex mtx; // stop reading motion_list while publishing to motor
@@ -210,8 +210,8 @@ void update_servo(void *param)
   array<float, LINK_SIZE> motion;
   array<float, LINK_SIZE> motion_aim;
   array<float, LINK_SIZE + 1> motion_read;
-  // motion_aim = Eglantyne.init_home(3);
-  Eglantyne.move_all(Eglantyne.home());
+  motion_aim = Eglantyne.init_home(1);
+  // Eglantyne.move_all(Eglantyne.home());
 
   state.data = 4;
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
