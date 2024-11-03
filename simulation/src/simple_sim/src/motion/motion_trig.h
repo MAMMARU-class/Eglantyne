@@ -1,7 +1,7 @@
 #ifndef motion_trig_h
 #define motion_trig_h
 
-#define CONTROL_CYCLE 60
+#define CONTROL_CYCLE 40
 
 #define NO_TRIG 0
 #define STAY 3

@@ -55,7 +55,7 @@ array<float, LINK_SIZE> Robot::init_home(float t){
 }
 
 void Robot::move_all(array<float, LINK_SIZE> motion){
-    for(int id=0; id<link_set.size(); id++){
+    for(int id=6; id<link_set.size(); id++){
         link_set[id]->move(motion[id]);
     }
 }
