@@ -18,14 +18,9 @@
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
-<<<<<<< HEAD
-using Eigen::Vector2d; using Eigen::Vector3d; using Eigen::Vector4d;
-using Eigen::Matrix2d;
-=======
 using Eigen::Vector2d; using Eigen::Vector3d;
 
 #define INTERVAL 60 // ms
->>>>>>> 6933607 (for Tyoufu Festivavl. discard serial1. only omuni_dir_walk (no zero handler and joy handler))
 
 // fixed variables
 #define Z 257.4 // grand to COM

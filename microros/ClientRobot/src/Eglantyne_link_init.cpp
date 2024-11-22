@@ -24,11 +24,7 @@ void Robot::setLink(){
 
 
     leg_yaw_right.setInitialPositionsDeg(7380, 0,0,0);
-<<<<<<< HEAD
-    leg_yaw_right.setMotor(serial1, 11, REVERSE);
-=======
     leg_yaw_right.setMotor(serial2, 11, REVERSE);
->>>>>>> 6933607 (for Tyoufu Festivavl. discard serial1. only omuni_dir_walk (no zero handler and joy handler))
 
     leg_roll_right.setInitialPositionsDeg(9000, 0,0,0);
     leg_roll_right.setMotor(serial1, 1, FORWARD);
@@ -48,11 +44,7 @@ void Robot::setLink(){
 
 
     leg_yaw_left.setInitialPositionsDeg(7500, 0,0,0);
-<<<<<<< HEAD
-    leg_yaw_left.setMotor(serial1, 12, REVERSE);
-=======
     leg_yaw_left.setMotor(serial2, 12, REVERSE);
->>>>>>> 6933607 (for Tyoufu Festivavl. discard serial1. only omuni_dir_walk (no zero handler and joy handler))
 
     leg_roll_left.setInitialPositionsDeg(8330, 0,0,0);
     leg_roll_left.setMotor(serial1, 6, REVERSE);
