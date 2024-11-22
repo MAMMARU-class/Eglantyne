@@ -1,0 +1,19 @@
+[ 15%] Built target squwad_esp
+[ 20%] Built target zero_pub
+[ 30%] Built target pub_test
+[ 40%] Built target pub_control
+[ 50%] Built target esp_control
+[ 60%] Built target joy_handler
+[ 80%] Built target walk_test
+[ 85%] [32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o[0m
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::calc_foot_pos()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:70:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOmuniDirWalk::update_joy_order()[m[K’
+   70 |     [01;31m[Kupdate_joy_order()[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:7:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid OmuniDirWalk::update_joy_order(sensor_msgs::msg::Joy)[m[K’
+    7 | void [01;36m[KOmuniDirWalk[m[K::update_joy_order(const sensor_msgs::msg::Joy msg){
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:7:6:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

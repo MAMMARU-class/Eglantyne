@@ -124,6 +124,8 @@ private:
     Matrix2d p1_XYRot;
     Matrix2d m1_to_p1_XYRot;
 
+    bool isfirst = true;
+
     std::vector< Vector4d > COM_traj;
     std::vector< Vector4d > COM_traj_next;
     std::vector< Vector4d > swing_foot_traj;

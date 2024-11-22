@@ -54,13 +54,11 @@ void OmuniDirWalk::calc_foot_pos()
     // add aim_step after calculated velocity
     COM_p_aim += aim_step;
 
-
     aim_step(0) = - COEF_A*(C-1) / D * (COM_p_aim(0) - C*COM_p_start(0) - Tc*S*COM_v_start(0))
                   - COEF_B*S/( Tc*D ) * (COM_v_aim(0) - S/Tc * COM_p_start(0) - C*COM_v_start(0));
     aim_step(1) = - COEF_A*(C-1) / D * (COM_p_aim(1) - C*COM_p_start(1) - Tc*S*COM_v_start(1))
                   - COEF_B*S/( Tc*D ) * (COM_v_aim(1) - S/Tc * COM_p_start(1) - C*COM_v_start(1));
     
-    RCLCPP_INFO(this->get_logger(), "model_COM_v_aim : %f, %f", COM_v_aim[0], COM_v_aim[1]);
     // reculculate aim
     COM_p_aim(0) = C    * COM_p_start(0) + Tc*S*COM_v_start(0) + (1-C)*aim_step(0);
     COM_v_aim(0) = S/Tc * COM_p_start(0) +    C*COM_v_start(0) - S/Tc *aim_step(0);
@@ -68,8 +66,14 @@ void OmuniDirWalk::calc_foot_pos()
     COM_p_aim(1) = C    * COM_p_start(1) + Tc*S*COM_v_start(1) + (1-C)*aim_step(1);
     COM_v_aim(1) = S/Tc * COM_p_start(1) +    C*COM_v_start(1) - S/Tc *aim_step(1);
 
-    if( abs(dx) < 3 && abs(dy) < 5 && abs(dtheta) < 0.05 && abs(p1_step(0)) < 3 && abs(p1_step(1)) < 3 ){
-        COM_v_aim << 0, 0;
+    // stop handler
+    if(isfirst){isfirst = false;
+    }else{
+        if( dx == 0 && dy == 0 && abs(dtheta) == 0 &&
+        abs(p1_step(0)) < 2 && abs(p1_step(1)) < 2){
+            COM_v_aim << 0, 0;
+        }
+        isfirst = true;
     }
 
     RCLCPP_INFO(this->get_logger(), "dx : %f, dy : %f, dtheta : %f", dx, dy, dtheta);
@@ -82,6 +86,8 @@ void OmuniDirWalk::calc_foot_pos()
 
 void OmuniDirWalk::COM_traj_zero()
 {
+    // isfirst = true;
+
     double trajy;
     double yp_0 = -sy/2;
     double yv_0 = -1 * yp_0*(C-1)/(Tc*S);
@@ -202,7 +208,7 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
         pub_trig_->publish(trig);
         return; }
     // initialize start motion handler
-    if (COM_traj_next.empty()){
+    if (isfirst){
         dx = 0; dy = 0; dtheta = 0;
         sy = DEFALUT_Y;
         step_dir = -1;
