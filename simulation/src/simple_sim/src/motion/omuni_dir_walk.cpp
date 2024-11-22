@@ -71,7 +71,7 @@ void OmuniDirWalk::calc_foot_pos()
         isfirst = false;
         RCLCPP_INFO(this->get_logger(), "first step");
     }else{
-        if( abs(dx) < 2 && abs(dy) < 2 && abs(dtheta) < 0.02 &&
+        if( abs(dx) < 2 && abs(dy) < 2 && abs(dtheta) < 0.001 &&
             abs(p1_step(0)) < 2 && abs(p1_step(1)) < 2){
             COM_v_aim << 0, 0;
             isfirst = true;
@@ -113,7 +113,7 @@ void OmuniDirWalk::calc_COM_traj_next()
         trajtheta = (p1_theta-aim_theta) * (Tsup-t)/Tsup;
         COM_traj_next.push_back({trajx, trajy, Z, trajtheta});
 
-        // RCLCPP_INFO(this->get_logger(), "next COM trajectory: x: %f, y: %f ", trajx, trajy);
+        RCLCPP_INFO(this->get_logger(), "next COM trajectory: x: %f, y: %f, theta: %f ", trajx, trajy, trajtheta);
     }
 }
 
@@ -132,7 +132,7 @@ void OmuniDirWalk::calc_swing_foot_traj()
 
         swing_foot_traj.push_back({trajx, trajy, trajz, trajtheta});
 
-        // RCLCPP_INFO(this->get_logger(), "swing foot trajectory: x: %f, y: %f, z:%f ", trajx, trajy, trajz);
+        RCLCPP_INFO(this->get_logger(), "swing foot trajectory: x: %f, y: %f, z:%f, theta:%f ", trajx, trajy, trajz, trajtheta);
     }
 }
 
@@ -143,13 +143,15 @@ void OmuniDirWalk::integrate_traj()
 
     while(!COM_traj.empty() && !swing_foot_traj.empty()){
         body_to_fixed_foot_point = -1 * COM_traj.front();
-        body_to_fixed_foot_point(0) += FULC_TO_FOOT_JOINT;
+        // body_to_fixed_foot_point(0) += FULC_TO_FOOT_JOINT * cos(body_to_fixed_foot_point(3));
+        // body_to_fixed_foot_point(1) -= FULC_TO_FOOT_JOINT * sin(body_to_fixed_foot_point(3));
         body_to_fixed_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
 
         body_to_fixed_foot_traj.push_back(body_to_fixed_foot_point);
 
         body_to_swing_foot_point = -1 * COM_traj.front() + swing_foot_traj.front();
-        body_to_swing_foot_point(0) += FULC_TO_FOOT_JOINT;
+        // body_to_swing_foot_point(0) += FULC_TO_FOOT_JOINT * cos(body_to_swing_foot_point(3));
+        // body_to_swing_foot_point(1) -= FULC_TO_FOOT_JOINT * sin(body_to_swing_foot_point(3));
         body_to_swing_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
 
         body_to_swing_foot_traj.push_back(body_to_swing_foot_point);
@@ -202,7 +204,7 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
 {
     if(msg.data != WALK){ return; }
     // stop robot if order is 0
-    if(abs(dx) < 2 && abs(dy) < 2 && abs(dtheta) < 0.02 && 
+    if(abs(dx) < 2 && abs(dy) < 2 && abs(dtheta) < 0.001 && 
        COM_v_aim(0) == 0 && COM_v_aim(1) == 0){
         RCLCPP_INFO(this->get_logger(), "no motion detected");
         std_msgs::msg::Int32 trig;
@@ -253,7 +255,14 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
         if(count == 1){positions.push_back(WALK);
         }else{positions.push_back(0);}
         pos.positions = positions;
-        
+
+        // print position data
+        std::stringstream ss;
+        for (size_t i=0; i<positions.size(); ++i){
+            ss << positions[i];
+            if (i < positions.size() - 1){ ss << ", "; }}
+        RCLCPP_INFO(this->get_logger(), "positions: [%s]", ss.str().c_str());
+
         motion.points.push_back(pos);
         count++;
     }
