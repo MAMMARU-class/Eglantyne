@@ -6,7 +6,7 @@ using Eigen::Matrix2d;
 
 void OmuniDirWalk::update_joy_order(const sensor_msgs::msg::Joy msg){
     this->dx = X_MAX*msg.axes[1];
-    this->dy = Y_MAX*msg.axes[0];
+    this->dy = Y_MAX*msg.axes[0] * -1;
     this->dtheta = THETA_MAX*msg.axes[2];
 }
 
@@ -67,13 +67,15 @@ void OmuniDirWalk::calc_foot_pos()
     COM_v_aim(1) = S/Tc * COM_p_start(1) +    C*COM_v_start(1) - S/Tc *aim_step(1);
 
     // stop handler
-    if(isfirst){isfirst = false;
+    if(isfirst){
+        isfirst = false;
+        RCLCPP_INFO(this->get_logger(), "first step");
     }else{
-        if( dx == 0 && dy == 0 && abs(dtheta) == 0 &&
-        abs(p1_step(0)) < 2 && abs(p1_step(1)) < 2){
+        if( abs(dx) < 2 && abs(dy) < 2 && abs(dtheta) < 0.02 &&
+            abs(p1_step(0)) < 2 && abs(p1_step(1)) < 2){
             COM_v_aim << 0, 0;
+            isfirst = true;
         }
-        isfirst = true;
     }
 
     RCLCPP_INFO(this->get_logger(), "dx : %f, dy : %f, dtheta : %f", dx, dy, dtheta);
@@ -98,7 +100,6 @@ void OmuniDirWalk::COM_traj_zero()
         
         // RCLCPP_INFO(this->get_logger(), "COM trajectory: x: %d, y: %f ", 0, trajy);
     }
-    COM_p_start << 0, yp_0, COM_v_start << 0, yv_0;
     COM_p_aim << 0, -trajy; COM_v_aim << 0, -yv_0;
 }
 
@@ -201,7 +202,8 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
 {
     if(msg.data != WALK){ return; }
     // stop robot if order is 0
-    if(dx == 0 && dy == 0 && dtheta == 0 && COM_v_aim(0) == 0 && COM_v_aim(1) == 0){
+    if(abs(dx) < 2 && abs(dy) < 2 && abs(dtheta) < 0.02 && 
+       COM_v_aim(0) == 0 && COM_v_aim(1) == 0){
         RCLCPP_INFO(this->get_logger(), "no motion detected");
         std_msgs::msg::Int32 trig;
         trig.data = STAY;
