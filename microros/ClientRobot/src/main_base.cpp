@@ -126,7 +126,11 @@ void update_motions(const void *msgin)
 
 void setup()
 {
+<<<<<<< HEAD
   set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.230.255", 8888);
+=======
+  set_microros_wifi_transports("hibiki", "Maruh1b1k1", "192.168.181.177", 8888);
+>>>>>>> 6933607 (for Tyoufu Festivavl. discard serial1. only omuni_dir_walk (no zero handler and joy handler))
   delay(2000);
   rclc_allocator = rcl_get_default_allocator();
   // create init_options
@@ -165,7 +169,7 @@ void setup()
 
   xTaskCreatePinnedToCore(
       update_servo, "update_servo",
-      2048, NULL, configMAX_PRIORITIES, &_servo_spinner, 0);
+      2048, NULL, configMAX_PRIORITIES+1, &_servo_spinner, 0);
   xTaskCreatePinnedToCore(
       update_rclc, "update_rclc",
       2048, NULL, 1, &_rclc_spinner, 0);
@@ -206,24 +210,30 @@ void update_servo(void *param)
   krs1.begin();
   krs2.begin();
   // vector<float> motion_aim;
-  array<float, LINK_SIZE> motion_ex = Eglantyne.current();
+  // array<float, LINK_SIZE> motion_ex = Eglantyne.current();
+  array<float, LINK_SIZE> motion_ex = Eglantyne.home();
   array<float, LINK_SIZE> motion;
   array<float, LINK_SIZE> motion_aim;
   array<float, LINK_SIZE + 1> motion_read;
+<<<<<<< HEAD
   motion_aim = Eglantyne.init_home(1);
   // Eglantyne.move_all(Eglantyne.home());
 
   state.data = 4;
   RCSOFTCHECK(rcl_publish(&state_publisher, &state, NULL));
+=======
+  // motion_aim = Eglantyne.init_home(3);
+>>>>>>> 6933607 (for Tyoufu Festivavl. discard serial1. only omuni_dir_walk (no zero handler and joy handler))
   // vTaskResume(_rclc_spinner);
-  // int init_max = 3000 / (CONTROL_CYCLE*5);
-  // for(int i=0; i<init_max; i++){
-  //   array<float, LINK_SIZE+1> init_motion;
-  //   for(int j=0; j<LINK_SIZE; j++){
-  //     init_motion[j] = ( motion_ex[j] * (init_max-i) + Eglantyne.home()[j] * i ) / init_max;
-  //   }
-  //   motion_list.push_back(init_motion);
-  // }
+  
+  int init_max = 3000 / (CONTROL_CYCLE*5);
+  for(int i=0; i<init_max; i++){
+    array<float, LINK_SIZE+1> init_motion;
+    for(int j=0; j<LINK_SIZE; j++){
+      init_motion[j] = ( motion_ex[j] * (init_max-i) + Eglantyne.home()[j] * i ) / init_max;
+    }
+    motion_list.push_back(init_motion);
+  }
 
   int count = 0;
   while (true)

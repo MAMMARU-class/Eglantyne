@@ -18,14 +18,20 @@
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
+<<<<<<< HEAD
 using Eigen::Vector2d; using Eigen::Vector3d; using Eigen::Vector4d;
 using Eigen::Matrix2d;
+=======
+using Eigen::Vector2d; using Eigen::Vector3d;
+
+#define INTERVAL 60 // ms
+>>>>>>> 6933607 (for Tyoufu Festivavl. discard serial1. only omuni_dir_walk (no zero handler and joy handler))
 
 // fixed variables
 #define Z 257.4 // grand to COM
 #define BASE_TO_COM 40.0
 #define END_TO_FOOT 37.4
-#define FULC_TO_FOOT_JOINT -25
+#define FULC_TO_FOOT_JOINT -15
 #define H 25.0 // foot height while walking 
 #define G (9.81 * 1000) // mm/s^2
 #define PI 3.1415

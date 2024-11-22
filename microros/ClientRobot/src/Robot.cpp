@@ -59,3 +59,4 @@ void Robot::move_all(array<float, LINK_SIZE> motion){
         link_set[id]->move(motion[id]);
     }
 }
+
