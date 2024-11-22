@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.000142] (-) JobUnselected: {'identifier': 'champ'}
+[0.000159] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000167] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000174] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000181] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000187] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000193] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000199] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000205] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.000211] (-) JobUnselected: {'identifier': 'gazebo_ros2_control_demos'}
+[0.000217] (-) JobUnselected: {'identifier': 'ros2_control_demo_description'}
+[0.000223] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_1'}
+[0.000230] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_10'}
+[0.000236] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_11'}
+[0.000241] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_12'}
+[0.000247] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_14'}
+[0.000254] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_15'}
+[0.000261] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_2'}
+[0.000269] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_3'}
+[0.000276] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_4'}
+[0.000283] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_5'}
+[0.000290] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_6'}
+[0.000297] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_7'}
+[0.000304] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_8'}
+[0.000311] (-) JobUnselected: {'identifier': 'ros2_control_demo_example_9'}
+[0.000318] (-) JobUnselected: {'identifier': 'ros2_control_demo_testing'}
+[0.000329] (-) JobUnselected: {'identifier': 'ros2_control_demos'}
+[0.000338] (simple_sim) JobQueued: {'identifier': 'simple_sim', 'dependencies': OrderedDict()}
+[0.000348] (simple_sim) JobStarted: {'identifier': 'simple_sim'}
+[0.012088] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'cmake'}
+[0.014863] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'build'}
+[0.014892] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', '--', '-j16', '-l16'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('OLDPWD', '/home/hibiki/Robomech_HR/Eglantyne'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpypkb27t4idf_4759'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1638,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b66ca18e_c56f_4a90_b213_486131d3a033'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WFURX2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.111'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099544] (-) TimerEvent: {}
+[0.100522] (simple_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.183161] (simple_sim) StdoutLine: {'line': b'-- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.199638] (-) TimerEvent: {}
+[0.217189] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.220413] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.228401] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.242041] (simple_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.255226] (simple_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299805] (-) TimerEvent: {}
+[0.365956] (simple_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.399847] (simple_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.399913] (-) TimerEvent: {}
+[0.402717] (simple_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.496807] (simple_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500081] (-) TimerEvent: {}
+[0.537789] (simple_sim) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.546371] (simple_sim) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.553919] (simple_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.600196] (-) TimerEvent: {}
+[0.638820] (simple_sim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.639234] (simple_sim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/PUBLIC\n'}
+[0.639315] (simple_sim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.640936] (simple_sim) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.641699] (simple_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.642217] (simple_sim) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.643473] (simple_sim) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.643536] (simple_sim) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.643951] (simple_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.646352] (simple_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.700368] (-) TimerEvent: {}
+[0.704801] (simple_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[0.708022] (simple_sim) StdoutLine: {'line': b'-- Build files have been written to: /home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim\n'}
+[0.775198] (simple_sim) StdoutLine: {'line': b'[ 20%] Built target zero_pub\n'}
+[0.775356] (simple_sim) StdoutLine: {'line': b'[ 20%] Built target pub_test\n'}
+[0.775400] (simple_sim) StdoutLine: {'line': b'[ 30%] Built target esp_control\n'}
+[0.776013] (simple_sim) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/squwad_esp.dir/src/test/squwad_esp.cpp.o\x1b[0m\n'}
+[0.776447] (simple_sim) StdoutLine: {'line': b'[ 45%] Built target pub_control\n'}
+[0.781541] (simple_sim) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/joy_handler.dir/simenv/controller/joy_handler.cpp.o\x1b[0m\n'}
+[0.798409] (simple_sim) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o\x1b[0m\n'}
+[0.798540] (simple_sim) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/walk_test.dir/src/test/walk_test.cpp.o\x1b[0m\n'}
+[0.800539] (-) TimerEvent: {}
+[0.900838] (-) TimerEvent: {}
+[1.001091] (-) TimerEvent: {}
+[1.101308] (-) TimerEvent: {}
+[1.201544] (-) TimerEvent: {}
+[1.301934] (-) TimerEvent: {}
+[1.402369] (-) TimerEvent: {}
+[1.502788] (-) TimerEvent: {}
+[1.603218] (-) TimerEvent: {}
+[1.703641] (-) TimerEvent: {}
+[1.804076] (-) TimerEvent: {}
+[1.904518] (-) TimerEvent: {}
+[2.004866] (-) TimerEvent: {}
+[2.105219] (-) TimerEvent: {}
+[2.205652] (-) TimerEvent: {}
+[2.305967] (-) TimerEvent: {}
+[2.406412] (-) TimerEvent: {}
+[2.506856] (-) TimerEvent: {}
+[2.607284] (-) TimerEvent: {}
+[2.707718] (-) TimerEvent: {}
+[2.808011] (-) TimerEvent: {}
+[2.908366] (-) TimerEvent: {}
+[3.008746] (-) TimerEvent: {}
+[3.109152] (-) TimerEvent: {}
+[3.209579] (-) TimerEvent: {}
+[3.310026] (-) TimerEvent: {}
+[3.410463] (-) TimerEvent: {}
+[3.510916] (-) TimerEvent: {}
+[3.611364] (-) TimerEvent: {}
+[3.711802] (-) TimerEvent: {}
+[3.812233] (-) TimerEvent: {}
+[3.912673] (-) TimerEvent: {}
+[4.013124] (-) TimerEvent: {}
+[4.113555] (-) TimerEvent: {}
+[4.214009] (-) TimerEvent: {}
+[4.314435] (-) TimerEvent: {}
+[4.414860] (-) TimerEvent: {}
+[4.515275] (-) TimerEvent: {}
+[4.615720] (-) TimerEvent: {}
+[4.716165] (-) TimerEvent: {}
+[4.816621] (-) TimerEvent: {}
+[4.917054] (-) TimerEvent: {}
+[5.017476] (-) TimerEvent: {}
+[5.117777] (-) TimerEvent: {}
+[5.218201] (-) TimerEvent: {}
+[5.318598] (-) TimerEvent: {}
+[5.419023] (-) TimerEvent: {}
+[5.519432] (-) TimerEvent: {}
+[5.619839] (-) TimerEvent: {}
+[5.720239] (-) TimerEvent: {}
+[5.820651] (-) TimerEvent: {}
+[5.920974] (-) TimerEvent: {}
+[6.021373] (-) TimerEvent: {}
+[6.121769] (-) TimerEvent: {}
+[6.222166] (-) TimerEvent: {}
+[6.322565] (-) TimerEvent: {}
+[6.422989] (-) TimerEvent: {}
+[6.475671] (simple_sim) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX executable squwad_esp\x1b[0m\n'}
+[6.523091] (-) TimerEvent: {}
+[6.623394] (-) TimerEvent: {}
+[6.723715] (-) TimerEvent: {}
+[6.808976] (simple_sim) StdoutLine: {'line': b'[ 65%] Built target squwad_esp\n'}
+[6.823787] (-) TimerEvent: {}
+[6.924027] (-) TimerEvent: {}
+[7.024299] (-) TimerEvent: {}
+[7.124565] (-) TimerEvent: {}
+[7.224898] (-) TimerEvent: {}
+[7.250850] (simple_sim) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable walk_test\x1b[0m\n'}
+[7.325126] (-) TimerEvent: {}
+[7.425538] (-) TimerEvent: {}
+[7.525985] (-) TimerEvent: {}
+[7.626330] (-) TimerEvent: {}
+[7.726700] (-) TimerEvent: {}
+[7.727017] (simple_sim) StdoutLine: {'line': b'[ 80%] Built target walk_test\n'}
+[7.795495] (simple_sim) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable joy_handler\x1b[0m\n'}
+[7.826883] (-) TimerEvent: {}
+[7.927285] (-) TimerEvent: {}
+[8.027700] (-) TimerEvent: {}
+[8.095597] (simple_sim) StdoutLine: {'line': b'[ 85%] Built target joy_handler\n'}
+[8.127913] (-) TimerEvent: {}
+[8.228295] (-) TimerEvent: {}
+[8.328724] (-) TimerEvent: {}
+[8.429145] (-) TimerEvent: {}
+[8.529568] (-) TimerEvent: {}
+[8.630107] (-) TimerEvent: {}
+[8.730407] (-) TimerEvent: {}
+[8.830813] (-) TimerEvent: {}
+[8.931222] (-) TimerEvent: {}
+[9.031638] (-) TimerEvent: {}
+[9.131966] (-) TimerEvent: {}
+[9.136888] (simple_sim) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable omuni_dir_walk\x1b[0m\n'}
+[9.232177] (-) TimerEvent: {}
+[9.332468] (-) TimerEvent: {}
+[9.432870] (-) TimerEvent: {}
+[9.533294] (-) TimerEvent: {}
+[9.617492] (simple_sim) StdoutLine: {'line': b'[100%] Built target omuni_dir_walk\n'}
+[9.622017] (simple_sim) CommandEnded: {'returncode': 0}
+[9.633401] (-) TimerEvent: {}
+[9.653667] (simple_sim) JobProgress: {'identifier': 'simple_sim', 'progress': 'install'}
+[9.656841] (simple_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'], 'cwd': '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hibiki'), ('XDG_SESSION_TYPE', 'wayland'), ('IDF_TOOLS_INSTALL_CMD', '/home/hibiki/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hibiki'), ('OLDPWD', '/home/hibiki/Robomech_HR/Eglantyne'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hibiki'), ('_', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hibiki'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpypkb27t4idf_4759'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/hibiki/esp/esp-idf'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hibiki/esp/esp-idf/components/espcoredump:/home/hibiki/esp/esp-idf/components/partition_table:/home/hibiki/esp/esp-idf/components/app_update:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/hibiki/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin:/home/hibiki/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240305/riscv32-esp-elf/bin:/home/hibiki/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/hibiki/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/hibiki/.espressif/python_env/idf5.4_py3.10_env/bin:/home/hibiki/esp/esp-idf/tools:/usr/bin/:/home/hibiki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin'), ('SESSION_MANAGER', 'local/hibiki-ubuntu22:@/tmp/.ICE-unix/1638,unix/hibiki-ubuntu22:/tmp/.ICE-unix/1638'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b66ca18e_c56f_4a90_b213_486131d3a033'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WFURX2'), ('ESP_IDF_VERSION', '5.4'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.111'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/hibiki/.espressif/python_env/idf5.4_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('matlab', '/.MATLAB/R2024a/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/hibiki/esp/esp-idf/export.sh'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-17-openjdk-amd64'), ('PWD', '/home/hibiki/Robomech_HR/Eglantyne/simulation/build/simple_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/hibiki/.espressif/tools/esp-rom-elfs/20240305/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.659379] (simple_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.663026] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_control\n'}
+[9.667033] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/esp_control\n'}
+[9.668422] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/joy_handler\n'}
+[9.672392] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/joy_handler" to ""\n'}
+[9.673435] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/omuni_dir_walk\n'}
+[9.679722] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/omuni_dir_walk" to ""\n'}
+[9.680834] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/pub_test\n'}
+[9.681895] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/zero_pub\n'}
+[9.683879] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/squwad_esp\n'}
+[9.686594] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/squwad_esp" to ""\n'}
+[9.687901] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/walk_test\n'}
+[9.692699] (simple_sim) StdoutLine: {'line': b'-- Set runtime path of "/home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/lib/simple_sim/walk_test" to ""\n'}
+[9.692998] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch\n'}
+[9.693366] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/view_robot.launch.py\n'}
+[9.693452] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf\n'}
+[9.693620] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/ros2_control_conf.xacro\n'}
+[9.693736] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/gazebo_setup.xacro\n'}
+[9.693824] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info\n'}
+[9.694003] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_body.xacro\n'}
+[9.694779] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_arm.xacro\n'}
+[9.694819] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/eglantyne_leg.xacro\n'}
+[9.694847] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/body_info/shape_macro.xacro\n'}
+[9.694872] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//urdf/eglantyne.xacro\n'}
+[9.694953] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch\n'}
+[9.694976] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//launch/eglantyne_controller.launch.py\n'}
+[9.694998] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config\n'}
+[9.695398] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim//config/eglantyne_controller.yaml\n'}
+[9.695762] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/package_run_dependencies/simple_sim\n'}
+[9.696164] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/parent_prefix_path/simple_sim\n'}
+[9.697056] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.sh\n'}
+[9.697081] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/ament_prefix_path.dsv\n'}
+[9.697217] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.sh\n'}
+[9.697248] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/environment/path.dsv\n'}
+[9.697349] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.bash\n'}
+[9.697377] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.sh\n'}
+[9.697419] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.zsh\n'}
+[9.697440] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/local_setup.dsv\n'}
+[9.697507] (simple_sim) StdoutLine: {'line': b'-- Installing: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.dsv\n'}
+[9.697929] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/ament_index/resource_index/packages/simple_sim\n'}
+[9.698274] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig.cmake\n'}
+[9.698297] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/cmake/simple_simConfig-version.cmake\n'}
+[9.698317] (simple_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hibiki/Robomech_HR/Eglantyne/simulation/install/simple_sim/share/simple_sim/package.xml\n'}
+[9.699384] (simple_sim) CommandEnded: {'returncode': 0}
+[9.733511] (-) TimerEvent: {}
+[9.767723] (simple_sim) JobEnded: {'identifier': 'simple_sim', 'rc': 0}
+[9.768210] (-) EventReactorShutdown: {}
