@@ -1,0 +1,8 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::calc_foot_pos()[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:24:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpi[m[K’ was not declared in this scope; did you mean ‘[01m[KPI[m[K’?
+   24 |     rest_aim_XYRot << cos([01;31m[Kpi[m[K/2 - aim_theta), -sin(pi/2 - aim_theta),
+      |                           [01;31m[K^~[m[K
+      |                           [32m[KPI[m[K
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

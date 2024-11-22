@@ -19,8 +19,8 @@ void OmuniDirWalk::calc_foot_pos()
     aim_theta = p1_theta - aim_theta;
     p1_theta = aim_theta + dtheta;
 
-    m_aim_XYRot << cos(-aim_theta), -sin(-aim_theta),
-                   sin(-aim_theta),  cos(-aim_theta);
+    aim_XYRot << cos(aim_theta), -sin(aim_theta),
+                 sin(aim_theta),  cos(aim_theta);
     p1_XYRot << cos(p1_theta), -sin(p1_theta),
                 sin(p1_theta),  cos(p1_theta);
     m1_to_p1_XYRot << cos(p1_theta+aim_theta), -sin(p1_theta+aim_theta),
@@ -28,23 +28,27 @@ void OmuniDirWalk::calc_foot_pos()
 
     // shift COM
     COM_p_start = COM_p_aim - aim_step;
-    COM_p_start = m_aim_XYRot*COM_p_start;
+    COM_p_start = aim_XYRot.inverse()*COM_p_start;
     
     COM_v_start = COM_v_aim;
-    COM_v_start = m_aim_XYRot*COM_v_start;
+    COM_v_start = aim_XYRot.inverse()*COM_v_start;
 
     // shift step
     m2_step = -aim_step;
+    m2_step = aim_XYRot.inverse()*m2_step;
     aim_step = p1_step - aim_step;
+    aim_step = aim_XYRot.inverse()*aim_step;
 
     sy = DEFALUT_Y+(step_dir*dy);
     if(sy < DEFALUT_Y){ sy=DEFALUT_Y; }
     Vector2d ofs{dx, -step_dir*sy};
     p1_step =aim_step + ofs;
-
-    RCLCPP_INFO(this->get_logger(), "raw p1 step: x: %f, y: %f, theta: %f", p1_step(0), p1_step(1), p1_theta);
     
+    RCLCPP_INFO(this->get_logger(), "no_rot p1 step: x: %f, y: %f", p1_step(0), p1_step(1));
+
     p1_step = m1_to_p1_XYRot*p1_step;
+
+    RCLCPP_INFO(this->get_logger(), "raw p1 step:    x: %f, y: %f, theta: %f", p1_step(0), p1_step(1), p1_theta);
 
     // model aim (origin: n-1 step)
     COM_p_aim << dx / 2,

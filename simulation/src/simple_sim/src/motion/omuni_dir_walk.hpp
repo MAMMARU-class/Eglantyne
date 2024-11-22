@@ -120,7 +120,8 @@ private:
     Vector2d COM_p_aim;
     Vector2d COM_v_aim;
 
-    Matrix2d m_aim_XYRot;
+    Matrix2d aim_XYRot;
+    Matrix2d rest_aim_XYRot; // pi/2 - aim_theta
     Matrix2d p1_XYRot;
     Matrix2d m1_to_p1_XYRot;
 
