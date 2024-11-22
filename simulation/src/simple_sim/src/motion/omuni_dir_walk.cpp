@@ -14,6 +14,7 @@ void OmuniDirWalk::calc_foot_pos()
 {
     // shift theta
     if( dtheta/abs(dtheta) == -1 * step_dir/abs(step_dir) ){ dtheta=0; }
+    if(abs(dx) < 2 && abs(dy) < 2){ dtheta=0; } // rotate without move is somehow not permitted
     m2_theta = -aim_theta;
     aim_theta = p1_theta - aim_theta;
     p1_theta = aim_theta + dtheta;
@@ -143,15 +144,15 @@ void OmuniDirWalk::integrate_traj()
 
     while(!COM_traj.empty() && !swing_foot_traj.empty()){
         body_to_fixed_foot_point = -1 * COM_traj.front();
-        // body_to_fixed_foot_point(0) += FULC_TO_FOOT_JOINT * cos(body_to_fixed_foot_point(3));
-        // body_to_fixed_foot_point(1) -= FULC_TO_FOOT_JOINT * sin(body_to_fixed_foot_point(3));
+        body_to_fixed_foot_point(0) += FULC_TO_FOOT_JOINT * cos(body_to_fixed_foot_point(3));
+        body_to_fixed_foot_point(1) -= FULC_TO_FOOT_JOINT * sin(body_to_fixed_foot_point(3));
         body_to_fixed_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
 
         body_to_fixed_foot_traj.push_back(body_to_fixed_foot_point);
 
         body_to_swing_foot_point = -1 * COM_traj.front() + swing_foot_traj.front();
-        // body_to_swing_foot_point(0) += FULC_TO_FOOT_JOINT * cos(body_to_swing_foot_point(3));
-        // body_to_swing_foot_point(1) -= FULC_TO_FOOT_JOINT * sin(body_to_swing_foot_point(3));
+        body_to_swing_foot_point(0) += FULC_TO_FOOT_JOINT * cos(body_to_swing_foot_point(3));
+        body_to_swing_foot_point(1) -= FULC_TO_FOOT_JOINT * sin(body_to_swing_foot_point(3));
         body_to_swing_foot_point(2) += BASE_TO_COM + END_TO_FOOT;
 
         body_to_swing_foot_traj.push_back(body_to_swing_foot_point);
@@ -187,14 +188,14 @@ void OmuniDirWalk::traj_to_motion()
             Kinematics::inverse(&foot_roll_left,  body_to_fixed_foot_traj.front().segment(0,3), theta2Rot(body_to_fixed_foot_traj.front()(3)));
             Kinematics::inverse(&foot_roll_right, body_to_swing_foot_traj.front().segment(0,3), theta2Rot(body_to_swing_foot_traj.front()(3)));
         }
-        body_to_fixed_foot_traj.erase(body_to_fixed_foot_traj.begin());
-        body_to_swing_foot_traj.erase(body_to_swing_foot_traj.begin());
         std::vector<double> foot_pos;
         for (auto* link : link_vec){
             foot_pos.push_back(link->getq());
         }
         foot_motion.push_back(foot_pos);
 
+        body_to_fixed_foot_traj.erase(body_to_fixed_foot_traj.begin());
+        body_to_swing_foot_traj.erase(body_to_swing_foot_traj.begin());
     }
     body_to_fixed_foot_traj = {};
     body_to_swing_foot_traj = {};
