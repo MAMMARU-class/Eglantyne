@@ -7,13 +7,13 @@ using Eigen::Matrix2d;
 void OmuniDirWalk::update_joy_order(const sensor_msgs::msg::Joy msg){
     this->dx = X_MAX*msg.axes[1];
     this->dy = Y_MAX*msg.axes[0] * -1;
-    this->dtheta = THETA_MAX*msg.axes[2];
+    this->dtheta = THETA_MAX*msg.axes[2] * -1;
 }
 
 void OmuniDirWalk::calc_foot_pos()
 {
     // shift theta
-    if( dtheta/abs(dtheta) == step_dir/abs(step_dir) ){ dtheta=0; }
+    if( dtheta/abs(dtheta) == -1 * step_dir/abs(step_dir) ){ dtheta=0; }
     m2_theta = -aim_theta;
     aim_theta = p1_theta - aim_theta;
     p1_theta = aim_theta + dtheta;
@@ -208,9 +208,15 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
         std_msgs::msg::Int32 trig;
         trig.data = STAY;
         pub_trig_->publish(trig);
+
+        // initialize vectors
+        isfirst = true;
+        COM_p_start = {}; COM_v_start = {};
+        COM_traj_next = {};
         return; }
     // initialize start motion handler
     if (isfirst){
+        // initialize walk_params
         dx = 0; dy = 0; dtheta = 0;
         sy = DEFALUT_Y;
         step_dir = -1;
@@ -219,6 +225,8 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
         p1_step << 0, 0;          p1_theta = 0;
         COM_traj_zero();
     }
+
+    init_calc_vectors();
 
     COM_traj = COM_traj_next;
     COM_traj_next = {};
@@ -256,6 +264,14 @@ void OmuniDirWalk::pub_walk_trajectory(const std_msgs::msg::Int32 msg)
     // initialize
     step_dir *= -1;
     calc_COM_traj_next();
+}
+
+void OmuniDirWalk::init_calc_vectors(){
+    COM_traj = {};
+    swing_foot_traj = {};
+    body_to_fixed_foot_traj = {};
+    body_to_swing_foot_traj = {};
+    foot_motion = {};
 }
 
 

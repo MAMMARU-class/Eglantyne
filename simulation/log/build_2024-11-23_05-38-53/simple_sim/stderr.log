@@ -1,0 +1,11 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::pub_walk_trajectory(std_msgs::msg::Int32)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:213:17:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  213 |         [01;35m[Kisfirst == true[m[K;
+      |         [01;35m[K~~~~~~~~^~~~~~~[m[K
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:215:9:[m[K [01;31m[Kerror: [m[K‘[01m[KCOM_ttraj_next[m[K’ was not declared in this scope; did you mean ‘[01m[KCOM_traj_next[m[K’?
+  215 |         [01;31m[KCOM_ttraj_next[m[K = {};
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[KCOM_traj_next[m[K
+gmake[2]: *** [CMakeFiles/omuni_dir_walk.dir/build.make:76: CMakeFiles/omuni_dir_walk.dir/src/motion/omuni_dir_walk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/omuni_dir_walk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

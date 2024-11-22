@@ -137,6 +137,7 @@ private:
     std::vector<double> arm_angle = {0.523, -0.349, -1.57, 0.523, 0.349, -1.57};
     
     void COM_traj_zero();
+    void init_calc_vectors();
 
 
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_motion_list_;

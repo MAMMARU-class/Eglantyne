@@ -1,0 +1,4 @@
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:[m[K In member function ‘[01m[Kvoid OmuniDirWalk::pub_walk_trajectory(std_msgs::msg::Int32)[m[K’:
+[01m[K/home/hibiki/Robomech_HR/Eglantyne/simulation/src/simple_sim/src/motion/omuni_dir_walk.cpp:213:17:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  213 |         [01;35m[Kisfirst == true[m[K;
+      |         [01;35m[K~~~~~~~~^~~~~~~[m[K
