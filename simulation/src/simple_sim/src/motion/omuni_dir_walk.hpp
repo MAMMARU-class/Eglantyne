@@ -42,9 +42,9 @@ using Eigen::Vector2d; using Eigen::Vector3d;
 #define WALK_STEP Tsup / CONTROL_CYCLE * 1000
 
 #define DEFALUT_Y (80)
-#define X_MAX 70
-#define Y_MAX 50
-#define THETA_MAX (10 * M_PI / 180)
+#define X_MAX 50
+#define Y_MAX 35
+#define THETA_MAX (15 * M_PI / 180)
 
 class OmuniDirWalk : public rclcpp::Node
 {
