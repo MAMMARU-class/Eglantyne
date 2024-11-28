@@ -27,19 +27,19 @@ void Robot::setLink(){
     leg_yaw_right.setMotor(serial2, 11, REVERSE);
 
     leg_roll_right.setInitialPositionsDeg(9000, 0,0,0);
-    leg_roll_right.setMotor(serial1, 1, FORWARD);
+    leg_roll_right.setMotor(serial2, 1, FORWARD);
 
     leg_upper_right.setInitialPositionsDeg(9850, -18.31, 0,0);
-    leg_upper_right.setMotor(serial1, 2, FORWARD);
+    leg_upper_right.setMotor(serial2, 2, FORWARD);
 
     leg_under_right.setInitialPositionsDeg(4200, 65.8, 0,0);
-    leg_under_right.setMotor(serial1, 3, FORWARD);
+    leg_under_right.setMotor(serial2, 3, FORWARD);
 
     foot_pitch_right.setInitialPositionsDeg(5890, -45.88, 0,0);
-    foot_pitch_right.setMotor(serial1, 4, REVERSE);
+    foot_pitch_right.setMotor(serial2, 4, REVERSE);
 
     foot_roll_right.setInitialPositionsDeg(7600, 0,0,0);
-    foot_roll_right.setMotor(serial1, 5, REVERSE);
+    foot_roll_right.setMotor(serial2, 5, REVERSE);
 
 
 
@@ -47,19 +47,19 @@ void Robot::setLink(){
     leg_yaw_left.setMotor(serial2, 12, REVERSE);
 
     leg_roll_left.setInitialPositionsDeg(8330, 0,0,0);
-    leg_roll_left.setMotor(serial1, 6, REVERSE);
+    leg_roll_left.setMotor(serial2, 6, REVERSE);
 
     leg_upper_left.setInitialPositionsDeg(9750, -18.31, 0,0);
-    leg_upper_left.setMotor(serial1, 7, FORWARD);
+    leg_upper_left.setMotor(serial2, 7, FORWARD);
 
     leg_under_left.setInitialPositionsDeg(4320, 65.8, 0,0);
-    leg_under_left.setMotor(serial1, 8, FORWARD);
+    leg_under_left.setMotor(serial2, 8, FORWARD);
 
     foot_pitch_left.setInitialPositionsDeg(6090, -45.88, 0,0);
-    foot_pitch_left.setMotor(serial1, 9, REVERSE);
+    foot_pitch_left.setMotor(serial2, 9, REVERSE);
 
     foot_roll_left.setInitialPositionsDeg(7400, 0,0,0);
-    foot_roll_left.setMotor(serial1, 10, REVERSE);
+    foot_roll_left.setMotor(serial2, 10, REVERSE);
 
     this->link_set = {
         &arm_pitch_right, &arm_roll_right, &hand_right,
